@@ -1,0 +1,11 @@
+[comment encoding = UTF-8 /]
+[module accev4('http://www.bzh.ubo.pauline.metaheres')]
+
+
+[template public templateMetaheres(aServiceName : ServiceName)]
+[comment @main/]
+[file ('reporttest1_'.concat('.txt'), false)]
+Pauline test 1
+Configuration du service [aServiceName.name/]
+[/file]
+[/template]

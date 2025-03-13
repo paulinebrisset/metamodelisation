@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Acceleo Accev4 Module Runtime Plug-in
+Bundle-SymbolicName: pauline.metaheres.accev4
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: pauline.metaheres.accev4.Activator
+Bundle-Vendor: Eclipse Modeling Project
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.ocl,
+ org.eclipse.ocl.ecore,
+ org.eclipse.acceleo.common;bundle-version="3.3.0",
+ org.eclipse.acceleo.model;bundle-version="3.3.0",
+ org.eclipse.acceleo.profiler;bundle-version="3.3.0",
+ org.eclipse.acceleo.engine;bundle-version="3.3.0",
+ com.google.guava,
+ bzh.ubo.pauline.metaheres
+Bundle-RequiredExecutionEnvironment: JavaSE-14
+Bundle-ActivationPolicy: lazy
+Eclipse-LazyStart: true
+Export-Package: pauline.metaheres.accev4.main
+

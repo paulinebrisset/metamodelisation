@@ -47,11 +47,13 @@ Country returns Country:
 ;
 
 ResourcesConfig returns ResourcesConfig:
+	'('
 	(hasImage?='hasImage')?
 	(hasOneStockPerSlot?='hasOneStockPerSlot')?
-	isConsumable?='isConsumable'
+	(isConsumable?='isConsumable')?
 	(isLoan?='isLoan')?
 	(isCharged?='isCharged')?
+	')'
 	;
 
 LotsConfig returns LotsConfig:

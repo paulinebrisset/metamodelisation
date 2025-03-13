@@ -2,9 +2,7 @@
 <metaheres:ServiceName
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:metaheres="http://www.bzh.ubo.pauline.metaheres"
-    xsi:schemaLocation="http://www.bzh.ubo.pauline.metaheres metaheres.ecore"
     name="Heres">
   <serviceconfig
       closesOnPublicHolidays="true"
@@ -32,12 +30,17 @@
           name="Japonnais"/>
       <pricingsystem
           currency="Yen"
-          taxSystem="TVA_Japan"/>
+          taxSystem="TVA_Japan"
+          name="PricingJapon"/>
     </country>
     <country
         name="Japon">
       <language
           name="EN"/>
+      <pricingsystem
+          currency="Rouble"
+          taxSystem="TaxJapon"
+          name="PricingJapan"/>
     </country>
     <resourcesconfig
         hasImage="true"

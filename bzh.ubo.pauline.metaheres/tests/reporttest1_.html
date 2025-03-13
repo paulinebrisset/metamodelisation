@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Configuration - Heres</title>
+    <style>
+        body { font-family:sans-serif; background-color: #f4f4f4; padding: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #2980b9; border-bottom: 2px solid #2980b9; padding-bottom: 5px; }
+        p, li { font-size: 16px; }
+        ul { list-style-type: square; padding-left: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #2980b9; color: white; }
+        .highlight { color: #e74c3c; font-weight: bold; }
+        .success { color: #008000; font-weight: bold; }
+        .info { color: #f39c12; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<h1>Configurations appliqu�es au service : Heres</h1>
+
+<h2>Informations g�n�rales</h2>
+<ul>
+    <li>Ferme pendant les jours f�ri�s : 
+            <span class="success">OUI</span>
+    </li>
+    
+    <li>L'inventaire est public : 
+            <span class="success">OUI</span>
+    </li>
+
+    <li>Pr�sente une charte d'utilisation : 
+            <span class="success">OUI</span>
+    </li>
+
+    <li>Compte en jours ouvrables : 
+            <span class="success">OUI</span>
+    </li>
+
+    <li>Syst�me de tarification : <span class="info">metaheres.impl.PricingSystemImpl@49d3c823 (currency: Euros, taxSystem: TVA_FR, name: PricingFR)</span></li>
+</ul>
+
+<h2>Langues parl�es</h2>
+<ul>
+    <li>Français</li>
+</ul>
+
+<h2>Configuration des r�servations</h2>
+<table>
+    <tr>
+        <th>Param�tre</th>
+        <th>Valeur</th>
+    </tr>
+    <tr>
+        <td>D�lai minimal de demande</td>
+        <td>1 jours</td>
+    </tr>
+    <tr>
+        <td>D�lai maximal de demande</td>
+        <td>15 jours</td>
+    </tr>
+</table>
+
+<h2>Statuts possibles pour une r�servation</h2>
+<ul>
+    <li>Brouillon</li>
+    <li>Validé</li>
+    <li>Fini</li>
+</ul>
+
+<h2>Pays o� le service est propos�</h2>
+<ul>
+    <li>Pays : <span class="info">France</span></li>
+    <li>Langue associ�e : <span class="info">Français</span></li>
+    <li>Syst�me de tarification : <span class="info">PricingFR 
+        (Euros, TVA_FR)</span></li>
+</ul>
+
+<h2>Configuration des ressources disponibles � la r�servation</h2>
+<ul>
+    <li>Affichage avec une image : 
+            <span class="highlight">OUI</span>
+    </li>
+
+    <li>Stocks renouvel�s pour chaque cr�neau : 
+            <span class="highlight">OUI</span>
+    </li>
+
+    <li>Ressources consommables : 
+            <span class="highlight">OUI</span>
+    </li>
+</ul>
+
+</body>
+</html>

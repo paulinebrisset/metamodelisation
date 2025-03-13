@@ -8,7 +8,7 @@
     <semanticResources>metaheres.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_AjU-wOL6Ee-uJ46ECHbv5g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_AlL_8OL6Ee-uJ46ECHbv5g" name="metaheres" repPath="#_Akp0cOL6Ee-uJ46ECHbv5g" changeId="297fe150-4972-4357-bb75-6288536a0198">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_AlL_8OL6Ee-uJ46ECHbv5g" name="metaheres" repPath="#_Akp0cOL6Ee-uJ46ECHbv5g" changeId="7c2cd3cd-3e86-41ad-b41f-5c4124cc099c">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="metaheres.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -402,10 +402,10 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yuEGXOL-Ee-uJ46ECHbv5g" x="-9" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_yuEGXeL-Ee-uJ46ECHbv5g" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yuEGXuL-Ee-uJ46ECHbv5g" x="44" y="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yuEGXuL-Ee-uJ46ECHbv5g" x="-9" y="-37"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_yuEGX-L-Ee-uJ46ECHbv5g" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yuEGYOL-Ee-uJ46ECHbv5g" x="-2" y="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yuEGYOL-Ee-uJ46ECHbv5g" x="16" y="-33"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_yuEGWOL-Ee-uJ46ECHbv5g" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_yuEGWeL-Ee-uJ46ECHbv5g" fontName="Segoe UI" fontHeight="8"/>
@@ -514,10 +514,10 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJJ89uMAEe-uJ46ECHbv5g" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_AJJ89-MAEe-uJ46ECHbv5g" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJJ8-OMAEe-uJ46ECHbv5g" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJJ8-OMAEe-uJ46ECHbv5g" x="23" y="16"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_AJJ8-eMAEe-uJ46ECHbv5g" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJJ8-uMAEe-uJ46ECHbv5g" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJJ8-uMAEe-uJ46ECHbv5g" x="-1" y="54"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_AJJ88uMAEe-uJ46ECHbv5g" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_AJJ88-MAEe-uJ46ECHbv5g" fontName="Segoe UI" fontHeight="8"/>

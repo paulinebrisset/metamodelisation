@@ -21,7 +21,7 @@ Sandwicherie:
                 )
     pricingsystem :  
     	"France.FranceSystem", 
-    	"France.FranceSystem"
+    	"USA.USASystem"
     lang : 
     	Francais, 
     	English
@@ -31,10 +31,8 @@ Sandwicherie:
         maxRequestAdvance 30
         statuslist : ("Pending", "Confirmed", "Cancelled")
     resourcesconfig : 
-        hasImage
-        hasOneStockPerSlot
-        isConsumable 
-        isCharged
+        (hasImage hasOneStockPerSlot isConsumable isCharged),
+        (hasImage isLoan isCharged)
     lotsconfig :
     	 hasImage 
     	 hasOneStockPerSlot

@@ -767,76 +767,84 @@ ruleResourcesConfig returns [EObject current=null]
 	leaveRule();
 }:
 	(
+		otherlv_0='('
+		{
+			newLeafNode(otherlv_0, grammarAccess.getResourcesConfigAccess().getLeftParenthesisKeyword_0());
+		}
 		(
 			(
-				lv_hasImage_0_0='hasImage'
+				lv_hasImage_1_0='hasImage'
 				{
-					newLeafNode(lv_hasImage_0_0, grammarAccess.getResourcesConfigAccess().getHasImageHasImageKeyword_0_0());
+					newLeafNode(lv_hasImage_1_0, grammarAccess.getResourcesConfigAccess().getHasImageHasImageKeyword_1_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "hasImage", lv_hasImage_0_0 != null, "hasImage");
+					setWithLastConsumed($current, "hasImage", lv_hasImage_1_0 != null, "hasImage");
 				}
 			)
 		)?
 		(
 			(
-				lv_hasOneStockPerSlot_1_0='hasOneStockPerSlot'
+				lv_hasOneStockPerSlot_2_0='hasOneStockPerSlot'
 				{
-					newLeafNode(lv_hasOneStockPerSlot_1_0, grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_1_0());
+					newLeafNode(lv_hasOneStockPerSlot_2_0, grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_1_0 != null, "hasOneStockPerSlot");
+					setWithLastConsumed($current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_2_0 != null, "hasOneStockPerSlot");
 				}
 			)
 		)?
 		(
 			(
-				lv_isConsumable_2_0='isConsumable'
+				lv_isConsumable_3_0='isConsumable'
 				{
-					newLeafNode(lv_isConsumable_2_0, grammarAccess.getResourcesConfigAccess().getIsConsumableIsConsumableKeyword_2_0());
+					newLeafNode(lv_isConsumable_3_0, grammarAccess.getResourcesConfigAccess().getIsConsumableIsConsumableKeyword_3_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "isConsumable", lv_isConsumable_2_0 != null, "isConsumable");
-				}
-			)
-		)
-		(
-			(
-				lv_isLoan_3_0='isLoan'
-				{
-					newLeafNode(lv_isLoan_3_0, grammarAccess.getResourcesConfigAccess().getIsLoanIsLoanKeyword_3_0());
-				}
-				{
-					if ($current==null) {
-						$current = createModelElement(grammarAccess.getResourcesConfigRule());
-					}
-					setWithLastConsumed($current, "isLoan", lv_isLoan_3_0 != null, "isLoan");
+					setWithLastConsumed($current, "isConsumable", lv_isConsumable_3_0 != null, "isConsumable");
 				}
 			)
 		)?
 		(
 			(
-				lv_isCharged_4_0='isCharged'
+				lv_isLoan_4_0='isLoan'
 				{
-					newLeafNode(lv_isCharged_4_0, grammarAccess.getResourcesConfigAccess().getIsChargedIsChargedKeyword_4_0());
+					newLeafNode(lv_isLoan_4_0, grammarAccess.getResourcesConfigAccess().getIsLoanIsLoanKeyword_4_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "isCharged", lv_isCharged_4_0 != null, "isCharged");
+					setWithLastConsumed($current, "isLoan", lv_isLoan_4_0 != null, "isLoan");
 				}
 			)
 		)?
+		(
+			(
+				lv_isCharged_5_0='isCharged'
+				{
+					newLeafNode(lv_isCharged_5_0, grammarAccess.getResourcesConfigAccess().getIsChargedIsChargedKeyword_5_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getResourcesConfigRule());
+					}
+					setWithLastConsumed($current, "isCharged", lv_isCharged_5_0 != null, "isCharged");
+				}
+			)
+		)?
+		otherlv_6=')'
+		{
+			newLeafNode(otherlv_6, grammarAccess.getResourcesConfigAccess().getRightParenthesisKeyword_6());
+		}
 	)
 ;
 

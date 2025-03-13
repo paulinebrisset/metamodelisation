@@ -77,11 +77,11 @@ public class MyParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getCountryAccess().getNameAssignment_0(), "rule__Country__NameAssignment_0");
 			builder.put(grammarAccess.getCountryAccess().getLanguageAssignment_2(), "rule__Country__LanguageAssignment_2");
 			builder.put(grammarAccess.getCountryAccess().getPricingsystemAssignment_6(), "rule__Country__PricingsystemAssignment_6");
-			builder.put(grammarAccess.getResourcesConfigAccess().getHasImageAssignment_0(), "rule__ResourcesConfig__HasImageAssignment_0");
-			builder.put(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotAssignment_1(), "rule__ResourcesConfig__HasOneStockPerSlotAssignment_1");
-			builder.put(grammarAccess.getResourcesConfigAccess().getIsConsumableAssignment_2(), "rule__ResourcesConfig__IsConsumableAssignment_2");
-			builder.put(grammarAccess.getResourcesConfigAccess().getIsLoanAssignment_3(), "rule__ResourcesConfig__IsLoanAssignment_3");
-			builder.put(grammarAccess.getResourcesConfigAccess().getIsChargedAssignment_4(), "rule__ResourcesConfig__IsChargedAssignment_4");
+			builder.put(grammarAccess.getResourcesConfigAccess().getHasImageAssignment_1(), "rule__ResourcesConfig__HasImageAssignment_1");
+			builder.put(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotAssignment_2(), "rule__ResourcesConfig__HasOneStockPerSlotAssignment_2");
+			builder.put(grammarAccess.getResourcesConfigAccess().getIsConsumableAssignment_3(), "rule__ResourcesConfig__IsConsumableAssignment_3");
+			builder.put(grammarAccess.getResourcesConfigAccess().getIsLoanAssignment_4(), "rule__ResourcesConfig__IsLoanAssignment_4");
+			builder.put(grammarAccess.getResourcesConfigAccess().getIsChargedAssignment_5(), "rule__ResourcesConfig__IsChargedAssignment_5");
 			builder.put(grammarAccess.getLotsConfigAccess().getHasImageAssignment_1(), "rule__LotsConfig__HasImageAssignment_1");
 			builder.put(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotAssignment_2(), "rule__LotsConfig__HasOneStockPerSlotAssignment_2");
 			builder.put(grammarAccess.getPricingSystemAccess().getNameAssignment_0(), "rule__PricingSystem__NameAssignment_0");

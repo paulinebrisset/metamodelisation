@@ -2,15 +2,14 @@
 <metaheres:ServiceName
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:metaheres="http://www.bzh.ubo.pauline.metaheres"
-    xsi:schemaLocation="http://www.bzh.ubo.pauline.metaheres metaheres.ecore"
     name="Heres">
   <serviceconfig
       closesOnPublicHolidays="true"
       inventoryIsPublic="true"
       hasChart="true"
-      countInBusinessDays="true">
+      countInBusinessDays="true"
+      pricingsystem="PricingFR">
     <language
         name="Français"/>
     <language
@@ -29,15 +28,17 @@
     </reservationsconfig>
     <country
         name="France">
+      <language
+          name="Français"/>
       <pricingsystem
           currency="Euros"
-          taxSystem="TVA_FR"/>
+          taxSystem="TVA_FR"
+          name="PricingFR"/>
     </country>
     <resourcesconfig
         hasImage="true"
         hasOneStockPerSlot="true"
-        isConsumable="true"
-        isCharged="true"/>
+        isConsumable="true"/>
     <lotsconfig/>
   </serviceconfig>
 </metaheres:ServiceName>

@@ -499,62 +499,74 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 	public class ResourcesConfigElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.ResourcesConfig");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cHasImageAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Keyword cHasImageHasImageKeyword_0_0 = (Keyword)cHasImageAssignment_0.eContents().get(0);
-		private final Assignment cHasOneStockPerSlotAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final Keyword cHasOneStockPerSlotHasOneStockPerSlotKeyword_1_0 = (Keyword)cHasOneStockPerSlotAssignment_1.eContents().get(0);
-		private final Assignment cIsConsumableAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final Keyword cIsConsumableIsConsumableKeyword_2_0 = (Keyword)cIsConsumableAssignment_2.eContents().get(0);
-		private final Assignment cIsLoanAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final Keyword cIsLoanIsLoanKeyword_3_0 = (Keyword)cIsLoanAssignment_3.eContents().get(0);
-		private final Assignment cIsChargedAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final Keyword cIsChargedIsChargedKeyword_4_0 = (Keyword)cIsChargedAssignment_4.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cHasImageAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final Keyword cHasImageHasImageKeyword_1_0 = (Keyword)cHasImageAssignment_1.eContents().get(0);
+		private final Assignment cHasOneStockPerSlotAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final Keyword cHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0 = (Keyword)cHasOneStockPerSlotAssignment_2.eContents().get(0);
+		private final Assignment cIsConsumableAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final Keyword cIsConsumableIsConsumableKeyword_3_0 = (Keyword)cIsConsumableAssignment_3.eContents().get(0);
+		private final Assignment cIsLoanAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final Keyword cIsLoanIsLoanKeyword_4_0 = (Keyword)cIsLoanAssignment_4.eContents().get(0);
+		private final Assignment cIsChargedAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final Keyword cIsChargedIsChargedKeyword_5_0 = (Keyword)cIsChargedAssignment_5.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
 		//ResourcesConfig returns ResourcesConfig:
+		//    '('
 		//    (hasImage?='hasImage')?
 		//    (hasOneStockPerSlot?='hasOneStockPerSlot')?
-		//    isConsumable?='isConsumable'
+		//    (isConsumable?='isConsumable')?
 		//    (isLoan?='isLoan')?
 		//    (isCharged?='isCharged')?
+		//    ')'
 		//    ;
 		@Override public ParserRule getRule() { return rule; }
 		
+		//'('
 		//(hasImage?='hasImage')?
 		//(hasOneStockPerSlot?='hasOneStockPerSlot')?
-		//isConsumable?='isConsumable'
+		//(isConsumable?='isConsumable')?
 		//(isLoan?='isLoan')?
 		//(isCharged?='isCharged')?
+		//')'
 		public Group getGroup() { return cGroup; }
 		
+		//'('
+		public Keyword getLeftParenthesisKeyword_0() { return cLeftParenthesisKeyword_0; }
+		
 		//(hasImage?='hasImage')?
-		public Assignment getHasImageAssignment_0() { return cHasImageAssignment_0; }
+		public Assignment getHasImageAssignment_1() { return cHasImageAssignment_1; }
 		
 		//'hasImage'
-		public Keyword getHasImageHasImageKeyword_0_0() { return cHasImageHasImageKeyword_0_0; }
+		public Keyword getHasImageHasImageKeyword_1_0() { return cHasImageHasImageKeyword_1_0; }
 		
 		//(hasOneStockPerSlot?='hasOneStockPerSlot')?
-		public Assignment getHasOneStockPerSlotAssignment_1() { return cHasOneStockPerSlotAssignment_1; }
+		public Assignment getHasOneStockPerSlotAssignment_2() { return cHasOneStockPerSlotAssignment_2; }
 		
 		//'hasOneStockPerSlot'
-		public Keyword getHasOneStockPerSlotHasOneStockPerSlotKeyword_1_0() { return cHasOneStockPerSlotHasOneStockPerSlotKeyword_1_0; }
+		public Keyword getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0() { return cHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0; }
 		
-		//isConsumable?='isConsumable'
-		public Assignment getIsConsumableAssignment_2() { return cIsConsumableAssignment_2; }
+		//(isConsumable?='isConsumable')?
+		public Assignment getIsConsumableAssignment_3() { return cIsConsumableAssignment_3; }
 		
 		//'isConsumable'
-		public Keyword getIsConsumableIsConsumableKeyword_2_0() { return cIsConsumableIsConsumableKeyword_2_0; }
+		public Keyword getIsConsumableIsConsumableKeyword_3_0() { return cIsConsumableIsConsumableKeyword_3_0; }
 		
 		//(isLoan?='isLoan')?
-		public Assignment getIsLoanAssignment_3() { return cIsLoanAssignment_3; }
+		public Assignment getIsLoanAssignment_4() { return cIsLoanAssignment_4; }
 		
 		//'isLoan'
-		public Keyword getIsLoanIsLoanKeyword_3_0() { return cIsLoanIsLoanKeyword_3_0; }
+		public Keyword getIsLoanIsLoanKeyword_4_0() { return cIsLoanIsLoanKeyword_4_0; }
 		
 		//(isCharged?='isCharged')?
-		public Assignment getIsChargedAssignment_4() { return cIsChargedAssignment_4; }
+		public Assignment getIsChargedAssignment_5() { return cIsChargedAssignment_5; }
 		
 		//'isCharged'
-		public Keyword getIsChargedIsChargedKeyword_4_0() { return cIsChargedIsChargedKeyword_4_0; }
+		public Keyword getIsChargedIsChargedKeyword_5_0() { return cIsChargedIsChargedKeyword_5_0; }
+		
+		//')'
+		public Keyword getRightParenthesisKeyword_6() { return cRightParenthesisKeyword_6; }
 	}
 	public class LotsConfigElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.LotsConfig");
@@ -916,11 +928,13 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 	}
 	
 	//ResourcesConfig returns ResourcesConfig:
+	//    '('
 	//    (hasImage?='hasImage')?
 	//    (hasOneStockPerSlot?='hasOneStockPerSlot')?
-	//    isConsumable?='isConsumable'
+	//    (isConsumable?='isConsumable')?
 	//    (isLoan?='isLoan')?
 	//    (isCharged?='isCharged')?
+	//    ')'
 	//    ;
 	public ResourcesConfigElements getResourcesConfigAccess() {
 		return pResourcesConfig;

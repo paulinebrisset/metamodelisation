@@ -44,7 +44,7 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="allServicesHaveDifferentNamesTer" value="ServiceConfig.allInstances()->forAll(service1, service2 |&#xA;&#x9;&#x9;&#x9;&#x9;service1 &lt;> service2 implies service1.servicename.name &lt;> service2.servicename.name)"/>
       <details key="allLanguagesFromCountries" value="self.country->collect(language)->asSet()->forAll(lang |&#xA;&#x9;&#x9;&#x9;&#x9;self.language.name->includes(lang.name))"/>
-      <details key="allLanguagesFromCountriesVariant" value="let countriesLanguages = self.country->collect(language)->asSet()&#xA;&#x9;in countriesLanguages->forAll(lang | self.language.name->includes(lang.name))"/>
+      <details key="allLanguagesFromCountriesVariant" value="&#xA;&#x9;&#x9;let countriesLanguages = self.country->collect(language)->asSet()&#xA;&#x9;&#x9;in countriesLanguages->forAll(lang | self.language.name->includes(lang.name))"/>
       <details key="ifResourceChargedPricingSystemIsMandatory" value="resourcesconfig->exists(rc |&#xA;&#x9;&#x9;&#x9;rc.isCharged) implies pricingsystem->notEmpty()"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="servicename" eType="#//ServiceName"
@@ -124,7 +124,7 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="taxSystem" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
   </eClassifiers>
 </ecore:EPackage>

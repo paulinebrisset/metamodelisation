@@ -182,7 +182,24 @@ public class MySemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     ResourcesConfig returns ResourcesConfig
 	 *
 	 * Constraint:
-	 *     (hasImage?='hasImage'? hasOneStockPerSlot?='hasOneStockPerSlot'? isConsumable?='isConsumable' isLoan?='isLoan'? isCharged?='isCharged'?)
+	 *     (
+	 *         (hasImage?='hasImage' ((isConsumable?='isConsumable' isCharged?='isCharged') | isCharged?='isCharged')) | 
+	 *         (
+	 *             ((hasImage?='hasImage' hasOneStockPerSlot?='hasOneStockPerSlot') | hasOneStockPerSlot?='hasOneStockPerSlot') 
+	 *             ((isConsumable?='isConsumable' isCharged?='isCharged') | isCharged?='isCharged')
+	 *         ) | 
+	 *         (
+	 *             (
+	 *                 (hasImage?='hasImage' ((hasOneStockPerSlot?='hasOneStockPerSlot' isConsumable?='isConsumable') | isConsumable?='isConsumable')) | 
+	 *                 (hasOneStockPerSlot?='hasOneStockPerSlot' isConsumable?='isConsumable') | 
+	 *                 isConsumable?='isConsumable'
+	 *             )? 
+	 *             isLoan?='isLoan' 
+	 *             isCharged?='isCharged'
+	 *         ) | 
+	 *         (isConsumable?='isConsumable' isCharged?='isCharged') | 
+	 *         isCharged?='isCharged'
+	 *     )?
 	 * </pre>
 	 */
 	protected void sequence_ResourcesConfig(ISerializationContext context, ResourcesConfig semanticObject) {
