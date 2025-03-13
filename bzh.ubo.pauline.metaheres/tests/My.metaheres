@@ -1,0 +1,40 @@
+Sandwicherie:
+    closesOnPublicHolidays 
+    inventoryIsPublic
+    hasChart
+    countInBusinessDays
+    country :
+           France
+                lang Francais
+                pricing : (
+                	FranceSystem : 
+                	currency Euros, 
+                	taxSystem FranceTVA
+                )
+           ,
+           USA
+                lang English
+                pricing : (
+                	USASystem : 
+                	currency Dollars, 
+                	taxSystem FreeUSA
+                )
+    pricingsystem :  
+    	"France.FranceSystem", 
+    	"France.FranceSystem"
+    lang : 
+    	Francais, 
+    	English
+    reservationsconfig :
+    	hasMoveOutCheck
+    	minRequestAdvance 1
+        maxRequestAdvance 30
+        statuslist : ("Pending", "Confirmed", "Cancelled")
+    resourcesconfig : 
+        hasImage
+        hasOneStockPerSlot
+        isConsumable 
+        isCharged
+    lotsconfig :
+    	 hasImage 
+    	 hasOneStockPerSlot

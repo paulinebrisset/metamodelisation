@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/bzh.ubo.pauline.metaheres/src" modelPluginID="bzh.ubo.pauline.metaheres"
+    modelName="Metaheres" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>metaheres.ecore</foreignModel>
+  <genPackages prefix="Metaheres" disposableProviderFactory="true" ecorePackage="metaheres.ecore#/">
+    <genClasses image="false" ecoreClass="metaheres.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//ServiceName">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceName/serviceconfig"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//Status"/>
+    <genClasses ecoreClass="metaheres.ecore#//RightLevel"/>
+    <genClasses ecoreClass="metaheres.ecore#//Language"/>
+    <genClasses ecoreClass="metaheres.ecore#//RightsLevelList">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metaheres.ecore#//RightsLevelList/rightlevel"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//StatusList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//StatusList/status"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//UsersConfig">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//UsersConfig/hasAdress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//UsersConfig/hasPhone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//UsersConfig/rightslevellist"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//UsersConfig/bloackedAtUnfulfilledReservation"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//ServiceConfig">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceConfig/servicename"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ServiceConfig/closesOnPublicHolidays"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ServiceConfig/inventoryIsPublic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ServiceConfig/hasChart"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ServiceConfig/countInBusinessDays"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceConfig/language"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceConfig/reservationsconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceConfig/country"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceConfig/resourcesconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceConfig/lotsconfig"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceConfig/pricingsystem"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//Country">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//Country/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//Country/language"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//Country/pricingsystem"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="metaheres.ecore#//ReservableEntity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ReservableEntity/hasImage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ReservableEntity/hasOneStockPerSlot"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//ReservationsConfig">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ReservationsConfig/hasMoveOutCheck"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ReservationsConfig/minRequestAdvance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ReservationsConfig/maxRequestAdvance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ReservationsConfig/hasMoveInCheck"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference metaheres.ecore#//ReservationsConfig/serviceconfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//ReservationsConfig/statuslist"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//ResourcesConfig">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ResourcesConfig/isConsumable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ResourcesConfig/isLoan"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//ResourcesConfig/isCharged"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference metaheres.ecore#//ResourcesConfig/serviceconfig"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//LotsConfig">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference metaheres.ecore#//LotsConfig/serviceconfig"/>
+    </genClasses>
+    <genClasses ecoreClass="metaheres.ecore#//PricingSystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//PricingSystem/currency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//PricingSystem/taxSystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//PricingSystem/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

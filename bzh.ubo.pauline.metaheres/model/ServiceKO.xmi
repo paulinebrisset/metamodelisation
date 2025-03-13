@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metaheres:ServiceName
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:metaheres="http://www.bzh.ubo.pauline.metaheres"
+    xsi:schemaLocation="http://www.bzh.ubo.pauline.metaheres metaheres.ecore"
+    name="Heres">
+  <serviceconfig
+      closesOnPublicHolidays="true"
+      inventoryIsPublic="true"
+      hasChart="false"
+      countInBusinessDays="true">
+    <language
+        name="Français"/>
+    <reservationsconfig
+        minRequestAdvance="36"
+        maxRequestAdvance="15"
+        hasMoveInCheck="true">
+      <statuslist>
+        <status
+            name="Brouillon"/>
+        <status
+            name="Accepté"/>
+        <status
+            name="Annulé"/>
+      </statuslist>
+    </reservationsconfig>
+    <country
+        name="Japon">
+      <language
+          name="Japonnais"/>
+      <pricingsystem
+          currency="Yen"
+          taxSystem="TVA_Japan"/>
+    </country>
+    <country
+        name="Japon">
+      <language
+          name="EN"/>
+    </country>
+    <resourcesconfig
+        hasImage="true"
+        hasOneStockPerSlot="true"
+        isConsumable="true"
+        isCharged="true"/>
+    <lotsconfig
+        hasImage="true"
+        hasOneStockPerSlot="true"/>
+  </serviceconfig>
+</metaheres:ServiceName>

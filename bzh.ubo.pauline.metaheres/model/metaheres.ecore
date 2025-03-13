@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="metaheres" nsURI="http://www.bzh.ubo.pauline.metaheres" nsPrefix="metaheres">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceName" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceconfig" lowerBound="1"
+        eType="#//ServiceConfig" containment="true" eOpposite="#//ServiceConfig/servicename"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Status" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RightLevel" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Language" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RightsLevelList">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rightlevel" lowerBound="1"
+        upperBound="-1" eType="#//RightLevel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StatusList">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="status" lowerBound="2"
+        upperBound="-1" eType="#//Status" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UsersConfig">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasAdress" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasPhone" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rightslevellist" lowerBound="1"
+        eType="#//RightsLevelList" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bloackedAtUnfulfilledReservation"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceConfig">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="allServicesHaveDifferentNamesTer allLanguagesFromCountries allLanguagesFromCountriesVariant ifResourceChargedPricingSystemIsMandatory"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="allServicesHaveDifferentNamesTer" value="ServiceConfig.allInstances()->forAll(service1, service2 |&#xA;&#x9;&#x9;&#x9;&#x9;service1 &lt;> service2 implies service1.servicename.name &lt;> service2.servicename.name)"/>
+      <details key="allLanguagesFromCountries" value="self.country->collect(language)->asSet()->forAll(lang |&#xA;&#x9;&#x9;&#x9;&#x9;self.language.name->includes(lang.name))"/>
+      <details key="allLanguagesFromCountriesVariant" value="let countriesLanguages = self.country->collect(language)->asSet()&#xA;&#x9;in countriesLanguages->forAll(lang | self.language.name->includes(lang.name))"/>
+      <details key="ifResourceChargedPricingSystemIsMandatory" value="resourcesconfig->exists(rc |&#xA;&#x9;&#x9;&#x9;rc.isCharged) implies pricingsystem->notEmpty()"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="servicename" eType="#//ServiceName"
+        eOpposite="#//ServiceName/serviceconfig"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="closesOnPublicHolidays"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inventoryIsPublic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasChart" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countInBusinessDays" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="language" lowerBound="1"
+        upperBound="-1" eType="#//Language" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reservationsconfig" lowerBound="1"
+        eType="#//ReservationsConfig" containment="true" eOpposite="#//ReservationsConfig/serviceconfig"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="country" lowerBound="1"
+        upperBound="3" eType="#//Country" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resourcesconfig" lowerBound="1"
+        upperBound="-1" eType="#//ResourcesConfig" containment="true" eOpposite="#//ResourcesConfig/serviceconfig"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lotsconfig" eType="#//LotsConfig"
+        containment="true" eOpposite="#//LotsConfig/serviceconfig"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pricingsystem" upperBound="3"
+        eType="#//PricingSystem"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Country">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="languageNameMinLength countriesHaveDifferentNames"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="languageNameMinLength" value="self.language.name.size() >= 5"/>
+      <details key="countriesHaveDifferentNames" value="Country.allInstances()->forAll(country1, country2 |&#xA;&#x9;&#x9;&#x9;country1 &lt;> country2 implies country1.name &lt;> country2.name)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="language" lowerBound="1"
+        eType="#//Language" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pricingsystem" lowerBound="1"
+        eType="#//PricingSystem" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReservableEntity" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasImage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasOneStockPerSlot" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReservationsConfig">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="noMoveInAllowedForConsumables"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="noMoveInAllowedForConsumables" value="hasMoveInCheck implies not serviceconfig.resourcesconfig->exists(r |&#xA;&#x9;&#x9;&#x9;r.isConsumable)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasMoveOutCheck" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minRequestAdvance" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxRequestAdvance" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasMoveInCheck" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceconfig" lowerBound="1"
+        eType="#//ServiceConfig" eOpposite="#//ServiceConfig/reservationsconfig"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="statuslist" lowerBound="1"
+        eType="#//StatusList" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResourcesConfig" eSuperTypes="#//ReservableEntity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isConsumable" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isLoan" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isCharged" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceconfig" eType="#//ServiceConfig"
+        eOpposite="#//ServiceConfig/resourcesconfig"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LotsConfig" eSuperTypes="#//ReservableEntity">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceconfig" eType="#//ServiceConfig"
+        eOpposite="#//ServiceConfig/lotsconfig"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PricingSystem">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currency" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="taxSystem" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true"/>
+  </eClassifiers>
+</ecore:EPackage>

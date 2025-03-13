@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metaheres:ServiceName
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:metaheres="http://www.bzh.ubo.pauline.metaheres"
+    xsi:schemaLocation="http://www.bzh.ubo.pauline.metaheres metaheres.ecore"
+    name="Heres">
+  <serviceconfig
+      closesOnPublicHolidays="true"
+      inventoryIsPublic="true"
+      hasChart="true"
+      countInBusinessDays="true">
+    <language
+        name="Français"/>
+    <language
+        name="Anglais"/>
+    <reservationsconfig
+        minRequestAdvance="1"
+        maxRequestAdvance="15">
+      <statuslist>
+        <status
+            name="Brouillon"/>
+        <status
+            name="Validé"/>
+        <status
+            name="Fini"/>
+      </statuslist>
+    </reservationsconfig>
+    <country
+        name="France">
+      <pricingsystem
+          currency="Euros"
+          taxSystem="TVA_FR"/>
+    </country>
+    <resourcesconfig
+        hasImage="true"
+        hasOneStockPerSlot="true"
+        isConsumable="true"
+        isCharged="true"/>
+    <lotsconfig/>
+  </serviceconfig>
+</metaheres:ServiceName>
