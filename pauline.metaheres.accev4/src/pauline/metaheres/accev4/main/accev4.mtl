@@ -3,7 +3,7 @@
 
 [template public templateMetaheres(aServiceName : ServiceName)]
 [comment @main/]
-[file ('reporttest1_'.concat('.html'), false, 'UTF-8')]
+[file ('propositionsiteweb_'.concat('.html'), false, 'UTF-8')]
 
 <!DOCTYPE html>
 <html lang="fr">

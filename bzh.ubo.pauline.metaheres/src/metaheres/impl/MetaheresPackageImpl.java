@@ -1023,7 +1023,7 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 		initEClass(pricingSystemEClass, PricingSystem.class, "PricingSystem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPricingSystem_Currency(), ecorePackage.getEString(), "currency", null, 1, 1, PricingSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPricingSystem_TaxSystem(), ecorePackage.getEString(), "taxSystem", null, 1, 1, PricingSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPricingSystem_Name(), ecorePackage.getEString(), "name", null, 1, 1, PricingSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPricingSystem_Name(), ecorePackage.getEString(), "name", null, 1, 1, PricingSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -1086,7 +1086,7 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 		  (getServiceConfig__AllLanguagesFromCountriesVariant__DiagnosticChain_Map(),
 		   source,
 		   new String[] {
-			   "body", "let countriesLanguages = self.country->collect(language)->asSet()\n\tin countriesLanguages->forAll(lang | self.language.name->includes(lang.name))"
+			   "body", "\n\t\tlet countriesLanguages = self.country->collect(language)->asSet()\n\t\tin countriesLanguages->forAll(lang | self.language.name->includes(lang.name))"
 		   });
 		addAnnotation
 		  (getServiceConfig__IfResourceChargedPricingSystemIsMandatory__DiagnosticChain_Map(),

@@ -1,11 +1,144 @@
 [comment encoding = UTF-8 /]
 [module accev4('http://www.bzh.ubo.pauline.metaheres')]
 
-
 [template public templateMetaheres(aServiceName : ServiceName)]
 [comment @main/]
-[file ('reporttest1_'.concat('.txt'), false)]
-Pauline test 1
-Configuration du service [aServiceName.name/]
+[file ('propositionsiteweb_'.concat('.html'), false, 'UTF-8')]
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Configuration - [aServiceName.name/]</title>
+    <style>
+        body { font-family:sans-serif; background-color: #f4f4f4; padding: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #2980b9; border-bottom: 2px solid #2980b9; padding-bottom: 5px; }
+        p, li { font-size: 16px; }
+        ul { list-style-type: square; padding-left: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #2980b9; color: white; }
+        .highlight { color: #e74c3c; font-weight: bold; }
+        .success { color: #008000; font-weight: bold; }
+        .info { color: #f39c12; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<h1>Configurations appliquées au service : [aServiceName.name/]</h1>
+
+<h2>Informations générales</h2>
+<ul>
+    <li>Ferme pendant les jours fériés : 
+        [if (aServiceName.serviceconfig.closesOnPublicHolidays)]
+            <span class="success">OUI</span>
+ 		[/if]
+        [if (not aServiceName.serviceconfig.closesOnPublicHolidays)]
+            <span class="highlight">NON</span>
+        [/if]
+    </li>
+    
+    <li>L'inventaire est public : 
+        [if (aServiceName.serviceconfig.inventoryIsPublic)]
+            <span class="success">OUI</span>
+ 		[/if]
+        [if (not aServiceName.serviceconfig.inventoryIsPublic)]
+            <span class="highlight">NON</span>
+        [/if]
+    </li>
+
+    <li>Présente une charte d'utilisation : 
+        [if (aServiceName.serviceconfig.hasChart)]
+            <span class="success">OUI</span>
+ 		[/if]
+        [if (not aServiceName.serviceconfig.hasChart)]
+            <span class="highlight">NON</span>
+        [/if]
+    </li>
+
+    <li>Compte en jours ouvrables : 
+        [if (aServiceName.serviceconfig.countInBusinessDays)]
+            <span class="success">OUI</span>
+ 		[/if]
+        [if (not aServiceName.serviceconfig.countInBusinessDays)]
+            <span class="highlight">NON</span>
+        [/if]
+    </li>
+
+    <li>Système de tarification : <span class="info">[aServiceName.serviceconfig.pricingsystem/]</span></li>
+</ul>
+
+<h2>Langues parlées</h2>
+<ul>
+[for (lang : Language | aServiceName.serviceconfig.country.language)]
+    <li>[lang.name/]</li>
+[/for]
+</ul>
+
+<h2>Configuration des réservations</h2>
+<table>
+    <tr>
+        <th>Paramètre</th>
+        <th>Valeur</th>
+    </tr>
+    <tr>
+        <td>Délai minimal de demande</td>
+        <td>[aServiceName.serviceconfig.reservationsconfig.minRequestAdvance/] jours</td>
+    </tr>
+    <tr>
+        <td>Délai maximal de demande</td>
+        <td>[aServiceName.serviceconfig.reservationsconfig.maxRequestAdvance/] jours</td>
+    </tr>
+</table>
+
+<h2>Statuts possibles pour une réservation</h2>
+<ul>
+[for (status : Status | aServiceName.serviceconfig.reservationsconfig.statuslist.status)]
+    <li>[status.name/]</li>
+[/for]
+</ul>
+
+<h2>Pays où le service est proposé</h2>
+<ul>
+    <li>Pays : <span class="info">[aServiceName.serviceconfig.country.name/]</span></li>
+    <li>Langue associée : <span class="info">[aServiceName.serviceconfig.country.language.name/]</span></li>
+    <li>Système de tarification : <span class="info">[aServiceName.serviceconfig.country.pricingsystem.name/] 
+        ([aServiceName.serviceconfig.country.pricingsystem.currency/], [aServiceName.serviceconfig.country.pricingsystem.taxSystem/])</span></li>
+</ul>
+
+<h2>Configuration des ressources disponibles à la réservation</h2>
+<ul>
+    <li>Affichage avec une image : 
+        [if (aServiceName.serviceconfig.resourcesconfig.hasImage->first())]
+            <span class="highlight">OUI</span>
+ 		[/if]
+        [if (not aServiceName.serviceconfig.resourcesconfig.hasImage->first())]
+            <span class="success">NON</span>
+        [/if]
+    </li>
+
+    <li>Stocks renouvelés pour chaque créneau : 
+        [if (aServiceName.serviceconfig.resourcesconfig.hasOneStockPerSlot->first())]
+            <span class="highlight">OUI</span>
+ 		[/if]
+        [if (not aServiceName.serviceconfig.resourcesconfig.hasOneStockPerSlot->first())]
+            <span class="success">NON</span>
+        [/if]
+    </li>
+
+    <li>Ressources consommables : 
+        [if (aServiceName.serviceconfig.resourcesconfig.isConsumable->first())]
+            <span class="highlight">OUI</span>
+ 		[/if]
+        [if (not aServiceName.serviceconfig.resourcesconfig.isConsumable->first())]
+            <span class="success">NON</span>
+        [/if]
+    </li>
+</ul>
+
+</body>
+</html>
 [/file]
 [/template]

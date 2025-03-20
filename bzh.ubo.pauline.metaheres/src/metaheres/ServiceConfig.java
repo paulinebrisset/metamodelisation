@@ -257,7 +257,7 @@ public interface ServiceConfig extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='let countriesLanguages = self.country-&gt;collect(language)-&gt;asSet()\n\tin countriesLanguages-&gt;forAll(lang | self.language.name-&gt;includes(lang.name))'"
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='\n\t\tlet countriesLanguages = self.country-&gt;collect(language)-&gt;asSet()\n\t\tin countriesLanguages-&gt;forAll(lang | self.language.name-&gt;includes(lang.name))'"
 	 * @generated
 	 */
 	boolean allLanguagesFromCountriesVariant(DiagnosticChain diagnostics, Map<Object, Object> context);

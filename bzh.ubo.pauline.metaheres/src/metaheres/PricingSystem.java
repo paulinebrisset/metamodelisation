@@ -74,7 +74,7 @@ public interface PricingSystem extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see metaheres.MetaheresPackage#getPricingSystem_Name()
-	 * @model id="true" required="true" ordered="false"
+	 * @model id="true" required="true"
 	 * @generated
 	 */
 	String getName();
