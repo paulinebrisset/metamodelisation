@@ -13,7 +13,9 @@
     <language
         name="Français"/>
     <language
-        name="Anglais"/>
+        name="English"/>
+    <language
+        name="Espagnol"/>
     <reservationsconfig
         minRequestAdvance="1"
         maxRequestAdvance="15">
@@ -34,6 +36,24 @@
           currency="Euros"
           taxSystem="TVA_FR"
           name="PricingFR"/>
+    </country>
+    <country
+        name="Angleterre">
+      <language
+          name="English"/>
+      <pricingsystem
+          currency="Livre Sterling"
+          taxSystem="Hors-UE"
+          name="SystemeAng"/>
+    </country>
+    <country
+        name="Espagne">
+      <language
+          name="Espagnol"/>
+      <pricingsystem
+          currency="Euros"
+          taxSystem="TaxUE"
+          name="SystemeES"/>
     </country>
     <resourcesconfig
         hasImage="true"
