@@ -128,7 +128,7 @@ public class MySemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     LotsConfig returns LotsConfig
 	 *
 	 * Constraint:
-	 *     (hasImage?='hasImage'? hasOneStockPerSlot?='hasOneStockPerSlot'?)
+	 *     (hasImage?='avec-illustration'? hasOneStockPerSlot?='un-stock-par-ouverture'?)
 	 * </pre>
 	 */
 	protected void sequence_LotsConfig(ISerializationContext context, LotsConfig semanticObject) {
@@ -156,8 +156,8 @@ public class MySemanticSequencer extends AbstractDelegatingSemanticSequencer {
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
 		feeder.accept(grammarAccess.getPricingSystemAccess().getNameEStringParserRuleCall_0_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_3_0(), semanticObject.getCurrency());
-		feeder.accept(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_6_0(), semanticObject.getTaxSystem());
+		feeder.accept(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_4_0(), semanticObject.getCurrency());
+		feeder.accept(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_8_0(), semanticObject.getTaxSystem());
 		feeder.finish();
 	}
 	
@@ -168,7 +168,13 @@ public class MySemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     ReservationsConfig returns ReservationsConfig
 	 *
 	 * Constraint:
-	 *     (hasMoveOutCheck?='hasMoveOutCheck' hasMoveInCheck?='hasMoveInCheck'? minRequestAdvance=EInt maxRequestAdvance=EInt statuslist=StatusList)
+	 *     (
+	 *         hasMoveOutCheck?='etat-des-lieux-sortie' 
+	 *         hasMoveInCheck?='etat-des-lieux-retour'? 
+	 *         minRequestAdvance=EInt 
+	 *         maxRequestAdvance=EInt 
+	 *         statuslist=StatusList
+	 *     )
 	 * </pre>
 	 */
 	protected void sequence_ReservationsConfig(ISerializationContext context, ReservationsConfig semanticObject) {
@@ -183,22 +189,25 @@ public class MySemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *
 	 * Constraint:
 	 *     (
-	 *         (hasImage?='hasImage' ((isConsumable?='isConsumable' isCharged?='isCharged') | isCharged?='isCharged')) | 
+	 *         (hasImage?='avec-illustration' ((isConsumable?='type-consommable' isCharged?='payant') | isCharged?='payant')) | 
 	 *         (
-	 *             ((hasImage?='hasImage' hasOneStockPerSlot?='hasOneStockPerSlot') | hasOneStockPerSlot?='hasOneStockPerSlot') 
-	 *             ((isConsumable?='isConsumable' isCharged?='isCharged') | isCharged?='isCharged')
+	 *             ((hasImage?='avec-illustration' hasOneStockPerSlot?='un-stock-par-ouverture') | hasOneStockPerSlot?='un-stock-par-ouverture') 
+	 *             ((isConsumable?='type-consommable' isCharged?='payant') | isCharged?='payant')
 	 *         ) | 
 	 *         (
 	 *             (
-	 *                 (hasImage?='hasImage' ((hasOneStockPerSlot?='hasOneStockPerSlot' isConsumable?='isConsumable') | isConsumable?='isConsumable')) | 
-	 *                 (hasOneStockPerSlot?='hasOneStockPerSlot' isConsumable?='isConsumable') | 
-	 *                 isConsumable?='isConsumable'
+	 *                 (
+	 *                     hasImage?='avec-illustration' 
+	 *                     ((hasOneStockPerSlot?='un-stock-par-ouverture' isConsumable?='type-consommable') | isConsumable?='type-consommable')
+	 *                 ) | 
+	 *                 (hasOneStockPerSlot?='un-stock-par-ouverture' isConsumable?='type-consommable') | 
+	 *                 isConsumable?='type-consommable'
 	 *             )? 
-	 *             isLoan?='isLoan' 
-	 *             isCharged?='isCharged'
+	 *             isLoan?='emprunt-avec-retour' 
+	 *             isCharged?='payant'
 	 *         ) | 
-	 *         (isConsumable?='isConsumable' isCharged?='isCharged') | 
-	 *         isCharged?='isCharged'
+	 *         (isConsumable?='type-consommable' isCharged?='payant') | 
+	 *         isCharged?='payant'
 	 *     )?
 	 * </pre>
 	 */
@@ -237,10 +246,10 @@ public class MySemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *
 	 * Constraint:
 	 *     (
-	 *         closesOnPublicHolidays?='closesOnPublicHolidays'? 
-	 *         inventoryIsPublic?='inventoryIsPublic'? 
-	 *         hasChart?='hasChart'? 
-	 *         countInBusinessDays?='countInBusinessDays'? 
+	 *         closesOnPublicHolidays?='ferme-les-jours-feries'? 
+	 *         inventoryIsPublic?='inventaire-public'? 
+	 *         hasChart?='charte-d-utilisation-visible'? 
+	 *         countInBusinessDays?='compte-en-jours-ouvrables'? 
 	 *         country+=Country 
 	 *         country+=Country* 
 	 *         (pricingsystem+=[PricingSystem|EString] pricingsystem+=[PricingSystem|EString]*)? 

@@ -13,19 +13,9 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceName/serviceconfig"/>
     </genClasses>
     <genClasses ecoreClass="metaheres.ecore#//Status"/>
-    <genClasses ecoreClass="metaheres.ecore#//RightLevel"/>
     <genClasses ecoreClass="metaheres.ecore#//Language"/>
-    <genClasses ecoreClass="metaheres.ecore#//RightsLevelList">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metaheres.ecore#//RightsLevelList/rightlevel"/>
-    </genClasses>
     <genClasses ecoreClass="metaheres.ecore#//StatusList">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//StatusList/status"/>
-    </genClasses>
-    <genClasses ecoreClass="metaheres.ecore#//UsersConfig">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//UsersConfig/hasAdress"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//UsersConfig/hasPhone"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaheres.ecore#//UsersConfig/rightslevellist"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaheres.ecore#//UsersConfig/bloackedAtUnfulfilledReservation"/>
     </genClasses>
     <genClasses ecoreClass="metaheres.ecore#//ServiceConfig">
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference metaheres.ecore#//ServiceConfig/servicename"/>

@@ -1,38 +1,18 @@
 Sandwicherie:
-    closesOnPublicHolidays 
-    inventoryIsPublic
-    hasChart
-    countInBusinessDays
-    country :
-           France
-                lang Francais
-                pricing : (
-                	FranceSystem : 
-                	currency Euros, 
-                	taxSystem FranceTVA
-                )
-           ,
-           USA
-                lang English
-                pricing : (
-                	USASystem : 
-                	currency Dollars, 
-                	taxSystem FreeUSA
-                )
-    pricingsystem :  
-    	"France.FranceSystem", 
-    	"USA.USASystem"
-    lang : 
-    	Francais, 
-    	English
-    reservationsconfig :
-    	hasMoveOutCheck
-    	minRequestAdvance 1
-        maxRequestAdvance 30
-        statuslist : ("Pending", "Confirmed", "Cancelled")
-    resourcesconfig : 
-        (hasImage hasOneStockPerSlot isConsumable isCharged),
-        (hasImage isLoan isCharged)
+    ferme-les-jours-feries 
+    inventaire-public 
+    charte-d-utilisation-visible 
+    compte-en-jours-ouvrables
+   pays:
+        France: Francais, tarification: SystemeFrancais (devise: Euros, systeme-comptable: FranceAvecTva)
+    paiements-proposes:("France.SystemeFrancais")
+    langues : (Francais, English)
+    configuration-reservations :
+        etat-des-lieux-sortie
+        avance-minimum-et-maximum-reservation : 1, 30
+        statuts-des-demandes : ("Brouillon", "Validée", "Annulée")
+    configuration-ressources : 
+        (avec-illustration un-stock-par-ouverture type-consommable payant),
+        (avec-illustration emprunt-avec-retour payant)
     lotsconfig :
-    	 hasImage 
-    	 hasOneStockPerSlot
+        (avec-illustration un-stock-par-ouverture)

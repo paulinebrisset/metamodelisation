@@ -38,7 +38,8 @@
     <resourcesconfig
         hasImage="true"
         hasOneStockPerSlot="true"
-        isConsumable="true"/>
+        isConsumable="true"
+        isCharged="true"/>
     <lotsconfig/>
   </serviceconfig>
 </metaheres:ServiceName>

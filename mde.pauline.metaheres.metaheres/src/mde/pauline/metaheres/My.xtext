@@ -13,15 +13,15 @@ EString returns ecore::EString:
 	STRING | ID;
 
 ServiceConfig returns ServiceConfig:
-    (closesOnPublicHolidays?='closesOnPublicHolidays')?
-    (inventoryIsPublic?='inventoryIsPublic')?
-    (hasChart?='hasChart')?
-    (countInBusinessDays?='countInBusinessDays')?
-    'country' ':' country+=Country ( "," country+=Country)*
-	('pricingsystem' ':' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )?
-    'lang' ':' language+=Language ( "," language+=Language)*
-    'reservationsconfig' ':' reservationsconfig=ReservationsConfig
-    'resourcesconfig' ':' resourcesconfig+=ResourcesConfig ( "," resourcesconfig+=ResourcesConfig)*
+    (closesOnPublicHolidays?='ferme-les-jours-feries')?
+    (inventoryIsPublic?='inventaire-public')?
+    (hasChart?='charte-d-utilisation-visible')?
+    (countInBusinessDays?='compte-en-jours-ouvrables')? 
+    'pays'':' country+=Country ( "," country+=Country)* 
+	('paiements-proposes' ':' '(' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )? ')'
+    'langues' ':' '(' language+=Language ( "," language+=Language)* ')'
+    'configuration-reservations' ':' reservationsconfig=ReservationsConfig
+    'configuration-ressources' ':' resourcesconfig+=ResourcesConfig ( "," resourcesconfig+=ResourcesConfig)*
     ('lotsconfig' ':' lotsconfig=LotsConfig)?
 ;
 
@@ -33,39 +33,40 @@ Language returns Language:
 	name=EString;
 
 ReservationsConfig returns ReservationsConfig:
-	hasMoveOutCheck?='hasMoveOutCheck'
-	(hasMoveInCheck?='hasMoveInCheck')?
-		'minRequestAdvance' minRequestAdvance=EInt
-		'maxRequestAdvance' maxRequestAdvance=EInt
-		'statuslist' ':' statuslist=StatusList
+	hasMoveOutCheck?='etat-des-lieux-sortie'
+	(hasMoveInCheck?='etat-des-lieux-retour')?
+		'avance-minimum-et-maximum-reservation' ':' minRequestAdvance=EInt ',' maxRequestAdvance=EInt
+		'statuts-des-demandes' ':' statuslist=StatusList
 	;
 
 Country returns Country:
-	name=EString
-		'lang' language=Language
-		'pricing' ':' '(' pricingsystem=PricingSystem ')'
+	name=EString ':' 
+		language=Language ','
+		'tarification' ':' pricingsystem=PricingSystem 
 ;
 
 ResourcesConfig returns ResourcesConfig:
 	'('
-	(hasImage?='hasImage')?
-	(hasOneStockPerSlot?='hasOneStockPerSlot')?
-	(isConsumable?='isConsumable')?
-	(isLoan?='isLoan')?
-	(isCharged?='isCharged')?
+	(hasImage?='avec-illustration')?
+	(hasOneStockPerSlot?='un-stock-par-ouverture')?
+	(isConsumable?='type-consommable')?
+	(isLoan?='emprunt-avec-retour')?
+	(isCharged?='payant')?
 	')'
 	;
 
 LotsConfig returns LotsConfig:
-	{LotsConfig}
-	(hasImage?='hasImage')?
-	(hasOneStockPerSlot?='hasOneStockPerSlot')?
+	{LotsConfig} '('
+	(hasImage?='avec-illustration')?
+	(hasOneStockPerSlot?='un-stock-par-ouverture')?
+	')'
 	;
 
 PricingSystem returns PricingSystem:
-    name=EString ':'
-    'currency' currency=EString ','
-    'taxSystem' taxSystem=EString
+    name=EString '('
+    'devise' ':' currency=EString ','
+    'systeme-comptable' ':' taxSystem=EString
+	')'
 ;
 EBoolean returns ecore::EBoolean:
 	'true' | 'false';

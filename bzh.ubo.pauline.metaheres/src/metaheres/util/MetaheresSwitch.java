@@ -86,13 +86,6 @@ public class MetaheresSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MetaheresPackage.RIGHT_LEVEL: {
-				RightLevel rightLevel = (RightLevel)theEObject;
-				T result = caseRightLevel(rightLevel);
-				if (result == null) result = caseNamedElement(rightLevel);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case MetaheresPackage.LANGUAGE: {
 				Language language = (Language)theEObject;
 				T result = caseLanguage(language);
@@ -100,21 +93,9 @@ public class MetaheresSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MetaheresPackage.RIGHTS_LEVEL_LIST: {
-				RightsLevelList rightsLevelList = (RightsLevelList)theEObject;
-				T result = caseRightsLevelList(rightsLevelList);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case MetaheresPackage.STATUS_LIST: {
 				StatusList statusList = (StatusList)theEObject;
 				T result = caseStatusList(statusList);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case MetaheresPackage.USERS_CONFIG: {
-				UsersConfig usersConfig = (UsersConfig)theEObject;
-				T result = caseUsersConfig(usersConfig);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -212,21 +193,6 @@ public class MetaheresSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Right Level</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Right Level</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRightLevel(RightLevel object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Language</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -242,21 +208,6 @@ public class MetaheresSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Rights Level List</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Rights Level List</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRightsLevelList(RightsLevelList object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Status List</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -268,21 +219,6 @@ public class MetaheresSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseStatusList(StatusList object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Users Config</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Users Config</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseUsersConfig(UsersConfig object) {
 		return null;
 	}
 

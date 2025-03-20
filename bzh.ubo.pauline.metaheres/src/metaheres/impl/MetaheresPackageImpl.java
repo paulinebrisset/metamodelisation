@@ -12,14 +12,10 @@ import metaheres.PricingSystem;
 import metaheres.ReservableEntity;
 import metaheres.ReservationsConfig;
 import metaheres.ResourcesConfig;
-import metaheres.RightLevel;
-import metaheres.RightsLevelList;
 import metaheres.ServiceConfig;
 import metaheres.ServiceName;
 import metaheres.Status;
 import metaheres.StatusList;
-import metaheres.UsersConfig;
-
 import metaheres.util.MetaheresValidator;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -65,13 +61,6 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass rightLevelEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass languageEClass = null;
 
 	/**
@@ -79,21 +68,7 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass rightsLevelListEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass statusListEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass usersConfigEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -264,35 +239,8 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getRightLevel() {
-		return rightLevelEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getLanguage() {
 		return languageEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getRightsLevelList() {
-		return rightsLevelListEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getRightsLevelList_Rightlevel() {
-		return (EReference)rightsLevelListEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -311,51 +259,6 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 	 */
 	public EReference getStatusList_Status() {
 		return (EReference)statusListEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getUsersConfig() {
-		return usersConfigEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUsersConfig_HasAdress() {
-		return (EAttribute)usersConfigEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUsersConfig_HasPhone() {
-		return (EAttribute)usersConfigEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getUsersConfig_Rightslevellist() {
-		return (EReference)usersConfigEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUsersConfig_BloackedAtUnfulfilledReservation() {
-		return (EAttribute)usersConfigEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -790,21 +693,10 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 
 		statusEClass = createEClass(STATUS);
 
-		rightLevelEClass = createEClass(RIGHT_LEVEL);
-
 		languageEClass = createEClass(LANGUAGE);
-
-		rightsLevelListEClass = createEClass(RIGHTS_LEVEL_LIST);
-		createEReference(rightsLevelListEClass, RIGHTS_LEVEL_LIST__RIGHTLEVEL);
 
 		statusListEClass = createEClass(STATUS_LIST);
 		createEReference(statusListEClass, STATUS_LIST__STATUS);
-
-		usersConfigEClass = createEClass(USERS_CONFIG);
-		createEAttribute(usersConfigEClass, USERS_CONFIG__HAS_ADRESS);
-		createEAttribute(usersConfigEClass, USERS_CONFIG__HAS_PHONE);
-		createEReference(usersConfigEClass, USERS_CONFIG__RIGHTSLEVELLIST);
-		createEAttribute(usersConfigEClass, USERS_CONFIG__BLOACKED_AT_UNFULFILLED_RESERVATION);
 
 		serviceConfigEClass = createEClass(SERVICE_CONFIG);
 		createEReference(serviceConfigEClass, SERVICE_CONFIG__SERVICENAME);
@@ -888,7 +780,6 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 		// Add supertypes to classes
 		serviceNameEClass.getESuperTypes().add(this.getNamedElement());
 		statusEClass.getESuperTypes().add(this.getNamedElement());
-		rightLevelEClass.getESuperTypes().add(this.getNamedElement());
 		languageEClass.getESuperTypes().add(this.getNamedElement());
 		resourcesConfigEClass.getESuperTypes().add(this.getReservableEntity());
 		lotsConfigEClass.getESuperTypes().add(this.getReservableEntity());
@@ -902,21 +793,10 @@ public class MetaheresPackageImpl extends EPackageImpl implements MetaheresPacka
 
 		initEClass(statusEClass, Status.class, "Status", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(rightLevelEClass, RightLevel.class, "RightLevel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(languageEClass, Language.class, "Language", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(rightsLevelListEClass, RightsLevelList.class, "RightsLevelList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRightsLevelList_Rightlevel(), this.getRightLevel(), null, "rightlevel", null, 1, -1, RightsLevelList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(statusListEClass, StatusList.class, "StatusList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getStatusList_Status(), this.getStatus(), null, "status", null, 2, -1, StatusList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(usersConfigEClass, UsersConfig.class, "UsersConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getUsersConfig_HasAdress(), ecorePackage.getEBoolean(), "hasAdress", null, 1, 1, UsersConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUsersConfig_HasPhone(), ecorePackage.getEBoolean(), "hasPhone", null, 1, 1, UsersConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getUsersConfig_Rightslevellist(), this.getRightsLevelList(), null, "rightslevellist", null, 1, 1, UsersConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUsersConfig_BloackedAtUnfulfilledReservation(), ecorePackage.getEBooleanObject(), "bloackedAtUnfulfilledReservation", null, 0, 1, UsersConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(serviceConfigEClass, ServiceConfig.class, "ServiceConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getServiceConfig_Servicename(), this.getServiceName(), this.getServiceName_Serviceconfig(), "servicename", null, 0, 1, ServiceConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

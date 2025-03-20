@@ -17,25 +17,10 @@
         eType="#//ServiceConfig" containment="true" eOpposite="#//ServiceConfig/servicename"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Status" eSuperTypes="#//NamedElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RightLevel" eSuperTypes="#//NamedElement"/>
   <eClassifiers xsi:type="ecore:EClass" name="Language" eSuperTypes="#//NamedElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RightsLevelList">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rightlevel" lowerBound="1"
-        upperBound="-1" eType="#//RightLevel"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="StatusList">
     <eStructuralFeatures xsi:type="ecore:EReference" name="status" lowerBound="2"
         upperBound="-1" eType="#//Status" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="UsersConfig">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasAdress" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasPhone" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rightslevellist" lowerBound="1"
-        eType="#//RightsLevelList" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bloackedAtUnfulfilledReservation"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ServiceConfig">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -107,11 +92,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResourcesConfig" eSuperTypes="#//ReservableEntity">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isConsumable" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isLoan" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isCharged" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="serviceconfig" eType="#//ServiceConfig"
         eOpposite="#//ServiceConfig/resourcesconfig"/>
   </eClassifiers>

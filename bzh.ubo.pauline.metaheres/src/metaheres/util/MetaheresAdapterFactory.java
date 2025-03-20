@@ -80,24 +80,12 @@ public class MetaheresAdapterFactory extends AdapterFactoryImpl {
 				return createStatusAdapter();
 			}
 			@Override
-			public Adapter caseRightLevel(RightLevel object) {
-				return createRightLevelAdapter();
-			}
-			@Override
 			public Adapter caseLanguage(Language object) {
 				return createLanguageAdapter();
 			}
 			@Override
-			public Adapter caseRightsLevelList(RightsLevelList object) {
-				return createRightsLevelListAdapter();
-			}
-			@Override
 			public Adapter caseStatusList(StatusList object) {
 				return createStatusListAdapter();
-			}
-			@Override
-			public Adapter caseUsersConfig(UsersConfig object) {
-				return createUsersConfigAdapter();
 			}
 			@Override
 			public Adapter caseServiceConfig(ServiceConfig object) {
@@ -190,20 +178,6 @@ public class MetaheresAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link metaheres.RightLevel <em>Right Level</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see metaheres.RightLevel
-	 * @generated
-	 */
-	public Adapter createRightLevelAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link metaheres.Language <em>Language</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -218,20 +192,6 @@ public class MetaheresAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link metaheres.RightsLevelList <em>Rights Level List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see metaheres.RightsLevelList
-	 * @generated
-	 */
-	public Adapter createRightsLevelListAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link metaheres.StatusList <em>Status List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -242,20 +202,6 @@ public class MetaheresAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStatusListAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link metaheres.UsersConfig <em>Users Config</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see metaheres.UsersConfig
-	 * @generated
-	 */
-	public Adapter createUsersConfigAdapter() {
 		return null;
 	}
 

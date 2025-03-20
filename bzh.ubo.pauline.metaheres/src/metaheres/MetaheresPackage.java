@@ -179,43 +179,6 @@ public interface MetaheresPackage extends EPackage {
 	int STATUS_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link metaheres.impl.RightLevelImpl <em>Right Level</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see metaheres.impl.RightLevelImpl
-	 * @see metaheres.impl.MetaheresPackageImpl#getRightLevel()
-	 * @generated
-	 */
-	int RIGHT_LEVEL = 3;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RIGHT_LEVEL__NAME = NAMED_ELEMENT__NAME;
-
-	/**
-	 * The number of structural features of the '<em>Right Level</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RIGHT_LEVEL_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Right Level</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RIGHT_LEVEL_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link metaheres.impl.LanguageImpl <em>Language</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -223,7 +186,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getLanguage()
 	 * @generated
 	 */
-	int LANGUAGE = 4;
+	int LANGUAGE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -253,43 +216,6 @@ public interface MetaheresPackage extends EPackage {
 	int LANGUAGE_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link metaheres.impl.RightsLevelListImpl <em>Rights Level List</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see metaheres.impl.RightsLevelListImpl
-	 * @see metaheres.impl.MetaheresPackageImpl#getRightsLevelList()
-	 * @generated
-	 */
-	int RIGHTS_LEVEL_LIST = 5;
-
-	/**
-	 * The feature id for the '<em><b>Rightlevel</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RIGHTS_LEVEL_LIST__RIGHTLEVEL = 0;
-
-	/**
-	 * The number of structural features of the '<em>Rights Level List</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RIGHTS_LEVEL_LIST_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Rights Level List</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RIGHTS_LEVEL_LIST_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link metaheres.impl.StatusListImpl <em>Status List</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -297,7 +223,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getStatusList()
 	 * @generated
 	 */
-	int STATUS_LIST = 6;
+	int STATUS_LIST = 4;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' containment reference list.
@@ -327,70 +253,6 @@ public interface MetaheresPackage extends EPackage {
 	int STATUS_LIST_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link metaheres.impl.UsersConfigImpl <em>Users Config</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see metaheres.impl.UsersConfigImpl
-	 * @see metaheres.impl.MetaheresPackageImpl#getUsersConfig()
-	 * @generated
-	 */
-	int USERS_CONFIG = 7;
-
-	/**
-	 * The feature id for the '<em><b>Has Adress</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USERS_CONFIG__HAS_ADRESS = 0;
-
-	/**
-	 * The feature id for the '<em><b>Has Phone</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USERS_CONFIG__HAS_PHONE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Rightslevellist</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USERS_CONFIG__RIGHTSLEVELLIST = 2;
-
-	/**
-	 * The feature id for the '<em><b>Bloacked At Unfulfilled Reservation</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USERS_CONFIG__BLOACKED_AT_UNFULFILLED_RESERVATION = 3;
-
-	/**
-	 * The number of structural features of the '<em>Users Config</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USERS_CONFIG_FEATURE_COUNT = 4;
-
-	/**
-	 * The number of operations of the '<em>Users Config</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USERS_CONFIG_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link metaheres.impl.ServiceConfigImpl <em>Service Config</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -398,7 +260,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getServiceConfig()
 	 * @generated
 	 */
-	int SERVICE_CONFIG = 8;
+	int SERVICE_CONFIG = 5;
 
 	/**
 	 * The feature id for the '<em><b>Servicename</b></em>' container reference.
@@ -561,7 +423,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getCountry()
 	 * @generated
 	 */
-	int COUNTRY = 9;
+	int COUNTRY = 6;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -634,7 +496,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getReservableEntity()
 	 * @generated
 	 */
-	int RESERVABLE_ENTITY = 10;
+	int RESERVABLE_ENTITY = 7;
 
 	/**
 	 * The feature id for the '<em><b>Has Image</b></em>' attribute.
@@ -680,7 +542,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getReservationsConfig()
 	 * @generated
 	 */
-	int RESERVATIONS_CONFIG = 11;
+	int RESERVATIONS_CONFIG = 8;
 
 	/**
 	 * The feature id for the '<em><b>Has Move Out Check</b></em>' attribute.
@@ -771,7 +633,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getResourcesConfig()
 	 * @generated
 	 */
-	int RESOURCES_CONFIG = 12;
+	int RESOURCES_CONFIG = 9;
 
 	/**
 	 * The feature id for the '<em><b>Has Image</b></em>' attribute.
@@ -853,7 +715,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getLotsConfig()
 	 * @generated
 	 */
-	int LOTS_CONFIG = 13;
+	int LOTS_CONFIG = 10;
 
 	/**
 	 * The feature id for the '<em><b>Has Image</b></em>' attribute.
@@ -908,7 +770,7 @@ public interface MetaheresPackage extends EPackage {
 	 * @see metaheres.impl.MetaheresPackageImpl#getPricingSystem()
 	 * @generated
 	 */
-	int PRICING_SYSTEM = 14;
+	int PRICING_SYSTEM = 11;
 
 	/**
 	 * The feature id for the '<em><b>Currency</b></em>' attribute.
@@ -1009,16 +871,6 @@ public interface MetaheresPackage extends EPackage {
 	EClass getStatus();
 
 	/**
-	 * Returns the meta object for class '{@link metaheres.RightLevel <em>Right Level</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Right Level</em>'.
-	 * @see metaheres.RightLevel
-	 * @generated
-	 */
-	EClass getRightLevel();
-
-	/**
 	 * Returns the meta object for class '{@link metaheres.Language <em>Language</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1027,27 +879,6 @@ public interface MetaheresPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getLanguage();
-
-	/**
-	 * Returns the meta object for class '{@link metaheres.RightsLevelList <em>Rights Level List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Rights Level List</em>'.
-	 * @see metaheres.RightsLevelList
-	 * @generated
-	 */
-	EClass getRightsLevelList();
-
-	/**
-	 * Returns the meta object for the reference list '{@link metaheres.RightsLevelList#getRightlevel <em>Rightlevel</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Rightlevel</em>'.
-	 * @see metaheres.RightsLevelList#getRightlevel()
-	 * @see #getRightsLevelList()
-	 * @generated
-	 */
-	EReference getRightsLevelList_Rightlevel();
 
 	/**
 	 * Returns the meta object for class '{@link metaheres.StatusList <em>Status List</em>}'.
@@ -1069,60 +900,6 @@ public interface MetaheresPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getStatusList_Status();
-
-	/**
-	 * Returns the meta object for class '{@link metaheres.UsersConfig <em>Users Config</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Users Config</em>'.
-	 * @see metaheres.UsersConfig
-	 * @generated
-	 */
-	EClass getUsersConfig();
-
-	/**
-	 * Returns the meta object for the attribute '{@link metaheres.UsersConfig#isHasAdress <em>Has Adress</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Has Adress</em>'.
-	 * @see metaheres.UsersConfig#isHasAdress()
-	 * @see #getUsersConfig()
-	 * @generated
-	 */
-	EAttribute getUsersConfig_HasAdress();
-
-	/**
-	 * Returns the meta object for the attribute '{@link metaheres.UsersConfig#isHasPhone <em>Has Phone</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Has Phone</em>'.
-	 * @see metaheres.UsersConfig#isHasPhone()
-	 * @see #getUsersConfig()
-	 * @generated
-	 */
-	EAttribute getUsersConfig_HasPhone();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link metaheres.UsersConfig#getRightslevellist <em>Rightslevellist</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Rightslevellist</em>'.
-	 * @see metaheres.UsersConfig#getRightslevellist()
-	 * @see #getUsersConfig()
-	 * @generated
-	 */
-	EReference getUsersConfig_Rightslevellist();
-
-	/**
-	 * Returns the meta object for the attribute '{@link metaheres.UsersConfig#getBloackedAtUnfulfilledReservation <em>Bloacked At Unfulfilled Reservation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Bloacked At Unfulfilled Reservation</em>'.
-	 * @see metaheres.UsersConfig#getBloackedAtUnfulfilledReservation()
-	 * @see #getUsersConfig()
-	 * @generated
-	 */
-	EAttribute getUsersConfig_BloackedAtUnfulfilledReservation();
 
 	/**
 	 * Returns the meta object for class '{@link metaheres.ServiceConfig <em>Service Config</em>}'.
@@ -1664,16 +1441,6 @@ public interface MetaheresPackage extends EPackage {
 		EClass STATUS = eINSTANCE.getStatus();
 
 		/**
-		 * The meta object literal for the '{@link metaheres.impl.RightLevelImpl <em>Right Level</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see metaheres.impl.RightLevelImpl
-		 * @see metaheres.impl.MetaheresPackageImpl#getRightLevel()
-		 * @generated
-		 */
-		EClass RIGHT_LEVEL = eINSTANCE.getRightLevel();
-
-		/**
 		 * The meta object literal for the '{@link metaheres.impl.LanguageImpl <em>Language</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1682,24 +1449,6 @@ public interface MetaheresPackage extends EPackage {
 		 * @generated
 		 */
 		EClass LANGUAGE = eINSTANCE.getLanguage();
-
-		/**
-		 * The meta object literal for the '{@link metaheres.impl.RightsLevelListImpl <em>Rights Level List</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see metaheres.impl.RightsLevelListImpl
-		 * @see metaheres.impl.MetaheresPackageImpl#getRightsLevelList()
-		 * @generated
-		 */
-		EClass RIGHTS_LEVEL_LIST = eINSTANCE.getRightsLevelList();
-
-		/**
-		 * The meta object literal for the '<em><b>Rightlevel</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RIGHTS_LEVEL_LIST__RIGHTLEVEL = eINSTANCE.getRightsLevelList_Rightlevel();
 
 		/**
 		 * The meta object literal for the '{@link metaheres.impl.StatusListImpl <em>Status List</em>}' class.
@@ -1718,48 +1467,6 @@ public interface MetaheresPackage extends EPackage {
 		 * @generated
 		 */
 		EReference STATUS_LIST__STATUS = eINSTANCE.getStatusList_Status();
-
-		/**
-		 * The meta object literal for the '{@link metaheres.impl.UsersConfigImpl <em>Users Config</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see metaheres.impl.UsersConfigImpl
-		 * @see metaheres.impl.MetaheresPackageImpl#getUsersConfig()
-		 * @generated
-		 */
-		EClass USERS_CONFIG = eINSTANCE.getUsersConfig();
-
-		/**
-		 * The meta object literal for the '<em><b>Has Adress</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute USERS_CONFIG__HAS_ADRESS = eINSTANCE.getUsersConfig_HasAdress();
-
-		/**
-		 * The meta object literal for the '<em><b>Has Phone</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute USERS_CONFIG__HAS_PHONE = eINSTANCE.getUsersConfig_HasPhone();
-
-		/**
-		 * The meta object literal for the '<em><b>Rightslevellist</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference USERS_CONFIG__RIGHTSLEVELLIST = eINSTANCE.getUsersConfig_Rightslevellist();
-
-		/**
-		 * The meta object literal for the '<em><b>Bloacked At Unfulfilled Reservation</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute USERS_CONFIG__BLOACKED_AT_UNFULFILLED_RESERVATION = eINSTANCE.getUsersConfig_BloackedAtUnfulfilledReservation();
 
 		/**
 		 * The meta object literal for the '{@link metaheres.impl.ServiceConfigImpl <em>Service Config</em>}' class.

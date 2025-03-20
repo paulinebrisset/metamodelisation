@@ -173,63 +173,63 @@ ruleServiceConfig returns [EObject current=null]
 	(
 		(
 			(
-				lv_closesOnPublicHolidays_0_0='closesOnPublicHolidays'
+				lv_closesOnPublicHolidays_0_0='ferme-les-jours-feries'
 				{
-					newLeafNode(lv_closesOnPublicHolidays_0_0, grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0());
+					newLeafNode(lv_closesOnPublicHolidays_0_0, grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getServiceConfigRule());
 					}
-					setWithLastConsumed($current, "closesOnPublicHolidays", lv_closesOnPublicHolidays_0_0 != null, "closesOnPublicHolidays");
+					setWithLastConsumed($current, "closesOnPublicHolidays", lv_closesOnPublicHolidays_0_0 != null, "ferme-les-jours-feries");
 				}
 			)
 		)?
 		(
 			(
-				lv_inventoryIsPublic_1_0='inventoryIsPublic'
+				lv_inventoryIsPublic_1_0='inventaire-public'
 				{
-					newLeafNode(lv_inventoryIsPublic_1_0, grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventoryIsPublicKeyword_1_0());
+					newLeafNode(lv_inventoryIsPublic_1_0, grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventairePublicKeyword_1_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getServiceConfigRule());
 					}
-					setWithLastConsumed($current, "inventoryIsPublic", lv_inventoryIsPublic_1_0 != null, "inventoryIsPublic");
+					setWithLastConsumed($current, "inventoryIsPublic", lv_inventoryIsPublic_1_0 != null, "inventaire-public");
 				}
 			)
 		)?
 		(
 			(
-				lv_hasChart_2_0='hasChart'
+				lv_hasChart_2_0='charte-d-utilisation-visible'
 				{
-					newLeafNode(lv_hasChart_2_0, grammarAccess.getServiceConfigAccess().getHasChartHasChartKeyword_2_0());
+					newLeafNode(lv_hasChart_2_0, grammarAccess.getServiceConfigAccess().getHasChartCharteDUtilisationVisibleKeyword_2_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getServiceConfigRule());
 					}
-					setWithLastConsumed($current, "hasChart", lv_hasChart_2_0 != null, "hasChart");
+					setWithLastConsumed($current, "hasChart", lv_hasChart_2_0 != null, "charte-d-utilisation-visible");
 				}
 			)
 		)?
 		(
 			(
-				lv_countInBusinessDays_3_0='countInBusinessDays'
+				lv_countInBusinessDays_3_0='compte-en-jours-ouvrables'
 				{
-					newLeafNode(lv_countInBusinessDays_3_0, grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCountInBusinessDaysKeyword_3_0());
+					newLeafNode(lv_countInBusinessDays_3_0, grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getServiceConfigRule());
 					}
-					setWithLastConsumed($current, "countInBusinessDays", lv_countInBusinessDays_3_0 != null, "countInBusinessDays");
+					setWithLastConsumed($current, "countInBusinessDays", lv_countInBusinessDays_3_0 != null, "compte-en-jours-ouvrables");
 				}
 			)
 		)?
-		otherlv_4='country'
+		otherlv_4='pays'
 		{
-			newLeafNode(otherlv_4, grammarAccess.getServiceConfigAccess().getCountryKeyword_4());
+			newLeafNode(otherlv_4, grammarAccess.getServiceConfigAccess().getPaysKeyword_4());
 		}
 		otherlv_5=':'
 		{
@@ -280,13 +280,17 @@ ruleServiceConfig returns [EObject current=null]
 			)
 		)*
 		(
-			otherlv_9='pricingsystem'
+			otherlv_9='paiements-proposes'
 			{
-				newLeafNode(otherlv_9, grammarAccess.getServiceConfigAccess().getPricingsystemKeyword_8_0());
+				newLeafNode(otherlv_9, grammarAccess.getServiceConfigAccess().getPaiementsProposesKeyword_8_0());
 			}
 			otherlv_10=':'
 			{
 				newLeafNode(otherlv_10, grammarAccess.getServiceConfigAccess().getColonKeyword_8_1());
+			}
+			otherlv_11='('
+			{
+				newLeafNode(otherlv_11, grammarAccess.getServiceConfigAccess().getLeftParenthesisKeyword_8_2());
 			}
 			(
 				(
@@ -296,7 +300,7 @@ ruleServiceConfig returns [EObject current=null]
 						}
 					}
 					{
-						newCompositeNode(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_2_0());
+						newCompositeNode(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_3_0());
 					}
 					ruleEString
 					{
@@ -305,9 +309,9 @@ ruleServiceConfig returns [EObject current=null]
 				)
 			)
 			(
-				otherlv_12=','
+				otherlv_13=','
 				{
-					newLeafNode(otherlv_12, grammarAccess.getServiceConfigAccess().getCommaKeyword_8_3_0());
+					newLeafNode(otherlv_13, grammarAccess.getServiceConfigAccess().getCommaKeyword_8_4_0());
 				}
 				(
 					(
@@ -317,7 +321,7 @@ ruleServiceConfig returns [EObject current=null]
 							}
 						}
 						{
-							newCompositeNode(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_3_1_0());
+							newCompositeNode(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_4_1_0());
 						}
 						ruleEString
 						{
@@ -327,20 +331,28 @@ ruleServiceConfig returns [EObject current=null]
 				)
 			)*
 		)?
-		otherlv_14='lang'
+		otherlv_15=')'
 		{
-			newLeafNode(otherlv_14, grammarAccess.getServiceConfigAccess().getLangKeyword_9());
+			newLeafNode(otherlv_15, grammarAccess.getServiceConfigAccess().getRightParenthesisKeyword_9());
 		}
-		otherlv_15=':'
+		otherlv_16='langues'
 		{
-			newLeafNode(otherlv_15, grammarAccess.getServiceConfigAccess().getColonKeyword_10());
+			newLeafNode(otherlv_16, grammarAccess.getServiceConfigAccess().getLanguesKeyword_10());
+		}
+		otherlv_17=':'
+		{
+			newLeafNode(otherlv_17, grammarAccess.getServiceConfigAccess().getColonKeyword_11());
+		}
+		otherlv_18='('
+		{
+			newLeafNode(otherlv_18, grammarAccess.getServiceConfigAccess().getLeftParenthesisKeyword_12());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_11_0());
+					newCompositeNode(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_13_0());
 				}
-				lv_language_16_0=ruleLanguage
+				lv_language_19_0=ruleLanguage
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getServiceConfigRule());
@@ -348,23 +360,23 @@ ruleServiceConfig returns [EObject current=null]
 					add(
 						$current,
 						"language",
-						lv_language_16_0,
+						lv_language_19_0,
 						"mde.pauline.metaheres.My.Language");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_17=','
+			otherlv_20=','
 			{
-				newLeafNode(otherlv_17, grammarAccess.getServiceConfigAccess().getCommaKeyword_12_0());
+				newLeafNode(otherlv_20, grammarAccess.getServiceConfigAccess().getCommaKeyword_14_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_12_1_0());
+						newCompositeNode(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_14_1_0());
 					}
-					lv_language_18_0=ruleLanguage
+					lv_language_21_0=ruleLanguage
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getServiceConfigRule());
@@ -372,27 +384,31 @@ ruleServiceConfig returns [EObject current=null]
 						add(
 							$current,
 							"language",
-							lv_language_18_0,
+							lv_language_21_0,
 							"mde.pauline.metaheres.My.Language");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)*
-		otherlv_19='reservationsconfig'
+		otherlv_22=')'
 		{
-			newLeafNode(otherlv_19, grammarAccess.getServiceConfigAccess().getReservationsconfigKeyword_13());
+			newLeafNode(otherlv_22, grammarAccess.getServiceConfigAccess().getRightParenthesisKeyword_15());
 		}
-		otherlv_20=':'
+		otherlv_23='configuration-reservations'
 		{
-			newLeafNode(otherlv_20, grammarAccess.getServiceConfigAccess().getColonKeyword_14());
+			newLeafNode(otherlv_23, grammarAccess.getServiceConfigAccess().getConfigurationReservationsKeyword_16());
+		}
+		otherlv_24=':'
+		{
+			newLeafNode(otherlv_24, grammarAccess.getServiceConfigAccess().getColonKeyword_17());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getServiceConfigAccess().getReservationsconfigReservationsConfigParserRuleCall_15_0());
+					newCompositeNode(grammarAccess.getServiceConfigAccess().getReservationsconfigReservationsConfigParserRuleCall_18_0());
 				}
-				lv_reservationsconfig_21_0=ruleReservationsConfig
+				lv_reservationsconfig_25_0=ruleReservationsConfig
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getServiceConfigRule());
@@ -400,26 +416,26 @@ ruleServiceConfig returns [EObject current=null]
 					set(
 						$current,
 						"reservationsconfig",
-						lv_reservationsconfig_21_0,
+						lv_reservationsconfig_25_0,
 						"mde.pauline.metaheres.My.ReservationsConfig");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		otherlv_22='resourcesconfig'
+		otherlv_26='configuration-ressources'
 		{
-			newLeafNode(otherlv_22, grammarAccess.getServiceConfigAccess().getResourcesconfigKeyword_16());
+			newLeafNode(otherlv_26, grammarAccess.getServiceConfigAccess().getConfigurationRessourcesKeyword_19());
 		}
-		otherlv_23=':'
+		otherlv_27=':'
 		{
-			newLeafNode(otherlv_23, grammarAccess.getServiceConfigAccess().getColonKeyword_17());
+			newLeafNode(otherlv_27, grammarAccess.getServiceConfigAccess().getColonKeyword_20());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_18_0());
+					newCompositeNode(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_21_0());
 				}
-				lv_resourcesconfig_24_0=ruleResourcesConfig
+				lv_resourcesconfig_28_0=ruleResourcesConfig
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getServiceConfigRule());
@@ -427,23 +443,23 @@ ruleServiceConfig returns [EObject current=null]
 					add(
 						$current,
 						"resourcesconfig",
-						lv_resourcesconfig_24_0,
+						lv_resourcesconfig_28_0,
 						"mde.pauline.metaheres.My.ResourcesConfig");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
 		(
-			otherlv_25=','
+			otherlv_29=','
 			{
-				newLeafNode(otherlv_25, grammarAccess.getServiceConfigAccess().getCommaKeyword_19_0());
+				newLeafNode(otherlv_29, grammarAccess.getServiceConfigAccess().getCommaKeyword_22_0());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_19_1_0());
+						newCompositeNode(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_22_1_0());
 					}
-					lv_resourcesconfig_26_0=ruleResourcesConfig
+					lv_resourcesconfig_30_0=ruleResourcesConfig
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getServiceConfigRule());
@@ -451,7 +467,7 @@ ruleServiceConfig returns [EObject current=null]
 						add(
 							$current,
 							"resourcesconfig",
-							lv_resourcesconfig_26_0,
+							lv_resourcesconfig_30_0,
 							"mde.pauline.metaheres.My.ResourcesConfig");
 						afterParserOrEnumRuleCall();
 					}
@@ -459,20 +475,20 @@ ruleServiceConfig returns [EObject current=null]
 			)
 		)*
 		(
-			otherlv_27='lotsconfig'
+			otherlv_31='lotsconfig'
 			{
-				newLeafNode(otherlv_27, grammarAccess.getServiceConfigAccess().getLotsconfigKeyword_20_0());
+				newLeafNode(otherlv_31, grammarAccess.getServiceConfigAccess().getLotsconfigKeyword_23_0());
 			}
-			otherlv_28=':'
+			otherlv_32=':'
 			{
-				newLeafNode(otherlv_28, grammarAccess.getServiceConfigAccess().getColonKeyword_20_1());
+				newLeafNode(otherlv_32, grammarAccess.getServiceConfigAccess().getColonKeyword_23_1());
 			}
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getServiceConfigAccess().getLotsconfigLotsConfigParserRuleCall_20_2_0());
+						newCompositeNode(grammarAccess.getServiceConfigAccess().getLotsconfigLotsConfigParserRuleCall_23_2_0());
 					}
-					lv_lotsconfig_29_0=ruleLotsConfig
+					lv_lotsconfig_33_0=ruleLotsConfig
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getServiceConfigRule());
@@ -480,7 +496,7 @@ ruleServiceConfig returns [EObject current=null]
 						set(
 							$current,
 							"lotsconfig",
-							lv_lotsconfig_29_0,
+							lv_lotsconfig_33_0,
 							"mde.pauline.metaheres.My.LotsConfig");
 						afterParserOrEnumRuleCall();
 					}
@@ -553,42 +569,46 @@ ruleReservationsConfig returns [EObject current=null]
 	(
 		(
 			(
-				lv_hasMoveOutCheck_0_0='hasMoveOutCheck'
+				lv_hasMoveOutCheck_0_0='etat-des-lieux-sortie'
 				{
-					newLeafNode(lv_hasMoveOutCheck_0_0, grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckHasMoveOutCheckKeyword_0_0());
+					newLeafNode(lv_hasMoveOutCheck_0_0, grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getReservationsConfigRule());
 					}
-					setWithLastConsumed($current, "hasMoveOutCheck", lv_hasMoveOutCheck_0_0 != null, "hasMoveOutCheck");
+					setWithLastConsumed($current, "hasMoveOutCheck", lv_hasMoveOutCheck_0_0 != null, "etat-des-lieux-sortie");
 				}
 			)
 		)
 		(
 			(
-				lv_hasMoveInCheck_1_0='hasMoveInCheck'
+				lv_hasMoveInCheck_1_0='etat-des-lieux-retour'
 				{
-					newLeafNode(lv_hasMoveInCheck_1_0, grammarAccess.getReservationsConfigAccess().getHasMoveInCheckHasMoveInCheckKeyword_1_0());
+					newLeafNode(lv_hasMoveInCheck_1_0, grammarAccess.getReservationsConfigAccess().getHasMoveInCheckEtatDesLieuxRetourKeyword_1_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getReservationsConfigRule());
 					}
-					setWithLastConsumed($current, "hasMoveInCheck", lv_hasMoveInCheck_1_0 != null, "hasMoveInCheck");
+					setWithLastConsumed($current, "hasMoveInCheck", lv_hasMoveInCheck_1_0 != null, "etat-des-lieux-retour");
 				}
 			)
 		)?
-		otherlv_2='minRequestAdvance'
+		otherlv_2='avance-minimum-et-maximum-reservation'
 		{
-			newLeafNode(otherlv_2, grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceKeyword_2());
+			newLeafNode(otherlv_2, grammarAccess.getReservationsConfigAccess().getAvanceMinimumEtMaximumReservationKeyword_2());
+		}
+		otherlv_3=':'
+		{
+			newLeafNode(otherlv_3, grammarAccess.getReservationsConfigAccess().getColonKeyword_3());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceEIntParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceEIntParserRuleCall_4_0());
 				}
-				lv_minRequestAdvance_3_0=ruleEInt
+				lv_minRequestAdvance_4_0=ruleEInt
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getReservationsConfigRule());
@@ -596,22 +616,22 @@ ruleReservationsConfig returns [EObject current=null]
 					set(
 						$current,
 						"minRequestAdvance",
-						lv_minRequestAdvance_3_0,
+						lv_minRequestAdvance_4_0,
 						"mde.pauline.metaheres.My.EInt");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		otherlv_4='maxRequestAdvance'
+		otherlv_5=','
 		{
-			newLeafNode(otherlv_4, grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceKeyword_4());
+			newLeafNode(otherlv_5, grammarAccess.getReservationsConfigAccess().getCommaKeyword_5());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceEIntParserRuleCall_5_0());
+					newCompositeNode(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceEIntParserRuleCall_6_0());
 				}
-				lv_maxRequestAdvance_5_0=ruleEInt
+				lv_maxRequestAdvance_6_0=ruleEInt
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getReservationsConfigRule());
@@ -619,26 +639,26 @@ ruleReservationsConfig returns [EObject current=null]
 					set(
 						$current,
 						"maxRequestAdvance",
-						lv_maxRequestAdvance_5_0,
+						lv_maxRequestAdvance_6_0,
 						"mde.pauline.metaheres.My.EInt");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		otherlv_6='statuslist'
+		otherlv_7='statuts-des-demandes'
 		{
-			newLeafNode(otherlv_6, grammarAccess.getReservationsConfigAccess().getStatuslistKeyword_6());
+			newLeafNode(otherlv_7, grammarAccess.getReservationsConfigAccess().getStatutsDesDemandesKeyword_7());
 		}
-		otherlv_7=':'
+		otherlv_8=':'
 		{
-			newLeafNode(otherlv_7, grammarAccess.getReservationsConfigAccess().getColonKeyword_7());
+			newLeafNode(otherlv_8, grammarAccess.getReservationsConfigAccess().getColonKeyword_8());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getReservationsConfigAccess().getStatuslistStatusListParserRuleCall_8_0());
+					newCompositeNode(grammarAccess.getReservationsConfigAccess().getStatuslistStatusListParserRuleCall_9_0());
 				}
-				lv_statuslist_8_0=ruleStatusList
+				lv_statuslist_9_0=ruleStatusList
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getReservationsConfigRule());
@@ -646,7 +666,7 @@ ruleReservationsConfig returns [EObject current=null]
 					set(
 						$current,
 						"statuslist",
-						lv_statuslist_8_0,
+						lv_statuslist_9_0,
 						"mde.pauline.metaheres.My.StatusList");
 					afterParserOrEnumRuleCall();
 				}
@@ -690,9 +710,9 @@ ruleCountry returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_1='lang'
+		otherlv_1=':'
 		{
-			newLeafNode(otherlv_1, grammarAccess.getCountryAccess().getLangKeyword_1());
+			newLeafNode(otherlv_1, grammarAccess.getCountryAccess().getColonKeyword_1());
 		}
 		(
 			(
@@ -713,17 +733,17 @@ ruleCountry returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_3='pricing'
+		otherlv_3=','
 		{
-			newLeafNode(otherlv_3, grammarAccess.getCountryAccess().getPricingKeyword_3());
+			newLeafNode(otherlv_3, grammarAccess.getCountryAccess().getCommaKeyword_3());
 		}
-		otherlv_4=':'
+		otherlv_4='tarification'
 		{
-			newLeafNode(otherlv_4, grammarAccess.getCountryAccess().getColonKeyword_4());
+			newLeafNode(otherlv_4, grammarAccess.getCountryAccess().getTarificationKeyword_4());
 		}
-		otherlv_5='('
+		otherlv_5=':'
 		{
-			newLeafNode(otherlv_5, grammarAccess.getCountryAccess().getLeftParenthesisKeyword_5());
+			newLeafNode(otherlv_5, grammarAccess.getCountryAccess().getColonKeyword_5());
 		}
 		(
 			(
@@ -744,10 +764,6 @@ ruleCountry returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_7=')'
-		{
-			newLeafNode(otherlv_7, grammarAccess.getCountryAccess().getRightParenthesisKeyword_7());
-		}
 	)
 ;
 
@@ -773,71 +789,71 @@ ruleResourcesConfig returns [EObject current=null]
 		}
 		(
 			(
-				lv_hasImage_1_0='hasImage'
+				lv_hasImage_1_0='avec-illustration'
 				{
-					newLeafNode(lv_hasImage_1_0, grammarAccess.getResourcesConfigAccess().getHasImageHasImageKeyword_1_0());
+					newLeafNode(lv_hasImage_1_0, grammarAccess.getResourcesConfigAccess().getHasImageAvecIllustrationKeyword_1_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "hasImage", lv_hasImage_1_0 != null, "hasImage");
+					setWithLastConsumed($current, "hasImage", lv_hasImage_1_0 != null, "avec-illustration");
 				}
 			)
 		)?
 		(
 			(
-				lv_hasOneStockPerSlot_2_0='hasOneStockPerSlot'
+				lv_hasOneStockPerSlot_2_0='un-stock-par-ouverture'
 				{
-					newLeafNode(lv_hasOneStockPerSlot_2_0, grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0());
+					newLeafNode(lv_hasOneStockPerSlot_2_0, grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_2_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_2_0 != null, "hasOneStockPerSlot");
+					setWithLastConsumed($current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_2_0 != null, "un-stock-par-ouverture");
 				}
 			)
 		)?
 		(
 			(
-				lv_isConsumable_3_0='isConsumable'
+				lv_isConsumable_3_0='type-consommable'
 				{
-					newLeafNode(lv_isConsumable_3_0, grammarAccess.getResourcesConfigAccess().getIsConsumableIsConsumableKeyword_3_0());
+					newLeafNode(lv_isConsumable_3_0, grammarAccess.getResourcesConfigAccess().getIsConsumableTypeConsommableKeyword_3_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "isConsumable", lv_isConsumable_3_0 != null, "isConsumable");
+					setWithLastConsumed($current, "isConsumable", lv_isConsumable_3_0 != null, "type-consommable");
 				}
 			)
 		)?
 		(
 			(
-				lv_isLoan_4_0='isLoan'
+				lv_isLoan_4_0='emprunt-avec-retour'
 				{
-					newLeafNode(lv_isLoan_4_0, grammarAccess.getResourcesConfigAccess().getIsLoanIsLoanKeyword_4_0());
+					newLeafNode(lv_isLoan_4_0, grammarAccess.getResourcesConfigAccess().getIsLoanEmpruntAvecRetourKeyword_4_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "isLoan", lv_isLoan_4_0 != null, "isLoan");
+					setWithLastConsumed($current, "isLoan", lv_isLoan_4_0 != null, "emprunt-avec-retour");
 				}
 			)
 		)?
 		(
 			(
-				lv_isCharged_5_0='isCharged'
+				lv_isCharged_5_0='payant'
 				{
-					newLeafNode(lv_isCharged_5_0, grammarAccess.getResourcesConfigAccess().getIsChargedIsChargedKeyword_5_0());
+					newLeafNode(lv_isCharged_5_0, grammarAccess.getResourcesConfigAccess().getIsChargedPayantKeyword_5_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getResourcesConfigRule());
 					}
-					setWithLastConsumed($current, "isCharged", lv_isCharged_5_0 != null, "isCharged");
+					setWithLastConsumed($current, "isCharged", lv_isCharged_5_0 != null, "payant");
 				}
 			)
 		)?
@@ -871,34 +887,42 @@ ruleLotsConfig returns [EObject current=null]
 					$current);
 			}
 		)
+		otherlv_1='('
+		{
+			newLeafNode(otherlv_1, grammarAccess.getLotsConfigAccess().getLeftParenthesisKeyword_1());
+		}
 		(
 			(
-				lv_hasImage_1_0='hasImage'
+				lv_hasImage_2_0='avec-illustration'
 				{
-					newLeafNode(lv_hasImage_1_0, grammarAccess.getLotsConfigAccess().getHasImageHasImageKeyword_1_0());
+					newLeafNode(lv_hasImage_2_0, grammarAccess.getLotsConfigAccess().getHasImageAvecIllustrationKeyword_2_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getLotsConfigRule());
 					}
-					setWithLastConsumed($current, "hasImage", lv_hasImage_1_0 != null, "hasImage");
+					setWithLastConsumed($current, "hasImage", lv_hasImage_2_0 != null, "avec-illustration");
 				}
 			)
 		)?
 		(
 			(
-				lv_hasOneStockPerSlot_2_0='hasOneStockPerSlot'
+				lv_hasOneStockPerSlot_3_0='un-stock-par-ouverture'
 				{
-					newLeafNode(lv_hasOneStockPerSlot_2_0, grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0());
+					newLeafNode(lv_hasOneStockPerSlot_3_0, grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_3_0());
 				}
 				{
 					if ($current==null) {
 						$current = createModelElement(grammarAccess.getLotsConfigRule());
 					}
-					setWithLastConsumed($current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_2_0 != null, "hasOneStockPerSlot");
+					setWithLastConsumed($current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_3_0 != null, "un-stock-par-ouverture");
 				}
 			)
 		)?
+		otherlv_4=')'
+		{
+			newLeafNode(otherlv_4, grammarAccess.getLotsConfigAccess().getRightParenthesisKeyword_4());
+		}
 	)
 ;
 
@@ -937,20 +961,24 @@ rulePricingSystem returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_1=':'
+		otherlv_1='('
 		{
-			newLeafNode(otherlv_1, grammarAccess.getPricingSystemAccess().getColonKeyword_1());
+			newLeafNode(otherlv_1, grammarAccess.getPricingSystemAccess().getLeftParenthesisKeyword_1());
 		}
-		otherlv_2='currency'
+		otherlv_2='devise'
 		{
-			newLeafNode(otherlv_2, grammarAccess.getPricingSystemAccess().getCurrencyKeyword_2());
+			newLeafNode(otherlv_2, grammarAccess.getPricingSystemAccess().getDeviseKeyword_2());
+		}
+		otherlv_3=':'
+		{
+			newLeafNode(otherlv_3, grammarAccess.getPricingSystemAccess().getColonKeyword_3());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_3_0());
+					newCompositeNode(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_4_0());
 				}
-				lv_currency_3_0=ruleEString
+				lv_currency_4_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getPricingSystemRule());
@@ -958,26 +986,30 @@ rulePricingSystem returns [EObject current=null]
 					set(
 						$current,
 						"currency",
-						lv_currency_3_0,
+						lv_currency_4_0,
 						"mde.pauline.metaheres.My.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		otherlv_4=','
+		otherlv_5=','
 		{
-			newLeafNode(otherlv_4, grammarAccess.getPricingSystemAccess().getCommaKeyword_4());
+			newLeafNode(otherlv_5, grammarAccess.getPricingSystemAccess().getCommaKeyword_5());
 		}
-		otherlv_5='taxSystem'
+		otherlv_6='systeme-comptable'
 		{
-			newLeafNode(otherlv_5, grammarAccess.getPricingSystemAccess().getTaxSystemKeyword_5());
+			newLeafNode(otherlv_6, grammarAccess.getPricingSystemAccess().getSystemeComptableKeyword_6());
+		}
+		otherlv_7=':'
+		{
+			newLeafNode(otherlv_7, grammarAccess.getPricingSystemAccess().getColonKeyword_7());
 		}
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_6_0());
+					newCompositeNode(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_8_0());
 				}
-				lv_taxSystem_6_0=ruleEString
+				lv_taxSystem_8_0=ruleEString
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getPricingSystemRule());
@@ -985,12 +1017,16 @@ rulePricingSystem returns [EObject current=null]
 					set(
 						$current,
 						"taxSystem",
-						lv_taxSystem_6_0,
+						lv_taxSystem_8_0,
 						"mde.pauline.metaheres.My.EString");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
+		otherlv_9=')'
+		{
+			newLeafNode(otherlv_9, grammarAccess.getPricingSystemAccess().getRightParenthesisKeyword_9());
+		}
 	)
 ;
 

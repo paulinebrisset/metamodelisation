@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalMyParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "':'", "'closesOnPublicHolidays'", "'inventoryIsPublic'", "'hasChart'", "'countInBusinessDays'", "'country'", "','", "'pricingsystem'", "'lang'", "'reservationsconfig'", "'resourcesconfig'", "'lotsconfig'", "'hasMoveOutCheck'", "'hasMoveInCheck'", "'minRequestAdvance'", "'maxRequestAdvance'", "'statuslist'", "'pricing'", "'('", "')'", "'hasImage'", "'hasOneStockPerSlot'", "'isConsumable'", "'isLoan'", "'isCharged'", "'currency'", "'taxSystem'", "'-'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "':'", "'ferme-les-jours-feries'", "'inventaire-public'", "'charte-d-utilisation-visible'", "'compte-en-jours-ouvrables'", "'pays'", "','", "'paiements-proposes'", "'('", "')'", "'langues'", "'configuration-reservations'", "'configuration-ressources'", "'lotsconfig'", "'etat-des-lieux-sortie'", "'etat-des-lieux-retour'", "'avance-minimum-et-maximum-reservation'", "'statuts-des-demandes'", "'tarification'", "'avec-illustration'", "'un-stock-par-ouverture'", "'type-consommable'", "'emprunt-avec-retour'", "'payant'", "'devise'", "'systeme-comptable'", "'-'"
     };
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
@@ -29,7 +29,6 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
     public static final int T__15=15;
     public static final int T__37=37;
     public static final int T__16=16;
-    public static final int T__38=38;
     public static final int T__17=17;
     public static final int T__18=18;
     public static final int T__11=11;
@@ -397,7 +396,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleServiceConfig"
-    // InternalMy.g:166:1: ruleServiceConfig returns [EObject current=null] : ( ( (lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays' ) )? ( (lv_inventoryIsPublic_1_0= 'inventoryIsPublic' ) )? ( (lv_hasChart_2_0= 'hasChart' ) )? ( (lv_countInBusinessDays_3_0= 'countInBusinessDays' ) )? otherlv_4= 'country' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'pricingsystem' otherlv_10= ':' ( ( ruleEString ) ) (otherlv_12= ',' ( ( ruleEString ) ) )* )? otherlv_14= 'lang' otherlv_15= ':' ( (lv_language_16_0= ruleLanguage ) ) (otherlv_17= ',' ( (lv_language_18_0= ruleLanguage ) ) )* otherlv_19= 'reservationsconfig' otherlv_20= ':' ( (lv_reservationsconfig_21_0= ruleReservationsConfig ) ) otherlv_22= 'resourcesconfig' otherlv_23= ':' ( (lv_resourcesconfig_24_0= ruleResourcesConfig ) ) (otherlv_25= ',' ( (lv_resourcesconfig_26_0= ruleResourcesConfig ) ) )* (otherlv_27= 'lotsconfig' otherlv_28= ':' ( (lv_lotsconfig_29_0= ruleLotsConfig ) ) )? ) ;
+    // InternalMy.g:166:1: ruleServiceConfig returns [EObject current=null] : ( ( (lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries' ) )? ( (lv_inventoryIsPublic_1_0= 'inventaire-public' ) )? ( (lv_hasChart_2_0= 'charte-d-utilisation-visible' ) )? ( (lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables' ) )? otherlv_4= 'pays' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'paiements-proposes' otherlv_10= ':' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* )? otherlv_15= ')' otherlv_16= 'langues' otherlv_17= ':' otherlv_18= '(' ( (lv_language_19_0= ruleLanguage ) ) (otherlv_20= ',' ( (lv_language_21_0= ruleLanguage ) ) )* otherlv_22= ')' otherlv_23= 'configuration-reservations' otherlv_24= ':' ( (lv_reservationsconfig_25_0= ruleReservationsConfig ) ) otherlv_26= 'configuration-ressources' otherlv_27= ':' ( (lv_resourcesconfig_28_0= ruleResourcesConfig ) ) (otherlv_29= ',' ( (lv_resourcesconfig_30_0= ruleResourcesConfig ) ) )* (otherlv_31= 'lotsconfig' otherlv_32= ':' ( (lv_lotsconfig_33_0= ruleLotsConfig ) ) )? ) ;
     public final EObject ruleServiceConfig() throws RecognitionException {
         EObject current = null;
 
@@ -410,45 +409,49 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
         Token otherlv_7=null;
         Token otherlv_9=null;
         Token otherlv_10=null;
-        Token otherlv_12=null;
-        Token otherlv_14=null;
+        Token otherlv_11=null;
+        Token otherlv_13=null;
         Token otherlv_15=null;
+        Token otherlv_16=null;
         Token otherlv_17=null;
-        Token otherlv_19=null;
+        Token otherlv_18=null;
         Token otherlv_20=null;
         Token otherlv_22=null;
         Token otherlv_23=null;
-        Token otherlv_25=null;
+        Token otherlv_24=null;
+        Token otherlv_26=null;
         Token otherlv_27=null;
-        Token otherlv_28=null;
+        Token otherlv_29=null;
+        Token otherlv_31=null;
+        Token otherlv_32=null;
         EObject lv_country_6_0 = null;
 
         EObject lv_country_8_0 = null;
 
-        EObject lv_language_16_0 = null;
+        EObject lv_language_19_0 = null;
 
-        EObject lv_language_18_0 = null;
+        EObject lv_language_21_0 = null;
 
-        EObject lv_reservationsconfig_21_0 = null;
+        EObject lv_reservationsconfig_25_0 = null;
 
-        EObject lv_resourcesconfig_24_0 = null;
+        EObject lv_resourcesconfig_28_0 = null;
 
-        EObject lv_resourcesconfig_26_0 = null;
+        EObject lv_resourcesconfig_30_0 = null;
 
-        EObject lv_lotsconfig_29_0 = null;
+        EObject lv_lotsconfig_33_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalMy.g:172:2: ( ( ( (lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays' ) )? ( (lv_inventoryIsPublic_1_0= 'inventoryIsPublic' ) )? ( (lv_hasChart_2_0= 'hasChart' ) )? ( (lv_countInBusinessDays_3_0= 'countInBusinessDays' ) )? otherlv_4= 'country' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'pricingsystem' otherlv_10= ':' ( ( ruleEString ) ) (otherlv_12= ',' ( ( ruleEString ) ) )* )? otherlv_14= 'lang' otherlv_15= ':' ( (lv_language_16_0= ruleLanguage ) ) (otherlv_17= ',' ( (lv_language_18_0= ruleLanguage ) ) )* otherlv_19= 'reservationsconfig' otherlv_20= ':' ( (lv_reservationsconfig_21_0= ruleReservationsConfig ) ) otherlv_22= 'resourcesconfig' otherlv_23= ':' ( (lv_resourcesconfig_24_0= ruleResourcesConfig ) ) (otherlv_25= ',' ( (lv_resourcesconfig_26_0= ruleResourcesConfig ) ) )* (otherlv_27= 'lotsconfig' otherlv_28= ':' ( (lv_lotsconfig_29_0= ruleLotsConfig ) ) )? ) )
-            // InternalMy.g:173:2: ( ( (lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays' ) )? ( (lv_inventoryIsPublic_1_0= 'inventoryIsPublic' ) )? ( (lv_hasChart_2_0= 'hasChart' ) )? ( (lv_countInBusinessDays_3_0= 'countInBusinessDays' ) )? otherlv_4= 'country' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'pricingsystem' otherlv_10= ':' ( ( ruleEString ) ) (otherlv_12= ',' ( ( ruleEString ) ) )* )? otherlv_14= 'lang' otherlv_15= ':' ( (lv_language_16_0= ruleLanguage ) ) (otherlv_17= ',' ( (lv_language_18_0= ruleLanguage ) ) )* otherlv_19= 'reservationsconfig' otherlv_20= ':' ( (lv_reservationsconfig_21_0= ruleReservationsConfig ) ) otherlv_22= 'resourcesconfig' otherlv_23= ':' ( (lv_resourcesconfig_24_0= ruleResourcesConfig ) ) (otherlv_25= ',' ( (lv_resourcesconfig_26_0= ruleResourcesConfig ) ) )* (otherlv_27= 'lotsconfig' otherlv_28= ':' ( (lv_lotsconfig_29_0= ruleLotsConfig ) ) )? )
+            // InternalMy.g:172:2: ( ( ( (lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries' ) )? ( (lv_inventoryIsPublic_1_0= 'inventaire-public' ) )? ( (lv_hasChart_2_0= 'charte-d-utilisation-visible' ) )? ( (lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables' ) )? otherlv_4= 'pays' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'paiements-proposes' otherlv_10= ':' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* )? otherlv_15= ')' otherlv_16= 'langues' otherlv_17= ':' otherlv_18= '(' ( (lv_language_19_0= ruleLanguage ) ) (otherlv_20= ',' ( (lv_language_21_0= ruleLanguage ) ) )* otherlv_22= ')' otherlv_23= 'configuration-reservations' otherlv_24= ':' ( (lv_reservationsconfig_25_0= ruleReservationsConfig ) ) otherlv_26= 'configuration-ressources' otherlv_27= ':' ( (lv_resourcesconfig_28_0= ruleResourcesConfig ) ) (otherlv_29= ',' ( (lv_resourcesconfig_30_0= ruleResourcesConfig ) ) )* (otherlv_31= 'lotsconfig' otherlv_32= ':' ( (lv_lotsconfig_33_0= ruleLotsConfig ) ) )? ) )
+            // InternalMy.g:173:2: ( ( (lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries' ) )? ( (lv_inventoryIsPublic_1_0= 'inventaire-public' ) )? ( (lv_hasChart_2_0= 'charte-d-utilisation-visible' ) )? ( (lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables' ) )? otherlv_4= 'pays' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'paiements-proposes' otherlv_10= ':' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* )? otherlv_15= ')' otherlv_16= 'langues' otherlv_17= ':' otherlv_18= '(' ( (lv_language_19_0= ruleLanguage ) ) (otherlv_20= ',' ( (lv_language_21_0= ruleLanguage ) ) )* otherlv_22= ')' otherlv_23= 'configuration-reservations' otherlv_24= ':' ( (lv_reservationsconfig_25_0= ruleReservationsConfig ) ) otherlv_26= 'configuration-ressources' otherlv_27= ':' ( (lv_resourcesconfig_28_0= ruleResourcesConfig ) ) (otherlv_29= ',' ( (lv_resourcesconfig_30_0= ruleResourcesConfig ) ) )* (otherlv_31= 'lotsconfig' otherlv_32= ':' ( (lv_lotsconfig_33_0= ruleLotsConfig ) ) )? )
             {
-            // InternalMy.g:173:2: ( ( (lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays' ) )? ( (lv_inventoryIsPublic_1_0= 'inventoryIsPublic' ) )? ( (lv_hasChart_2_0= 'hasChart' ) )? ( (lv_countInBusinessDays_3_0= 'countInBusinessDays' ) )? otherlv_4= 'country' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'pricingsystem' otherlv_10= ':' ( ( ruleEString ) ) (otherlv_12= ',' ( ( ruleEString ) ) )* )? otherlv_14= 'lang' otherlv_15= ':' ( (lv_language_16_0= ruleLanguage ) ) (otherlv_17= ',' ( (lv_language_18_0= ruleLanguage ) ) )* otherlv_19= 'reservationsconfig' otherlv_20= ':' ( (lv_reservationsconfig_21_0= ruleReservationsConfig ) ) otherlv_22= 'resourcesconfig' otherlv_23= ':' ( (lv_resourcesconfig_24_0= ruleResourcesConfig ) ) (otherlv_25= ',' ( (lv_resourcesconfig_26_0= ruleResourcesConfig ) ) )* (otherlv_27= 'lotsconfig' otherlv_28= ':' ( (lv_lotsconfig_29_0= ruleLotsConfig ) ) )? )
-            // InternalMy.g:174:3: ( (lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays' ) )? ( (lv_inventoryIsPublic_1_0= 'inventoryIsPublic' ) )? ( (lv_hasChart_2_0= 'hasChart' ) )? ( (lv_countInBusinessDays_3_0= 'countInBusinessDays' ) )? otherlv_4= 'country' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'pricingsystem' otherlv_10= ':' ( ( ruleEString ) ) (otherlv_12= ',' ( ( ruleEString ) ) )* )? otherlv_14= 'lang' otherlv_15= ':' ( (lv_language_16_0= ruleLanguage ) ) (otherlv_17= ',' ( (lv_language_18_0= ruleLanguage ) ) )* otherlv_19= 'reservationsconfig' otherlv_20= ':' ( (lv_reservationsconfig_21_0= ruleReservationsConfig ) ) otherlv_22= 'resourcesconfig' otherlv_23= ':' ( (lv_resourcesconfig_24_0= ruleResourcesConfig ) ) (otherlv_25= ',' ( (lv_resourcesconfig_26_0= ruleResourcesConfig ) ) )* (otherlv_27= 'lotsconfig' otherlv_28= ':' ( (lv_lotsconfig_29_0= ruleLotsConfig ) ) )?
+            // InternalMy.g:173:2: ( ( (lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries' ) )? ( (lv_inventoryIsPublic_1_0= 'inventaire-public' ) )? ( (lv_hasChart_2_0= 'charte-d-utilisation-visible' ) )? ( (lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables' ) )? otherlv_4= 'pays' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'paiements-proposes' otherlv_10= ':' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* )? otherlv_15= ')' otherlv_16= 'langues' otherlv_17= ':' otherlv_18= '(' ( (lv_language_19_0= ruleLanguage ) ) (otherlv_20= ',' ( (lv_language_21_0= ruleLanguage ) ) )* otherlv_22= ')' otherlv_23= 'configuration-reservations' otherlv_24= ':' ( (lv_reservationsconfig_25_0= ruleReservationsConfig ) ) otherlv_26= 'configuration-ressources' otherlv_27= ':' ( (lv_resourcesconfig_28_0= ruleResourcesConfig ) ) (otherlv_29= ',' ( (lv_resourcesconfig_30_0= ruleResourcesConfig ) ) )* (otherlv_31= 'lotsconfig' otherlv_32= ':' ( (lv_lotsconfig_33_0= ruleLotsConfig ) ) )? )
+            // InternalMy.g:174:3: ( (lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries' ) )? ( (lv_inventoryIsPublic_1_0= 'inventaire-public' ) )? ( (lv_hasChart_2_0= 'charte-d-utilisation-visible' ) )? ( (lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables' ) )? otherlv_4= 'pays' otherlv_5= ':' ( (lv_country_6_0= ruleCountry ) ) (otherlv_7= ',' ( (lv_country_8_0= ruleCountry ) ) )* (otherlv_9= 'paiements-proposes' otherlv_10= ':' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* )? otherlv_15= ')' otherlv_16= 'langues' otherlv_17= ':' otherlv_18= '(' ( (lv_language_19_0= ruleLanguage ) ) (otherlv_20= ',' ( (lv_language_21_0= ruleLanguage ) ) )* otherlv_22= ')' otherlv_23= 'configuration-reservations' otherlv_24= ':' ( (lv_reservationsconfig_25_0= ruleReservationsConfig ) ) otherlv_26= 'configuration-ressources' otherlv_27= ':' ( (lv_resourcesconfig_28_0= ruleResourcesConfig ) ) (otherlv_29= ',' ( (lv_resourcesconfig_30_0= ruleResourcesConfig ) ) )* (otherlv_31= 'lotsconfig' otherlv_32= ':' ( (lv_lotsconfig_33_0= ruleLotsConfig ) ) )?
             {
-            // InternalMy.g:174:3: ( (lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays' ) )?
+            // InternalMy.g:174:3: ( (lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries' ) )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -457,20 +460,20 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             }
             switch (alt2) {
                 case 1 :
-                    // InternalMy.g:175:4: (lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays' )
+                    // InternalMy.g:175:4: (lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries' )
                     {
-                    // InternalMy.g:175:4: (lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays' )
-                    // InternalMy.g:176:5: lv_closesOnPublicHolidays_0_0= 'closesOnPublicHolidays'
+                    // InternalMy.g:175:4: (lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries' )
+                    // InternalMy.g:176:5: lv_closesOnPublicHolidays_0_0= 'ferme-les-jours-feries'
                     {
                     lv_closesOnPublicHolidays_0_0=(Token)match(input,12,FOLLOW_5); 
 
-                    					newLeafNode(lv_closesOnPublicHolidays_0_0, grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0());
+                    					newLeafNode(lv_closesOnPublicHolidays_0_0, grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getServiceConfigRule());
                     					}
-                    					setWithLastConsumed(current, "closesOnPublicHolidays", lv_closesOnPublicHolidays_0_0 != null, "closesOnPublicHolidays");
+                    					setWithLastConsumed(current, "closesOnPublicHolidays", lv_closesOnPublicHolidays_0_0 != null, "ferme-les-jours-feries");
                     				
 
                     }
@@ -481,7 +484,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:188:3: ( (lv_inventoryIsPublic_1_0= 'inventoryIsPublic' ) )?
+            // InternalMy.g:188:3: ( (lv_inventoryIsPublic_1_0= 'inventaire-public' ) )?
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -490,20 +493,20 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             }
             switch (alt3) {
                 case 1 :
-                    // InternalMy.g:189:4: (lv_inventoryIsPublic_1_0= 'inventoryIsPublic' )
+                    // InternalMy.g:189:4: (lv_inventoryIsPublic_1_0= 'inventaire-public' )
                     {
-                    // InternalMy.g:189:4: (lv_inventoryIsPublic_1_0= 'inventoryIsPublic' )
-                    // InternalMy.g:190:5: lv_inventoryIsPublic_1_0= 'inventoryIsPublic'
+                    // InternalMy.g:189:4: (lv_inventoryIsPublic_1_0= 'inventaire-public' )
+                    // InternalMy.g:190:5: lv_inventoryIsPublic_1_0= 'inventaire-public'
                     {
                     lv_inventoryIsPublic_1_0=(Token)match(input,13,FOLLOW_6); 
 
-                    					newLeafNode(lv_inventoryIsPublic_1_0, grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventoryIsPublicKeyword_1_0());
+                    					newLeafNode(lv_inventoryIsPublic_1_0, grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventairePublicKeyword_1_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getServiceConfigRule());
                     					}
-                    					setWithLastConsumed(current, "inventoryIsPublic", lv_inventoryIsPublic_1_0 != null, "inventoryIsPublic");
+                    					setWithLastConsumed(current, "inventoryIsPublic", lv_inventoryIsPublic_1_0 != null, "inventaire-public");
                     				
 
                     }
@@ -514,7 +517,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:202:3: ( (lv_hasChart_2_0= 'hasChart' ) )?
+            // InternalMy.g:202:3: ( (lv_hasChart_2_0= 'charte-d-utilisation-visible' ) )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -523,20 +526,20 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             }
             switch (alt4) {
                 case 1 :
-                    // InternalMy.g:203:4: (lv_hasChart_2_0= 'hasChart' )
+                    // InternalMy.g:203:4: (lv_hasChart_2_0= 'charte-d-utilisation-visible' )
                     {
-                    // InternalMy.g:203:4: (lv_hasChart_2_0= 'hasChart' )
-                    // InternalMy.g:204:5: lv_hasChart_2_0= 'hasChart'
+                    // InternalMy.g:203:4: (lv_hasChart_2_0= 'charte-d-utilisation-visible' )
+                    // InternalMy.g:204:5: lv_hasChart_2_0= 'charte-d-utilisation-visible'
                     {
                     lv_hasChart_2_0=(Token)match(input,14,FOLLOW_7); 
 
-                    					newLeafNode(lv_hasChart_2_0, grammarAccess.getServiceConfigAccess().getHasChartHasChartKeyword_2_0());
+                    					newLeafNode(lv_hasChart_2_0, grammarAccess.getServiceConfigAccess().getHasChartCharteDUtilisationVisibleKeyword_2_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getServiceConfigRule());
                     					}
-                    					setWithLastConsumed(current, "hasChart", lv_hasChart_2_0 != null, "hasChart");
+                    					setWithLastConsumed(current, "hasChart", lv_hasChart_2_0 != null, "charte-d-utilisation-visible");
                     				
 
                     }
@@ -547,7 +550,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:216:3: ( (lv_countInBusinessDays_3_0= 'countInBusinessDays' ) )?
+            // InternalMy.g:216:3: ( (lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables' ) )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -556,20 +559,20 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             }
             switch (alt5) {
                 case 1 :
-                    // InternalMy.g:217:4: (lv_countInBusinessDays_3_0= 'countInBusinessDays' )
+                    // InternalMy.g:217:4: (lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables' )
                     {
-                    // InternalMy.g:217:4: (lv_countInBusinessDays_3_0= 'countInBusinessDays' )
-                    // InternalMy.g:218:5: lv_countInBusinessDays_3_0= 'countInBusinessDays'
+                    // InternalMy.g:217:4: (lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables' )
+                    // InternalMy.g:218:5: lv_countInBusinessDays_3_0= 'compte-en-jours-ouvrables'
                     {
                     lv_countInBusinessDays_3_0=(Token)match(input,15,FOLLOW_8); 
 
-                    					newLeafNode(lv_countInBusinessDays_3_0, grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCountInBusinessDaysKeyword_3_0());
+                    					newLeafNode(lv_countInBusinessDays_3_0, grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getServiceConfigRule());
                     					}
-                    					setWithLastConsumed(current, "countInBusinessDays", lv_countInBusinessDays_3_0 != null, "countInBusinessDays");
+                    					setWithLastConsumed(current, "countInBusinessDays", lv_countInBusinessDays_3_0 != null, "compte-en-jours-ouvrables");
                     				
 
                     }
@@ -582,7 +585,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             otherlv_4=(Token)match(input,16,FOLLOW_3); 
 
-            			newLeafNode(otherlv_4, grammarAccess.getServiceConfigAccess().getCountryKeyword_4());
+            			newLeafNode(otherlv_4, grammarAccess.getServiceConfigAccess().getPaysKeyword_4());
             		
             otherlv_5=(Token)match(input,11,FOLLOW_9); 
 
@@ -678,7 +681,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            // InternalMy.g:282:3: (otherlv_9= 'pricingsystem' otherlv_10= ':' ( ( ruleEString ) ) (otherlv_12= ',' ( ( ruleEString ) ) )* )?
+            // InternalMy.g:282:3: (otherlv_9= 'paiements-proposes' otherlv_10= ':' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )* )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -687,21 +690,25 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             }
             switch (alt8) {
                 case 1 :
-                    // InternalMy.g:283:4: otherlv_9= 'pricingsystem' otherlv_10= ':' ( ( ruleEString ) ) (otherlv_12= ',' ( ( ruleEString ) ) )*
+                    // InternalMy.g:283:4: otherlv_9= 'paiements-proposes' otherlv_10= ':' otherlv_11= '(' ( ( ruleEString ) ) (otherlv_13= ',' ( ( ruleEString ) ) )*
                     {
                     otherlv_9=(Token)match(input,18,FOLLOW_3); 
 
-                    				newLeafNode(otherlv_9, grammarAccess.getServiceConfigAccess().getPricingsystemKeyword_8_0());
+                    				newLeafNode(otherlv_9, grammarAccess.getServiceConfigAccess().getPaiementsProposesKeyword_8_0());
                     			
-                    otherlv_10=(Token)match(input,11,FOLLOW_9); 
+                    otherlv_10=(Token)match(input,11,FOLLOW_11); 
 
                     				newLeafNode(otherlv_10, grammarAccess.getServiceConfigAccess().getColonKeyword_8_1());
                     			
-                    // InternalMy.g:291:4: ( ( ruleEString ) )
-                    // InternalMy.g:292:5: ( ruleEString )
+                    otherlv_11=(Token)match(input,19,FOLLOW_9); 
+
+                    				newLeafNode(otherlv_11, grammarAccess.getServiceConfigAccess().getLeftParenthesisKeyword_8_2());
+                    			
+                    // InternalMy.g:295:4: ( ( ruleEString ) )
+                    // InternalMy.g:296:5: ( ruleEString )
                     {
-                    // InternalMy.g:292:5: ( ruleEString )
-                    // InternalMy.g:293:6: ruleEString
+                    // InternalMy.g:296:5: ( ruleEString )
+                    // InternalMy.g:297:6: ruleEString
                     {
 
                     						if (current==null) {
@@ -709,9 +716,9 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
                     						}
                     					
 
-                    						newCompositeNode(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_2_0());
+                    						newCompositeNode(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_3_0());
                     					
-                    pushFollow(FOLLOW_11);
+                    pushFollow(FOLLOW_12);
                     ruleEString();
 
                     state._fsp--;
@@ -725,7 +732,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalMy.g:307:4: (otherlv_12= ',' ( ( ruleEString ) ) )*
+                    // InternalMy.g:311:4: (otherlv_13= ',' ( ( ruleEString ) ) )*
                     loop7:
                     do {
                         int alt7=2;
@@ -738,17 +745,17 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // InternalMy.g:308:5: otherlv_12= ',' ( ( ruleEString ) )
+                    	    // InternalMy.g:312:5: otherlv_13= ',' ( ( ruleEString ) )
                     	    {
-                    	    otherlv_12=(Token)match(input,17,FOLLOW_9); 
+                    	    otherlv_13=(Token)match(input,17,FOLLOW_9); 
 
-                    	    					newLeafNode(otherlv_12, grammarAccess.getServiceConfigAccess().getCommaKeyword_8_3_0());
+                    	    					newLeafNode(otherlv_13, grammarAccess.getServiceConfigAccess().getCommaKeyword_8_4_0());
                     	    				
-                    	    // InternalMy.g:312:5: ( ( ruleEString ) )
-                    	    // InternalMy.g:313:6: ( ruleEString )
+                    	    // InternalMy.g:316:5: ( ( ruleEString ) )
+                    	    // InternalMy.g:317:6: ( ruleEString )
                     	    {
-                    	    // InternalMy.g:313:6: ( ruleEString )
-                    	    // InternalMy.g:314:7: ruleEString
+                    	    // InternalMy.g:317:6: ( ruleEString )
+                    	    // InternalMy.g:318:7: ruleEString
                     	    {
 
                     	    							if (current==null) {
@@ -756,9 +763,9 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
                     	    							}
                     	    						
 
-                    	    							newCompositeNode(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_3_1_0());
+                    	    							newCompositeNode(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_4_1_0());
                     	    						
-                    	    pushFollow(FOLLOW_11);
+                    	    pushFollow(FOLLOW_12);
                     	    ruleEString();
 
                     	    state._fsp--;
@@ -787,25 +794,33 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_14=(Token)match(input,19,FOLLOW_3); 
+            otherlv_15=(Token)match(input,20,FOLLOW_13); 
 
-            			newLeafNode(otherlv_14, grammarAccess.getServiceConfigAccess().getLangKeyword_9());
+            			newLeafNode(otherlv_15, grammarAccess.getServiceConfigAccess().getRightParenthesisKeyword_9());
             		
-            otherlv_15=(Token)match(input,11,FOLLOW_9); 
+            otherlv_16=(Token)match(input,21,FOLLOW_3); 
 
-            			newLeafNode(otherlv_15, grammarAccess.getServiceConfigAccess().getColonKeyword_10());
+            			newLeafNode(otherlv_16, grammarAccess.getServiceConfigAccess().getLanguesKeyword_10());
             		
-            // InternalMy.g:338:3: ( (lv_language_16_0= ruleLanguage ) )
-            // InternalMy.g:339:4: (lv_language_16_0= ruleLanguage )
+            otherlv_17=(Token)match(input,11,FOLLOW_11); 
+
+            			newLeafNode(otherlv_17, grammarAccess.getServiceConfigAccess().getColonKeyword_11());
+            		
+            otherlv_18=(Token)match(input,19,FOLLOW_9); 
+
+            			newLeafNode(otherlv_18, grammarAccess.getServiceConfigAccess().getLeftParenthesisKeyword_12());
+            		
+            // InternalMy.g:350:3: ( (lv_language_19_0= ruleLanguage ) )
+            // InternalMy.g:351:4: (lv_language_19_0= ruleLanguage )
             {
-            // InternalMy.g:339:4: (lv_language_16_0= ruleLanguage )
-            // InternalMy.g:340:5: lv_language_16_0= ruleLanguage
+            // InternalMy.g:351:4: (lv_language_19_0= ruleLanguage )
+            // InternalMy.g:352:5: lv_language_19_0= ruleLanguage
             {
 
-            					newCompositeNode(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_11_0());
+            					newCompositeNode(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_13_0());
             				
             pushFollow(FOLLOW_12);
-            lv_language_16_0=ruleLanguage();
+            lv_language_19_0=ruleLanguage();
 
             state._fsp--;
 
@@ -816,7 +831,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             					add(
             						current,
             						"language",
-            						lv_language_16_0,
+            						lv_language_19_0,
             						"mde.pauline.metaheres.My.Language");
             					afterParserOrEnumRuleCall();
             				
@@ -826,7 +841,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:357:3: (otherlv_17= ',' ( (lv_language_18_0= ruleLanguage ) ) )*
+            // InternalMy.g:369:3: (otherlv_20= ',' ( (lv_language_21_0= ruleLanguage ) ) )*
             loop9:
             do {
                 int alt9=2;
@@ -839,23 +854,23 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
                 switch (alt9) {
             	case 1 :
-            	    // InternalMy.g:358:4: otherlv_17= ',' ( (lv_language_18_0= ruleLanguage ) )
+            	    // InternalMy.g:370:4: otherlv_20= ',' ( (lv_language_21_0= ruleLanguage ) )
             	    {
-            	    otherlv_17=(Token)match(input,17,FOLLOW_9); 
+            	    otherlv_20=(Token)match(input,17,FOLLOW_9); 
 
-            	    				newLeafNode(otherlv_17, grammarAccess.getServiceConfigAccess().getCommaKeyword_12_0());
+            	    				newLeafNode(otherlv_20, grammarAccess.getServiceConfigAccess().getCommaKeyword_14_0());
             	    			
-            	    // InternalMy.g:362:4: ( (lv_language_18_0= ruleLanguage ) )
-            	    // InternalMy.g:363:5: (lv_language_18_0= ruleLanguage )
+            	    // InternalMy.g:374:4: ( (lv_language_21_0= ruleLanguage ) )
+            	    // InternalMy.g:375:5: (lv_language_21_0= ruleLanguage )
             	    {
-            	    // InternalMy.g:363:5: (lv_language_18_0= ruleLanguage )
-            	    // InternalMy.g:364:6: lv_language_18_0= ruleLanguage
+            	    // InternalMy.g:375:5: (lv_language_21_0= ruleLanguage )
+            	    // InternalMy.g:376:6: lv_language_21_0= ruleLanguage
             	    {
 
-            	    						newCompositeNode(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_12_1_0());
+            	    						newCompositeNode(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_14_1_0());
             	    					
             	    pushFollow(FOLLOW_12);
-            	    lv_language_18_0=ruleLanguage();
+            	    lv_language_21_0=ruleLanguage();
 
             	    state._fsp--;
 
@@ -866,7 +881,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             	    						add(
             	    							current,
             	    							"language",
-            	    							lv_language_18_0,
+            	    							lv_language_21_0,
             	    							"mde.pauline.metaheres.My.Language");
             	    						afterParserOrEnumRuleCall();
             	    					
@@ -885,25 +900,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_19=(Token)match(input,20,FOLLOW_3); 
+            otherlv_22=(Token)match(input,20,FOLLOW_14); 
 
-            			newLeafNode(otherlv_19, grammarAccess.getServiceConfigAccess().getReservationsconfigKeyword_13());
+            			newLeafNode(otherlv_22, grammarAccess.getServiceConfigAccess().getRightParenthesisKeyword_15());
             		
-            otherlv_20=(Token)match(input,11,FOLLOW_13); 
+            otherlv_23=(Token)match(input,22,FOLLOW_3); 
 
-            			newLeafNode(otherlv_20, grammarAccess.getServiceConfigAccess().getColonKeyword_14());
+            			newLeafNode(otherlv_23, grammarAccess.getServiceConfigAccess().getConfigurationReservationsKeyword_16());
             		
-            // InternalMy.g:390:3: ( (lv_reservationsconfig_21_0= ruleReservationsConfig ) )
-            // InternalMy.g:391:4: (lv_reservationsconfig_21_0= ruleReservationsConfig )
+            otherlv_24=(Token)match(input,11,FOLLOW_15); 
+
+            			newLeafNode(otherlv_24, grammarAccess.getServiceConfigAccess().getColonKeyword_17());
+            		
+            // InternalMy.g:406:3: ( (lv_reservationsconfig_25_0= ruleReservationsConfig ) )
+            // InternalMy.g:407:4: (lv_reservationsconfig_25_0= ruleReservationsConfig )
             {
-            // InternalMy.g:391:4: (lv_reservationsconfig_21_0= ruleReservationsConfig )
-            // InternalMy.g:392:5: lv_reservationsconfig_21_0= ruleReservationsConfig
+            // InternalMy.g:407:4: (lv_reservationsconfig_25_0= ruleReservationsConfig )
+            // InternalMy.g:408:5: lv_reservationsconfig_25_0= ruleReservationsConfig
             {
 
-            					newCompositeNode(grammarAccess.getServiceConfigAccess().getReservationsconfigReservationsConfigParserRuleCall_15_0());
+            					newCompositeNode(grammarAccess.getServiceConfigAccess().getReservationsconfigReservationsConfigParserRuleCall_18_0());
             				
-            pushFollow(FOLLOW_14);
-            lv_reservationsconfig_21_0=ruleReservationsConfig();
+            pushFollow(FOLLOW_16);
+            lv_reservationsconfig_25_0=ruleReservationsConfig();
 
             state._fsp--;
 
@@ -914,7 +933,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             					set(
             						current,
             						"reservationsconfig",
-            						lv_reservationsconfig_21_0,
+            						lv_reservationsconfig_25_0,
             						"mde.pauline.metaheres.My.ReservationsConfig");
             					afterParserOrEnumRuleCall();
             				
@@ -924,25 +943,25 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_22=(Token)match(input,21,FOLLOW_3); 
+            otherlv_26=(Token)match(input,23,FOLLOW_3); 
 
-            			newLeafNode(otherlv_22, grammarAccess.getServiceConfigAccess().getResourcesconfigKeyword_16());
+            			newLeafNode(otherlv_26, grammarAccess.getServiceConfigAccess().getConfigurationRessourcesKeyword_19());
             		
-            otherlv_23=(Token)match(input,11,FOLLOW_15); 
+            otherlv_27=(Token)match(input,11,FOLLOW_11); 
 
-            			newLeafNode(otherlv_23, grammarAccess.getServiceConfigAccess().getColonKeyword_17());
+            			newLeafNode(otherlv_27, grammarAccess.getServiceConfigAccess().getColonKeyword_20());
             		
-            // InternalMy.g:417:3: ( (lv_resourcesconfig_24_0= ruleResourcesConfig ) )
-            // InternalMy.g:418:4: (lv_resourcesconfig_24_0= ruleResourcesConfig )
+            // InternalMy.g:433:3: ( (lv_resourcesconfig_28_0= ruleResourcesConfig ) )
+            // InternalMy.g:434:4: (lv_resourcesconfig_28_0= ruleResourcesConfig )
             {
-            // InternalMy.g:418:4: (lv_resourcesconfig_24_0= ruleResourcesConfig )
-            // InternalMy.g:419:5: lv_resourcesconfig_24_0= ruleResourcesConfig
+            // InternalMy.g:434:4: (lv_resourcesconfig_28_0= ruleResourcesConfig )
+            // InternalMy.g:435:5: lv_resourcesconfig_28_0= ruleResourcesConfig
             {
 
-            					newCompositeNode(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_18_0());
+            					newCompositeNode(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_21_0());
             				
-            pushFollow(FOLLOW_16);
-            lv_resourcesconfig_24_0=ruleResourcesConfig();
+            pushFollow(FOLLOW_17);
+            lv_resourcesconfig_28_0=ruleResourcesConfig();
 
             state._fsp--;
 
@@ -953,7 +972,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             					add(
             						current,
             						"resourcesconfig",
-            						lv_resourcesconfig_24_0,
+            						lv_resourcesconfig_28_0,
             						"mde.pauline.metaheres.My.ResourcesConfig");
             					afterParserOrEnumRuleCall();
             				
@@ -963,7 +982,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:436:3: (otherlv_25= ',' ( (lv_resourcesconfig_26_0= ruleResourcesConfig ) ) )*
+            // InternalMy.g:452:3: (otherlv_29= ',' ( (lv_resourcesconfig_30_0= ruleResourcesConfig ) ) )*
             loop10:
             do {
                 int alt10=2;
@@ -976,23 +995,23 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
                 switch (alt10) {
             	case 1 :
-            	    // InternalMy.g:437:4: otherlv_25= ',' ( (lv_resourcesconfig_26_0= ruleResourcesConfig ) )
+            	    // InternalMy.g:453:4: otherlv_29= ',' ( (lv_resourcesconfig_30_0= ruleResourcesConfig ) )
             	    {
-            	    otherlv_25=(Token)match(input,17,FOLLOW_15); 
+            	    otherlv_29=(Token)match(input,17,FOLLOW_11); 
 
-            	    				newLeafNode(otherlv_25, grammarAccess.getServiceConfigAccess().getCommaKeyword_19_0());
+            	    				newLeafNode(otherlv_29, grammarAccess.getServiceConfigAccess().getCommaKeyword_22_0());
             	    			
-            	    // InternalMy.g:441:4: ( (lv_resourcesconfig_26_0= ruleResourcesConfig ) )
-            	    // InternalMy.g:442:5: (lv_resourcesconfig_26_0= ruleResourcesConfig )
+            	    // InternalMy.g:457:4: ( (lv_resourcesconfig_30_0= ruleResourcesConfig ) )
+            	    // InternalMy.g:458:5: (lv_resourcesconfig_30_0= ruleResourcesConfig )
             	    {
-            	    // InternalMy.g:442:5: (lv_resourcesconfig_26_0= ruleResourcesConfig )
-            	    // InternalMy.g:443:6: lv_resourcesconfig_26_0= ruleResourcesConfig
+            	    // InternalMy.g:458:5: (lv_resourcesconfig_30_0= ruleResourcesConfig )
+            	    // InternalMy.g:459:6: lv_resourcesconfig_30_0= ruleResourcesConfig
             	    {
 
-            	    						newCompositeNode(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_19_1_0());
+            	    						newCompositeNode(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_22_1_0());
             	    					
-            	    pushFollow(FOLLOW_16);
-            	    lv_resourcesconfig_26_0=ruleResourcesConfig();
+            	    pushFollow(FOLLOW_17);
+            	    lv_resourcesconfig_30_0=ruleResourcesConfig();
 
             	    state._fsp--;
 
@@ -1003,7 +1022,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             	    						add(
             	    							current,
             	    							"resourcesconfig",
-            	    							lv_resourcesconfig_26_0,
+            	    							lv_resourcesconfig_30_0,
             	    							"mde.pauline.metaheres.My.ResourcesConfig");
             	    						afterParserOrEnumRuleCall();
             	    					
@@ -1022,36 +1041,36 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            // InternalMy.g:461:3: (otherlv_27= 'lotsconfig' otherlv_28= ':' ( (lv_lotsconfig_29_0= ruleLotsConfig ) ) )?
+            // InternalMy.g:477:3: (otherlv_31= 'lotsconfig' otherlv_32= ':' ( (lv_lotsconfig_33_0= ruleLotsConfig ) ) )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
-            if ( (LA11_0==22) ) {
+            if ( (LA11_0==24) ) {
                 alt11=1;
             }
             switch (alt11) {
                 case 1 :
-                    // InternalMy.g:462:4: otherlv_27= 'lotsconfig' otherlv_28= ':' ( (lv_lotsconfig_29_0= ruleLotsConfig ) )
+                    // InternalMy.g:478:4: otherlv_31= 'lotsconfig' otherlv_32= ':' ( (lv_lotsconfig_33_0= ruleLotsConfig ) )
                     {
-                    otherlv_27=(Token)match(input,22,FOLLOW_3); 
+                    otherlv_31=(Token)match(input,24,FOLLOW_3); 
 
-                    				newLeafNode(otherlv_27, grammarAccess.getServiceConfigAccess().getLotsconfigKeyword_20_0());
+                    				newLeafNode(otherlv_31, grammarAccess.getServiceConfigAccess().getLotsconfigKeyword_23_0());
                     			
-                    otherlv_28=(Token)match(input,11,FOLLOW_17); 
+                    otherlv_32=(Token)match(input,11,FOLLOW_11); 
 
-                    				newLeafNode(otherlv_28, grammarAccess.getServiceConfigAccess().getColonKeyword_20_1());
+                    				newLeafNode(otherlv_32, grammarAccess.getServiceConfigAccess().getColonKeyword_23_1());
                     			
-                    // InternalMy.g:470:4: ( (lv_lotsconfig_29_0= ruleLotsConfig ) )
-                    // InternalMy.g:471:5: (lv_lotsconfig_29_0= ruleLotsConfig )
+                    // InternalMy.g:486:4: ( (lv_lotsconfig_33_0= ruleLotsConfig ) )
+                    // InternalMy.g:487:5: (lv_lotsconfig_33_0= ruleLotsConfig )
                     {
-                    // InternalMy.g:471:5: (lv_lotsconfig_29_0= ruleLotsConfig )
-                    // InternalMy.g:472:6: lv_lotsconfig_29_0= ruleLotsConfig
+                    // InternalMy.g:487:5: (lv_lotsconfig_33_0= ruleLotsConfig )
+                    // InternalMy.g:488:6: lv_lotsconfig_33_0= ruleLotsConfig
                     {
 
-                    						newCompositeNode(grammarAccess.getServiceConfigAccess().getLotsconfigLotsConfigParserRuleCall_20_2_0());
+                    						newCompositeNode(grammarAccess.getServiceConfigAccess().getLotsconfigLotsConfigParserRuleCall_23_2_0());
                     					
                     pushFollow(FOLLOW_2);
-                    lv_lotsconfig_29_0=ruleLotsConfig();
+                    lv_lotsconfig_33_0=ruleLotsConfig();
 
                     state._fsp--;
 
@@ -1062,7 +1081,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
                     						set(
                     							current,
                     							"lotsconfig",
-                    							lv_lotsconfig_29_0,
+                    							lv_lotsconfig_33_0,
                     							"mde.pauline.metaheres.My.LotsConfig");
                     						afterParserOrEnumRuleCall();
                     					
@@ -1101,7 +1120,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleLanguage"
-    // InternalMy.g:494:1: entryRuleLanguage returns [EObject current=null] : iv_ruleLanguage= ruleLanguage EOF ;
+    // InternalMy.g:510:1: entryRuleLanguage returns [EObject current=null] : iv_ruleLanguage= ruleLanguage EOF ;
     public final EObject entryRuleLanguage() throws RecognitionException {
         EObject current = null;
 
@@ -1109,8 +1128,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:494:49: (iv_ruleLanguage= ruleLanguage EOF )
-            // InternalMy.g:495:2: iv_ruleLanguage= ruleLanguage EOF
+            // InternalMy.g:510:49: (iv_ruleLanguage= ruleLanguage EOF )
+            // InternalMy.g:511:2: iv_ruleLanguage= ruleLanguage EOF
             {
              newCompositeNode(grammarAccess.getLanguageRule()); 
             pushFollow(FOLLOW_1);
@@ -1137,7 +1156,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleLanguage"
-    // InternalMy.g:501:1: ruleLanguage returns [EObject current=null] : ( () ( (lv_name_1_0= ruleEString ) ) ) ;
+    // InternalMy.g:517:1: ruleLanguage returns [EObject current=null] : ( () ( (lv_name_1_0= ruleEString ) ) ) ;
     public final EObject ruleLanguage() throws RecognitionException {
         EObject current = null;
 
@@ -1148,14 +1167,14 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalMy.g:507:2: ( ( () ( (lv_name_1_0= ruleEString ) ) ) )
-            // InternalMy.g:508:2: ( () ( (lv_name_1_0= ruleEString ) ) )
+            // InternalMy.g:523:2: ( ( () ( (lv_name_1_0= ruleEString ) ) ) )
+            // InternalMy.g:524:2: ( () ( (lv_name_1_0= ruleEString ) ) )
             {
-            // InternalMy.g:508:2: ( () ( (lv_name_1_0= ruleEString ) ) )
-            // InternalMy.g:509:3: () ( (lv_name_1_0= ruleEString ) )
+            // InternalMy.g:524:2: ( () ( (lv_name_1_0= ruleEString ) ) )
+            // InternalMy.g:525:3: () ( (lv_name_1_0= ruleEString ) )
             {
-            // InternalMy.g:509:3: ()
-            // InternalMy.g:510:4: 
+            // InternalMy.g:525:3: ()
+            // InternalMy.g:526:4: 
             {
 
             				current = forceCreateModelElement(
@@ -1165,11 +1184,11 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:516:3: ( (lv_name_1_0= ruleEString ) )
-            // InternalMy.g:517:4: (lv_name_1_0= ruleEString )
+            // InternalMy.g:532:3: ( (lv_name_1_0= ruleEString ) )
+            // InternalMy.g:533:4: (lv_name_1_0= ruleEString )
             {
-            // InternalMy.g:517:4: (lv_name_1_0= ruleEString )
-            // InternalMy.g:518:5: lv_name_1_0= ruleEString
+            // InternalMy.g:533:4: (lv_name_1_0= ruleEString )
+            // InternalMy.g:534:5: lv_name_1_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getLanguageAccess().getNameEStringParserRuleCall_1_0());
@@ -1219,7 +1238,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleReservationsConfig"
-    // InternalMy.g:539:1: entryRuleReservationsConfig returns [EObject current=null] : iv_ruleReservationsConfig= ruleReservationsConfig EOF ;
+    // InternalMy.g:555:1: entryRuleReservationsConfig returns [EObject current=null] : iv_ruleReservationsConfig= ruleReservationsConfig EOF ;
     public final EObject entryRuleReservationsConfig() throws RecognitionException {
         EObject current = null;
 
@@ -1227,8 +1246,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:539:59: (iv_ruleReservationsConfig= ruleReservationsConfig EOF )
-            // InternalMy.g:540:2: iv_ruleReservationsConfig= ruleReservationsConfig EOF
+            // InternalMy.g:555:59: (iv_ruleReservationsConfig= ruleReservationsConfig EOF )
+            // InternalMy.g:556:2: iv_ruleReservationsConfig= ruleReservationsConfig EOF
             {
              newCompositeNode(grammarAccess.getReservationsConfigRule()); 
             pushFollow(FOLLOW_1);
@@ -1255,48 +1274,49 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleReservationsConfig"
-    // InternalMy.g:546:1: ruleReservationsConfig returns [EObject current=null] : ( ( (lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck' ) ) ( (lv_hasMoveInCheck_1_0= 'hasMoveInCheck' ) )? otherlv_2= 'minRequestAdvance' ( (lv_minRequestAdvance_3_0= ruleEInt ) ) otherlv_4= 'maxRequestAdvance' ( (lv_maxRequestAdvance_5_0= ruleEInt ) ) otherlv_6= 'statuslist' otherlv_7= ':' ( (lv_statuslist_8_0= ruleStatusList ) ) ) ;
+    // InternalMy.g:562:1: ruleReservationsConfig returns [EObject current=null] : ( ( (lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie' ) ) ( (lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour' ) )? otherlv_2= 'avance-minimum-et-maximum-reservation' otherlv_3= ':' ( (lv_minRequestAdvance_4_0= ruleEInt ) ) otherlv_5= ',' ( (lv_maxRequestAdvance_6_0= ruleEInt ) ) otherlv_7= 'statuts-des-demandes' otherlv_8= ':' ( (lv_statuslist_9_0= ruleStatusList ) ) ) ;
     public final EObject ruleReservationsConfig() throws RecognitionException {
         EObject current = null;
 
         Token lv_hasMoveOutCheck_0_0=null;
         Token lv_hasMoveInCheck_1_0=null;
         Token otherlv_2=null;
-        Token otherlv_4=null;
-        Token otherlv_6=null;
+        Token otherlv_3=null;
+        Token otherlv_5=null;
         Token otherlv_7=null;
-        AntlrDatatypeRuleToken lv_minRequestAdvance_3_0 = null;
+        Token otherlv_8=null;
+        AntlrDatatypeRuleToken lv_minRequestAdvance_4_0 = null;
 
-        AntlrDatatypeRuleToken lv_maxRequestAdvance_5_0 = null;
+        AntlrDatatypeRuleToken lv_maxRequestAdvance_6_0 = null;
 
-        EObject lv_statuslist_8_0 = null;
+        EObject lv_statuslist_9_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalMy.g:552:2: ( ( ( (lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck' ) ) ( (lv_hasMoveInCheck_1_0= 'hasMoveInCheck' ) )? otherlv_2= 'minRequestAdvance' ( (lv_minRequestAdvance_3_0= ruleEInt ) ) otherlv_4= 'maxRequestAdvance' ( (lv_maxRequestAdvance_5_0= ruleEInt ) ) otherlv_6= 'statuslist' otherlv_7= ':' ( (lv_statuslist_8_0= ruleStatusList ) ) ) )
-            // InternalMy.g:553:2: ( ( (lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck' ) ) ( (lv_hasMoveInCheck_1_0= 'hasMoveInCheck' ) )? otherlv_2= 'minRequestAdvance' ( (lv_minRequestAdvance_3_0= ruleEInt ) ) otherlv_4= 'maxRequestAdvance' ( (lv_maxRequestAdvance_5_0= ruleEInt ) ) otherlv_6= 'statuslist' otherlv_7= ':' ( (lv_statuslist_8_0= ruleStatusList ) ) )
+            // InternalMy.g:568:2: ( ( ( (lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie' ) ) ( (lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour' ) )? otherlv_2= 'avance-minimum-et-maximum-reservation' otherlv_3= ':' ( (lv_minRequestAdvance_4_0= ruleEInt ) ) otherlv_5= ',' ( (lv_maxRequestAdvance_6_0= ruleEInt ) ) otherlv_7= 'statuts-des-demandes' otherlv_8= ':' ( (lv_statuslist_9_0= ruleStatusList ) ) ) )
+            // InternalMy.g:569:2: ( ( (lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie' ) ) ( (lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour' ) )? otherlv_2= 'avance-minimum-et-maximum-reservation' otherlv_3= ':' ( (lv_minRequestAdvance_4_0= ruleEInt ) ) otherlv_5= ',' ( (lv_maxRequestAdvance_6_0= ruleEInt ) ) otherlv_7= 'statuts-des-demandes' otherlv_8= ':' ( (lv_statuslist_9_0= ruleStatusList ) ) )
             {
-            // InternalMy.g:553:2: ( ( (lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck' ) ) ( (lv_hasMoveInCheck_1_0= 'hasMoveInCheck' ) )? otherlv_2= 'minRequestAdvance' ( (lv_minRequestAdvance_3_0= ruleEInt ) ) otherlv_4= 'maxRequestAdvance' ( (lv_maxRequestAdvance_5_0= ruleEInt ) ) otherlv_6= 'statuslist' otherlv_7= ':' ( (lv_statuslist_8_0= ruleStatusList ) ) )
-            // InternalMy.g:554:3: ( (lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck' ) ) ( (lv_hasMoveInCheck_1_0= 'hasMoveInCheck' ) )? otherlv_2= 'minRequestAdvance' ( (lv_minRequestAdvance_3_0= ruleEInt ) ) otherlv_4= 'maxRequestAdvance' ( (lv_maxRequestAdvance_5_0= ruleEInt ) ) otherlv_6= 'statuslist' otherlv_7= ':' ( (lv_statuslist_8_0= ruleStatusList ) )
+            // InternalMy.g:569:2: ( ( (lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie' ) ) ( (lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour' ) )? otherlv_2= 'avance-minimum-et-maximum-reservation' otherlv_3= ':' ( (lv_minRequestAdvance_4_0= ruleEInt ) ) otherlv_5= ',' ( (lv_maxRequestAdvance_6_0= ruleEInt ) ) otherlv_7= 'statuts-des-demandes' otherlv_8= ':' ( (lv_statuslist_9_0= ruleStatusList ) ) )
+            // InternalMy.g:570:3: ( (lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie' ) ) ( (lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour' ) )? otherlv_2= 'avance-minimum-et-maximum-reservation' otherlv_3= ':' ( (lv_minRequestAdvance_4_0= ruleEInt ) ) otherlv_5= ',' ( (lv_maxRequestAdvance_6_0= ruleEInt ) ) otherlv_7= 'statuts-des-demandes' otherlv_8= ':' ( (lv_statuslist_9_0= ruleStatusList ) )
             {
-            // InternalMy.g:554:3: ( (lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck' ) )
-            // InternalMy.g:555:4: (lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck' )
+            // InternalMy.g:570:3: ( (lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie' ) )
+            // InternalMy.g:571:4: (lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie' )
             {
-            // InternalMy.g:555:4: (lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck' )
-            // InternalMy.g:556:5: lv_hasMoveOutCheck_0_0= 'hasMoveOutCheck'
+            // InternalMy.g:571:4: (lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie' )
+            // InternalMy.g:572:5: lv_hasMoveOutCheck_0_0= 'etat-des-lieux-sortie'
             {
-            lv_hasMoveOutCheck_0_0=(Token)match(input,23,FOLLOW_18); 
+            lv_hasMoveOutCheck_0_0=(Token)match(input,25,FOLLOW_18); 
 
-            					newLeafNode(lv_hasMoveOutCheck_0_0, grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckHasMoveOutCheckKeyword_0_0());
+            					newLeafNode(lv_hasMoveOutCheck_0_0, grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0());
             				
 
             					if (current==null) {
             						current = createModelElement(grammarAccess.getReservationsConfigRule());
             					}
-            					setWithLastConsumed(current, "hasMoveOutCheck", lv_hasMoveOutCheck_0_0 != null, "hasMoveOutCheck");
+            					setWithLastConsumed(current, "hasMoveOutCheck", lv_hasMoveOutCheck_0_0 != null, "etat-des-lieux-sortie");
             				
 
             }
@@ -1304,29 +1324,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:568:3: ( (lv_hasMoveInCheck_1_0= 'hasMoveInCheck' ) )?
+            // InternalMy.g:584:3: ( (lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour' ) )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
-            if ( (LA12_0==24) ) {
+            if ( (LA12_0==26) ) {
                 alt12=1;
             }
             switch (alt12) {
                 case 1 :
-                    // InternalMy.g:569:4: (lv_hasMoveInCheck_1_0= 'hasMoveInCheck' )
+                    // InternalMy.g:585:4: (lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour' )
                     {
-                    // InternalMy.g:569:4: (lv_hasMoveInCheck_1_0= 'hasMoveInCheck' )
-                    // InternalMy.g:570:5: lv_hasMoveInCheck_1_0= 'hasMoveInCheck'
+                    // InternalMy.g:585:4: (lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour' )
+                    // InternalMy.g:586:5: lv_hasMoveInCheck_1_0= 'etat-des-lieux-retour'
                     {
-                    lv_hasMoveInCheck_1_0=(Token)match(input,24,FOLLOW_19); 
+                    lv_hasMoveInCheck_1_0=(Token)match(input,26,FOLLOW_19); 
 
-                    					newLeafNode(lv_hasMoveInCheck_1_0, grammarAccess.getReservationsConfigAccess().getHasMoveInCheckHasMoveInCheckKeyword_1_0());
+                    					newLeafNode(lv_hasMoveInCheck_1_0, grammarAccess.getReservationsConfigAccess().getHasMoveInCheckEtatDesLieuxRetourKeyword_1_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getReservationsConfigRule());
                     					}
-                    					setWithLastConsumed(current, "hasMoveInCheck", lv_hasMoveInCheck_1_0 != null, "hasMoveInCheck");
+                    					setWithLastConsumed(current, "hasMoveInCheck", lv_hasMoveInCheck_1_0 != null, "etat-des-lieux-retour");
                     				
 
                     }
@@ -1337,21 +1357,25 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,25,FOLLOW_20); 
+            otherlv_2=(Token)match(input,27,FOLLOW_3); 
 
-            			newLeafNode(otherlv_2, grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceKeyword_2());
+            			newLeafNode(otherlv_2, grammarAccess.getReservationsConfigAccess().getAvanceMinimumEtMaximumReservationKeyword_2());
             		
-            // InternalMy.g:586:3: ( (lv_minRequestAdvance_3_0= ruleEInt ) )
-            // InternalMy.g:587:4: (lv_minRequestAdvance_3_0= ruleEInt )
+            otherlv_3=(Token)match(input,11,FOLLOW_20); 
+
+            			newLeafNode(otherlv_3, grammarAccess.getReservationsConfigAccess().getColonKeyword_3());
+            		
+            // InternalMy.g:606:3: ( (lv_minRequestAdvance_4_0= ruleEInt ) )
+            // InternalMy.g:607:4: (lv_minRequestAdvance_4_0= ruleEInt )
             {
-            // InternalMy.g:587:4: (lv_minRequestAdvance_3_0= ruleEInt )
-            // InternalMy.g:588:5: lv_minRequestAdvance_3_0= ruleEInt
+            // InternalMy.g:607:4: (lv_minRequestAdvance_4_0= ruleEInt )
+            // InternalMy.g:608:5: lv_minRequestAdvance_4_0= ruleEInt
             {
 
-            					newCompositeNode(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceEIntParserRuleCall_3_0());
+            					newCompositeNode(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceEIntParserRuleCall_4_0());
             				
             pushFollow(FOLLOW_21);
-            lv_minRequestAdvance_3_0=ruleEInt();
+            lv_minRequestAdvance_4_0=ruleEInt();
 
             state._fsp--;
 
@@ -1362,7 +1386,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             					set(
             						current,
             						"minRequestAdvance",
-            						lv_minRequestAdvance_3_0,
+            						lv_minRequestAdvance_4_0,
             						"mde.pauline.metaheres.My.EInt");
             					afterParserOrEnumRuleCall();
             				
@@ -1372,21 +1396,21 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,26,FOLLOW_20); 
+            otherlv_5=(Token)match(input,17,FOLLOW_20); 
 
-            			newLeafNode(otherlv_4, grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceKeyword_4());
+            			newLeafNode(otherlv_5, grammarAccess.getReservationsConfigAccess().getCommaKeyword_5());
             		
-            // InternalMy.g:609:3: ( (lv_maxRequestAdvance_5_0= ruleEInt ) )
-            // InternalMy.g:610:4: (lv_maxRequestAdvance_5_0= ruleEInt )
+            // InternalMy.g:629:3: ( (lv_maxRequestAdvance_6_0= ruleEInt ) )
+            // InternalMy.g:630:4: (lv_maxRequestAdvance_6_0= ruleEInt )
             {
-            // InternalMy.g:610:4: (lv_maxRequestAdvance_5_0= ruleEInt )
-            // InternalMy.g:611:5: lv_maxRequestAdvance_5_0= ruleEInt
+            // InternalMy.g:630:4: (lv_maxRequestAdvance_6_0= ruleEInt )
+            // InternalMy.g:631:5: lv_maxRequestAdvance_6_0= ruleEInt
             {
 
-            					newCompositeNode(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceEIntParserRuleCall_5_0());
+            					newCompositeNode(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceEIntParserRuleCall_6_0());
             				
             pushFollow(FOLLOW_22);
-            lv_maxRequestAdvance_5_0=ruleEInt();
+            lv_maxRequestAdvance_6_0=ruleEInt();
 
             state._fsp--;
 
@@ -1397,7 +1421,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             					set(
             						current,
             						"maxRequestAdvance",
-            						lv_maxRequestAdvance_5_0,
+            						lv_maxRequestAdvance_6_0,
             						"mde.pauline.metaheres.My.EInt");
             					afterParserOrEnumRuleCall();
             				
@@ -1407,25 +1431,25 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,27,FOLLOW_3); 
+            otherlv_7=(Token)match(input,28,FOLLOW_3); 
 
-            			newLeafNode(otherlv_6, grammarAccess.getReservationsConfigAccess().getStatuslistKeyword_6());
+            			newLeafNode(otherlv_7, grammarAccess.getReservationsConfigAccess().getStatutsDesDemandesKeyword_7());
             		
-            otherlv_7=(Token)match(input,11,FOLLOW_15); 
+            otherlv_8=(Token)match(input,11,FOLLOW_11); 
 
-            			newLeafNode(otherlv_7, grammarAccess.getReservationsConfigAccess().getColonKeyword_7());
+            			newLeafNode(otherlv_8, grammarAccess.getReservationsConfigAccess().getColonKeyword_8());
             		
-            // InternalMy.g:636:3: ( (lv_statuslist_8_0= ruleStatusList ) )
-            // InternalMy.g:637:4: (lv_statuslist_8_0= ruleStatusList )
+            // InternalMy.g:656:3: ( (lv_statuslist_9_0= ruleStatusList ) )
+            // InternalMy.g:657:4: (lv_statuslist_9_0= ruleStatusList )
             {
-            // InternalMy.g:637:4: (lv_statuslist_8_0= ruleStatusList )
-            // InternalMy.g:638:5: lv_statuslist_8_0= ruleStatusList
+            // InternalMy.g:657:4: (lv_statuslist_9_0= ruleStatusList )
+            // InternalMy.g:658:5: lv_statuslist_9_0= ruleStatusList
             {
 
-            					newCompositeNode(grammarAccess.getReservationsConfigAccess().getStatuslistStatusListParserRuleCall_8_0());
+            					newCompositeNode(grammarAccess.getReservationsConfigAccess().getStatuslistStatusListParserRuleCall_9_0());
             				
             pushFollow(FOLLOW_2);
-            lv_statuslist_8_0=ruleStatusList();
+            lv_statuslist_9_0=ruleStatusList();
 
             state._fsp--;
 
@@ -1436,7 +1460,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             					set(
             						current,
             						"statuslist",
-            						lv_statuslist_8_0,
+            						lv_statuslist_9_0,
             						"mde.pauline.metaheres.My.StatusList");
             					afterParserOrEnumRuleCall();
             				
@@ -1469,7 +1493,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleCountry"
-    // InternalMy.g:659:1: entryRuleCountry returns [EObject current=null] : iv_ruleCountry= ruleCountry EOF ;
+    // InternalMy.g:679:1: entryRuleCountry returns [EObject current=null] : iv_ruleCountry= ruleCountry EOF ;
     public final EObject entryRuleCountry() throws RecognitionException {
         EObject current = null;
 
@@ -1477,8 +1501,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:659:48: (iv_ruleCountry= ruleCountry EOF )
-            // InternalMy.g:660:2: iv_ruleCountry= ruleCountry EOF
+            // InternalMy.g:679:48: (iv_ruleCountry= ruleCountry EOF )
+            // InternalMy.g:680:2: iv_ruleCountry= ruleCountry EOF
             {
              newCompositeNode(grammarAccess.getCountryRule()); 
             pushFollow(FOLLOW_1);
@@ -1505,7 +1529,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCountry"
-    // InternalMy.g:666:1: ruleCountry returns [EObject current=null] : ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= 'lang' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= 'pricing' otherlv_4= ':' otherlv_5= '(' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) otherlv_7= ')' ) ;
+    // InternalMy.g:686:1: ruleCountry returns [EObject current=null] : ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= ',' otherlv_4= 'tarification' otherlv_5= ':' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) ) ;
     public final EObject ruleCountry() throws RecognitionException {
         EObject current = null;
 
@@ -1513,7 +1537,6 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
         Token otherlv_3=null;
         Token otherlv_4=null;
         Token otherlv_5=null;
-        Token otherlv_7=null;
         AntlrDatatypeRuleToken lv_name_0_0 = null;
 
         EObject lv_language_2_0 = null;
@@ -1525,22 +1548,22 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalMy.g:672:2: ( ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= 'lang' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= 'pricing' otherlv_4= ':' otherlv_5= '(' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) otherlv_7= ')' ) )
-            // InternalMy.g:673:2: ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= 'lang' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= 'pricing' otherlv_4= ':' otherlv_5= '(' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) otherlv_7= ')' )
+            // InternalMy.g:692:2: ( ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= ',' otherlv_4= 'tarification' otherlv_5= ':' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) ) )
+            // InternalMy.g:693:2: ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= ',' otherlv_4= 'tarification' otherlv_5= ':' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) )
             {
-            // InternalMy.g:673:2: ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= 'lang' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= 'pricing' otherlv_4= ':' otherlv_5= '(' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) otherlv_7= ')' )
-            // InternalMy.g:674:3: ( (lv_name_0_0= ruleEString ) ) otherlv_1= 'lang' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= 'pricing' otherlv_4= ':' otherlv_5= '(' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) otherlv_7= ')'
+            // InternalMy.g:693:2: ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= ',' otherlv_4= 'tarification' otherlv_5= ':' ( (lv_pricingsystem_6_0= rulePricingSystem ) ) )
+            // InternalMy.g:694:3: ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' ( (lv_language_2_0= ruleLanguage ) ) otherlv_3= ',' otherlv_4= 'tarification' otherlv_5= ':' ( (lv_pricingsystem_6_0= rulePricingSystem ) )
             {
-            // InternalMy.g:674:3: ( (lv_name_0_0= ruleEString ) )
-            // InternalMy.g:675:4: (lv_name_0_0= ruleEString )
+            // InternalMy.g:694:3: ( (lv_name_0_0= ruleEString ) )
+            // InternalMy.g:695:4: (lv_name_0_0= ruleEString )
             {
-            // InternalMy.g:675:4: (lv_name_0_0= ruleEString )
-            // InternalMy.g:676:5: lv_name_0_0= ruleEString
+            // InternalMy.g:695:4: (lv_name_0_0= ruleEString )
+            // InternalMy.g:696:5: lv_name_0_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getCountryAccess().getNameEStringParserRuleCall_0_0());
             				
-            pushFollow(FOLLOW_23);
+            pushFollow(FOLLOW_3);
             lv_name_0_0=ruleEString();
 
             state._fsp--;
@@ -1562,20 +1585,20 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,19,FOLLOW_9); 
+            otherlv_1=(Token)match(input,11,FOLLOW_9); 
 
-            			newLeafNode(otherlv_1, grammarAccess.getCountryAccess().getLangKeyword_1());
+            			newLeafNode(otherlv_1, grammarAccess.getCountryAccess().getColonKeyword_1());
             		
-            // InternalMy.g:697:3: ( (lv_language_2_0= ruleLanguage ) )
-            // InternalMy.g:698:4: (lv_language_2_0= ruleLanguage )
+            // InternalMy.g:717:3: ( (lv_language_2_0= ruleLanguage ) )
+            // InternalMy.g:718:4: (lv_language_2_0= ruleLanguage )
             {
-            // InternalMy.g:698:4: (lv_language_2_0= ruleLanguage )
-            // InternalMy.g:699:5: lv_language_2_0= ruleLanguage
+            // InternalMy.g:718:4: (lv_language_2_0= ruleLanguage )
+            // InternalMy.g:719:5: lv_language_2_0= ruleLanguage
             {
 
             					newCompositeNode(grammarAccess.getCountryAccess().getLanguageLanguageParserRuleCall_2_0());
             				
-            pushFollow(FOLLOW_24);
+            pushFollow(FOLLOW_21);
             lv_language_2_0=ruleLanguage();
 
             state._fsp--;
@@ -1597,28 +1620,28 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,28,FOLLOW_3); 
+            otherlv_3=(Token)match(input,17,FOLLOW_23); 
 
-            			newLeafNode(otherlv_3, grammarAccess.getCountryAccess().getPricingKeyword_3());
+            			newLeafNode(otherlv_3, grammarAccess.getCountryAccess().getCommaKeyword_3());
             		
-            otherlv_4=(Token)match(input,11,FOLLOW_15); 
+            otherlv_4=(Token)match(input,29,FOLLOW_3); 
 
-            			newLeafNode(otherlv_4, grammarAccess.getCountryAccess().getColonKeyword_4());
+            			newLeafNode(otherlv_4, grammarAccess.getCountryAccess().getTarificationKeyword_4());
             		
-            otherlv_5=(Token)match(input,29,FOLLOW_9); 
+            otherlv_5=(Token)match(input,11,FOLLOW_9); 
 
-            			newLeafNode(otherlv_5, grammarAccess.getCountryAccess().getLeftParenthesisKeyword_5());
+            			newLeafNode(otherlv_5, grammarAccess.getCountryAccess().getColonKeyword_5());
             		
-            // InternalMy.g:728:3: ( (lv_pricingsystem_6_0= rulePricingSystem ) )
-            // InternalMy.g:729:4: (lv_pricingsystem_6_0= rulePricingSystem )
+            // InternalMy.g:748:3: ( (lv_pricingsystem_6_0= rulePricingSystem ) )
+            // InternalMy.g:749:4: (lv_pricingsystem_6_0= rulePricingSystem )
             {
-            // InternalMy.g:729:4: (lv_pricingsystem_6_0= rulePricingSystem )
-            // InternalMy.g:730:5: lv_pricingsystem_6_0= rulePricingSystem
+            // InternalMy.g:749:4: (lv_pricingsystem_6_0= rulePricingSystem )
+            // InternalMy.g:750:5: lv_pricingsystem_6_0= rulePricingSystem
             {
 
             					newCompositeNode(grammarAccess.getCountryAccess().getPricingsystemPricingSystemParserRuleCall_6_0());
             				
-            pushFollow(FOLLOW_25);
+            pushFollow(FOLLOW_2);
             lv_pricingsystem_6_0=rulePricingSystem();
 
             state._fsp--;
@@ -1640,10 +1663,6 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_7=(Token)match(input,30,FOLLOW_2); 
-
-            			newLeafNode(otherlv_7, grammarAccess.getCountryAccess().getRightParenthesisKeyword_7());
-            		
 
             }
 
@@ -1667,7 +1686,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleResourcesConfig"
-    // InternalMy.g:755:1: entryRuleResourcesConfig returns [EObject current=null] : iv_ruleResourcesConfig= ruleResourcesConfig EOF ;
+    // InternalMy.g:771:1: entryRuleResourcesConfig returns [EObject current=null] : iv_ruleResourcesConfig= ruleResourcesConfig EOF ;
     public final EObject entryRuleResourcesConfig() throws RecognitionException {
         EObject current = null;
 
@@ -1675,8 +1694,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:755:56: (iv_ruleResourcesConfig= ruleResourcesConfig EOF )
-            // InternalMy.g:756:2: iv_ruleResourcesConfig= ruleResourcesConfig EOF
+            // InternalMy.g:771:56: (iv_ruleResourcesConfig= ruleResourcesConfig EOF )
+            // InternalMy.g:772:2: iv_ruleResourcesConfig= ruleResourcesConfig EOF
             {
              newCompositeNode(grammarAccess.getResourcesConfigRule()); 
             pushFollow(FOLLOW_1);
@@ -1703,7 +1722,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleResourcesConfig"
-    // InternalMy.g:762:1: ruleResourcesConfig returns [EObject current=null] : (otherlv_0= '(' ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? ( (lv_isConsumable_3_0= 'isConsumable' ) )? ( (lv_isLoan_4_0= 'isLoan' ) )? ( (lv_isCharged_5_0= 'isCharged' ) )? otherlv_6= ')' ) ;
+    // InternalMy.g:778:1: ruleResourcesConfig returns [EObject current=null] : (otherlv_0= '(' ( (lv_hasImage_1_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture' ) )? ( (lv_isConsumable_3_0= 'type-consommable' ) )? ( (lv_isLoan_4_0= 'emprunt-avec-retour' ) )? ( (lv_isCharged_5_0= 'payant' ) )? otherlv_6= ')' ) ;
     public final EObject ruleResourcesConfig() throws RecognitionException {
         EObject current = null;
 
@@ -1719,39 +1738,39 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalMy.g:768:2: ( (otherlv_0= '(' ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? ( (lv_isConsumable_3_0= 'isConsumable' ) )? ( (lv_isLoan_4_0= 'isLoan' ) )? ( (lv_isCharged_5_0= 'isCharged' ) )? otherlv_6= ')' ) )
-            // InternalMy.g:769:2: (otherlv_0= '(' ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? ( (lv_isConsumable_3_0= 'isConsumable' ) )? ( (lv_isLoan_4_0= 'isLoan' ) )? ( (lv_isCharged_5_0= 'isCharged' ) )? otherlv_6= ')' )
+            // InternalMy.g:784:2: ( (otherlv_0= '(' ( (lv_hasImage_1_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture' ) )? ( (lv_isConsumable_3_0= 'type-consommable' ) )? ( (lv_isLoan_4_0= 'emprunt-avec-retour' ) )? ( (lv_isCharged_5_0= 'payant' ) )? otherlv_6= ')' ) )
+            // InternalMy.g:785:2: (otherlv_0= '(' ( (lv_hasImage_1_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture' ) )? ( (lv_isConsumable_3_0= 'type-consommable' ) )? ( (lv_isLoan_4_0= 'emprunt-avec-retour' ) )? ( (lv_isCharged_5_0= 'payant' ) )? otherlv_6= ')' )
             {
-            // InternalMy.g:769:2: (otherlv_0= '(' ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? ( (lv_isConsumable_3_0= 'isConsumable' ) )? ( (lv_isLoan_4_0= 'isLoan' ) )? ( (lv_isCharged_5_0= 'isCharged' ) )? otherlv_6= ')' )
-            // InternalMy.g:770:3: otherlv_0= '(' ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? ( (lv_isConsumable_3_0= 'isConsumable' ) )? ( (lv_isLoan_4_0= 'isLoan' ) )? ( (lv_isCharged_5_0= 'isCharged' ) )? otherlv_6= ')'
+            // InternalMy.g:785:2: (otherlv_0= '(' ( (lv_hasImage_1_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture' ) )? ( (lv_isConsumable_3_0= 'type-consommable' ) )? ( (lv_isLoan_4_0= 'emprunt-avec-retour' ) )? ( (lv_isCharged_5_0= 'payant' ) )? otherlv_6= ')' )
+            // InternalMy.g:786:3: otherlv_0= '(' ( (lv_hasImage_1_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture' ) )? ( (lv_isConsumable_3_0= 'type-consommable' ) )? ( (lv_isLoan_4_0= 'emprunt-avec-retour' ) )? ( (lv_isCharged_5_0= 'payant' ) )? otherlv_6= ')'
             {
-            otherlv_0=(Token)match(input,29,FOLLOW_26); 
+            otherlv_0=(Token)match(input,19,FOLLOW_24); 
 
             			newLeafNode(otherlv_0, grammarAccess.getResourcesConfigAccess().getLeftParenthesisKeyword_0());
             		
-            // InternalMy.g:774:3: ( (lv_hasImage_1_0= 'hasImage' ) )?
+            // InternalMy.g:790:3: ( (lv_hasImage_1_0= 'avec-illustration' ) )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
-            if ( (LA13_0==31) ) {
+            if ( (LA13_0==30) ) {
                 alt13=1;
             }
             switch (alt13) {
                 case 1 :
-                    // InternalMy.g:775:4: (lv_hasImage_1_0= 'hasImage' )
+                    // InternalMy.g:791:4: (lv_hasImage_1_0= 'avec-illustration' )
                     {
-                    // InternalMy.g:775:4: (lv_hasImage_1_0= 'hasImage' )
-                    // InternalMy.g:776:5: lv_hasImage_1_0= 'hasImage'
+                    // InternalMy.g:791:4: (lv_hasImage_1_0= 'avec-illustration' )
+                    // InternalMy.g:792:5: lv_hasImage_1_0= 'avec-illustration'
                     {
-                    lv_hasImage_1_0=(Token)match(input,31,FOLLOW_27); 
+                    lv_hasImage_1_0=(Token)match(input,30,FOLLOW_25); 
 
-                    					newLeafNode(lv_hasImage_1_0, grammarAccess.getResourcesConfigAccess().getHasImageHasImageKeyword_1_0());
+                    					newLeafNode(lv_hasImage_1_0, grammarAccess.getResourcesConfigAccess().getHasImageAvecIllustrationKeyword_1_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getResourcesConfigRule());
                     					}
-                    					setWithLastConsumed(current, "hasImage", lv_hasImage_1_0 != null, "hasImage");
+                    					setWithLastConsumed(current, "hasImage", lv_hasImage_1_0 != null, "avec-illustration");
                     				
 
                     }
@@ -1762,29 +1781,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:788:3: ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )?
+            // InternalMy.g:804:3: ( (lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture' ) )?
             int alt14=2;
             int LA14_0 = input.LA(1);
 
-            if ( (LA14_0==32) ) {
+            if ( (LA14_0==31) ) {
                 alt14=1;
             }
             switch (alt14) {
                 case 1 :
-                    // InternalMy.g:789:4: (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' )
+                    // InternalMy.g:805:4: (lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture' )
                     {
-                    // InternalMy.g:789:4: (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' )
-                    // InternalMy.g:790:5: lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot'
+                    // InternalMy.g:805:4: (lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture' )
+                    // InternalMy.g:806:5: lv_hasOneStockPerSlot_2_0= 'un-stock-par-ouverture'
                     {
-                    lv_hasOneStockPerSlot_2_0=(Token)match(input,32,FOLLOW_28); 
+                    lv_hasOneStockPerSlot_2_0=(Token)match(input,31,FOLLOW_26); 
 
-                    					newLeafNode(lv_hasOneStockPerSlot_2_0, grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0());
+                    					newLeafNode(lv_hasOneStockPerSlot_2_0, grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_2_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getResourcesConfigRule());
                     					}
-                    					setWithLastConsumed(current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_2_0 != null, "hasOneStockPerSlot");
+                    					setWithLastConsumed(current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_2_0 != null, "un-stock-par-ouverture");
                     				
 
                     }
@@ -1795,29 +1814,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:802:3: ( (lv_isConsumable_3_0= 'isConsumable' ) )?
+            // InternalMy.g:818:3: ( (lv_isConsumable_3_0= 'type-consommable' ) )?
             int alt15=2;
             int LA15_0 = input.LA(1);
 
-            if ( (LA15_0==33) ) {
+            if ( (LA15_0==32) ) {
                 alt15=1;
             }
             switch (alt15) {
                 case 1 :
-                    // InternalMy.g:803:4: (lv_isConsumable_3_0= 'isConsumable' )
+                    // InternalMy.g:819:4: (lv_isConsumable_3_0= 'type-consommable' )
                     {
-                    // InternalMy.g:803:4: (lv_isConsumable_3_0= 'isConsumable' )
-                    // InternalMy.g:804:5: lv_isConsumable_3_0= 'isConsumable'
+                    // InternalMy.g:819:4: (lv_isConsumable_3_0= 'type-consommable' )
+                    // InternalMy.g:820:5: lv_isConsumable_3_0= 'type-consommable'
                     {
-                    lv_isConsumable_3_0=(Token)match(input,33,FOLLOW_29); 
+                    lv_isConsumable_3_0=(Token)match(input,32,FOLLOW_27); 
 
-                    					newLeafNode(lv_isConsumable_3_0, grammarAccess.getResourcesConfigAccess().getIsConsumableIsConsumableKeyword_3_0());
+                    					newLeafNode(lv_isConsumable_3_0, grammarAccess.getResourcesConfigAccess().getIsConsumableTypeConsommableKeyword_3_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getResourcesConfigRule());
                     					}
-                    					setWithLastConsumed(current, "isConsumable", lv_isConsumable_3_0 != null, "isConsumable");
+                    					setWithLastConsumed(current, "isConsumable", lv_isConsumable_3_0 != null, "type-consommable");
                     				
 
                     }
@@ -1828,29 +1847,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:816:3: ( (lv_isLoan_4_0= 'isLoan' ) )?
+            // InternalMy.g:832:3: ( (lv_isLoan_4_0= 'emprunt-avec-retour' ) )?
             int alt16=2;
             int LA16_0 = input.LA(1);
 
-            if ( (LA16_0==34) ) {
+            if ( (LA16_0==33) ) {
                 alt16=1;
             }
             switch (alt16) {
                 case 1 :
-                    // InternalMy.g:817:4: (lv_isLoan_4_0= 'isLoan' )
+                    // InternalMy.g:833:4: (lv_isLoan_4_0= 'emprunt-avec-retour' )
                     {
-                    // InternalMy.g:817:4: (lv_isLoan_4_0= 'isLoan' )
-                    // InternalMy.g:818:5: lv_isLoan_4_0= 'isLoan'
+                    // InternalMy.g:833:4: (lv_isLoan_4_0= 'emprunt-avec-retour' )
+                    // InternalMy.g:834:5: lv_isLoan_4_0= 'emprunt-avec-retour'
                     {
-                    lv_isLoan_4_0=(Token)match(input,34,FOLLOW_30); 
+                    lv_isLoan_4_0=(Token)match(input,33,FOLLOW_28); 
 
-                    					newLeafNode(lv_isLoan_4_0, grammarAccess.getResourcesConfigAccess().getIsLoanIsLoanKeyword_4_0());
+                    					newLeafNode(lv_isLoan_4_0, grammarAccess.getResourcesConfigAccess().getIsLoanEmpruntAvecRetourKeyword_4_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getResourcesConfigRule());
                     					}
-                    					setWithLastConsumed(current, "isLoan", lv_isLoan_4_0 != null, "isLoan");
+                    					setWithLastConsumed(current, "isLoan", lv_isLoan_4_0 != null, "emprunt-avec-retour");
                     				
 
                     }
@@ -1861,29 +1880,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:830:3: ( (lv_isCharged_5_0= 'isCharged' ) )?
+            // InternalMy.g:846:3: ( (lv_isCharged_5_0= 'payant' ) )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
-            if ( (LA17_0==35) ) {
+            if ( (LA17_0==34) ) {
                 alt17=1;
             }
             switch (alt17) {
                 case 1 :
-                    // InternalMy.g:831:4: (lv_isCharged_5_0= 'isCharged' )
+                    // InternalMy.g:847:4: (lv_isCharged_5_0= 'payant' )
                     {
-                    // InternalMy.g:831:4: (lv_isCharged_5_0= 'isCharged' )
-                    // InternalMy.g:832:5: lv_isCharged_5_0= 'isCharged'
+                    // InternalMy.g:847:4: (lv_isCharged_5_0= 'payant' )
+                    // InternalMy.g:848:5: lv_isCharged_5_0= 'payant'
                     {
-                    lv_isCharged_5_0=(Token)match(input,35,FOLLOW_25); 
+                    lv_isCharged_5_0=(Token)match(input,34,FOLLOW_29); 
 
-                    					newLeafNode(lv_isCharged_5_0, grammarAccess.getResourcesConfigAccess().getIsChargedIsChargedKeyword_5_0());
+                    					newLeafNode(lv_isCharged_5_0, grammarAccess.getResourcesConfigAccess().getIsChargedPayantKeyword_5_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getResourcesConfigRule());
                     					}
-                    					setWithLastConsumed(current, "isCharged", lv_isCharged_5_0 != null, "isCharged");
+                    					setWithLastConsumed(current, "isCharged", lv_isCharged_5_0 != null, "payant");
                     				
 
                     }
@@ -1894,7 +1913,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,30,FOLLOW_2); 
+            otherlv_6=(Token)match(input,20,FOLLOW_2); 
 
             			newLeafNode(otherlv_6, grammarAccess.getResourcesConfigAccess().getRightParenthesisKeyword_6());
             		
@@ -1921,7 +1940,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleLotsConfig"
-    // InternalMy.g:852:1: entryRuleLotsConfig returns [EObject current=null] : iv_ruleLotsConfig= ruleLotsConfig EOF ;
+    // InternalMy.g:868:1: entryRuleLotsConfig returns [EObject current=null] : iv_ruleLotsConfig= ruleLotsConfig EOF ;
     public final EObject entryRuleLotsConfig() throws RecognitionException {
         EObject current = null;
 
@@ -1929,8 +1948,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:852:51: (iv_ruleLotsConfig= ruleLotsConfig EOF )
-            // InternalMy.g:853:2: iv_ruleLotsConfig= ruleLotsConfig EOF
+            // InternalMy.g:868:51: (iv_ruleLotsConfig= ruleLotsConfig EOF )
+            // InternalMy.g:869:2: iv_ruleLotsConfig= ruleLotsConfig EOF
             {
              newCompositeNode(grammarAccess.getLotsConfigRule()); 
             pushFollow(FOLLOW_1);
@@ -1957,25 +1976,27 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleLotsConfig"
-    // InternalMy.g:859:1: ruleLotsConfig returns [EObject current=null] : ( () ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? ) ;
+    // InternalMy.g:875:1: ruleLotsConfig returns [EObject current=null] : ( () otherlv_1= '(' ( (lv_hasImage_2_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture' ) )? otherlv_4= ')' ) ;
     public final EObject ruleLotsConfig() throws RecognitionException {
         EObject current = null;
 
-        Token lv_hasImage_1_0=null;
-        Token lv_hasOneStockPerSlot_2_0=null;
+        Token otherlv_1=null;
+        Token lv_hasImage_2_0=null;
+        Token lv_hasOneStockPerSlot_3_0=null;
+        Token otherlv_4=null;
 
 
         	enterRule();
 
         try {
-            // InternalMy.g:865:2: ( ( () ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? ) )
-            // InternalMy.g:866:2: ( () ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? )
+            // InternalMy.g:881:2: ( ( () otherlv_1= '(' ( (lv_hasImage_2_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture' ) )? otherlv_4= ')' ) )
+            // InternalMy.g:882:2: ( () otherlv_1= '(' ( (lv_hasImage_2_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture' ) )? otherlv_4= ')' )
             {
-            // InternalMy.g:866:2: ( () ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )? )
-            // InternalMy.g:867:3: () ( (lv_hasImage_1_0= 'hasImage' ) )? ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )?
+            // InternalMy.g:882:2: ( () otherlv_1= '(' ( (lv_hasImage_2_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture' ) )? otherlv_4= ')' )
+            // InternalMy.g:883:3: () otherlv_1= '(' ( (lv_hasImage_2_0= 'avec-illustration' ) )? ( (lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture' ) )? otherlv_4= ')'
             {
-            // InternalMy.g:867:3: ()
-            // InternalMy.g:868:4: 
+            // InternalMy.g:883:3: ()
+            // InternalMy.g:884:4: 
             {
 
             				current = forceCreateModelElement(
@@ -1985,29 +2006,33 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:874:3: ( (lv_hasImage_1_0= 'hasImage' ) )?
+            otherlv_1=(Token)match(input,19,FOLLOW_30); 
+
+            			newLeafNode(otherlv_1, grammarAccess.getLotsConfigAccess().getLeftParenthesisKeyword_1());
+            		
+            // InternalMy.g:894:3: ( (lv_hasImage_2_0= 'avec-illustration' ) )?
             int alt18=2;
             int LA18_0 = input.LA(1);
 
-            if ( (LA18_0==31) ) {
+            if ( (LA18_0==30) ) {
                 alt18=1;
             }
             switch (alt18) {
                 case 1 :
-                    // InternalMy.g:875:4: (lv_hasImage_1_0= 'hasImage' )
+                    // InternalMy.g:895:4: (lv_hasImage_2_0= 'avec-illustration' )
                     {
-                    // InternalMy.g:875:4: (lv_hasImage_1_0= 'hasImage' )
-                    // InternalMy.g:876:5: lv_hasImage_1_0= 'hasImage'
+                    // InternalMy.g:895:4: (lv_hasImage_2_0= 'avec-illustration' )
+                    // InternalMy.g:896:5: lv_hasImage_2_0= 'avec-illustration'
                     {
-                    lv_hasImage_1_0=(Token)match(input,31,FOLLOW_31); 
+                    lv_hasImage_2_0=(Token)match(input,30,FOLLOW_31); 
 
-                    					newLeafNode(lv_hasImage_1_0, grammarAccess.getLotsConfigAccess().getHasImageHasImageKeyword_1_0());
+                    					newLeafNode(lv_hasImage_2_0, grammarAccess.getLotsConfigAccess().getHasImageAvecIllustrationKeyword_2_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getLotsConfigRule());
                     					}
-                    					setWithLastConsumed(current, "hasImage", lv_hasImage_1_0 != null, "hasImage");
+                    					setWithLastConsumed(current, "hasImage", lv_hasImage_2_0 != null, "avec-illustration");
                     				
 
                     }
@@ -2018,29 +2043,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:888:3: ( (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' ) )?
+            // InternalMy.g:908:3: ( (lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture' ) )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
-            if ( (LA19_0==32) ) {
+            if ( (LA19_0==31) ) {
                 alt19=1;
             }
             switch (alt19) {
                 case 1 :
-                    // InternalMy.g:889:4: (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' )
+                    // InternalMy.g:909:4: (lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture' )
                     {
-                    // InternalMy.g:889:4: (lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot' )
-                    // InternalMy.g:890:5: lv_hasOneStockPerSlot_2_0= 'hasOneStockPerSlot'
+                    // InternalMy.g:909:4: (lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture' )
+                    // InternalMy.g:910:5: lv_hasOneStockPerSlot_3_0= 'un-stock-par-ouverture'
                     {
-                    lv_hasOneStockPerSlot_2_0=(Token)match(input,32,FOLLOW_2); 
+                    lv_hasOneStockPerSlot_3_0=(Token)match(input,31,FOLLOW_29); 
 
-                    					newLeafNode(lv_hasOneStockPerSlot_2_0, grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0());
+                    					newLeafNode(lv_hasOneStockPerSlot_3_0, grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_3_0());
                     				
 
                     					if (current==null) {
                     						current = createModelElement(grammarAccess.getLotsConfigRule());
                     					}
-                    					setWithLastConsumed(current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_2_0 != null, "hasOneStockPerSlot");
+                    					setWithLastConsumed(current, "hasOneStockPerSlot", lv_hasOneStockPerSlot_3_0 != null, "un-stock-par-ouverture");
                     				
 
                     }
@@ -2051,6 +2076,10 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
+            otherlv_4=(Token)match(input,20,FOLLOW_2); 
+
+            			newLeafNode(otherlv_4, grammarAccess.getLotsConfigAccess().getRightParenthesisKeyword_4());
+            		
 
             }
 
@@ -2074,7 +2103,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulePricingSystem"
-    // InternalMy.g:906:1: entryRulePricingSystem returns [EObject current=null] : iv_rulePricingSystem= rulePricingSystem EOF ;
+    // InternalMy.g:930:1: entryRulePricingSystem returns [EObject current=null] : iv_rulePricingSystem= rulePricingSystem EOF ;
     public final EObject entryRulePricingSystem() throws RecognitionException {
         EObject current = null;
 
@@ -2082,8 +2111,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:906:54: (iv_rulePricingSystem= rulePricingSystem EOF )
-            // InternalMy.g:907:2: iv_rulePricingSystem= rulePricingSystem EOF
+            // InternalMy.g:930:54: (iv_rulePricingSystem= rulePricingSystem EOF )
+            // InternalMy.g:931:2: iv_rulePricingSystem= rulePricingSystem EOF
             {
              newCompositeNode(grammarAccess.getPricingSystemRule()); 
             pushFollow(FOLLOW_1);
@@ -2110,41 +2139,44 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePricingSystem"
-    // InternalMy.g:913:1: rulePricingSystem returns [EObject current=null] : ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' otherlv_2= 'currency' ( (lv_currency_3_0= ruleEString ) ) otherlv_4= ',' otherlv_5= 'taxSystem' ( (lv_taxSystem_6_0= ruleEString ) ) ) ;
+    // InternalMy.g:937:1: rulePricingSystem returns [EObject current=null] : ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= '(' otherlv_2= 'devise' otherlv_3= ':' ( (lv_currency_4_0= ruleEString ) ) otherlv_5= ',' otherlv_6= 'systeme-comptable' otherlv_7= ':' ( (lv_taxSystem_8_0= ruleEString ) ) otherlv_9= ')' ) ;
     public final EObject rulePricingSystem() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
         Token otherlv_2=null;
-        Token otherlv_4=null;
+        Token otherlv_3=null;
         Token otherlv_5=null;
+        Token otherlv_6=null;
+        Token otherlv_7=null;
+        Token otherlv_9=null;
         AntlrDatatypeRuleToken lv_name_0_0 = null;
 
-        AntlrDatatypeRuleToken lv_currency_3_0 = null;
+        AntlrDatatypeRuleToken lv_currency_4_0 = null;
 
-        AntlrDatatypeRuleToken lv_taxSystem_6_0 = null;
+        AntlrDatatypeRuleToken lv_taxSystem_8_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalMy.g:919:2: ( ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' otherlv_2= 'currency' ( (lv_currency_3_0= ruleEString ) ) otherlv_4= ',' otherlv_5= 'taxSystem' ( (lv_taxSystem_6_0= ruleEString ) ) ) )
-            // InternalMy.g:920:2: ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' otherlv_2= 'currency' ( (lv_currency_3_0= ruleEString ) ) otherlv_4= ',' otherlv_5= 'taxSystem' ( (lv_taxSystem_6_0= ruleEString ) ) )
+            // InternalMy.g:943:2: ( ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= '(' otherlv_2= 'devise' otherlv_3= ':' ( (lv_currency_4_0= ruleEString ) ) otherlv_5= ',' otherlv_6= 'systeme-comptable' otherlv_7= ':' ( (lv_taxSystem_8_0= ruleEString ) ) otherlv_9= ')' ) )
+            // InternalMy.g:944:2: ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= '(' otherlv_2= 'devise' otherlv_3= ':' ( (lv_currency_4_0= ruleEString ) ) otherlv_5= ',' otherlv_6= 'systeme-comptable' otherlv_7= ':' ( (lv_taxSystem_8_0= ruleEString ) ) otherlv_9= ')' )
             {
-            // InternalMy.g:920:2: ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' otherlv_2= 'currency' ( (lv_currency_3_0= ruleEString ) ) otherlv_4= ',' otherlv_5= 'taxSystem' ( (lv_taxSystem_6_0= ruleEString ) ) )
-            // InternalMy.g:921:3: ( (lv_name_0_0= ruleEString ) ) otherlv_1= ':' otherlv_2= 'currency' ( (lv_currency_3_0= ruleEString ) ) otherlv_4= ',' otherlv_5= 'taxSystem' ( (lv_taxSystem_6_0= ruleEString ) )
+            // InternalMy.g:944:2: ( ( (lv_name_0_0= ruleEString ) ) otherlv_1= '(' otherlv_2= 'devise' otherlv_3= ':' ( (lv_currency_4_0= ruleEString ) ) otherlv_5= ',' otherlv_6= 'systeme-comptable' otherlv_7= ':' ( (lv_taxSystem_8_0= ruleEString ) ) otherlv_9= ')' )
+            // InternalMy.g:945:3: ( (lv_name_0_0= ruleEString ) ) otherlv_1= '(' otherlv_2= 'devise' otherlv_3= ':' ( (lv_currency_4_0= ruleEString ) ) otherlv_5= ',' otherlv_6= 'systeme-comptable' otherlv_7= ':' ( (lv_taxSystem_8_0= ruleEString ) ) otherlv_9= ')'
             {
-            // InternalMy.g:921:3: ( (lv_name_0_0= ruleEString ) )
-            // InternalMy.g:922:4: (lv_name_0_0= ruleEString )
+            // InternalMy.g:945:3: ( (lv_name_0_0= ruleEString ) )
+            // InternalMy.g:946:4: (lv_name_0_0= ruleEString )
             {
-            // InternalMy.g:922:4: (lv_name_0_0= ruleEString )
-            // InternalMy.g:923:5: lv_name_0_0= ruleEString
+            // InternalMy.g:946:4: (lv_name_0_0= ruleEString )
+            // InternalMy.g:947:5: lv_name_0_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getPricingSystemAccess().getNameEStringParserRuleCall_0_0());
             				
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_11);
             lv_name_0_0=ruleEString();
 
             state._fsp--;
@@ -2166,25 +2198,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,11,FOLLOW_32); 
+            otherlv_1=(Token)match(input,19,FOLLOW_32); 
 
-            			newLeafNode(otherlv_1, grammarAccess.getPricingSystemAccess().getColonKeyword_1());
+            			newLeafNode(otherlv_1, grammarAccess.getPricingSystemAccess().getLeftParenthesisKeyword_1());
             		
-            otherlv_2=(Token)match(input,36,FOLLOW_9); 
+            otherlv_2=(Token)match(input,35,FOLLOW_3); 
 
-            			newLeafNode(otherlv_2, grammarAccess.getPricingSystemAccess().getCurrencyKeyword_2());
+            			newLeafNode(otherlv_2, grammarAccess.getPricingSystemAccess().getDeviseKeyword_2());
             		
-            // InternalMy.g:948:3: ( (lv_currency_3_0= ruleEString ) )
-            // InternalMy.g:949:4: (lv_currency_3_0= ruleEString )
+            otherlv_3=(Token)match(input,11,FOLLOW_9); 
+
+            			newLeafNode(otherlv_3, grammarAccess.getPricingSystemAccess().getColonKeyword_3());
+            		
+            // InternalMy.g:976:3: ( (lv_currency_4_0= ruleEString ) )
+            // InternalMy.g:977:4: (lv_currency_4_0= ruleEString )
             {
-            // InternalMy.g:949:4: (lv_currency_3_0= ruleEString )
-            // InternalMy.g:950:5: lv_currency_3_0= ruleEString
+            // InternalMy.g:977:4: (lv_currency_4_0= ruleEString )
+            // InternalMy.g:978:5: lv_currency_4_0= ruleEString
             {
 
-            					newCompositeNode(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_3_0());
+            					newCompositeNode(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_4_0());
             				
-            pushFollow(FOLLOW_33);
-            lv_currency_3_0=ruleEString();
+            pushFollow(FOLLOW_21);
+            lv_currency_4_0=ruleEString();
 
             state._fsp--;
 
@@ -2195,7 +2231,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             					set(
             						current,
             						"currency",
-            						lv_currency_3_0,
+            						lv_currency_4_0,
             						"mde.pauline.metaheres.My.EString");
             					afterParserOrEnumRuleCall();
             				
@@ -2205,25 +2241,29 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,17,FOLLOW_34); 
+            otherlv_5=(Token)match(input,17,FOLLOW_33); 
 
-            			newLeafNode(otherlv_4, grammarAccess.getPricingSystemAccess().getCommaKeyword_4());
+            			newLeafNode(otherlv_5, grammarAccess.getPricingSystemAccess().getCommaKeyword_5());
             		
-            otherlv_5=(Token)match(input,37,FOLLOW_9); 
+            otherlv_6=(Token)match(input,36,FOLLOW_3); 
 
-            			newLeafNode(otherlv_5, grammarAccess.getPricingSystemAccess().getTaxSystemKeyword_5());
+            			newLeafNode(otherlv_6, grammarAccess.getPricingSystemAccess().getSystemeComptableKeyword_6());
             		
-            // InternalMy.g:975:3: ( (lv_taxSystem_6_0= ruleEString ) )
-            // InternalMy.g:976:4: (lv_taxSystem_6_0= ruleEString )
+            otherlv_7=(Token)match(input,11,FOLLOW_9); 
+
+            			newLeafNode(otherlv_7, grammarAccess.getPricingSystemAccess().getColonKeyword_7());
+            		
+            // InternalMy.g:1007:3: ( (lv_taxSystem_8_0= ruleEString ) )
+            // InternalMy.g:1008:4: (lv_taxSystem_8_0= ruleEString )
             {
-            // InternalMy.g:976:4: (lv_taxSystem_6_0= ruleEString )
-            // InternalMy.g:977:5: lv_taxSystem_6_0= ruleEString
+            // InternalMy.g:1008:4: (lv_taxSystem_8_0= ruleEString )
+            // InternalMy.g:1009:5: lv_taxSystem_8_0= ruleEString
             {
 
-            					newCompositeNode(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_6_0());
+            					newCompositeNode(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_8_0());
             				
-            pushFollow(FOLLOW_2);
-            lv_taxSystem_6_0=ruleEString();
+            pushFollow(FOLLOW_29);
+            lv_taxSystem_8_0=ruleEString();
 
             state._fsp--;
 
@@ -2234,7 +2274,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
             					set(
             						current,
             						"taxSystem",
-            						lv_taxSystem_6_0,
+            						lv_taxSystem_8_0,
             						"mde.pauline.metaheres.My.EString");
             					afterParserOrEnumRuleCall();
             				
@@ -2244,6 +2284,10 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
+            otherlv_9=(Token)match(input,20,FOLLOW_2); 
+
+            			newLeafNode(otherlv_9, grammarAccess.getPricingSystemAccess().getRightParenthesisKeyword_9());
+            		
 
             }
 
@@ -2267,7 +2311,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEInt"
-    // InternalMy.g:998:1: entryRuleEInt returns [String current=null] : iv_ruleEInt= ruleEInt EOF ;
+    // InternalMy.g:1034:1: entryRuleEInt returns [String current=null] : iv_ruleEInt= ruleEInt EOF ;
     public final String entryRuleEInt() throws RecognitionException {
         String current = null;
 
@@ -2275,8 +2319,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:998:44: (iv_ruleEInt= ruleEInt EOF )
-            // InternalMy.g:999:2: iv_ruleEInt= ruleEInt EOF
+            // InternalMy.g:1034:44: (iv_ruleEInt= ruleEInt EOF )
+            // InternalMy.g:1035:2: iv_ruleEInt= ruleEInt EOF
             {
              newCompositeNode(grammarAccess.getEIntRule()); 
             pushFollow(FOLLOW_1);
@@ -2303,7 +2347,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEInt"
-    // InternalMy.g:1005:1: ruleEInt returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '-' )? this_INT_1= RULE_INT ) ;
+    // InternalMy.g:1041:1: ruleEInt returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '-' )? this_INT_1= RULE_INT ) ;
     public final AntlrDatatypeRuleToken ruleEInt() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -2314,24 +2358,24 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalMy.g:1011:2: ( ( (kw= '-' )? this_INT_1= RULE_INT ) )
-            // InternalMy.g:1012:2: ( (kw= '-' )? this_INT_1= RULE_INT )
+            // InternalMy.g:1047:2: ( ( (kw= '-' )? this_INT_1= RULE_INT ) )
+            // InternalMy.g:1048:2: ( (kw= '-' )? this_INT_1= RULE_INT )
             {
-            // InternalMy.g:1012:2: ( (kw= '-' )? this_INT_1= RULE_INT )
-            // InternalMy.g:1013:3: (kw= '-' )? this_INT_1= RULE_INT
+            // InternalMy.g:1048:2: ( (kw= '-' )? this_INT_1= RULE_INT )
+            // InternalMy.g:1049:3: (kw= '-' )? this_INT_1= RULE_INT
             {
-            // InternalMy.g:1013:3: (kw= '-' )?
+            // InternalMy.g:1049:3: (kw= '-' )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
-            if ( (LA20_0==38) ) {
+            if ( (LA20_0==37) ) {
                 alt20=1;
             }
             switch (alt20) {
                 case 1 :
-                    // InternalMy.g:1014:4: kw= '-'
+                    // InternalMy.g:1050:4: kw= '-'
                     {
-                    kw=(Token)match(input,38,FOLLOW_35); 
+                    kw=(Token)match(input,37,FOLLOW_34); 
 
                     				current.merge(kw);
                     				newLeafNode(kw, grammarAccess.getEIntAccess().getHyphenMinusKeyword_0());
@@ -2372,7 +2416,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleStatusList"
-    // InternalMy.g:1031:1: entryRuleStatusList returns [EObject current=null] : iv_ruleStatusList= ruleStatusList EOF ;
+    // InternalMy.g:1067:1: entryRuleStatusList returns [EObject current=null] : iv_ruleStatusList= ruleStatusList EOF ;
     public final EObject entryRuleStatusList() throws RecognitionException {
         EObject current = null;
 
@@ -2380,8 +2424,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:1031:51: (iv_ruleStatusList= ruleStatusList EOF )
-            // InternalMy.g:1032:2: iv_ruleStatusList= ruleStatusList EOF
+            // InternalMy.g:1067:51: (iv_ruleStatusList= ruleStatusList EOF )
+            // InternalMy.g:1068:2: iv_ruleStatusList= ruleStatusList EOF
             {
              newCompositeNode(grammarAccess.getStatusListRule()); 
             pushFollow(FOLLOW_1);
@@ -2408,7 +2452,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleStatusList"
-    // InternalMy.g:1038:1: ruleStatusList returns [EObject current=null] : (otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')' ) ;
+    // InternalMy.g:1074:1: ruleStatusList returns [EObject current=null] : (otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')' ) ;
     public final EObject ruleStatusList() throws RecognitionException {
         EObject current = null;
 
@@ -2424,26 +2468,26 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalMy.g:1044:2: ( (otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')' ) )
-            // InternalMy.g:1045:2: (otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')' )
+            // InternalMy.g:1080:2: ( (otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')' ) )
+            // InternalMy.g:1081:2: (otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')' )
             {
-            // InternalMy.g:1045:2: (otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')' )
-            // InternalMy.g:1046:3: otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')'
+            // InternalMy.g:1081:2: (otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')' )
+            // InternalMy.g:1082:3: otherlv_0= '(' ( (lv_status_1_0= ruleStatus ) ) (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )* otherlv_4= ')'
             {
-            otherlv_0=(Token)match(input,29,FOLLOW_9); 
+            otherlv_0=(Token)match(input,19,FOLLOW_9); 
 
             			newLeafNode(otherlv_0, grammarAccess.getStatusListAccess().getLeftParenthesisKeyword_0());
             		
-            // InternalMy.g:1050:3: ( (lv_status_1_0= ruleStatus ) )
-            // InternalMy.g:1051:4: (lv_status_1_0= ruleStatus )
+            // InternalMy.g:1086:3: ( (lv_status_1_0= ruleStatus ) )
+            // InternalMy.g:1087:4: (lv_status_1_0= ruleStatus )
             {
-            // InternalMy.g:1051:4: (lv_status_1_0= ruleStatus )
-            // InternalMy.g:1052:5: lv_status_1_0= ruleStatus
+            // InternalMy.g:1087:4: (lv_status_1_0= ruleStatus )
+            // InternalMy.g:1088:5: lv_status_1_0= ruleStatus
             {
 
             					newCompositeNode(grammarAccess.getStatusListAccess().getStatusStatusParserRuleCall_1_0());
             				
-            pushFollow(FOLLOW_36);
+            pushFollow(FOLLOW_12);
             lv_status_1_0=ruleStatus();
 
             state._fsp--;
@@ -2465,7 +2509,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:1069:3: (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )*
+            // InternalMy.g:1105:3: (otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) ) )*
             loop21:
             do {
                 int alt21=2;
@@ -2478,22 +2522,22 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
                 switch (alt21) {
             	case 1 :
-            	    // InternalMy.g:1070:4: otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) )
+            	    // InternalMy.g:1106:4: otherlv_2= ',' ( (lv_status_3_0= ruleStatus ) )
             	    {
             	    otherlv_2=(Token)match(input,17,FOLLOW_9); 
 
             	    				newLeafNode(otherlv_2, grammarAccess.getStatusListAccess().getCommaKeyword_2_0());
             	    			
-            	    // InternalMy.g:1074:4: ( (lv_status_3_0= ruleStatus ) )
-            	    // InternalMy.g:1075:5: (lv_status_3_0= ruleStatus )
+            	    // InternalMy.g:1110:4: ( (lv_status_3_0= ruleStatus ) )
+            	    // InternalMy.g:1111:5: (lv_status_3_0= ruleStatus )
             	    {
-            	    // InternalMy.g:1075:5: (lv_status_3_0= ruleStatus )
-            	    // InternalMy.g:1076:6: lv_status_3_0= ruleStatus
+            	    // InternalMy.g:1111:5: (lv_status_3_0= ruleStatus )
+            	    // InternalMy.g:1112:6: lv_status_3_0= ruleStatus
             	    {
 
             	    						newCompositeNode(grammarAccess.getStatusListAccess().getStatusStatusParserRuleCall_2_1_0());
             	    					
-            	    pushFollow(FOLLOW_36);
+            	    pushFollow(FOLLOW_12);
             	    lv_status_3_0=ruleStatus();
 
             	    state._fsp--;
@@ -2524,7 +2568,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_4=(Token)match(input,30,FOLLOW_2); 
+            otherlv_4=(Token)match(input,20,FOLLOW_2); 
 
             			newLeafNode(otherlv_4, grammarAccess.getStatusListAccess().getRightParenthesisKeyword_3());
             		
@@ -2551,7 +2595,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleStatus"
-    // InternalMy.g:1102:1: entryRuleStatus returns [EObject current=null] : iv_ruleStatus= ruleStatus EOF ;
+    // InternalMy.g:1138:1: entryRuleStatus returns [EObject current=null] : iv_ruleStatus= ruleStatus EOF ;
     public final EObject entryRuleStatus() throws RecognitionException {
         EObject current = null;
 
@@ -2559,8 +2603,8 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalMy.g:1102:47: (iv_ruleStatus= ruleStatus EOF )
-            // InternalMy.g:1103:2: iv_ruleStatus= ruleStatus EOF
+            // InternalMy.g:1138:47: (iv_ruleStatus= ruleStatus EOF )
+            // InternalMy.g:1139:2: iv_ruleStatus= ruleStatus EOF
             {
              newCompositeNode(grammarAccess.getStatusRule()); 
             pushFollow(FOLLOW_1);
@@ -2587,7 +2631,7 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleStatus"
-    // InternalMy.g:1109:1: ruleStatus returns [EObject current=null] : ( () ( (lv_name_1_0= ruleEString ) ) ) ;
+    // InternalMy.g:1145:1: ruleStatus returns [EObject current=null] : ( () ( (lv_name_1_0= ruleEString ) ) ) ;
     public final EObject ruleStatus() throws RecognitionException {
         EObject current = null;
 
@@ -2598,14 +2642,14 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalMy.g:1115:2: ( ( () ( (lv_name_1_0= ruleEString ) ) ) )
-            // InternalMy.g:1116:2: ( () ( (lv_name_1_0= ruleEString ) ) )
+            // InternalMy.g:1151:2: ( ( () ( (lv_name_1_0= ruleEString ) ) ) )
+            // InternalMy.g:1152:2: ( () ( (lv_name_1_0= ruleEString ) ) )
             {
-            // InternalMy.g:1116:2: ( () ( (lv_name_1_0= ruleEString ) ) )
-            // InternalMy.g:1117:3: () ( (lv_name_1_0= ruleEString ) )
+            // InternalMy.g:1152:2: ( () ( (lv_name_1_0= ruleEString ) ) )
+            // InternalMy.g:1153:3: () ( (lv_name_1_0= ruleEString ) )
             {
-            // InternalMy.g:1117:3: ()
-            // InternalMy.g:1118:4: 
+            // InternalMy.g:1153:3: ()
+            // InternalMy.g:1154:4: 
             {
 
             				current = forceCreateModelElement(
@@ -2615,11 +2659,11 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalMy.g:1124:3: ( (lv_name_1_0= ruleEString ) )
-            // InternalMy.g:1125:4: (lv_name_1_0= ruleEString )
+            // InternalMy.g:1160:3: ( (lv_name_1_0= ruleEString ) )
+            // InternalMy.g:1161:4: (lv_name_1_0= ruleEString )
             {
-            // InternalMy.g:1125:4: (lv_name_1_0= ruleEString )
-            // InternalMy.g:1126:5: lv_name_1_0= ruleEString
+            // InternalMy.g:1161:4: (lv_name_1_0= ruleEString )
+            // InternalMy.g:1162:5: lv_name_1_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getStatusAccess().getNameEStringParserRuleCall_1_0());
@@ -2681,32 +2725,30 @@ public class InternalMyParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000018000L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000010000L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x00000000000E0000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x00000000000A0000L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000160000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000080000L});
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000120000L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000420002L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000180000000L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000003000000L});
-    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000004000000040L});
-    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000FC0000000L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000F40000000L});
-    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000E40000000L});
-    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000C40000000L});
-    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000840000000L});
-    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000100000002L});
-    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000002000000000L});
-    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000000040020000L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000001020002L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x000000000C000000L});
+    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000002000000040L});
+    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x00000007C0100000L});
+    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000780100000L});
+    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000700100000L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000000600100000L});
+    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000400100000L});
+    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x00000000C0100000L});
+    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000080100000L});
+    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000000000000040L});
 
 }

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalMyParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "':'", "'country'", "'lang'", "'reservationsconfig'", "'resourcesconfig'", "','", "'pricingsystem'", "'lotsconfig'", "'minRequestAdvance'", "'maxRequestAdvance'", "'statuslist'", "'pricing'", "'('", "')'", "'currency'", "'taxSystem'", "'-'", "'closesOnPublicHolidays'", "'inventoryIsPublic'", "'hasChart'", "'countInBusinessDays'", "'hasMoveOutCheck'", "'hasMoveInCheck'", "'hasImage'", "'hasOneStockPerSlot'", "'isConsumable'", "'isLoan'", "'isCharged'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "':'", "'pays'", "')'", "'langues'", "'('", "'configuration-reservations'", "'configuration-ressources'", "','", "'paiements-proposes'", "'lotsconfig'", "'avance-minimum-et-maximum-reservation'", "'statuts-des-demandes'", "'tarification'", "'devise'", "'systeme-comptable'", "'-'", "'ferme-les-jours-feries'", "'inventaire-public'", "'charte-d-utilisation-visible'", "'compte-en-jours-ouvrables'", "'etat-des-lieux-sortie'", "'etat-des-lieux-retour'", "'avec-illustration'", "'un-stock-par-ouverture'", "'type-consommable'", "'emprunt-avec-retour'", "'payant'"
     };
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
@@ -30,7 +30,6 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     public static final int T__15=15;
     public static final int T__37=37;
     public static final int T__16=16;
-    public static final int T__38=38;
     public static final int T__17=17;
     public static final int T__18=18;
     public static final int T__11=11;
@@ -1387,7 +1386,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             int alt2=2;
             int LA2_0 = input.LA(1);
 
-            if ( (LA2_0==28) ) {
+            if ( (LA2_0==27) ) {
                 alt2=1;
             }
             switch (alt2) {
@@ -1483,7 +1482,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             int alt3=2;
             int LA3_0 = input.LA(1);
 
-            if ( (LA3_0==29) ) {
+            if ( (LA3_0==28) ) {
                 alt3=1;
             }
             switch (alt3) {
@@ -1579,7 +1578,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             int alt4=2;
             int LA4_0 = input.LA(1);
 
-            if ( (LA4_0==30) ) {
+            if ( (LA4_0==29) ) {
                 alt4=1;
             }
             switch (alt4) {
@@ -1675,7 +1674,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             int alt5=2;
             int LA5_0 = input.LA(1);
 
-            if ( (LA5_0==31) ) {
+            if ( (LA5_0==30) ) {
                 alt5=1;
             }
             switch (alt5) {
@@ -1754,21 +1753,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__4__Impl"
-    // InternalMy.g:574:1: rule__ServiceConfig__Group__4__Impl : ( 'country' ) ;
+    // InternalMy.g:574:1: rule__ServiceConfig__Group__4__Impl : ( 'pays' ) ;
     public final void rule__ServiceConfig__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:578:1: ( ( 'country' ) )
-            // InternalMy.g:579:1: ( 'country' )
+            // InternalMy.g:578:1: ( ( 'pays' ) )
+            // InternalMy.g:579:1: ( 'pays' )
             {
-            // InternalMy.g:579:1: ( 'country' )
-            // InternalMy.g:580:2: 'country'
+            // InternalMy.g:579:1: ( 'pays' )
+            // InternalMy.g:580:2: 'pays'
             {
-             before(grammarAccess.getServiceConfigAccess().getCountryKeyword_4()); 
+             before(grammarAccess.getServiceConfigAccess().getPaysKeyword_4()); 
             match(input,12,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getCountryKeyword_4()); 
+             after(grammarAccess.getServiceConfigAccess().getPaysKeyword_4()); 
 
             }
 
@@ -2008,7 +2007,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
                 int alt6=2;
                 int LA6_0 = input.LA(1);
 
-                if ( (LA6_0==16) ) {
+                if ( (LA6_0==18) ) {
                     alt6=1;
                 }
 
@@ -2109,7 +2108,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             int alt7=2;
             int LA7_0 = input.LA(1);
 
-            if ( (LA7_0==17) ) {
+            if ( (LA7_0==19) ) {
                 alt7=1;
             }
             switch (alt7) {
@@ -2159,7 +2158,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:701:1: ( rule__ServiceConfig__Group__9__Impl rule__ServiceConfig__Group__10 )
             // InternalMy.g:702:2: rule__ServiceConfig__Group__9__Impl rule__ServiceConfig__Group__10
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_8);
             rule__ServiceConfig__Group__9__Impl();
 
             state._fsp--;
@@ -2188,21 +2187,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__9__Impl"
-    // InternalMy.g:709:1: rule__ServiceConfig__Group__9__Impl : ( 'lang' ) ;
+    // InternalMy.g:709:1: rule__ServiceConfig__Group__9__Impl : ( ')' ) ;
     public final void rule__ServiceConfig__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:713:1: ( ( 'lang' ) )
-            // InternalMy.g:714:1: ( 'lang' )
+            // InternalMy.g:713:1: ( ( ')' ) )
+            // InternalMy.g:714:1: ( ')' )
             {
-            // InternalMy.g:714:1: ( 'lang' )
-            // InternalMy.g:715:2: 'lang'
+            // InternalMy.g:714:1: ( ')' )
+            // InternalMy.g:715:2: ')'
             {
-             before(grammarAccess.getServiceConfigAccess().getLangKeyword_9()); 
+             before(grammarAccess.getServiceConfigAccess().getRightParenthesisKeyword_9()); 
             match(input,13,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getLangKeyword_9()); 
+             after(grammarAccess.getServiceConfigAccess().getRightParenthesisKeyword_9()); 
 
             }
 
@@ -2234,7 +2233,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:728:1: ( rule__ServiceConfig__Group__10__Impl rule__ServiceConfig__Group__11 )
             // InternalMy.g:729:2: rule__ServiceConfig__Group__10__Impl rule__ServiceConfig__Group__11
             {
-            pushFollow(FOLLOW_5);
+            pushFollow(FOLLOW_3);
             rule__ServiceConfig__Group__10__Impl();
 
             state._fsp--;
@@ -2263,21 +2262,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__10__Impl"
-    // InternalMy.g:736:1: rule__ServiceConfig__Group__10__Impl : ( ':' ) ;
+    // InternalMy.g:736:1: rule__ServiceConfig__Group__10__Impl : ( 'langues' ) ;
     public final void rule__ServiceConfig__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:740:1: ( ( ':' ) )
-            // InternalMy.g:741:1: ( ':' )
+            // InternalMy.g:740:1: ( ( 'langues' ) )
+            // InternalMy.g:741:1: ( 'langues' )
             {
-            // InternalMy.g:741:1: ( ':' )
-            // InternalMy.g:742:2: ':'
+            // InternalMy.g:741:1: ( 'langues' )
+            // InternalMy.g:742:2: 'langues'
             {
-             before(grammarAccess.getServiceConfigAccess().getColonKeyword_10()); 
-            match(input,11,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getColonKeyword_10()); 
+             before(grammarAccess.getServiceConfigAccess().getLanguesKeyword_10()); 
+            match(input,14,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getLanguesKeyword_10()); 
 
             }
 
@@ -2309,7 +2308,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:755:1: ( rule__ServiceConfig__Group__11__Impl rule__ServiceConfig__Group__12 )
             // InternalMy.g:756:2: rule__ServiceConfig__Group__11__Impl rule__ServiceConfig__Group__12
             {
-            pushFollow(FOLLOW_8);
+            pushFollow(FOLLOW_9);
             rule__ServiceConfig__Group__11__Impl();
 
             state._fsp--;
@@ -2338,31 +2337,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__11__Impl"
-    // InternalMy.g:763:1: rule__ServiceConfig__Group__11__Impl : ( ( rule__ServiceConfig__LanguageAssignment_11 ) ) ;
+    // InternalMy.g:763:1: rule__ServiceConfig__Group__11__Impl : ( ':' ) ;
     public final void rule__ServiceConfig__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:767:1: ( ( ( rule__ServiceConfig__LanguageAssignment_11 ) ) )
-            // InternalMy.g:768:1: ( ( rule__ServiceConfig__LanguageAssignment_11 ) )
+            // InternalMy.g:767:1: ( ( ':' ) )
+            // InternalMy.g:768:1: ( ':' )
             {
-            // InternalMy.g:768:1: ( ( rule__ServiceConfig__LanguageAssignment_11 ) )
-            // InternalMy.g:769:2: ( rule__ServiceConfig__LanguageAssignment_11 )
+            // InternalMy.g:768:1: ( ':' )
+            // InternalMy.g:769:2: ':'
             {
-             before(grammarAccess.getServiceConfigAccess().getLanguageAssignment_11()); 
-            // InternalMy.g:770:2: ( rule__ServiceConfig__LanguageAssignment_11 )
-            // InternalMy.g:770:3: rule__ServiceConfig__LanguageAssignment_11
-            {
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__LanguageAssignment_11();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getServiceConfigAccess().getLanguageAssignment_11()); 
+             before(grammarAccess.getServiceConfigAccess().getColonKeyword_11()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getColonKeyword_11()); 
 
             }
 
@@ -2394,7 +2383,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:782:1: ( rule__ServiceConfig__Group__12__Impl rule__ServiceConfig__Group__13 )
             // InternalMy.g:783:2: rule__ServiceConfig__Group__12__Impl rule__ServiceConfig__Group__13
             {
-            pushFollow(FOLLOW_8);
+            pushFollow(FOLLOW_5);
             rule__ServiceConfig__Group__12__Impl();
 
             state._fsp--;
@@ -2423,49 +2412,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__12__Impl"
-    // InternalMy.g:790:1: rule__ServiceConfig__Group__12__Impl : ( ( rule__ServiceConfig__Group_12__0 )* ) ;
+    // InternalMy.g:790:1: rule__ServiceConfig__Group__12__Impl : ( '(' ) ;
     public final void rule__ServiceConfig__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:794:1: ( ( ( rule__ServiceConfig__Group_12__0 )* ) )
-            // InternalMy.g:795:1: ( ( rule__ServiceConfig__Group_12__0 )* )
+            // InternalMy.g:794:1: ( ( '(' ) )
+            // InternalMy.g:795:1: ( '(' )
             {
-            // InternalMy.g:795:1: ( ( rule__ServiceConfig__Group_12__0 )* )
-            // InternalMy.g:796:2: ( rule__ServiceConfig__Group_12__0 )*
+            // InternalMy.g:795:1: ( '(' )
+            // InternalMy.g:796:2: '('
             {
-             before(grammarAccess.getServiceConfigAccess().getGroup_12()); 
-            // InternalMy.g:797:2: ( rule__ServiceConfig__Group_12__0 )*
-            loop8:
-            do {
-                int alt8=2;
-                int LA8_0 = input.LA(1);
-
-                if ( (LA8_0==16) ) {
-                    alt8=1;
-                }
-
-
-                switch (alt8) {
-            	case 1 :
-            	    // InternalMy.g:797:3: rule__ServiceConfig__Group_12__0
-            	    {
-            	    pushFollow(FOLLOW_7);
-            	    rule__ServiceConfig__Group_12__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop8;
-                }
-            } while (true);
-
-             after(grammarAccess.getServiceConfigAccess().getGroup_12()); 
+             before(grammarAccess.getServiceConfigAccess().getLeftParenthesisKeyword_12()); 
+            match(input,15,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getLeftParenthesisKeyword_12()); 
 
             }
 
@@ -2497,7 +2458,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:809:1: ( rule__ServiceConfig__Group__13__Impl rule__ServiceConfig__Group__14 )
             // InternalMy.g:810:2: rule__ServiceConfig__Group__13__Impl rule__ServiceConfig__Group__14
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_10);
             rule__ServiceConfig__Group__13__Impl();
 
             state._fsp--;
@@ -2526,21 +2487,31 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__13__Impl"
-    // InternalMy.g:817:1: rule__ServiceConfig__Group__13__Impl : ( 'reservationsconfig' ) ;
+    // InternalMy.g:817:1: rule__ServiceConfig__Group__13__Impl : ( ( rule__ServiceConfig__LanguageAssignment_13 ) ) ;
     public final void rule__ServiceConfig__Group__13__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:821:1: ( ( 'reservationsconfig' ) )
-            // InternalMy.g:822:1: ( 'reservationsconfig' )
+            // InternalMy.g:821:1: ( ( ( rule__ServiceConfig__LanguageAssignment_13 ) ) )
+            // InternalMy.g:822:1: ( ( rule__ServiceConfig__LanguageAssignment_13 ) )
             {
-            // InternalMy.g:822:1: ( 'reservationsconfig' )
-            // InternalMy.g:823:2: 'reservationsconfig'
+            // InternalMy.g:822:1: ( ( rule__ServiceConfig__LanguageAssignment_13 ) )
+            // InternalMy.g:823:2: ( rule__ServiceConfig__LanguageAssignment_13 )
             {
-             before(grammarAccess.getServiceConfigAccess().getReservationsconfigKeyword_13()); 
-            match(input,14,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getReservationsconfigKeyword_13()); 
+             before(grammarAccess.getServiceConfigAccess().getLanguageAssignment_13()); 
+            // InternalMy.g:824:2: ( rule__ServiceConfig__LanguageAssignment_13 )
+            // InternalMy.g:824:3: rule__ServiceConfig__LanguageAssignment_13
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__LanguageAssignment_13();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getServiceConfigAccess().getLanguageAssignment_13()); 
 
             }
 
@@ -2572,7 +2543,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:836:1: ( rule__ServiceConfig__Group__14__Impl rule__ServiceConfig__Group__15 )
             // InternalMy.g:837:2: rule__ServiceConfig__Group__14__Impl rule__ServiceConfig__Group__15
             {
-            pushFollow(FOLLOW_9);
+            pushFollow(FOLLOW_10);
             rule__ServiceConfig__Group__14__Impl();
 
             state._fsp--;
@@ -2601,21 +2572,49 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__14__Impl"
-    // InternalMy.g:844:1: rule__ServiceConfig__Group__14__Impl : ( ':' ) ;
+    // InternalMy.g:844:1: rule__ServiceConfig__Group__14__Impl : ( ( rule__ServiceConfig__Group_14__0 )* ) ;
     public final void rule__ServiceConfig__Group__14__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:848:1: ( ( ':' ) )
-            // InternalMy.g:849:1: ( ':' )
+            // InternalMy.g:848:1: ( ( ( rule__ServiceConfig__Group_14__0 )* ) )
+            // InternalMy.g:849:1: ( ( rule__ServiceConfig__Group_14__0 )* )
             {
-            // InternalMy.g:849:1: ( ':' )
-            // InternalMy.g:850:2: ':'
+            // InternalMy.g:849:1: ( ( rule__ServiceConfig__Group_14__0 )* )
+            // InternalMy.g:850:2: ( rule__ServiceConfig__Group_14__0 )*
             {
-             before(grammarAccess.getServiceConfigAccess().getColonKeyword_14()); 
-            match(input,11,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getColonKeyword_14()); 
+             before(grammarAccess.getServiceConfigAccess().getGroup_14()); 
+            // InternalMy.g:851:2: ( rule__ServiceConfig__Group_14__0 )*
+            loop8:
+            do {
+                int alt8=2;
+                int LA8_0 = input.LA(1);
+
+                if ( (LA8_0==18) ) {
+                    alt8=1;
+                }
+
+
+                switch (alt8) {
+            	case 1 :
+            	    // InternalMy.g:851:3: rule__ServiceConfig__Group_14__0
+            	    {
+            	    pushFollow(FOLLOW_7);
+            	    rule__ServiceConfig__Group_14__0();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop8;
+                }
+            } while (true);
+
+             after(grammarAccess.getServiceConfigAccess().getGroup_14()); 
 
             }
 
@@ -2647,7 +2646,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:863:1: ( rule__ServiceConfig__Group__15__Impl rule__ServiceConfig__Group__16 )
             // InternalMy.g:864:2: rule__ServiceConfig__Group__15__Impl rule__ServiceConfig__Group__16
             {
-            pushFollow(FOLLOW_10);
+            pushFollow(FOLLOW_11);
             rule__ServiceConfig__Group__15__Impl();
 
             state._fsp--;
@@ -2676,31 +2675,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__15__Impl"
-    // InternalMy.g:871:1: rule__ServiceConfig__Group__15__Impl : ( ( rule__ServiceConfig__ReservationsconfigAssignment_15 ) ) ;
+    // InternalMy.g:871:1: rule__ServiceConfig__Group__15__Impl : ( ')' ) ;
     public final void rule__ServiceConfig__Group__15__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:875:1: ( ( ( rule__ServiceConfig__ReservationsconfigAssignment_15 ) ) )
-            // InternalMy.g:876:1: ( ( rule__ServiceConfig__ReservationsconfigAssignment_15 ) )
+            // InternalMy.g:875:1: ( ( ')' ) )
+            // InternalMy.g:876:1: ( ')' )
             {
-            // InternalMy.g:876:1: ( ( rule__ServiceConfig__ReservationsconfigAssignment_15 ) )
-            // InternalMy.g:877:2: ( rule__ServiceConfig__ReservationsconfigAssignment_15 )
+            // InternalMy.g:876:1: ( ')' )
+            // InternalMy.g:877:2: ')'
             {
-             before(grammarAccess.getServiceConfigAccess().getReservationsconfigAssignment_15()); 
-            // InternalMy.g:878:2: ( rule__ServiceConfig__ReservationsconfigAssignment_15 )
-            // InternalMy.g:878:3: rule__ServiceConfig__ReservationsconfigAssignment_15
-            {
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__ReservationsconfigAssignment_15();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getServiceConfigAccess().getReservationsconfigAssignment_15()); 
+             before(grammarAccess.getServiceConfigAccess().getRightParenthesisKeyword_15()); 
+            match(input,13,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getRightParenthesisKeyword_15()); 
 
             }
 
@@ -2761,21 +2750,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__16__Impl"
-    // InternalMy.g:898:1: rule__ServiceConfig__Group__16__Impl : ( 'resourcesconfig' ) ;
+    // InternalMy.g:898:1: rule__ServiceConfig__Group__16__Impl : ( 'configuration-reservations' ) ;
     public final void rule__ServiceConfig__Group__16__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:902:1: ( ( 'resourcesconfig' ) )
-            // InternalMy.g:903:1: ( 'resourcesconfig' )
+            // InternalMy.g:902:1: ( ( 'configuration-reservations' ) )
+            // InternalMy.g:903:1: ( 'configuration-reservations' )
             {
-            // InternalMy.g:903:1: ( 'resourcesconfig' )
-            // InternalMy.g:904:2: 'resourcesconfig'
+            // InternalMy.g:903:1: ( 'configuration-reservations' )
+            // InternalMy.g:904:2: 'configuration-reservations'
             {
-             before(grammarAccess.getServiceConfigAccess().getResourcesconfigKeyword_16()); 
-            match(input,15,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getResourcesconfigKeyword_16()); 
+             before(grammarAccess.getServiceConfigAccess().getConfigurationReservationsKeyword_16()); 
+            match(input,16,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getConfigurationReservationsKeyword_16()); 
 
             }
 
@@ -2807,7 +2796,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:917:1: ( rule__ServiceConfig__Group__17__Impl rule__ServiceConfig__Group__18 )
             // InternalMy.g:918:2: rule__ServiceConfig__Group__17__Impl rule__ServiceConfig__Group__18
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_12);
             rule__ServiceConfig__Group__17__Impl();
 
             state._fsp--;
@@ -2882,7 +2871,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:944:1: ( rule__ServiceConfig__Group__18__Impl rule__ServiceConfig__Group__19 )
             // InternalMy.g:945:2: rule__ServiceConfig__Group__18__Impl rule__ServiceConfig__Group__19
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__ServiceConfig__Group__18__Impl();
 
             state._fsp--;
@@ -2911,31 +2900,31 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__18__Impl"
-    // InternalMy.g:952:1: rule__ServiceConfig__Group__18__Impl : ( ( rule__ServiceConfig__ResourcesconfigAssignment_18 ) ) ;
+    // InternalMy.g:952:1: rule__ServiceConfig__Group__18__Impl : ( ( rule__ServiceConfig__ReservationsconfigAssignment_18 ) ) ;
     public final void rule__ServiceConfig__Group__18__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:956:1: ( ( ( rule__ServiceConfig__ResourcesconfigAssignment_18 ) ) )
-            // InternalMy.g:957:1: ( ( rule__ServiceConfig__ResourcesconfigAssignment_18 ) )
+            // InternalMy.g:956:1: ( ( ( rule__ServiceConfig__ReservationsconfigAssignment_18 ) ) )
+            // InternalMy.g:957:1: ( ( rule__ServiceConfig__ReservationsconfigAssignment_18 ) )
             {
-            // InternalMy.g:957:1: ( ( rule__ServiceConfig__ResourcesconfigAssignment_18 ) )
-            // InternalMy.g:958:2: ( rule__ServiceConfig__ResourcesconfigAssignment_18 )
+            // InternalMy.g:957:1: ( ( rule__ServiceConfig__ReservationsconfigAssignment_18 ) )
+            // InternalMy.g:958:2: ( rule__ServiceConfig__ReservationsconfigAssignment_18 )
             {
-             before(grammarAccess.getServiceConfigAccess().getResourcesconfigAssignment_18()); 
-            // InternalMy.g:959:2: ( rule__ServiceConfig__ResourcesconfigAssignment_18 )
-            // InternalMy.g:959:3: rule__ServiceConfig__ResourcesconfigAssignment_18
+             before(grammarAccess.getServiceConfigAccess().getReservationsconfigAssignment_18()); 
+            // InternalMy.g:959:2: ( rule__ServiceConfig__ReservationsconfigAssignment_18 )
+            // InternalMy.g:959:3: rule__ServiceConfig__ReservationsconfigAssignment_18
             {
             pushFollow(FOLLOW_2);
-            rule__ServiceConfig__ResourcesconfigAssignment_18();
+            rule__ServiceConfig__ReservationsconfigAssignment_18();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getResourcesconfigAssignment_18()); 
+             after(grammarAccess.getServiceConfigAccess().getReservationsconfigAssignment_18()); 
 
             }
 
@@ -2967,7 +2956,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:971:1: ( rule__ServiceConfig__Group__19__Impl rule__ServiceConfig__Group__20 )
             // InternalMy.g:972:2: rule__ServiceConfig__Group__19__Impl rule__ServiceConfig__Group__20
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_3);
             rule__ServiceConfig__Group__19__Impl();
 
             state._fsp--;
@@ -2996,49 +2985,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__19__Impl"
-    // InternalMy.g:979:1: rule__ServiceConfig__Group__19__Impl : ( ( rule__ServiceConfig__Group_19__0 )* ) ;
+    // InternalMy.g:979:1: rule__ServiceConfig__Group__19__Impl : ( 'configuration-ressources' ) ;
     public final void rule__ServiceConfig__Group__19__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:983:1: ( ( ( rule__ServiceConfig__Group_19__0 )* ) )
-            // InternalMy.g:984:1: ( ( rule__ServiceConfig__Group_19__0 )* )
+            // InternalMy.g:983:1: ( ( 'configuration-ressources' ) )
+            // InternalMy.g:984:1: ( 'configuration-ressources' )
             {
-            // InternalMy.g:984:1: ( ( rule__ServiceConfig__Group_19__0 )* )
-            // InternalMy.g:985:2: ( rule__ServiceConfig__Group_19__0 )*
+            // InternalMy.g:984:1: ( 'configuration-ressources' )
+            // InternalMy.g:985:2: 'configuration-ressources'
             {
-             before(grammarAccess.getServiceConfigAccess().getGroup_19()); 
-            // InternalMy.g:986:2: ( rule__ServiceConfig__Group_19__0 )*
-            loop9:
-            do {
-                int alt9=2;
-                int LA9_0 = input.LA(1);
-
-                if ( (LA9_0==16) ) {
-                    alt9=1;
-                }
-
-
-                switch (alt9) {
-            	case 1 :
-            	    // InternalMy.g:986:3: rule__ServiceConfig__Group_19__0
-            	    {
-            	    pushFollow(FOLLOW_7);
-            	    rule__ServiceConfig__Group_19__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop9;
-                }
-            } while (true);
-
-             after(grammarAccess.getServiceConfigAccess().getGroup_19()); 
+             before(grammarAccess.getServiceConfigAccess().getConfigurationRessourcesKeyword_19()); 
+            match(input,17,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getConfigurationRessourcesKeyword_19()); 
 
             }
 
@@ -3061,17 +3022,22 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__20"
-    // InternalMy.g:994:1: rule__ServiceConfig__Group__20 : rule__ServiceConfig__Group__20__Impl ;
+    // InternalMy.g:994:1: rule__ServiceConfig__Group__20 : rule__ServiceConfig__Group__20__Impl rule__ServiceConfig__Group__21 ;
     public final void rule__ServiceConfig__Group__20() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:998:1: ( rule__ServiceConfig__Group__20__Impl )
-            // InternalMy.g:999:2: rule__ServiceConfig__Group__20__Impl
+            // InternalMy.g:998:1: ( rule__ServiceConfig__Group__20__Impl rule__ServiceConfig__Group__21 )
+            // InternalMy.g:999:2: rule__ServiceConfig__Group__20__Impl rule__ServiceConfig__Group__21
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_9);
             rule__ServiceConfig__Group__20__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group__21();
 
             state._fsp--;
 
@@ -3094,42 +3060,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group__20__Impl"
-    // InternalMy.g:1005:1: rule__ServiceConfig__Group__20__Impl : ( ( rule__ServiceConfig__Group_20__0 )? ) ;
+    // InternalMy.g:1006:1: rule__ServiceConfig__Group__20__Impl : ( ':' ) ;
     public final void rule__ServiceConfig__Group__20__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1009:1: ( ( ( rule__ServiceConfig__Group_20__0 )? ) )
-            // InternalMy.g:1010:1: ( ( rule__ServiceConfig__Group_20__0 )? )
+            // InternalMy.g:1010:1: ( ( ':' ) )
+            // InternalMy.g:1011:1: ( ':' )
             {
-            // InternalMy.g:1010:1: ( ( rule__ServiceConfig__Group_20__0 )? )
-            // InternalMy.g:1011:2: ( rule__ServiceConfig__Group_20__0 )?
+            // InternalMy.g:1011:1: ( ':' )
+            // InternalMy.g:1012:2: ':'
             {
-             before(grammarAccess.getServiceConfigAccess().getGroup_20()); 
-            // InternalMy.g:1012:2: ( rule__ServiceConfig__Group_20__0 )?
-            int alt10=2;
-            int LA10_0 = input.LA(1);
-
-            if ( (LA10_0==18) ) {
-                alt10=1;
-            }
-            switch (alt10) {
-                case 1 :
-                    // InternalMy.g:1012:3: rule__ServiceConfig__Group_20__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__ServiceConfig__Group_20__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getServiceConfigAccess().getGroup_20()); 
+             before(grammarAccess.getServiceConfigAccess().getColonKeyword_20()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getColonKeyword_20()); 
 
             }
 
@@ -3151,15 +3096,294 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ServiceConfig__Group__20__Impl"
 
 
+    // $ANTLR start "rule__ServiceConfig__Group__21"
+    // InternalMy.g:1021:1: rule__ServiceConfig__Group__21 : rule__ServiceConfig__Group__21__Impl rule__ServiceConfig__Group__22 ;
+    public final void rule__ServiceConfig__Group__21() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1025:1: ( rule__ServiceConfig__Group__21__Impl rule__ServiceConfig__Group__22 )
+            // InternalMy.g:1026:2: rule__ServiceConfig__Group__21__Impl rule__ServiceConfig__Group__22
+            {
+            pushFollow(FOLLOW_14);
+            rule__ServiceConfig__Group__21__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group__22();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group__21"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group__21__Impl"
+    // InternalMy.g:1033:1: rule__ServiceConfig__Group__21__Impl : ( ( rule__ServiceConfig__ResourcesconfigAssignment_21 ) ) ;
+    public final void rule__ServiceConfig__Group__21__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1037:1: ( ( ( rule__ServiceConfig__ResourcesconfigAssignment_21 ) ) )
+            // InternalMy.g:1038:1: ( ( rule__ServiceConfig__ResourcesconfigAssignment_21 ) )
+            {
+            // InternalMy.g:1038:1: ( ( rule__ServiceConfig__ResourcesconfigAssignment_21 ) )
+            // InternalMy.g:1039:2: ( rule__ServiceConfig__ResourcesconfigAssignment_21 )
+            {
+             before(grammarAccess.getServiceConfigAccess().getResourcesconfigAssignment_21()); 
+            // InternalMy.g:1040:2: ( rule__ServiceConfig__ResourcesconfigAssignment_21 )
+            // InternalMy.g:1040:3: rule__ServiceConfig__ResourcesconfigAssignment_21
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__ResourcesconfigAssignment_21();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getServiceConfigAccess().getResourcesconfigAssignment_21()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group__21__Impl"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group__22"
+    // InternalMy.g:1048:1: rule__ServiceConfig__Group__22 : rule__ServiceConfig__Group__22__Impl rule__ServiceConfig__Group__23 ;
+    public final void rule__ServiceConfig__Group__22() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1052:1: ( rule__ServiceConfig__Group__22__Impl rule__ServiceConfig__Group__23 )
+            // InternalMy.g:1053:2: rule__ServiceConfig__Group__22__Impl rule__ServiceConfig__Group__23
+            {
+            pushFollow(FOLLOW_14);
+            rule__ServiceConfig__Group__22__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group__23();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group__22"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group__22__Impl"
+    // InternalMy.g:1060:1: rule__ServiceConfig__Group__22__Impl : ( ( rule__ServiceConfig__Group_22__0 )* ) ;
+    public final void rule__ServiceConfig__Group__22__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1064:1: ( ( ( rule__ServiceConfig__Group_22__0 )* ) )
+            // InternalMy.g:1065:1: ( ( rule__ServiceConfig__Group_22__0 )* )
+            {
+            // InternalMy.g:1065:1: ( ( rule__ServiceConfig__Group_22__0 )* )
+            // InternalMy.g:1066:2: ( rule__ServiceConfig__Group_22__0 )*
+            {
+             before(grammarAccess.getServiceConfigAccess().getGroup_22()); 
+            // InternalMy.g:1067:2: ( rule__ServiceConfig__Group_22__0 )*
+            loop9:
+            do {
+                int alt9=2;
+                int LA9_0 = input.LA(1);
+
+                if ( (LA9_0==18) ) {
+                    alt9=1;
+                }
+
+
+                switch (alt9) {
+            	case 1 :
+            	    // InternalMy.g:1067:3: rule__ServiceConfig__Group_22__0
+            	    {
+            	    pushFollow(FOLLOW_7);
+            	    rule__ServiceConfig__Group_22__0();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop9;
+                }
+            } while (true);
+
+             after(grammarAccess.getServiceConfigAccess().getGroup_22()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group__22__Impl"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group__23"
+    // InternalMy.g:1075:1: rule__ServiceConfig__Group__23 : rule__ServiceConfig__Group__23__Impl ;
+    public final void rule__ServiceConfig__Group__23() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1079:1: ( rule__ServiceConfig__Group__23__Impl )
+            // InternalMy.g:1080:2: rule__ServiceConfig__Group__23__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group__23__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group__23"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group__23__Impl"
+    // InternalMy.g:1086:1: rule__ServiceConfig__Group__23__Impl : ( ( rule__ServiceConfig__Group_23__0 )? ) ;
+    public final void rule__ServiceConfig__Group__23__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1090:1: ( ( ( rule__ServiceConfig__Group_23__0 )? ) )
+            // InternalMy.g:1091:1: ( ( rule__ServiceConfig__Group_23__0 )? )
+            {
+            // InternalMy.g:1091:1: ( ( rule__ServiceConfig__Group_23__0 )? )
+            // InternalMy.g:1092:2: ( rule__ServiceConfig__Group_23__0 )?
+            {
+             before(grammarAccess.getServiceConfigAccess().getGroup_23()); 
+            // InternalMy.g:1093:2: ( rule__ServiceConfig__Group_23__0 )?
+            int alt10=2;
+            int LA10_0 = input.LA(1);
+
+            if ( (LA10_0==20) ) {
+                alt10=1;
+            }
+            switch (alt10) {
+                case 1 :
+                    // InternalMy.g:1093:3: rule__ServiceConfig__Group_23__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__ServiceConfig__Group_23__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getServiceConfigAccess().getGroup_23()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group__23__Impl"
+
+
     // $ANTLR start "rule__ServiceConfig__Group_7__0"
-    // InternalMy.g:1021:1: rule__ServiceConfig__Group_7__0 : rule__ServiceConfig__Group_7__0__Impl rule__ServiceConfig__Group_7__1 ;
+    // InternalMy.g:1102:1: rule__ServiceConfig__Group_7__0 : rule__ServiceConfig__Group_7__0__Impl rule__ServiceConfig__Group_7__1 ;
     public final void rule__ServiceConfig__Group_7__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1025:1: ( rule__ServiceConfig__Group_7__0__Impl rule__ServiceConfig__Group_7__1 )
-            // InternalMy.g:1026:2: rule__ServiceConfig__Group_7__0__Impl rule__ServiceConfig__Group_7__1
+            // InternalMy.g:1106:1: ( rule__ServiceConfig__Group_7__0__Impl rule__ServiceConfig__Group_7__1 )
+            // InternalMy.g:1107:2: rule__ServiceConfig__Group_7__0__Impl rule__ServiceConfig__Group_7__1
             {
             pushFollow(FOLLOW_5);
             rule__ServiceConfig__Group_7__0__Impl();
@@ -3190,20 +3414,20 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_7__0__Impl"
-    // InternalMy.g:1033:1: rule__ServiceConfig__Group_7__0__Impl : ( ',' ) ;
+    // InternalMy.g:1114:1: rule__ServiceConfig__Group_7__0__Impl : ( ',' ) ;
     public final void rule__ServiceConfig__Group_7__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1037:1: ( ( ',' ) )
-            // InternalMy.g:1038:1: ( ',' )
+            // InternalMy.g:1118:1: ( ( ',' ) )
+            // InternalMy.g:1119:1: ( ',' )
             {
-            // InternalMy.g:1038:1: ( ',' )
-            // InternalMy.g:1039:2: ','
+            // InternalMy.g:1119:1: ( ',' )
+            // InternalMy.g:1120:2: ','
             {
              before(grammarAccess.getServiceConfigAccess().getCommaKeyword_7_0()); 
-            match(input,16,FOLLOW_2); 
+            match(input,18,FOLLOW_2); 
              after(grammarAccess.getServiceConfigAccess().getCommaKeyword_7_0()); 
 
             }
@@ -3227,14 +3451,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_7__1"
-    // InternalMy.g:1048:1: rule__ServiceConfig__Group_7__1 : rule__ServiceConfig__Group_7__1__Impl ;
+    // InternalMy.g:1129:1: rule__ServiceConfig__Group_7__1 : rule__ServiceConfig__Group_7__1__Impl ;
     public final void rule__ServiceConfig__Group_7__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1052:1: ( rule__ServiceConfig__Group_7__1__Impl )
-            // InternalMy.g:1053:2: rule__ServiceConfig__Group_7__1__Impl
+            // InternalMy.g:1133:1: ( rule__ServiceConfig__Group_7__1__Impl )
+            // InternalMy.g:1134:2: rule__ServiceConfig__Group_7__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ServiceConfig__Group_7__1__Impl();
@@ -3260,21 +3484,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_7__1__Impl"
-    // InternalMy.g:1059:1: rule__ServiceConfig__Group_7__1__Impl : ( ( rule__ServiceConfig__CountryAssignment_7_1 ) ) ;
+    // InternalMy.g:1140:1: rule__ServiceConfig__Group_7__1__Impl : ( ( rule__ServiceConfig__CountryAssignment_7_1 ) ) ;
     public final void rule__ServiceConfig__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1063:1: ( ( ( rule__ServiceConfig__CountryAssignment_7_1 ) ) )
-            // InternalMy.g:1064:1: ( ( rule__ServiceConfig__CountryAssignment_7_1 ) )
+            // InternalMy.g:1144:1: ( ( ( rule__ServiceConfig__CountryAssignment_7_1 ) ) )
+            // InternalMy.g:1145:1: ( ( rule__ServiceConfig__CountryAssignment_7_1 ) )
             {
-            // InternalMy.g:1064:1: ( ( rule__ServiceConfig__CountryAssignment_7_1 ) )
-            // InternalMy.g:1065:2: ( rule__ServiceConfig__CountryAssignment_7_1 )
+            // InternalMy.g:1145:1: ( ( rule__ServiceConfig__CountryAssignment_7_1 ) )
+            // InternalMy.g:1146:2: ( rule__ServiceConfig__CountryAssignment_7_1 )
             {
              before(grammarAccess.getServiceConfigAccess().getCountryAssignment_7_1()); 
-            // InternalMy.g:1066:2: ( rule__ServiceConfig__CountryAssignment_7_1 )
-            // InternalMy.g:1066:3: rule__ServiceConfig__CountryAssignment_7_1
+            // InternalMy.g:1147:2: ( rule__ServiceConfig__CountryAssignment_7_1 )
+            // InternalMy.g:1147:3: rule__ServiceConfig__CountryAssignment_7_1
             {
             pushFollow(FOLLOW_2);
             rule__ServiceConfig__CountryAssignment_7_1();
@@ -3307,14 +3531,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_8__0"
-    // InternalMy.g:1075:1: rule__ServiceConfig__Group_8__0 : rule__ServiceConfig__Group_8__0__Impl rule__ServiceConfig__Group_8__1 ;
+    // InternalMy.g:1156:1: rule__ServiceConfig__Group_8__0 : rule__ServiceConfig__Group_8__0__Impl rule__ServiceConfig__Group_8__1 ;
     public final void rule__ServiceConfig__Group_8__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1079:1: ( rule__ServiceConfig__Group_8__0__Impl rule__ServiceConfig__Group_8__1 )
-            // InternalMy.g:1080:2: rule__ServiceConfig__Group_8__0__Impl rule__ServiceConfig__Group_8__1
+            // InternalMy.g:1160:1: ( rule__ServiceConfig__Group_8__0__Impl rule__ServiceConfig__Group_8__1 )
+            // InternalMy.g:1161:2: rule__ServiceConfig__Group_8__0__Impl rule__ServiceConfig__Group_8__1
             {
             pushFollow(FOLLOW_3);
             rule__ServiceConfig__Group_8__0__Impl();
@@ -3345,21 +3569,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_8__0__Impl"
-    // InternalMy.g:1087:1: rule__ServiceConfig__Group_8__0__Impl : ( 'pricingsystem' ) ;
+    // InternalMy.g:1168:1: rule__ServiceConfig__Group_8__0__Impl : ( 'paiements-proposes' ) ;
     public final void rule__ServiceConfig__Group_8__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1091:1: ( ( 'pricingsystem' ) )
-            // InternalMy.g:1092:1: ( 'pricingsystem' )
+            // InternalMy.g:1172:1: ( ( 'paiements-proposes' ) )
+            // InternalMy.g:1173:1: ( 'paiements-proposes' )
             {
-            // InternalMy.g:1092:1: ( 'pricingsystem' )
-            // InternalMy.g:1093:2: 'pricingsystem'
+            // InternalMy.g:1173:1: ( 'paiements-proposes' )
+            // InternalMy.g:1174:2: 'paiements-proposes'
             {
-             before(grammarAccess.getServiceConfigAccess().getPricingsystemKeyword_8_0()); 
-            match(input,17,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getPricingsystemKeyword_8_0()); 
+             before(grammarAccess.getServiceConfigAccess().getPaiementsProposesKeyword_8_0()); 
+            match(input,19,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getPaiementsProposesKeyword_8_0()); 
 
             }
 
@@ -3382,16 +3606,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_8__1"
-    // InternalMy.g:1102:1: rule__ServiceConfig__Group_8__1 : rule__ServiceConfig__Group_8__1__Impl rule__ServiceConfig__Group_8__2 ;
+    // InternalMy.g:1183:1: rule__ServiceConfig__Group_8__1 : rule__ServiceConfig__Group_8__1__Impl rule__ServiceConfig__Group_8__2 ;
     public final void rule__ServiceConfig__Group_8__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1106:1: ( rule__ServiceConfig__Group_8__1__Impl rule__ServiceConfig__Group_8__2 )
-            // InternalMy.g:1107:2: rule__ServiceConfig__Group_8__1__Impl rule__ServiceConfig__Group_8__2
+            // InternalMy.g:1187:1: ( rule__ServiceConfig__Group_8__1__Impl rule__ServiceConfig__Group_8__2 )
+            // InternalMy.g:1188:2: rule__ServiceConfig__Group_8__1__Impl rule__ServiceConfig__Group_8__2
             {
-            pushFollow(FOLLOW_5);
+            pushFollow(FOLLOW_9);
             rule__ServiceConfig__Group_8__1__Impl();
 
             state._fsp--;
@@ -3420,17 +3644,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_8__1__Impl"
-    // InternalMy.g:1114:1: rule__ServiceConfig__Group_8__1__Impl : ( ':' ) ;
+    // InternalMy.g:1195:1: rule__ServiceConfig__Group_8__1__Impl : ( ':' ) ;
     public final void rule__ServiceConfig__Group_8__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1118:1: ( ( ':' ) )
-            // InternalMy.g:1119:1: ( ':' )
+            // InternalMy.g:1199:1: ( ( ':' ) )
+            // InternalMy.g:1200:1: ( ':' )
             {
-            // InternalMy.g:1119:1: ( ':' )
-            // InternalMy.g:1120:2: ':'
+            // InternalMy.g:1200:1: ( ':' )
+            // InternalMy.g:1201:2: ':'
             {
              before(grammarAccess.getServiceConfigAccess().getColonKeyword_8_1()); 
             match(input,11,FOLLOW_2); 
@@ -3457,16 +3681,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_8__2"
-    // InternalMy.g:1129:1: rule__ServiceConfig__Group_8__2 : rule__ServiceConfig__Group_8__2__Impl rule__ServiceConfig__Group_8__3 ;
+    // InternalMy.g:1210:1: rule__ServiceConfig__Group_8__2 : rule__ServiceConfig__Group_8__2__Impl rule__ServiceConfig__Group_8__3 ;
     public final void rule__ServiceConfig__Group_8__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1133:1: ( rule__ServiceConfig__Group_8__2__Impl rule__ServiceConfig__Group_8__3 )
-            // InternalMy.g:1134:2: rule__ServiceConfig__Group_8__2__Impl rule__ServiceConfig__Group_8__3
+            // InternalMy.g:1214:1: ( rule__ServiceConfig__Group_8__2__Impl rule__ServiceConfig__Group_8__3 )
+            // InternalMy.g:1215:2: rule__ServiceConfig__Group_8__2__Impl rule__ServiceConfig__Group_8__3
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_5);
             rule__ServiceConfig__Group_8__2__Impl();
 
             state._fsp--;
@@ -3495,31 +3719,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_8__2__Impl"
-    // InternalMy.g:1141:1: rule__ServiceConfig__Group_8__2__Impl : ( ( rule__ServiceConfig__PricingsystemAssignment_8_2 ) ) ;
+    // InternalMy.g:1222:1: rule__ServiceConfig__Group_8__2__Impl : ( '(' ) ;
     public final void rule__ServiceConfig__Group_8__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1145:1: ( ( ( rule__ServiceConfig__PricingsystemAssignment_8_2 ) ) )
-            // InternalMy.g:1146:1: ( ( rule__ServiceConfig__PricingsystemAssignment_8_2 ) )
+            // InternalMy.g:1226:1: ( ( '(' ) )
+            // InternalMy.g:1227:1: ( '(' )
             {
-            // InternalMy.g:1146:1: ( ( rule__ServiceConfig__PricingsystemAssignment_8_2 ) )
-            // InternalMy.g:1147:2: ( rule__ServiceConfig__PricingsystemAssignment_8_2 )
+            // InternalMy.g:1227:1: ( '(' )
+            // InternalMy.g:1228:2: '('
             {
-             before(grammarAccess.getServiceConfigAccess().getPricingsystemAssignment_8_2()); 
-            // InternalMy.g:1148:2: ( rule__ServiceConfig__PricingsystemAssignment_8_2 )
-            // InternalMy.g:1148:3: rule__ServiceConfig__PricingsystemAssignment_8_2
-            {
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__PricingsystemAssignment_8_2();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getServiceConfigAccess().getPricingsystemAssignment_8_2()); 
+             before(grammarAccess.getServiceConfigAccess().getLeftParenthesisKeyword_8_2()); 
+            match(input,15,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getLeftParenthesisKeyword_8_2()); 
 
             }
 
@@ -3542,17 +3756,22 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_8__3"
-    // InternalMy.g:1156:1: rule__ServiceConfig__Group_8__3 : rule__ServiceConfig__Group_8__3__Impl ;
+    // InternalMy.g:1237:1: rule__ServiceConfig__Group_8__3 : rule__ServiceConfig__Group_8__3__Impl rule__ServiceConfig__Group_8__4 ;
     public final void rule__ServiceConfig__Group_8__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1160:1: ( rule__ServiceConfig__Group_8__3__Impl )
-            // InternalMy.g:1161:2: rule__ServiceConfig__Group_8__3__Impl
+            // InternalMy.g:1241:1: ( rule__ServiceConfig__Group_8__3__Impl rule__ServiceConfig__Group_8__4 )
+            // InternalMy.g:1242:2: rule__ServiceConfig__Group_8__3__Impl rule__ServiceConfig__Group_8__4
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_15);
             rule__ServiceConfig__Group_8__3__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group_8__4();
 
             state._fsp--;
 
@@ -3575,49 +3794,31 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__Group_8__3__Impl"
-    // InternalMy.g:1167:1: rule__ServiceConfig__Group_8__3__Impl : ( ( rule__ServiceConfig__Group_8_3__0 )* ) ;
+    // InternalMy.g:1249:1: rule__ServiceConfig__Group_8__3__Impl : ( ( rule__ServiceConfig__PricingsystemAssignment_8_3 ) ) ;
     public final void rule__ServiceConfig__Group_8__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1171:1: ( ( ( rule__ServiceConfig__Group_8_3__0 )* ) )
-            // InternalMy.g:1172:1: ( ( rule__ServiceConfig__Group_8_3__0 )* )
+            // InternalMy.g:1253:1: ( ( ( rule__ServiceConfig__PricingsystemAssignment_8_3 ) ) )
+            // InternalMy.g:1254:1: ( ( rule__ServiceConfig__PricingsystemAssignment_8_3 ) )
             {
-            // InternalMy.g:1172:1: ( ( rule__ServiceConfig__Group_8_3__0 )* )
-            // InternalMy.g:1173:2: ( rule__ServiceConfig__Group_8_3__0 )*
+            // InternalMy.g:1254:1: ( ( rule__ServiceConfig__PricingsystemAssignment_8_3 ) )
+            // InternalMy.g:1255:2: ( rule__ServiceConfig__PricingsystemAssignment_8_3 )
             {
-             before(grammarAccess.getServiceConfigAccess().getGroup_8_3()); 
-            // InternalMy.g:1174:2: ( rule__ServiceConfig__Group_8_3__0 )*
-            loop11:
-            do {
-                int alt11=2;
-                int LA11_0 = input.LA(1);
+             before(grammarAccess.getServiceConfigAccess().getPricingsystemAssignment_8_3()); 
+            // InternalMy.g:1256:2: ( rule__ServiceConfig__PricingsystemAssignment_8_3 )
+            // InternalMy.g:1256:3: rule__ServiceConfig__PricingsystemAssignment_8_3
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__PricingsystemAssignment_8_3();
 
-                if ( (LA11_0==16) ) {
-                    alt11=1;
-                }
+            state._fsp--;
 
 
-                switch (alt11) {
-            	case 1 :
-            	    // InternalMy.g:1174:3: rule__ServiceConfig__Group_8_3__0
-            	    {
-            	    pushFollow(FOLLOW_7);
-            	    rule__ServiceConfig__Group_8_3__0();
+            }
 
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop11;
-                }
-            } while (true);
-
-             after(grammarAccess.getServiceConfigAccess().getGroup_8_3()); 
+             after(grammarAccess.getServiceConfigAccess().getPricingsystemAssignment_8_3()); 
 
             }
 
@@ -3639,23 +3840,121 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ServiceConfig__Group_8__3__Impl"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_8_3__0"
-    // InternalMy.g:1183:1: rule__ServiceConfig__Group_8_3__0 : rule__ServiceConfig__Group_8_3__0__Impl rule__ServiceConfig__Group_8_3__1 ;
-    public final void rule__ServiceConfig__Group_8_3__0() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_8__4"
+    // InternalMy.g:1264:1: rule__ServiceConfig__Group_8__4 : rule__ServiceConfig__Group_8__4__Impl ;
+    public final void rule__ServiceConfig__Group_8__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1187:1: ( rule__ServiceConfig__Group_8_3__0__Impl rule__ServiceConfig__Group_8_3__1 )
-            // InternalMy.g:1188:2: rule__ServiceConfig__Group_8_3__0__Impl rule__ServiceConfig__Group_8_3__1
+            // InternalMy.g:1268:1: ( rule__ServiceConfig__Group_8__4__Impl )
+            // InternalMy.g:1269:2: rule__ServiceConfig__Group_8__4__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group_8__4__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_8__4"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_8__4__Impl"
+    // InternalMy.g:1275:1: rule__ServiceConfig__Group_8__4__Impl : ( ( rule__ServiceConfig__Group_8_4__0 )* ) ;
+    public final void rule__ServiceConfig__Group_8__4__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1279:1: ( ( ( rule__ServiceConfig__Group_8_4__0 )* ) )
+            // InternalMy.g:1280:1: ( ( rule__ServiceConfig__Group_8_4__0 )* )
+            {
+            // InternalMy.g:1280:1: ( ( rule__ServiceConfig__Group_8_4__0 )* )
+            // InternalMy.g:1281:2: ( rule__ServiceConfig__Group_8_4__0 )*
+            {
+             before(grammarAccess.getServiceConfigAccess().getGroup_8_4()); 
+            // InternalMy.g:1282:2: ( rule__ServiceConfig__Group_8_4__0 )*
+            loop11:
+            do {
+                int alt11=2;
+                int LA11_0 = input.LA(1);
+
+                if ( (LA11_0==18) ) {
+                    alt11=1;
+                }
+
+
+                switch (alt11) {
+            	case 1 :
+            	    // InternalMy.g:1282:3: rule__ServiceConfig__Group_8_4__0
+            	    {
+            	    pushFollow(FOLLOW_7);
+            	    rule__ServiceConfig__Group_8_4__0();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop11;
+                }
+            } while (true);
+
+             after(grammarAccess.getServiceConfigAccess().getGroup_8_4()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_8__4__Impl"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_8_4__0"
+    // InternalMy.g:1291:1: rule__ServiceConfig__Group_8_4__0 : rule__ServiceConfig__Group_8_4__0__Impl rule__ServiceConfig__Group_8_4__1 ;
+    public final void rule__ServiceConfig__Group_8_4__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1295:1: ( rule__ServiceConfig__Group_8_4__0__Impl rule__ServiceConfig__Group_8_4__1 )
+            // InternalMy.g:1296:2: rule__ServiceConfig__Group_8_4__0__Impl rule__ServiceConfig__Group_8_4__1
             {
             pushFollow(FOLLOW_5);
-            rule__ServiceConfig__Group_8_3__0__Impl();
+            rule__ServiceConfig__Group_8_4__0__Impl();
 
             state._fsp--;
 
             pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_8_3__1();
+            rule__ServiceConfig__Group_8_4__1();
 
             state._fsp--;
 
@@ -3674,322 +3973,12 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_8_3__0"
+    // $ANTLR end "rule__ServiceConfig__Group_8_4__0"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_8_3__0__Impl"
-    // InternalMy.g:1195:1: rule__ServiceConfig__Group_8_3__0__Impl : ( ',' ) ;
-    public final void rule__ServiceConfig__Group_8_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1199:1: ( ( ',' ) )
-            // InternalMy.g:1200:1: ( ',' )
-            {
-            // InternalMy.g:1200:1: ( ',' )
-            // InternalMy.g:1201:2: ','
-            {
-             before(grammarAccess.getServiceConfigAccess().getCommaKeyword_8_3_0()); 
-            match(input,16,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getCommaKeyword_8_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ServiceConfig__Group_8_3__0__Impl"
-
-
-    // $ANTLR start "rule__ServiceConfig__Group_8_3__1"
-    // InternalMy.g:1210:1: rule__ServiceConfig__Group_8_3__1 : rule__ServiceConfig__Group_8_3__1__Impl ;
-    public final void rule__ServiceConfig__Group_8_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1214:1: ( rule__ServiceConfig__Group_8_3__1__Impl )
-            // InternalMy.g:1215:2: rule__ServiceConfig__Group_8_3__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_8_3__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ServiceConfig__Group_8_3__1"
-
-
-    // $ANTLR start "rule__ServiceConfig__Group_8_3__1__Impl"
-    // InternalMy.g:1221:1: rule__ServiceConfig__Group_8_3__1__Impl : ( ( rule__ServiceConfig__PricingsystemAssignment_8_3_1 ) ) ;
-    public final void rule__ServiceConfig__Group_8_3__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1225:1: ( ( ( rule__ServiceConfig__PricingsystemAssignment_8_3_1 ) ) )
-            // InternalMy.g:1226:1: ( ( rule__ServiceConfig__PricingsystemAssignment_8_3_1 ) )
-            {
-            // InternalMy.g:1226:1: ( ( rule__ServiceConfig__PricingsystemAssignment_8_3_1 ) )
-            // InternalMy.g:1227:2: ( rule__ServiceConfig__PricingsystemAssignment_8_3_1 )
-            {
-             before(grammarAccess.getServiceConfigAccess().getPricingsystemAssignment_8_3_1()); 
-            // InternalMy.g:1228:2: ( rule__ServiceConfig__PricingsystemAssignment_8_3_1 )
-            // InternalMy.g:1228:3: rule__ServiceConfig__PricingsystemAssignment_8_3_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__PricingsystemAssignment_8_3_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getServiceConfigAccess().getPricingsystemAssignment_8_3_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ServiceConfig__Group_8_3__1__Impl"
-
-
-    // $ANTLR start "rule__ServiceConfig__Group_12__0"
-    // InternalMy.g:1237:1: rule__ServiceConfig__Group_12__0 : rule__ServiceConfig__Group_12__0__Impl rule__ServiceConfig__Group_12__1 ;
-    public final void rule__ServiceConfig__Group_12__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1241:1: ( rule__ServiceConfig__Group_12__0__Impl rule__ServiceConfig__Group_12__1 )
-            // InternalMy.g:1242:2: rule__ServiceConfig__Group_12__0__Impl rule__ServiceConfig__Group_12__1
-            {
-            pushFollow(FOLLOW_5);
-            rule__ServiceConfig__Group_12__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_12__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ServiceConfig__Group_12__0"
-
-
-    // $ANTLR start "rule__ServiceConfig__Group_12__0__Impl"
-    // InternalMy.g:1249:1: rule__ServiceConfig__Group_12__0__Impl : ( ',' ) ;
-    public final void rule__ServiceConfig__Group_12__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1253:1: ( ( ',' ) )
-            // InternalMy.g:1254:1: ( ',' )
-            {
-            // InternalMy.g:1254:1: ( ',' )
-            // InternalMy.g:1255:2: ','
-            {
-             before(grammarAccess.getServiceConfigAccess().getCommaKeyword_12_0()); 
-            match(input,16,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getCommaKeyword_12_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ServiceConfig__Group_12__0__Impl"
-
-
-    // $ANTLR start "rule__ServiceConfig__Group_12__1"
-    // InternalMy.g:1264:1: rule__ServiceConfig__Group_12__1 : rule__ServiceConfig__Group_12__1__Impl ;
-    public final void rule__ServiceConfig__Group_12__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1268:1: ( rule__ServiceConfig__Group_12__1__Impl )
-            // InternalMy.g:1269:2: rule__ServiceConfig__Group_12__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_12__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ServiceConfig__Group_12__1"
-
-
-    // $ANTLR start "rule__ServiceConfig__Group_12__1__Impl"
-    // InternalMy.g:1275:1: rule__ServiceConfig__Group_12__1__Impl : ( ( rule__ServiceConfig__LanguageAssignment_12_1 ) ) ;
-    public final void rule__ServiceConfig__Group_12__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1279:1: ( ( ( rule__ServiceConfig__LanguageAssignment_12_1 ) ) )
-            // InternalMy.g:1280:1: ( ( rule__ServiceConfig__LanguageAssignment_12_1 ) )
-            {
-            // InternalMy.g:1280:1: ( ( rule__ServiceConfig__LanguageAssignment_12_1 ) )
-            // InternalMy.g:1281:2: ( rule__ServiceConfig__LanguageAssignment_12_1 )
-            {
-             before(grammarAccess.getServiceConfigAccess().getLanguageAssignment_12_1()); 
-            // InternalMy.g:1282:2: ( rule__ServiceConfig__LanguageAssignment_12_1 )
-            // InternalMy.g:1282:3: rule__ServiceConfig__LanguageAssignment_12_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__LanguageAssignment_12_1();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getServiceConfigAccess().getLanguageAssignment_12_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ServiceConfig__Group_12__1__Impl"
-
-
-    // $ANTLR start "rule__ServiceConfig__Group_19__0"
-    // InternalMy.g:1291:1: rule__ServiceConfig__Group_19__0 : rule__ServiceConfig__Group_19__0__Impl rule__ServiceConfig__Group_19__1 ;
-    public final void rule__ServiceConfig__Group_19__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1295:1: ( rule__ServiceConfig__Group_19__0__Impl rule__ServiceConfig__Group_19__1 )
-            // InternalMy.g:1296:2: rule__ServiceConfig__Group_19__0__Impl rule__ServiceConfig__Group_19__1
-            {
-            pushFollow(FOLLOW_11);
-            rule__ServiceConfig__Group_19__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_19__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__ServiceConfig__Group_19__0"
-
-
-    // $ANTLR start "rule__ServiceConfig__Group_19__0__Impl"
-    // InternalMy.g:1303:1: rule__ServiceConfig__Group_19__0__Impl : ( ',' ) ;
-    public final void rule__ServiceConfig__Group_19__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_8_4__0__Impl"
+    // InternalMy.g:1303:1: rule__ServiceConfig__Group_8_4__0__Impl : ( ',' ) ;
+    public final void rule__ServiceConfig__Group_8_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
@@ -4000,9 +3989,9 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
             // InternalMy.g:1308:1: ( ',' )
             // InternalMy.g:1309:2: ','
             {
-             before(grammarAccess.getServiceConfigAccess().getCommaKeyword_19_0()); 
-            match(input,16,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getCommaKeyword_19_0()); 
+             before(grammarAccess.getServiceConfigAccess().getCommaKeyword_8_4_0()); 
+            match(input,18,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getCommaKeyword_8_4_0()); 
 
             }
 
@@ -4021,21 +4010,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_19__0__Impl"
+    // $ANTLR end "rule__ServiceConfig__Group_8_4__0__Impl"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_19__1"
-    // InternalMy.g:1318:1: rule__ServiceConfig__Group_19__1 : rule__ServiceConfig__Group_19__1__Impl ;
-    public final void rule__ServiceConfig__Group_19__1() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_8_4__1"
+    // InternalMy.g:1318:1: rule__ServiceConfig__Group_8_4__1 : rule__ServiceConfig__Group_8_4__1__Impl ;
+    public final void rule__ServiceConfig__Group_8_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1322:1: ( rule__ServiceConfig__Group_19__1__Impl )
-            // InternalMy.g:1323:2: rule__ServiceConfig__Group_19__1__Impl
+            // InternalMy.g:1322:1: ( rule__ServiceConfig__Group_8_4__1__Impl )
+            // InternalMy.g:1323:2: rule__ServiceConfig__Group_8_4__1__Impl
             {
             pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_19__1__Impl();
+            rule__ServiceConfig__Group_8_4__1__Impl();
 
             state._fsp--;
 
@@ -4054,35 +4043,35 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_19__1"
+    // $ANTLR end "rule__ServiceConfig__Group_8_4__1"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_19__1__Impl"
-    // InternalMy.g:1329:1: rule__ServiceConfig__Group_19__1__Impl : ( ( rule__ServiceConfig__ResourcesconfigAssignment_19_1 ) ) ;
-    public final void rule__ServiceConfig__Group_19__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_8_4__1__Impl"
+    // InternalMy.g:1329:1: rule__ServiceConfig__Group_8_4__1__Impl : ( ( rule__ServiceConfig__PricingsystemAssignment_8_4_1 ) ) ;
+    public final void rule__ServiceConfig__Group_8_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1333:1: ( ( ( rule__ServiceConfig__ResourcesconfigAssignment_19_1 ) ) )
-            // InternalMy.g:1334:1: ( ( rule__ServiceConfig__ResourcesconfigAssignment_19_1 ) )
+            // InternalMy.g:1333:1: ( ( ( rule__ServiceConfig__PricingsystemAssignment_8_4_1 ) ) )
+            // InternalMy.g:1334:1: ( ( rule__ServiceConfig__PricingsystemAssignment_8_4_1 ) )
             {
-            // InternalMy.g:1334:1: ( ( rule__ServiceConfig__ResourcesconfigAssignment_19_1 ) )
-            // InternalMy.g:1335:2: ( rule__ServiceConfig__ResourcesconfigAssignment_19_1 )
+            // InternalMy.g:1334:1: ( ( rule__ServiceConfig__PricingsystemAssignment_8_4_1 ) )
+            // InternalMy.g:1335:2: ( rule__ServiceConfig__PricingsystemAssignment_8_4_1 )
             {
-             before(grammarAccess.getServiceConfigAccess().getResourcesconfigAssignment_19_1()); 
-            // InternalMy.g:1336:2: ( rule__ServiceConfig__ResourcesconfigAssignment_19_1 )
-            // InternalMy.g:1336:3: rule__ServiceConfig__ResourcesconfigAssignment_19_1
+             before(grammarAccess.getServiceConfigAccess().getPricingsystemAssignment_8_4_1()); 
+            // InternalMy.g:1336:2: ( rule__ServiceConfig__PricingsystemAssignment_8_4_1 )
+            // InternalMy.g:1336:3: rule__ServiceConfig__PricingsystemAssignment_8_4_1
             {
             pushFollow(FOLLOW_2);
-            rule__ServiceConfig__ResourcesconfigAssignment_19_1();
+            rule__ServiceConfig__PricingsystemAssignment_8_4_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getResourcesconfigAssignment_19_1()); 
+             after(grammarAccess.getServiceConfigAccess().getPricingsystemAssignment_8_4_1()); 
 
             }
 
@@ -4101,26 +4090,336 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_19__1__Impl"
+    // $ANTLR end "rule__ServiceConfig__Group_8_4__1__Impl"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_20__0"
-    // InternalMy.g:1345:1: rule__ServiceConfig__Group_20__0 : rule__ServiceConfig__Group_20__0__Impl rule__ServiceConfig__Group_20__1 ;
-    public final void rule__ServiceConfig__Group_20__0() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_14__0"
+    // InternalMy.g:1345:1: rule__ServiceConfig__Group_14__0 : rule__ServiceConfig__Group_14__0__Impl rule__ServiceConfig__Group_14__1 ;
+    public final void rule__ServiceConfig__Group_14__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1349:1: ( rule__ServiceConfig__Group_20__0__Impl rule__ServiceConfig__Group_20__1 )
-            // InternalMy.g:1350:2: rule__ServiceConfig__Group_20__0__Impl rule__ServiceConfig__Group_20__1
+            // InternalMy.g:1349:1: ( rule__ServiceConfig__Group_14__0__Impl rule__ServiceConfig__Group_14__1 )
+            // InternalMy.g:1350:2: rule__ServiceConfig__Group_14__0__Impl rule__ServiceConfig__Group_14__1
+            {
+            pushFollow(FOLLOW_5);
+            rule__ServiceConfig__Group_14__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group_14__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_14__0"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_14__0__Impl"
+    // InternalMy.g:1357:1: rule__ServiceConfig__Group_14__0__Impl : ( ',' ) ;
+    public final void rule__ServiceConfig__Group_14__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1361:1: ( ( ',' ) )
+            // InternalMy.g:1362:1: ( ',' )
+            {
+            // InternalMy.g:1362:1: ( ',' )
+            // InternalMy.g:1363:2: ','
+            {
+             before(grammarAccess.getServiceConfigAccess().getCommaKeyword_14_0()); 
+            match(input,18,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getCommaKeyword_14_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_14__0__Impl"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_14__1"
+    // InternalMy.g:1372:1: rule__ServiceConfig__Group_14__1 : rule__ServiceConfig__Group_14__1__Impl ;
+    public final void rule__ServiceConfig__Group_14__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1376:1: ( rule__ServiceConfig__Group_14__1__Impl )
+            // InternalMy.g:1377:2: rule__ServiceConfig__Group_14__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group_14__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_14__1"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_14__1__Impl"
+    // InternalMy.g:1383:1: rule__ServiceConfig__Group_14__1__Impl : ( ( rule__ServiceConfig__LanguageAssignment_14_1 ) ) ;
+    public final void rule__ServiceConfig__Group_14__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1387:1: ( ( ( rule__ServiceConfig__LanguageAssignment_14_1 ) ) )
+            // InternalMy.g:1388:1: ( ( rule__ServiceConfig__LanguageAssignment_14_1 ) )
+            {
+            // InternalMy.g:1388:1: ( ( rule__ServiceConfig__LanguageAssignment_14_1 ) )
+            // InternalMy.g:1389:2: ( rule__ServiceConfig__LanguageAssignment_14_1 )
+            {
+             before(grammarAccess.getServiceConfigAccess().getLanguageAssignment_14_1()); 
+            // InternalMy.g:1390:2: ( rule__ServiceConfig__LanguageAssignment_14_1 )
+            // InternalMy.g:1390:3: rule__ServiceConfig__LanguageAssignment_14_1
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__LanguageAssignment_14_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getServiceConfigAccess().getLanguageAssignment_14_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_14__1__Impl"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_22__0"
+    // InternalMy.g:1399:1: rule__ServiceConfig__Group_22__0 : rule__ServiceConfig__Group_22__0__Impl rule__ServiceConfig__Group_22__1 ;
+    public final void rule__ServiceConfig__Group_22__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1403:1: ( rule__ServiceConfig__Group_22__0__Impl rule__ServiceConfig__Group_22__1 )
+            // InternalMy.g:1404:2: rule__ServiceConfig__Group_22__0__Impl rule__ServiceConfig__Group_22__1
+            {
+            pushFollow(FOLLOW_9);
+            rule__ServiceConfig__Group_22__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group_22__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_22__0"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_22__0__Impl"
+    // InternalMy.g:1411:1: rule__ServiceConfig__Group_22__0__Impl : ( ',' ) ;
+    public final void rule__ServiceConfig__Group_22__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1415:1: ( ( ',' ) )
+            // InternalMy.g:1416:1: ( ',' )
+            {
+            // InternalMy.g:1416:1: ( ',' )
+            // InternalMy.g:1417:2: ','
+            {
+             before(grammarAccess.getServiceConfigAccess().getCommaKeyword_22_0()); 
+            match(input,18,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getCommaKeyword_22_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_22__0__Impl"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_22__1"
+    // InternalMy.g:1426:1: rule__ServiceConfig__Group_22__1 : rule__ServiceConfig__Group_22__1__Impl ;
+    public final void rule__ServiceConfig__Group_22__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1430:1: ( rule__ServiceConfig__Group_22__1__Impl )
+            // InternalMy.g:1431:2: rule__ServiceConfig__Group_22__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__Group_22__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_22__1"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_22__1__Impl"
+    // InternalMy.g:1437:1: rule__ServiceConfig__Group_22__1__Impl : ( ( rule__ServiceConfig__ResourcesconfigAssignment_22_1 ) ) ;
+    public final void rule__ServiceConfig__Group_22__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1441:1: ( ( ( rule__ServiceConfig__ResourcesconfigAssignment_22_1 ) ) )
+            // InternalMy.g:1442:1: ( ( rule__ServiceConfig__ResourcesconfigAssignment_22_1 ) )
+            {
+            // InternalMy.g:1442:1: ( ( rule__ServiceConfig__ResourcesconfigAssignment_22_1 ) )
+            // InternalMy.g:1443:2: ( rule__ServiceConfig__ResourcesconfigAssignment_22_1 )
+            {
+             before(grammarAccess.getServiceConfigAccess().getResourcesconfigAssignment_22_1()); 
+            // InternalMy.g:1444:2: ( rule__ServiceConfig__ResourcesconfigAssignment_22_1 )
+            // InternalMy.g:1444:3: rule__ServiceConfig__ResourcesconfigAssignment_22_1
+            {
+            pushFollow(FOLLOW_2);
+            rule__ServiceConfig__ResourcesconfigAssignment_22_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getServiceConfigAccess().getResourcesconfigAssignment_22_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ServiceConfig__Group_22__1__Impl"
+
+
+    // $ANTLR start "rule__ServiceConfig__Group_23__0"
+    // InternalMy.g:1453:1: rule__ServiceConfig__Group_23__0 : rule__ServiceConfig__Group_23__0__Impl rule__ServiceConfig__Group_23__1 ;
+    public final void rule__ServiceConfig__Group_23__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1457:1: ( rule__ServiceConfig__Group_23__0__Impl rule__ServiceConfig__Group_23__1 )
+            // InternalMy.g:1458:2: rule__ServiceConfig__Group_23__0__Impl rule__ServiceConfig__Group_23__1
             {
             pushFollow(FOLLOW_3);
-            rule__ServiceConfig__Group_20__0__Impl();
+            rule__ServiceConfig__Group_23__0__Impl();
 
             state._fsp--;
 
             pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_20__1();
+            rule__ServiceConfig__Group_23__1();
 
             state._fsp--;
 
@@ -4139,25 +4438,25 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_20__0"
+    // $ANTLR end "rule__ServiceConfig__Group_23__0"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_20__0__Impl"
-    // InternalMy.g:1357:1: rule__ServiceConfig__Group_20__0__Impl : ( 'lotsconfig' ) ;
-    public final void rule__ServiceConfig__Group_20__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_23__0__Impl"
+    // InternalMy.g:1465:1: rule__ServiceConfig__Group_23__0__Impl : ( 'lotsconfig' ) ;
+    public final void rule__ServiceConfig__Group_23__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1361:1: ( ( 'lotsconfig' ) )
-            // InternalMy.g:1362:1: ( 'lotsconfig' )
+            // InternalMy.g:1469:1: ( ( 'lotsconfig' ) )
+            // InternalMy.g:1470:1: ( 'lotsconfig' )
             {
-            // InternalMy.g:1362:1: ( 'lotsconfig' )
-            // InternalMy.g:1363:2: 'lotsconfig'
+            // InternalMy.g:1470:1: ( 'lotsconfig' )
+            // InternalMy.g:1471:2: 'lotsconfig'
             {
-             before(grammarAccess.getServiceConfigAccess().getLotsconfigKeyword_20_0()); 
-            match(input,18,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getLotsconfigKeyword_20_0()); 
+             before(grammarAccess.getServiceConfigAccess().getLotsconfigKeyword_23_0()); 
+            match(input,20,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getLotsconfigKeyword_23_0()); 
 
             }
 
@@ -4176,26 +4475,26 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_20__0__Impl"
+    // $ANTLR end "rule__ServiceConfig__Group_23__0__Impl"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_20__1"
-    // InternalMy.g:1372:1: rule__ServiceConfig__Group_20__1 : rule__ServiceConfig__Group_20__1__Impl rule__ServiceConfig__Group_20__2 ;
-    public final void rule__ServiceConfig__Group_20__1() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_23__1"
+    // InternalMy.g:1480:1: rule__ServiceConfig__Group_23__1 : rule__ServiceConfig__Group_23__1__Impl rule__ServiceConfig__Group_23__2 ;
+    public final void rule__ServiceConfig__Group_23__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1376:1: ( rule__ServiceConfig__Group_20__1__Impl rule__ServiceConfig__Group_20__2 )
-            // InternalMy.g:1377:2: rule__ServiceConfig__Group_20__1__Impl rule__ServiceConfig__Group_20__2
+            // InternalMy.g:1484:1: ( rule__ServiceConfig__Group_23__1__Impl rule__ServiceConfig__Group_23__2 )
+            // InternalMy.g:1485:2: rule__ServiceConfig__Group_23__1__Impl rule__ServiceConfig__Group_23__2
             {
-            pushFollow(FOLLOW_14);
-            rule__ServiceConfig__Group_20__1__Impl();
+            pushFollow(FOLLOW_9);
+            rule__ServiceConfig__Group_23__1__Impl();
 
             state._fsp--;
 
             pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_20__2();
+            rule__ServiceConfig__Group_23__2();
 
             state._fsp--;
 
@@ -4214,25 +4513,25 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_20__1"
+    // $ANTLR end "rule__ServiceConfig__Group_23__1"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_20__1__Impl"
-    // InternalMy.g:1384:1: rule__ServiceConfig__Group_20__1__Impl : ( ':' ) ;
-    public final void rule__ServiceConfig__Group_20__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_23__1__Impl"
+    // InternalMy.g:1492:1: rule__ServiceConfig__Group_23__1__Impl : ( ':' ) ;
+    public final void rule__ServiceConfig__Group_23__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1388:1: ( ( ':' ) )
-            // InternalMy.g:1389:1: ( ':' )
+            // InternalMy.g:1496:1: ( ( ':' ) )
+            // InternalMy.g:1497:1: ( ':' )
             {
-            // InternalMy.g:1389:1: ( ':' )
-            // InternalMy.g:1390:2: ':'
+            // InternalMy.g:1497:1: ( ':' )
+            // InternalMy.g:1498:2: ':'
             {
-             before(grammarAccess.getServiceConfigAccess().getColonKeyword_20_1()); 
+             before(grammarAccess.getServiceConfigAccess().getColonKeyword_23_1()); 
             match(input,11,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getColonKeyword_20_1()); 
+             after(grammarAccess.getServiceConfigAccess().getColonKeyword_23_1()); 
 
             }
 
@@ -4251,21 +4550,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_20__1__Impl"
+    // $ANTLR end "rule__ServiceConfig__Group_23__1__Impl"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_20__2"
-    // InternalMy.g:1399:1: rule__ServiceConfig__Group_20__2 : rule__ServiceConfig__Group_20__2__Impl ;
-    public final void rule__ServiceConfig__Group_20__2() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_23__2"
+    // InternalMy.g:1507:1: rule__ServiceConfig__Group_23__2 : rule__ServiceConfig__Group_23__2__Impl ;
+    public final void rule__ServiceConfig__Group_23__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1403:1: ( rule__ServiceConfig__Group_20__2__Impl )
-            // InternalMy.g:1404:2: rule__ServiceConfig__Group_20__2__Impl
+            // InternalMy.g:1511:1: ( rule__ServiceConfig__Group_23__2__Impl )
+            // InternalMy.g:1512:2: rule__ServiceConfig__Group_23__2__Impl
             {
             pushFollow(FOLLOW_2);
-            rule__ServiceConfig__Group_20__2__Impl();
+            rule__ServiceConfig__Group_23__2__Impl();
 
             state._fsp--;
 
@@ -4284,35 +4583,35 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_20__2"
+    // $ANTLR end "rule__ServiceConfig__Group_23__2"
 
 
-    // $ANTLR start "rule__ServiceConfig__Group_20__2__Impl"
-    // InternalMy.g:1410:1: rule__ServiceConfig__Group_20__2__Impl : ( ( rule__ServiceConfig__LotsconfigAssignment_20_2 ) ) ;
-    public final void rule__ServiceConfig__Group_20__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__Group_23__2__Impl"
+    // InternalMy.g:1518:1: rule__ServiceConfig__Group_23__2__Impl : ( ( rule__ServiceConfig__LotsconfigAssignment_23_2 ) ) ;
+    public final void rule__ServiceConfig__Group_23__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1414:1: ( ( ( rule__ServiceConfig__LotsconfigAssignment_20_2 ) ) )
-            // InternalMy.g:1415:1: ( ( rule__ServiceConfig__LotsconfigAssignment_20_2 ) )
+            // InternalMy.g:1522:1: ( ( ( rule__ServiceConfig__LotsconfigAssignment_23_2 ) ) )
+            // InternalMy.g:1523:1: ( ( rule__ServiceConfig__LotsconfigAssignment_23_2 ) )
             {
-            // InternalMy.g:1415:1: ( ( rule__ServiceConfig__LotsconfigAssignment_20_2 ) )
-            // InternalMy.g:1416:2: ( rule__ServiceConfig__LotsconfigAssignment_20_2 )
+            // InternalMy.g:1523:1: ( ( rule__ServiceConfig__LotsconfigAssignment_23_2 ) )
+            // InternalMy.g:1524:2: ( rule__ServiceConfig__LotsconfigAssignment_23_2 )
             {
-             before(grammarAccess.getServiceConfigAccess().getLotsconfigAssignment_20_2()); 
-            // InternalMy.g:1417:2: ( rule__ServiceConfig__LotsconfigAssignment_20_2 )
-            // InternalMy.g:1417:3: rule__ServiceConfig__LotsconfigAssignment_20_2
+             before(grammarAccess.getServiceConfigAccess().getLotsconfigAssignment_23_2()); 
+            // InternalMy.g:1525:2: ( rule__ServiceConfig__LotsconfigAssignment_23_2 )
+            // InternalMy.g:1525:3: rule__ServiceConfig__LotsconfigAssignment_23_2
             {
             pushFollow(FOLLOW_2);
-            rule__ServiceConfig__LotsconfigAssignment_20_2();
+            rule__ServiceConfig__LotsconfigAssignment_23_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getLotsconfigAssignment_20_2()); 
+             after(grammarAccess.getServiceConfigAccess().getLotsconfigAssignment_23_2()); 
 
             }
 
@@ -4331,18 +4630,18 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__Group_20__2__Impl"
+    // $ANTLR end "rule__ServiceConfig__Group_23__2__Impl"
 
 
     // $ANTLR start "rule__Language__Group__0"
-    // InternalMy.g:1426:1: rule__Language__Group__0 : rule__Language__Group__0__Impl rule__Language__Group__1 ;
+    // InternalMy.g:1534:1: rule__Language__Group__0 : rule__Language__Group__0__Impl rule__Language__Group__1 ;
     public final void rule__Language__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1430:1: ( rule__Language__Group__0__Impl rule__Language__Group__1 )
-            // InternalMy.g:1431:2: rule__Language__Group__0__Impl rule__Language__Group__1
+            // InternalMy.g:1538:1: ( rule__Language__Group__0__Impl rule__Language__Group__1 )
+            // InternalMy.g:1539:2: rule__Language__Group__0__Impl rule__Language__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__Language__Group__0__Impl();
@@ -4373,21 +4672,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Language__Group__0__Impl"
-    // InternalMy.g:1438:1: rule__Language__Group__0__Impl : ( () ) ;
+    // InternalMy.g:1546:1: rule__Language__Group__0__Impl : ( () ) ;
     public final void rule__Language__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1442:1: ( ( () ) )
-            // InternalMy.g:1443:1: ( () )
+            // InternalMy.g:1550:1: ( ( () ) )
+            // InternalMy.g:1551:1: ( () )
             {
-            // InternalMy.g:1443:1: ( () )
-            // InternalMy.g:1444:2: ()
+            // InternalMy.g:1551:1: ( () )
+            // InternalMy.g:1552:2: ()
             {
              before(grammarAccess.getLanguageAccess().getLanguageAction_0()); 
-            // InternalMy.g:1445:2: ()
-            // InternalMy.g:1445:3: 
+            // InternalMy.g:1553:2: ()
+            // InternalMy.g:1553:3: 
             {
             }
 
@@ -4410,14 +4709,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Language__Group__1"
-    // InternalMy.g:1453:1: rule__Language__Group__1 : rule__Language__Group__1__Impl ;
+    // InternalMy.g:1561:1: rule__Language__Group__1 : rule__Language__Group__1__Impl ;
     public final void rule__Language__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1457:1: ( rule__Language__Group__1__Impl )
-            // InternalMy.g:1458:2: rule__Language__Group__1__Impl
+            // InternalMy.g:1565:1: ( rule__Language__Group__1__Impl )
+            // InternalMy.g:1566:2: rule__Language__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Language__Group__1__Impl();
@@ -4443,21 +4742,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Language__Group__1__Impl"
-    // InternalMy.g:1464:1: rule__Language__Group__1__Impl : ( ( rule__Language__NameAssignment_1 ) ) ;
+    // InternalMy.g:1572:1: rule__Language__Group__1__Impl : ( ( rule__Language__NameAssignment_1 ) ) ;
     public final void rule__Language__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1468:1: ( ( ( rule__Language__NameAssignment_1 ) ) )
-            // InternalMy.g:1469:1: ( ( rule__Language__NameAssignment_1 ) )
+            // InternalMy.g:1576:1: ( ( ( rule__Language__NameAssignment_1 ) ) )
+            // InternalMy.g:1577:1: ( ( rule__Language__NameAssignment_1 ) )
             {
-            // InternalMy.g:1469:1: ( ( rule__Language__NameAssignment_1 ) )
-            // InternalMy.g:1470:2: ( rule__Language__NameAssignment_1 )
+            // InternalMy.g:1577:1: ( ( rule__Language__NameAssignment_1 ) )
+            // InternalMy.g:1578:2: ( rule__Language__NameAssignment_1 )
             {
              before(grammarAccess.getLanguageAccess().getNameAssignment_1()); 
-            // InternalMy.g:1471:2: ( rule__Language__NameAssignment_1 )
-            // InternalMy.g:1471:3: rule__Language__NameAssignment_1
+            // InternalMy.g:1579:2: ( rule__Language__NameAssignment_1 )
+            // InternalMy.g:1579:3: rule__Language__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Language__NameAssignment_1();
@@ -4490,16 +4789,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__0"
-    // InternalMy.g:1480:1: rule__ReservationsConfig__Group__0 : rule__ReservationsConfig__Group__0__Impl rule__ReservationsConfig__Group__1 ;
+    // InternalMy.g:1588:1: rule__ReservationsConfig__Group__0 : rule__ReservationsConfig__Group__0__Impl rule__ReservationsConfig__Group__1 ;
     public final void rule__ReservationsConfig__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1484:1: ( rule__ReservationsConfig__Group__0__Impl rule__ReservationsConfig__Group__1 )
-            // InternalMy.g:1485:2: rule__ReservationsConfig__Group__0__Impl rule__ReservationsConfig__Group__1
+            // InternalMy.g:1592:1: ( rule__ReservationsConfig__Group__0__Impl rule__ReservationsConfig__Group__1 )
+            // InternalMy.g:1593:2: rule__ReservationsConfig__Group__0__Impl rule__ReservationsConfig__Group__1
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_16);
             rule__ReservationsConfig__Group__0__Impl();
 
             state._fsp--;
@@ -4528,21 +4827,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__0__Impl"
-    // InternalMy.g:1492:1: rule__ReservationsConfig__Group__0__Impl : ( ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 ) ) ;
+    // InternalMy.g:1600:1: rule__ReservationsConfig__Group__0__Impl : ( ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 ) ) ;
     public final void rule__ReservationsConfig__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1496:1: ( ( ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 ) ) )
-            // InternalMy.g:1497:1: ( ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 ) )
+            // InternalMy.g:1604:1: ( ( ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 ) ) )
+            // InternalMy.g:1605:1: ( ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 ) )
             {
-            // InternalMy.g:1497:1: ( ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 ) )
-            // InternalMy.g:1498:2: ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 )
+            // InternalMy.g:1605:1: ( ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 ) )
+            // InternalMy.g:1606:2: ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 )
             {
              before(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckAssignment_0()); 
-            // InternalMy.g:1499:2: ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 )
-            // InternalMy.g:1499:3: rule__ReservationsConfig__HasMoveOutCheckAssignment_0
+            // InternalMy.g:1607:2: ( rule__ReservationsConfig__HasMoveOutCheckAssignment_0 )
+            // InternalMy.g:1607:3: rule__ReservationsConfig__HasMoveOutCheckAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__ReservationsConfig__HasMoveOutCheckAssignment_0();
@@ -4575,16 +4874,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__1"
-    // InternalMy.g:1507:1: rule__ReservationsConfig__Group__1 : rule__ReservationsConfig__Group__1__Impl rule__ReservationsConfig__Group__2 ;
+    // InternalMy.g:1615:1: rule__ReservationsConfig__Group__1 : rule__ReservationsConfig__Group__1__Impl rule__ReservationsConfig__Group__2 ;
     public final void rule__ReservationsConfig__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1511:1: ( rule__ReservationsConfig__Group__1__Impl rule__ReservationsConfig__Group__2 )
-            // InternalMy.g:1512:2: rule__ReservationsConfig__Group__1__Impl rule__ReservationsConfig__Group__2
+            // InternalMy.g:1619:1: ( rule__ReservationsConfig__Group__1__Impl rule__ReservationsConfig__Group__2 )
+            // InternalMy.g:1620:2: rule__ReservationsConfig__Group__1__Impl rule__ReservationsConfig__Group__2
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_16);
             rule__ReservationsConfig__Group__1__Impl();
 
             state._fsp--;
@@ -4613,29 +4912,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__1__Impl"
-    // InternalMy.g:1519:1: rule__ReservationsConfig__Group__1__Impl : ( ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )? ) ;
+    // InternalMy.g:1627:1: rule__ReservationsConfig__Group__1__Impl : ( ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )? ) ;
     public final void rule__ReservationsConfig__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1523:1: ( ( ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )? ) )
-            // InternalMy.g:1524:1: ( ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )? )
+            // InternalMy.g:1631:1: ( ( ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )? ) )
+            // InternalMy.g:1632:1: ( ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )? )
             {
-            // InternalMy.g:1524:1: ( ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )? )
-            // InternalMy.g:1525:2: ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )?
+            // InternalMy.g:1632:1: ( ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )? )
+            // InternalMy.g:1633:2: ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )?
             {
              before(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckAssignment_1()); 
-            // InternalMy.g:1526:2: ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )?
+            // InternalMy.g:1634:2: ( rule__ReservationsConfig__HasMoveInCheckAssignment_1 )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
-            if ( (LA12_0==33) ) {
+            if ( (LA12_0==32) ) {
                 alt12=1;
             }
             switch (alt12) {
                 case 1 :
-                    // InternalMy.g:1526:3: rule__ReservationsConfig__HasMoveInCheckAssignment_1
+                    // InternalMy.g:1634:3: rule__ReservationsConfig__HasMoveInCheckAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__ReservationsConfig__HasMoveInCheckAssignment_1();
@@ -4671,16 +4970,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__2"
-    // InternalMy.g:1534:1: rule__ReservationsConfig__Group__2 : rule__ReservationsConfig__Group__2__Impl rule__ReservationsConfig__Group__3 ;
+    // InternalMy.g:1642:1: rule__ReservationsConfig__Group__2 : rule__ReservationsConfig__Group__2__Impl rule__ReservationsConfig__Group__3 ;
     public final void rule__ReservationsConfig__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1538:1: ( rule__ReservationsConfig__Group__2__Impl rule__ReservationsConfig__Group__3 )
-            // InternalMy.g:1539:2: rule__ReservationsConfig__Group__2__Impl rule__ReservationsConfig__Group__3
+            // InternalMy.g:1646:1: ( rule__ReservationsConfig__Group__2__Impl rule__ReservationsConfig__Group__3 )
+            // InternalMy.g:1647:2: rule__ReservationsConfig__Group__2__Impl rule__ReservationsConfig__Group__3
             {
-            pushFollow(FOLLOW_16);
+            pushFollow(FOLLOW_3);
             rule__ReservationsConfig__Group__2__Impl();
 
             state._fsp--;
@@ -4709,21 +5008,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__2__Impl"
-    // InternalMy.g:1546:1: rule__ReservationsConfig__Group__2__Impl : ( 'minRequestAdvance' ) ;
+    // InternalMy.g:1654:1: rule__ReservationsConfig__Group__2__Impl : ( 'avance-minimum-et-maximum-reservation' ) ;
     public final void rule__ReservationsConfig__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1550:1: ( ( 'minRequestAdvance' ) )
-            // InternalMy.g:1551:1: ( 'minRequestAdvance' )
+            // InternalMy.g:1658:1: ( ( 'avance-minimum-et-maximum-reservation' ) )
+            // InternalMy.g:1659:1: ( 'avance-minimum-et-maximum-reservation' )
             {
-            // InternalMy.g:1551:1: ( 'minRequestAdvance' )
-            // InternalMy.g:1552:2: 'minRequestAdvance'
+            // InternalMy.g:1659:1: ( 'avance-minimum-et-maximum-reservation' )
+            // InternalMy.g:1660:2: 'avance-minimum-et-maximum-reservation'
             {
-             before(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceKeyword_2()); 
-            match(input,19,FOLLOW_2); 
-             after(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceKeyword_2()); 
+             before(grammarAccess.getReservationsConfigAccess().getAvanceMinimumEtMaximumReservationKeyword_2()); 
+            match(input,21,FOLLOW_2); 
+             after(grammarAccess.getReservationsConfigAccess().getAvanceMinimumEtMaximumReservationKeyword_2()); 
 
             }
 
@@ -4746,14 +5045,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__3"
-    // InternalMy.g:1561:1: rule__ReservationsConfig__Group__3 : rule__ReservationsConfig__Group__3__Impl rule__ReservationsConfig__Group__4 ;
+    // InternalMy.g:1669:1: rule__ReservationsConfig__Group__3 : rule__ReservationsConfig__Group__3__Impl rule__ReservationsConfig__Group__4 ;
     public final void rule__ReservationsConfig__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1565:1: ( rule__ReservationsConfig__Group__3__Impl rule__ReservationsConfig__Group__4 )
-            // InternalMy.g:1566:2: rule__ReservationsConfig__Group__3__Impl rule__ReservationsConfig__Group__4
+            // InternalMy.g:1673:1: ( rule__ReservationsConfig__Group__3__Impl rule__ReservationsConfig__Group__4 )
+            // InternalMy.g:1674:2: rule__ReservationsConfig__Group__3__Impl rule__ReservationsConfig__Group__4
             {
             pushFollow(FOLLOW_17);
             rule__ReservationsConfig__Group__3__Impl();
@@ -4784,31 +5083,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__3__Impl"
-    // InternalMy.g:1573:1: rule__ReservationsConfig__Group__3__Impl : ( ( rule__ReservationsConfig__MinRequestAdvanceAssignment_3 ) ) ;
+    // InternalMy.g:1681:1: rule__ReservationsConfig__Group__3__Impl : ( ':' ) ;
     public final void rule__ReservationsConfig__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1577:1: ( ( ( rule__ReservationsConfig__MinRequestAdvanceAssignment_3 ) ) )
-            // InternalMy.g:1578:1: ( ( rule__ReservationsConfig__MinRequestAdvanceAssignment_3 ) )
+            // InternalMy.g:1685:1: ( ( ':' ) )
+            // InternalMy.g:1686:1: ( ':' )
             {
-            // InternalMy.g:1578:1: ( ( rule__ReservationsConfig__MinRequestAdvanceAssignment_3 ) )
-            // InternalMy.g:1579:2: ( rule__ReservationsConfig__MinRequestAdvanceAssignment_3 )
+            // InternalMy.g:1686:1: ( ':' )
+            // InternalMy.g:1687:2: ':'
             {
-             before(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceAssignment_3()); 
-            // InternalMy.g:1580:2: ( rule__ReservationsConfig__MinRequestAdvanceAssignment_3 )
-            // InternalMy.g:1580:3: rule__ReservationsConfig__MinRequestAdvanceAssignment_3
-            {
-            pushFollow(FOLLOW_2);
-            rule__ReservationsConfig__MinRequestAdvanceAssignment_3();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceAssignment_3()); 
+             before(grammarAccess.getReservationsConfigAccess().getColonKeyword_3()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getReservationsConfigAccess().getColonKeyword_3()); 
 
             }
 
@@ -4831,16 +5120,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__4"
-    // InternalMy.g:1588:1: rule__ReservationsConfig__Group__4 : rule__ReservationsConfig__Group__4__Impl rule__ReservationsConfig__Group__5 ;
+    // InternalMy.g:1696:1: rule__ReservationsConfig__Group__4 : rule__ReservationsConfig__Group__4__Impl rule__ReservationsConfig__Group__5 ;
     public final void rule__ReservationsConfig__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1592:1: ( rule__ReservationsConfig__Group__4__Impl rule__ReservationsConfig__Group__5 )
-            // InternalMy.g:1593:2: rule__ReservationsConfig__Group__4__Impl rule__ReservationsConfig__Group__5
+            // InternalMy.g:1700:1: ( rule__ReservationsConfig__Group__4__Impl rule__ReservationsConfig__Group__5 )
+            // InternalMy.g:1701:2: rule__ReservationsConfig__Group__4__Impl rule__ReservationsConfig__Group__5
             {
-            pushFollow(FOLLOW_16);
+            pushFollow(FOLLOW_15);
             rule__ReservationsConfig__Group__4__Impl();
 
             state._fsp--;
@@ -4869,21 +5158,31 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__4__Impl"
-    // InternalMy.g:1600:1: rule__ReservationsConfig__Group__4__Impl : ( 'maxRequestAdvance' ) ;
+    // InternalMy.g:1708:1: rule__ReservationsConfig__Group__4__Impl : ( ( rule__ReservationsConfig__MinRequestAdvanceAssignment_4 ) ) ;
     public final void rule__ReservationsConfig__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1604:1: ( ( 'maxRequestAdvance' ) )
-            // InternalMy.g:1605:1: ( 'maxRequestAdvance' )
+            // InternalMy.g:1712:1: ( ( ( rule__ReservationsConfig__MinRequestAdvanceAssignment_4 ) ) )
+            // InternalMy.g:1713:1: ( ( rule__ReservationsConfig__MinRequestAdvanceAssignment_4 ) )
             {
-            // InternalMy.g:1605:1: ( 'maxRequestAdvance' )
-            // InternalMy.g:1606:2: 'maxRequestAdvance'
+            // InternalMy.g:1713:1: ( ( rule__ReservationsConfig__MinRequestAdvanceAssignment_4 ) )
+            // InternalMy.g:1714:2: ( rule__ReservationsConfig__MinRequestAdvanceAssignment_4 )
             {
-             before(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceKeyword_4()); 
-            match(input,20,FOLLOW_2); 
-             after(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceKeyword_4()); 
+             before(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceAssignment_4()); 
+            // InternalMy.g:1715:2: ( rule__ReservationsConfig__MinRequestAdvanceAssignment_4 )
+            // InternalMy.g:1715:3: rule__ReservationsConfig__MinRequestAdvanceAssignment_4
+            {
+            pushFollow(FOLLOW_2);
+            rule__ReservationsConfig__MinRequestAdvanceAssignment_4();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceAssignment_4()); 
 
             }
 
@@ -4906,16 +5205,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__5"
-    // InternalMy.g:1615:1: rule__ReservationsConfig__Group__5 : rule__ReservationsConfig__Group__5__Impl rule__ReservationsConfig__Group__6 ;
+    // InternalMy.g:1723:1: rule__ReservationsConfig__Group__5 : rule__ReservationsConfig__Group__5__Impl rule__ReservationsConfig__Group__6 ;
     public final void rule__ReservationsConfig__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1619:1: ( rule__ReservationsConfig__Group__5__Impl rule__ReservationsConfig__Group__6 )
-            // InternalMy.g:1620:2: rule__ReservationsConfig__Group__5__Impl rule__ReservationsConfig__Group__6
+            // InternalMy.g:1727:1: ( rule__ReservationsConfig__Group__5__Impl rule__ReservationsConfig__Group__6 )
+            // InternalMy.g:1728:2: rule__ReservationsConfig__Group__5__Impl rule__ReservationsConfig__Group__6
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_17);
             rule__ReservationsConfig__Group__5__Impl();
 
             state._fsp--;
@@ -4944,31 +5243,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__5__Impl"
-    // InternalMy.g:1627:1: rule__ReservationsConfig__Group__5__Impl : ( ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_5 ) ) ;
+    // InternalMy.g:1735:1: rule__ReservationsConfig__Group__5__Impl : ( ',' ) ;
     public final void rule__ReservationsConfig__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1631:1: ( ( ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_5 ) ) )
-            // InternalMy.g:1632:1: ( ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_5 ) )
+            // InternalMy.g:1739:1: ( ( ',' ) )
+            // InternalMy.g:1740:1: ( ',' )
             {
-            // InternalMy.g:1632:1: ( ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_5 ) )
-            // InternalMy.g:1633:2: ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_5 )
+            // InternalMy.g:1740:1: ( ',' )
+            // InternalMy.g:1741:2: ','
             {
-             before(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceAssignment_5()); 
-            // InternalMy.g:1634:2: ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_5 )
-            // InternalMy.g:1634:3: rule__ReservationsConfig__MaxRequestAdvanceAssignment_5
-            {
-            pushFollow(FOLLOW_2);
-            rule__ReservationsConfig__MaxRequestAdvanceAssignment_5();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceAssignment_5()); 
+             before(grammarAccess.getReservationsConfigAccess().getCommaKeyword_5()); 
+            match(input,18,FOLLOW_2); 
+             after(grammarAccess.getReservationsConfigAccess().getCommaKeyword_5()); 
 
             }
 
@@ -4991,16 +5280,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__6"
-    // InternalMy.g:1642:1: rule__ReservationsConfig__Group__6 : rule__ReservationsConfig__Group__6__Impl rule__ReservationsConfig__Group__7 ;
+    // InternalMy.g:1750:1: rule__ReservationsConfig__Group__6 : rule__ReservationsConfig__Group__6__Impl rule__ReservationsConfig__Group__7 ;
     public final void rule__ReservationsConfig__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1646:1: ( rule__ReservationsConfig__Group__6__Impl rule__ReservationsConfig__Group__7 )
-            // InternalMy.g:1647:2: rule__ReservationsConfig__Group__6__Impl rule__ReservationsConfig__Group__7
+            // InternalMy.g:1754:1: ( rule__ReservationsConfig__Group__6__Impl rule__ReservationsConfig__Group__7 )
+            // InternalMy.g:1755:2: rule__ReservationsConfig__Group__6__Impl rule__ReservationsConfig__Group__7
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_18);
             rule__ReservationsConfig__Group__6__Impl();
 
             state._fsp--;
@@ -5029,21 +5318,31 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__6__Impl"
-    // InternalMy.g:1654:1: rule__ReservationsConfig__Group__6__Impl : ( 'statuslist' ) ;
+    // InternalMy.g:1762:1: rule__ReservationsConfig__Group__6__Impl : ( ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_6 ) ) ;
     public final void rule__ReservationsConfig__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1658:1: ( ( 'statuslist' ) )
-            // InternalMy.g:1659:1: ( 'statuslist' )
+            // InternalMy.g:1766:1: ( ( ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_6 ) ) )
+            // InternalMy.g:1767:1: ( ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_6 ) )
             {
-            // InternalMy.g:1659:1: ( 'statuslist' )
-            // InternalMy.g:1660:2: 'statuslist'
+            // InternalMy.g:1767:1: ( ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_6 ) )
+            // InternalMy.g:1768:2: ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_6 )
             {
-             before(grammarAccess.getReservationsConfigAccess().getStatuslistKeyword_6()); 
-            match(input,21,FOLLOW_2); 
-             after(grammarAccess.getReservationsConfigAccess().getStatuslistKeyword_6()); 
+             before(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceAssignment_6()); 
+            // InternalMy.g:1769:2: ( rule__ReservationsConfig__MaxRequestAdvanceAssignment_6 )
+            // InternalMy.g:1769:3: rule__ReservationsConfig__MaxRequestAdvanceAssignment_6
+            {
+            pushFollow(FOLLOW_2);
+            rule__ReservationsConfig__MaxRequestAdvanceAssignment_6();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceAssignment_6()); 
 
             }
 
@@ -5066,16 +5365,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__7"
-    // InternalMy.g:1669:1: rule__ReservationsConfig__Group__7 : rule__ReservationsConfig__Group__7__Impl rule__ReservationsConfig__Group__8 ;
+    // InternalMy.g:1777:1: rule__ReservationsConfig__Group__7 : rule__ReservationsConfig__Group__7__Impl rule__ReservationsConfig__Group__8 ;
     public final void rule__ReservationsConfig__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1673:1: ( rule__ReservationsConfig__Group__7__Impl rule__ReservationsConfig__Group__8 )
-            // InternalMy.g:1674:2: rule__ReservationsConfig__Group__7__Impl rule__ReservationsConfig__Group__8
+            // InternalMy.g:1781:1: ( rule__ReservationsConfig__Group__7__Impl rule__ReservationsConfig__Group__8 )
+            // InternalMy.g:1782:2: rule__ReservationsConfig__Group__7__Impl rule__ReservationsConfig__Group__8
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_3);
             rule__ReservationsConfig__Group__7__Impl();
 
             state._fsp--;
@@ -5104,21 +5403,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__7__Impl"
-    // InternalMy.g:1681:1: rule__ReservationsConfig__Group__7__Impl : ( ':' ) ;
+    // InternalMy.g:1789:1: rule__ReservationsConfig__Group__7__Impl : ( 'statuts-des-demandes' ) ;
     public final void rule__ReservationsConfig__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1685:1: ( ( ':' ) )
-            // InternalMy.g:1686:1: ( ':' )
+            // InternalMy.g:1793:1: ( ( 'statuts-des-demandes' ) )
+            // InternalMy.g:1794:1: ( 'statuts-des-demandes' )
             {
-            // InternalMy.g:1686:1: ( ':' )
-            // InternalMy.g:1687:2: ':'
+            // InternalMy.g:1794:1: ( 'statuts-des-demandes' )
+            // InternalMy.g:1795:2: 'statuts-des-demandes'
             {
-             before(grammarAccess.getReservationsConfigAccess().getColonKeyword_7()); 
-            match(input,11,FOLLOW_2); 
-             after(grammarAccess.getReservationsConfigAccess().getColonKeyword_7()); 
+             before(grammarAccess.getReservationsConfigAccess().getStatutsDesDemandesKeyword_7()); 
+            match(input,22,FOLLOW_2); 
+             after(grammarAccess.getReservationsConfigAccess().getStatutsDesDemandesKeyword_7()); 
 
             }
 
@@ -5141,17 +5440,22 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__8"
-    // InternalMy.g:1696:1: rule__ReservationsConfig__Group__8 : rule__ReservationsConfig__Group__8__Impl ;
+    // InternalMy.g:1804:1: rule__ReservationsConfig__Group__8 : rule__ReservationsConfig__Group__8__Impl rule__ReservationsConfig__Group__9 ;
     public final void rule__ReservationsConfig__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1700:1: ( rule__ReservationsConfig__Group__8__Impl )
-            // InternalMy.g:1701:2: rule__ReservationsConfig__Group__8__Impl
+            // InternalMy.g:1808:1: ( rule__ReservationsConfig__Group__8__Impl rule__ReservationsConfig__Group__9 )
+            // InternalMy.g:1809:2: rule__ReservationsConfig__Group__8__Impl rule__ReservationsConfig__Group__9
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_9);
             rule__ReservationsConfig__Group__8__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__ReservationsConfig__Group__9();
 
             state._fsp--;
 
@@ -5174,31 +5478,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__Group__8__Impl"
-    // InternalMy.g:1707:1: rule__ReservationsConfig__Group__8__Impl : ( ( rule__ReservationsConfig__StatuslistAssignment_8 ) ) ;
+    // InternalMy.g:1816:1: rule__ReservationsConfig__Group__8__Impl : ( ':' ) ;
     public final void rule__ReservationsConfig__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1711:1: ( ( ( rule__ReservationsConfig__StatuslistAssignment_8 ) ) )
-            // InternalMy.g:1712:1: ( ( rule__ReservationsConfig__StatuslistAssignment_8 ) )
+            // InternalMy.g:1820:1: ( ( ':' ) )
+            // InternalMy.g:1821:1: ( ':' )
             {
-            // InternalMy.g:1712:1: ( ( rule__ReservationsConfig__StatuslistAssignment_8 ) )
-            // InternalMy.g:1713:2: ( rule__ReservationsConfig__StatuslistAssignment_8 )
+            // InternalMy.g:1821:1: ( ':' )
+            // InternalMy.g:1822:2: ':'
             {
-             before(grammarAccess.getReservationsConfigAccess().getStatuslistAssignment_8()); 
-            // InternalMy.g:1714:2: ( rule__ReservationsConfig__StatuslistAssignment_8 )
-            // InternalMy.g:1714:3: rule__ReservationsConfig__StatuslistAssignment_8
-            {
-            pushFollow(FOLLOW_2);
-            rule__ReservationsConfig__StatuslistAssignment_8();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getReservationsConfigAccess().getStatuslistAssignment_8()); 
+             before(grammarAccess.getReservationsConfigAccess().getColonKeyword_8()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getReservationsConfigAccess().getColonKeyword_8()); 
 
             }
 
@@ -5220,17 +5514,97 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ReservationsConfig__Group__8__Impl"
 
 
+    // $ANTLR start "rule__ReservationsConfig__Group__9"
+    // InternalMy.g:1831:1: rule__ReservationsConfig__Group__9 : rule__ReservationsConfig__Group__9__Impl ;
+    public final void rule__ReservationsConfig__Group__9() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1835:1: ( rule__ReservationsConfig__Group__9__Impl )
+            // InternalMy.g:1836:2: rule__ReservationsConfig__Group__9__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__ReservationsConfig__Group__9__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ReservationsConfig__Group__9"
+
+
+    // $ANTLR start "rule__ReservationsConfig__Group__9__Impl"
+    // InternalMy.g:1842:1: rule__ReservationsConfig__Group__9__Impl : ( ( rule__ReservationsConfig__StatuslistAssignment_9 ) ) ;
+    public final void rule__ReservationsConfig__Group__9__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:1846:1: ( ( ( rule__ReservationsConfig__StatuslistAssignment_9 ) ) )
+            // InternalMy.g:1847:1: ( ( rule__ReservationsConfig__StatuslistAssignment_9 ) )
+            {
+            // InternalMy.g:1847:1: ( ( rule__ReservationsConfig__StatuslistAssignment_9 ) )
+            // InternalMy.g:1848:2: ( rule__ReservationsConfig__StatuslistAssignment_9 )
+            {
+             before(grammarAccess.getReservationsConfigAccess().getStatuslistAssignment_9()); 
+            // InternalMy.g:1849:2: ( rule__ReservationsConfig__StatuslistAssignment_9 )
+            // InternalMy.g:1849:3: rule__ReservationsConfig__StatuslistAssignment_9
+            {
+            pushFollow(FOLLOW_2);
+            rule__ReservationsConfig__StatuslistAssignment_9();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getReservationsConfigAccess().getStatuslistAssignment_9()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ReservationsConfig__Group__9__Impl"
+
+
     // $ANTLR start "rule__Country__Group__0"
-    // InternalMy.g:1723:1: rule__Country__Group__0 : rule__Country__Group__0__Impl rule__Country__Group__1 ;
+    // InternalMy.g:1858:1: rule__Country__Group__0 : rule__Country__Group__0__Impl rule__Country__Group__1 ;
     public final void rule__Country__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1727:1: ( rule__Country__Group__0__Impl rule__Country__Group__1 )
-            // InternalMy.g:1728:2: rule__Country__Group__0__Impl rule__Country__Group__1
+            // InternalMy.g:1862:1: ( rule__Country__Group__0__Impl rule__Country__Group__1 )
+            // InternalMy.g:1863:2: rule__Country__Group__0__Impl rule__Country__Group__1
             {
-            pushFollow(FOLLOW_19);
+            pushFollow(FOLLOW_3);
             rule__Country__Group__0__Impl();
 
             state._fsp--;
@@ -5259,21 +5633,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__0__Impl"
-    // InternalMy.g:1735:1: rule__Country__Group__0__Impl : ( ( rule__Country__NameAssignment_0 ) ) ;
+    // InternalMy.g:1870:1: rule__Country__Group__0__Impl : ( ( rule__Country__NameAssignment_0 ) ) ;
     public final void rule__Country__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1739:1: ( ( ( rule__Country__NameAssignment_0 ) ) )
-            // InternalMy.g:1740:1: ( ( rule__Country__NameAssignment_0 ) )
+            // InternalMy.g:1874:1: ( ( ( rule__Country__NameAssignment_0 ) ) )
+            // InternalMy.g:1875:1: ( ( rule__Country__NameAssignment_0 ) )
             {
-            // InternalMy.g:1740:1: ( ( rule__Country__NameAssignment_0 ) )
-            // InternalMy.g:1741:2: ( rule__Country__NameAssignment_0 )
+            // InternalMy.g:1875:1: ( ( rule__Country__NameAssignment_0 ) )
+            // InternalMy.g:1876:2: ( rule__Country__NameAssignment_0 )
             {
              before(grammarAccess.getCountryAccess().getNameAssignment_0()); 
-            // InternalMy.g:1742:2: ( rule__Country__NameAssignment_0 )
-            // InternalMy.g:1742:3: rule__Country__NameAssignment_0
+            // InternalMy.g:1877:2: ( rule__Country__NameAssignment_0 )
+            // InternalMy.g:1877:3: rule__Country__NameAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Country__NameAssignment_0();
@@ -5306,14 +5680,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__1"
-    // InternalMy.g:1750:1: rule__Country__Group__1 : rule__Country__Group__1__Impl rule__Country__Group__2 ;
+    // InternalMy.g:1885:1: rule__Country__Group__1 : rule__Country__Group__1__Impl rule__Country__Group__2 ;
     public final void rule__Country__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1754:1: ( rule__Country__Group__1__Impl rule__Country__Group__2 )
-            // InternalMy.g:1755:2: rule__Country__Group__1__Impl rule__Country__Group__2
+            // InternalMy.g:1889:1: ( rule__Country__Group__1__Impl rule__Country__Group__2 )
+            // InternalMy.g:1890:2: rule__Country__Group__1__Impl rule__Country__Group__2
             {
             pushFollow(FOLLOW_5);
             rule__Country__Group__1__Impl();
@@ -5344,21 +5718,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__1__Impl"
-    // InternalMy.g:1762:1: rule__Country__Group__1__Impl : ( 'lang' ) ;
+    // InternalMy.g:1897:1: rule__Country__Group__1__Impl : ( ':' ) ;
     public final void rule__Country__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1766:1: ( ( 'lang' ) )
-            // InternalMy.g:1767:1: ( 'lang' )
+            // InternalMy.g:1901:1: ( ( ':' ) )
+            // InternalMy.g:1902:1: ( ':' )
             {
-            // InternalMy.g:1767:1: ( 'lang' )
-            // InternalMy.g:1768:2: 'lang'
+            // InternalMy.g:1902:1: ( ':' )
+            // InternalMy.g:1903:2: ':'
             {
-             before(grammarAccess.getCountryAccess().getLangKeyword_1()); 
-            match(input,13,FOLLOW_2); 
-             after(grammarAccess.getCountryAccess().getLangKeyword_1()); 
+             before(grammarAccess.getCountryAccess().getColonKeyword_1()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getCountryAccess().getColonKeyword_1()); 
 
             }
 
@@ -5381,16 +5755,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__2"
-    // InternalMy.g:1777:1: rule__Country__Group__2 : rule__Country__Group__2__Impl rule__Country__Group__3 ;
+    // InternalMy.g:1912:1: rule__Country__Group__2 : rule__Country__Group__2__Impl rule__Country__Group__3 ;
     public final void rule__Country__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1781:1: ( rule__Country__Group__2__Impl rule__Country__Group__3 )
-            // InternalMy.g:1782:2: rule__Country__Group__2__Impl rule__Country__Group__3
+            // InternalMy.g:1916:1: ( rule__Country__Group__2__Impl rule__Country__Group__3 )
+            // InternalMy.g:1917:2: rule__Country__Group__2__Impl rule__Country__Group__3
             {
-            pushFollow(FOLLOW_20);
+            pushFollow(FOLLOW_15);
             rule__Country__Group__2__Impl();
 
             state._fsp--;
@@ -5419,21 +5793,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__2__Impl"
-    // InternalMy.g:1789:1: rule__Country__Group__2__Impl : ( ( rule__Country__LanguageAssignment_2 ) ) ;
+    // InternalMy.g:1924:1: rule__Country__Group__2__Impl : ( ( rule__Country__LanguageAssignment_2 ) ) ;
     public final void rule__Country__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1793:1: ( ( ( rule__Country__LanguageAssignment_2 ) ) )
-            // InternalMy.g:1794:1: ( ( rule__Country__LanguageAssignment_2 ) )
+            // InternalMy.g:1928:1: ( ( ( rule__Country__LanguageAssignment_2 ) ) )
+            // InternalMy.g:1929:1: ( ( rule__Country__LanguageAssignment_2 ) )
             {
-            // InternalMy.g:1794:1: ( ( rule__Country__LanguageAssignment_2 ) )
-            // InternalMy.g:1795:2: ( rule__Country__LanguageAssignment_2 )
+            // InternalMy.g:1929:1: ( ( rule__Country__LanguageAssignment_2 ) )
+            // InternalMy.g:1930:2: ( rule__Country__LanguageAssignment_2 )
             {
              before(grammarAccess.getCountryAccess().getLanguageAssignment_2()); 
-            // InternalMy.g:1796:2: ( rule__Country__LanguageAssignment_2 )
-            // InternalMy.g:1796:3: rule__Country__LanguageAssignment_2
+            // InternalMy.g:1931:2: ( rule__Country__LanguageAssignment_2 )
+            // InternalMy.g:1931:3: rule__Country__LanguageAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Country__LanguageAssignment_2();
@@ -5466,16 +5840,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__3"
-    // InternalMy.g:1804:1: rule__Country__Group__3 : rule__Country__Group__3__Impl rule__Country__Group__4 ;
+    // InternalMy.g:1939:1: rule__Country__Group__3 : rule__Country__Group__3__Impl rule__Country__Group__4 ;
     public final void rule__Country__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1808:1: ( rule__Country__Group__3__Impl rule__Country__Group__4 )
-            // InternalMy.g:1809:2: rule__Country__Group__3__Impl rule__Country__Group__4
+            // InternalMy.g:1943:1: ( rule__Country__Group__3__Impl rule__Country__Group__4 )
+            // InternalMy.g:1944:2: rule__Country__Group__3__Impl rule__Country__Group__4
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_19);
             rule__Country__Group__3__Impl();
 
             state._fsp--;
@@ -5504,21 +5878,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__3__Impl"
-    // InternalMy.g:1816:1: rule__Country__Group__3__Impl : ( 'pricing' ) ;
+    // InternalMy.g:1951:1: rule__Country__Group__3__Impl : ( ',' ) ;
     public final void rule__Country__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1820:1: ( ( 'pricing' ) )
-            // InternalMy.g:1821:1: ( 'pricing' )
+            // InternalMy.g:1955:1: ( ( ',' ) )
+            // InternalMy.g:1956:1: ( ',' )
             {
-            // InternalMy.g:1821:1: ( 'pricing' )
-            // InternalMy.g:1822:2: 'pricing'
+            // InternalMy.g:1956:1: ( ',' )
+            // InternalMy.g:1957:2: ','
             {
-             before(grammarAccess.getCountryAccess().getPricingKeyword_3()); 
-            match(input,22,FOLLOW_2); 
-             after(grammarAccess.getCountryAccess().getPricingKeyword_3()); 
+             before(grammarAccess.getCountryAccess().getCommaKeyword_3()); 
+            match(input,18,FOLLOW_2); 
+             after(grammarAccess.getCountryAccess().getCommaKeyword_3()); 
 
             }
 
@@ -5541,16 +5915,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__4"
-    // InternalMy.g:1831:1: rule__Country__Group__4 : rule__Country__Group__4__Impl rule__Country__Group__5 ;
+    // InternalMy.g:1966:1: rule__Country__Group__4 : rule__Country__Group__4__Impl rule__Country__Group__5 ;
     public final void rule__Country__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1835:1: ( rule__Country__Group__4__Impl rule__Country__Group__5 )
-            // InternalMy.g:1836:2: rule__Country__Group__4__Impl rule__Country__Group__5
+            // InternalMy.g:1970:1: ( rule__Country__Group__4__Impl rule__Country__Group__5 )
+            // InternalMy.g:1971:2: rule__Country__Group__4__Impl rule__Country__Group__5
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_3);
             rule__Country__Group__4__Impl();
 
             state._fsp--;
@@ -5579,21 +5953,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__4__Impl"
-    // InternalMy.g:1843:1: rule__Country__Group__4__Impl : ( ':' ) ;
+    // InternalMy.g:1978:1: rule__Country__Group__4__Impl : ( 'tarification' ) ;
     public final void rule__Country__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1847:1: ( ( ':' ) )
-            // InternalMy.g:1848:1: ( ':' )
+            // InternalMy.g:1982:1: ( ( 'tarification' ) )
+            // InternalMy.g:1983:1: ( 'tarification' )
             {
-            // InternalMy.g:1848:1: ( ':' )
-            // InternalMy.g:1849:2: ':'
+            // InternalMy.g:1983:1: ( 'tarification' )
+            // InternalMy.g:1984:2: 'tarification'
             {
-             before(grammarAccess.getCountryAccess().getColonKeyword_4()); 
-            match(input,11,FOLLOW_2); 
-             after(grammarAccess.getCountryAccess().getColonKeyword_4()); 
+             before(grammarAccess.getCountryAccess().getTarificationKeyword_4()); 
+            match(input,23,FOLLOW_2); 
+             after(grammarAccess.getCountryAccess().getTarificationKeyword_4()); 
 
             }
 
@@ -5616,14 +5990,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__5"
-    // InternalMy.g:1858:1: rule__Country__Group__5 : rule__Country__Group__5__Impl rule__Country__Group__6 ;
+    // InternalMy.g:1993:1: rule__Country__Group__5 : rule__Country__Group__5__Impl rule__Country__Group__6 ;
     public final void rule__Country__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1862:1: ( rule__Country__Group__5__Impl rule__Country__Group__6 )
-            // InternalMy.g:1863:2: rule__Country__Group__5__Impl rule__Country__Group__6
+            // InternalMy.g:1997:1: ( rule__Country__Group__5__Impl rule__Country__Group__6 )
+            // InternalMy.g:1998:2: rule__Country__Group__5__Impl rule__Country__Group__6
             {
             pushFollow(FOLLOW_5);
             rule__Country__Group__5__Impl();
@@ -5654,21 +6028,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__5__Impl"
-    // InternalMy.g:1870:1: rule__Country__Group__5__Impl : ( '(' ) ;
+    // InternalMy.g:2005:1: rule__Country__Group__5__Impl : ( ':' ) ;
     public final void rule__Country__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1874:1: ( ( '(' ) )
-            // InternalMy.g:1875:1: ( '(' )
+            // InternalMy.g:2009:1: ( ( ':' ) )
+            // InternalMy.g:2010:1: ( ':' )
             {
-            // InternalMy.g:1875:1: ( '(' )
-            // InternalMy.g:1876:2: '('
+            // InternalMy.g:2010:1: ( ':' )
+            // InternalMy.g:2011:2: ':'
             {
-             before(grammarAccess.getCountryAccess().getLeftParenthesisKeyword_5()); 
-            match(input,23,FOLLOW_2); 
-             after(grammarAccess.getCountryAccess().getLeftParenthesisKeyword_5()); 
+             before(grammarAccess.getCountryAccess().getColonKeyword_5()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getCountryAccess().getColonKeyword_5()); 
 
             }
 
@@ -5691,22 +6065,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__6"
-    // InternalMy.g:1885:1: rule__Country__Group__6 : rule__Country__Group__6__Impl rule__Country__Group__7 ;
+    // InternalMy.g:2020:1: rule__Country__Group__6 : rule__Country__Group__6__Impl ;
     public final void rule__Country__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1889:1: ( rule__Country__Group__6__Impl rule__Country__Group__7 )
-            // InternalMy.g:1890:2: rule__Country__Group__6__Impl rule__Country__Group__7
+            // InternalMy.g:2024:1: ( rule__Country__Group__6__Impl )
+            // InternalMy.g:2025:2: rule__Country__Group__6__Impl
             {
-            pushFollow(FOLLOW_21);
-            rule__Country__Group__6__Impl();
-
-            state._fsp--;
-
             pushFollow(FOLLOW_2);
-            rule__Country__Group__7();
+            rule__Country__Group__6__Impl();
 
             state._fsp--;
 
@@ -5729,21 +6098,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__Group__6__Impl"
-    // InternalMy.g:1897:1: rule__Country__Group__6__Impl : ( ( rule__Country__PricingsystemAssignment_6 ) ) ;
+    // InternalMy.g:2031:1: rule__Country__Group__6__Impl : ( ( rule__Country__PricingsystemAssignment_6 ) ) ;
     public final void rule__Country__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1901:1: ( ( ( rule__Country__PricingsystemAssignment_6 ) ) )
-            // InternalMy.g:1902:1: ( ( rule__Country__PricingsystemAssignment_6 ) )
+            // InternalMy.g:2035:1: ( ( ( rule__Country__PricingsystemAssignment_6 ) ) )
+            // InternalMy.g:2036:1: ( ( rule__Country__PricingsystemAssignment_6 ) )
             {
-            // InternalMy.g:1902:1: ( ( rule__Country__PricingsystemAssignment_6 ) )
-            // InternalMy.g:1903:2: ( rule__Country__PricingsystemAssignment_6 )
+            // InternalMy.g:2036:1: ( ( rule__Country__PricingsystemAssignment_6 ) )
+            // InternalMy.g:2037:2: ( rule__Country__PricingsystemAssignment_6 )
             {
              before(grammarAccess.getCountryAccess().getPricingsystemAssignment_6()); 
-            // InternalMy.g:1904:2: ( rule__Country__PricingsystemAssignment_6 )
-            // InternalMy.g:1904:3: rule__Country__PricingsystemAssignment_6
+            // InternalMy.g:2038:2: ( rule__Country__PricingsystemAssignment_6 )
+            // InternalMy.g:2038:3: rule__Country__PricingsystemAssignment_6
             {
             pushFollow(FOLLOW_2);
             rule__Country__PricingsystemAssignment_6();
@@ -5775,87 +6144,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Country__Group__6__Impl"
 
 
-    // $ANTLR start "rule__Country__Group__7"
-    // InternalMy.g:1912:1: rule__Country__Group__7 : rule__Country__Group__7__Impl ;
-    public final void rule__Country__Group__7() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1916:1: ( rule__Country__Group__7__Impl )
-            // InternalMy.g:1917:2: rule__Country__Group__7__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__Country__Group__7__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Country__Group__7"
-
-
-    // $ANTLR start "rule__Country__Group__7__Impl"
-    // InternalMy.g:1923:1: rule__Country__Group__7__Impl : ( ')' ) ;
-    public final void rule__Country__Group__7__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:1927:1: ( ( ')' ) )
-            // InternalMy.g:1928:1: ( ')' )
-            {
-            // InternalMy.g:1928:1: ( ')' )
-            // InternalMy.g:1929:2: ')'
-            {
-             before(grammarAccess.getCountryAccess().getRightParenthesisKeyword_7()); 
-            match(input,24,FOLLOW_2); 
-             after(grammarAccess.getCountryAccess().getRightParenthesisKeyword_7()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Country__Group__7__Impl"
-
-
     // $ANTLR start "rule__ResourcesConfig__Group__0"
-    // InternalMy.g:1939:1: rule__ResourcesConfig__Group__0 : rule__ResourcesConfig__Group__0__Impl rule__ResourcesConfig__Group__1 ;
+    // InternalMy.g:2047:1: rule__ResourcesConfig__Group__0 : rule__ResourcesConfig__Group__0__Impl rule__ResourcesConfig__Group__1 ;
     public final void rule__ResourcesConfig__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1943:1: ( rule__ResourcesConfig__Group__0__Impl rule__ResourcesConfig__Group__1 )
-            // InternalMy.g:1944:2: rule__ResourcesConfig__Group__0__Impl rule__ResourcesConfig__Group__1
+            // InternalMy.g:2051:1: ( rule__ResourcesConfig__Group__0__Impl rule__ResourcesConfig__Group__1 )
+            // InternalMy.g:2052:2: rule__ResourcesConfig__Group__0__Impl rule__ResourcesConfig__Group__1
             {
-            pushFollow(FOLLOW_22);
+            pushFollow(FOLLOW_20);
             rule__ResourcesConfig__Group__0__Impl();
 
             state._fsp--;
@@ -5884,20 +6183,20 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__0__Impl"
-    // InternalMy.g:1951:1: rule__ResourcesConfig__Group__0__Impl : ( '(' ) ;
+    // InternalMy.g:2059:1: rule__ResourcesConfig__Group__0__Impl : ( '(' ) ;
     public final void rule__ResourcesConfig__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1955:1: ( ( '(' ) )
-            // InternalMy.g:1956:1: ( '(' )
+            // InternalMy.g:2063:1: ( ( '(' ) )
+            // InternalMy.g:2064:1: ( '(' )
             {
-            // InternalMy.g:1956:1: ( '(' )
-            // InternalMy.g:1957:2: '('
+            // InternalMy.g:2064:1: ( '(' )
+            // InternalMy.g:2065:2: '('
             {
              before(grammarAccess.getResourcesConfigAccess().getLeftParenthesisKeyword_0()); 
-            match(input,23,FOLLOW_2); 
+            match(input,15,FOLLOW_2); 
              after(grammarAccess.getResourcesConfigAccess().getLeftParenthesisKeyword_0()); 
 
             }
@@ -5921,16 +6220,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__1"
-    // InternalMy.g:1966:1: rule__ResourcesConfig__Group__1 : rule__ResourcesConfig__Group__1__Impl rule__ResourcesConfig__Group__2 ;
+    // InternalMy.g:2074:1: rule__ResourcesConfig__Group__1 : rule__ResourcesConfig__Group__1__Impl rule__ResourcesConfig__Group__2 ;
     public final void rule__ResourcesConfig__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1970:1: ( rule__ResourcesConfig__Group__1__Impl rule__ResourcesConfig__Group__2 )
-            // InternalMy.g:1971:2: rule__ResourcesConfig__Group__1__Impl rule__ResourcesConfig__Group__2
+            // InternalMy.g:2078:1: ( rule__ResourcesConfig__Group__1__Impl rule__ResourcesConfig__Group__2 )
+            // InternalMy.g:2079:2: rule__ResourcesConfig__Group__1__Impl rule__ResourcesConfig__Group__2
             {
-            pushFollow(FOLLOW_22);
+            pushFollow(FOLLOW_20);
             rule__ResourcesConfig__Group__1__Impl();
 
             state._fsp--;
@@ -5959,29 +6258,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__1__Impl"
-    // InternalMy.g:1978:1: rule__ResourcesConfig__Group__1__Impl : ( ( rule__ResourcesConfig__HasImageAssignment_1 )? ) ;
+    // InternalMy.g:2086:1: rule__ResourcesConfig__Group__1__Impl : ( ( rule__ResourcesConfig__HasImageAssignment_1 )? ) ;
     public final void rule__ResourcesConfig__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1982:1: ( ( ( rule__ResourcesConfig__HasImageAssignment_1 )? ) )
-            // InternalMy.g:1983:1: ( ( rule__ResourcesConfig__HasImageAssignment_1 )? )
+            // InternalMy.g:2090:1: ( ( ( rule__ResourcesConfig__HasImageAssignment_1 )? ) )
+            // InternalMy.g:2091:1: ( ( rule__ResourcesConfig__HasImageAssignment_1 )? )
             {
-            // InternalMy.g:1983:1: ( ( rule__ResourcesConfig__HasImageAssignment_1 )? )
-            // InternalMy.g:1984:2: ( rule__ResourcesConfig__HasImageAssignment_1 )?
+            // InternalMy.g:2091:1: ( ( rule__ResourcesConfig__HasImageAssignment_1 )? )
+            // InternalMy.g:2092:2: ( rule__ResourcesConfig__HasImageAssignment_1 )?
             {
              before(grammarAccess.getResourcesConfigAccess().getHasImageAssignment_1()); 
-            // InternalMy.g:1985:2: ( rule__ResourcesConfig__HasImageAssignment_1 )?
+            // InternalMy.g:2093:2: ( rule__ResourcesConfig__HasImageAssignment_1 )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
-            if ( (LA13_0==34) ) {
+            if ( (LA13_0==33) ) {
                 alt13=1;
             }
             switch (alt13) {
                 case 1 :
-                    // InternalMy.g:1985:3: rule__ResourcesConfig__HasImageAssignment_1
+                    // InternalMy.g:2093:3: rule__ResourcesConfig__HasImageAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__ResourcesConfig__HasImageAssignment_1();
@@ -6017,16 +6316,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__2"
-    // InternalMy.g:1993:1: rule__ResourcesConfig__Group__2 : rule__ResourcesConfig__Group__2__Impl rule__ResourcesConfig__Group__3 ;
+    // InternalMy.g:2101:1: rule__ResourcesConfig__Group__2 : rule__ResourcesConfig__Group__2__Impl rule__ResourcesConfig__Group__3 ;
     public final void rule__ResourcesConfig__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:1997:1: ( rule__ResourcesConfig__Group__2__Impl rule__ResourcesConfig__Group__3 )
-            // InternalMy.g:1998:2: rule__ResourcesConfig__Group__2__Impl rule__ResourcesConfig__Group__3
+            // InternalMy.g:2105:1: ( rule__ResourcesConfig__Group__2__Impl rule__ResourcesConfig__Group__3 )
+            // InternalMy.g:2106:2: rule__ResourcesConfig__Group__2__Impl rule__ResourcesConfig__Group__3
             {
-            pushFollow(FOLLOW_22);
+            pushFollow(FOLLOW_20);
             rule__ResourcesConfig__Group__2__Impl();
 
             state._fsp--;
@@ -6055,29 +6354,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__2__Impl"
-    // InternalMy.g:2005:1: rule__ResourcesConfig__Group__2__Impl : ( ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )? ) ;
+    // InternalMy.g:2113:1: rule__ResourcesConfig__Group__2__Impl : ( ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )? ) ;
     public final void rule__ResourcesConfig__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2009:1: ( ( ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )? ) )
-            // InternalMy.g:2010:1: ( ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )? )
+            // InternalMy.g:2117:1: ( ( ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )? ) )
+            // InternalMy.g:2118:1: ( ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )? )
             {
-            // InternalMy.g:2010:1: ( ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )? )
-            // InternalMy.g:2011:2: ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )?
+            // InternalMy.g:2118:1: ( ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )? )
+            // InternalMy.g:2119:2: ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )?
             {
              before(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotAssignment_2()); 
-            // InternalMy.g:2012:2: ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )?
+            // InternalMy.g:2120:2: ( rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 )?
             int alt14=2;
             int LA14_0 = input.LA(1);
 
-            if ( (LA14_0==35) ) {
+            if ( (LA14_0==34) ) {
                 alt14=1;
             }
             switch (alt14) {
                 case 1 :
-                    // InternalMy.g:2012:3: rule__ResourcesConfig__HasOneStockPerSlotAssignment_2
+                    // InternalMy.g:2120:3: rule__ResourcesConfig__HasOneStockPerSlotAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__ResourcesConfig__HasOneStockPerSlotAssignment_2();
@@ -6113,16 +6412,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__3"
-    // InternalMy.g:2020:1: rule__ResourcesConfig__Group__3 : rule__ResourcesConfig__Group__3__Impl rule__ResourcesConfig__Group__4 ;
+    // InternalMy.g:2128:1: rule__ResourcesConfig__Group__3 : rule__ResourcesConfig__Group__3__Impl rule__ResourcesConfig__Group__4 ;
     public final void rule__ResourcesConfig__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2024:1: ( rule__ResourcesConfig__Group__3__Impl rule__ResourcesConfig__Group__4 )
-            // InternalMy.g:2025:2: rule__ResourcesConfig__Group__3__Impl rule__ResourcesConfig__Group__4
+            // InternalMy.g:2132:1: ( rule__ResourcesConfig__Group__3__Impl rule__ResourcesConfig__Group__4 )
+            // InternalMy.g:2133:2: rule__ResourcesConfig__Group__3__Impl rule__ResourcesConfig__Group__4
             {
-            pushFollow(FOLLOW_22);
+            pushFollow(FOLLOW_20);
             rule__ResourcesConfig__Group__3__Impl();
 
             state._fsp--;
@@ -6151,29 +6450,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__3__Impl"
-    // InternalMy.g:2032:1: rule__ResourcesConfig__Group__3__Impl : ( ( rule__ResourcesConfig__IsConsumableAssignment_3 )? ) ;
+    // InternalMy.g:2140:1: rule__ResourcesConfig__Group__3__Impl : ( ( rule__ResourcesConfig__IsConsumableAssignment_3 )? ) ;
     public final void rule__ResourcesConfig__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2036:1: ( ( ( rule__ResourcesConfig__IsConsumableAssignment_3 )? ) )
-            // InternalMy.g:2037:1: ( ( rule__ResourcesConfig__IsConsumableAssignment_3 )? )
+            // InternalMy.g:2144:1: ( ( ( rule__ResourcesConfig__IsConsumableAssignment_3 )? ) )
+            // InternalMy.g:2145:1: ( ( rule__ResourcesConfig__IsConsumableAssignment_3 )? )
             {
-            // InternalMy.g:2037:1: ( ( rule__ResourcesConfig__IsConsumableAssignment_3 )? )
-            // InternalMy.g:2038:2: ( rule__ResourcesConfig__IsConsumableAssignment_3 )?
+            // InternalMy.g:2145:1: ( ( rule__ResourcesConfig__IsConsumableAssignment_3 )? )
+            // InternalMy.g:2146:2: ( rule__ResourcesConfig__IsConsumableAssignment_3 )?
             {
              before(grammarAccess.getResourcesConfigAccess().getIsConsumableAssignment_3()); 
-            // InternalMy.g:2039:2: ( rule__ResourcesConfig__IsConsumableAssignment_3 )?
+            // InternalMy.g:2147:2: ( rule__ResourcesConfig__IsConsumableAssignment_3 )?
             int alt15=2;
             int LA15_0 = input.LA(1);
 
-            if ( (LA15_0==36) ) {
+            if ( (LA15_0==35) ) {
                 alt15=1;
             }
             switch (alt15) {
                 case 1 :
-                    // InternalMy.g:2039:3: rule__ResourcesConfig__IsConsumableAssignment_3
+                    // InternalMy.g:2147:3: rule__ResourcesConfig__IsConsumableAssignment_3
                     {
                     pushFollow(FOLLOW_2);
                     rule__ResourcesConfig__IsConsumableAssignment_3();
@@ -6209,16 +6508,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__4"
-    // InternalMy.g:2047:1: rule__ResourcesConfig__Group__4 : rule__ResourcesConfig__Group__4__Impl rule__ResourcesConfig__Group__5 ;
+    // InternalMy.g:2155:1: rule__ResourcesConfig__Group__4 : rule__ResourcesConfig__Group__4__Impl rule__ResourcesConfig__Group__5 ;
     public final void rule__ResourcesConfig__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2051:1: ( rule__ResourcesConfig__Group__4__Impl rule__ResourcesConfig__Group__5 )
-            // InternalMy.g:2052:2: rule__ResourcesConfig__Group__4__Impl rule__ResourcesConfig__Group__5
+            // InternalMy.g:2159:1: ( rule__ResourcesConfig__Group__4__Impl rule__ResourcesConfig__Group__5 )
+            // InternalMy.g:2160:2: rule__ResourcesConfig__Group__4__Impl rule__ResourcesConfig__Group__5
             {
-            pushFollow(FOLLOW_22);
+            pushFollow(FOLLOW_20);
             rule__ResourcesConfig__Group__4__Impl();
 
             state._fsp--;
@@ -6247,29 +6546,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__4__Impl"
-    // InternalMy.g:2059:1: rule__ResourcesConfig__Group__4__Impl : ( ( rule__ResourcesConfig__IsLoanAssignment_4 )? ) ;
+    // InternalMy.g:2167:1: rule__ResourcesConfig__Group__4__Impl : ( ( rule__ResourcesConfig__IsLoanAssignment_4 )? ) ;
     public final void rule__ResourcesConfig__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2063:1: ( ( ( rule__ResourcesConfig__IsLoanAssignment_4 )? ) )
-            // InternalMy.g:2064:1: ( ( rule__ResourcesConfig__IsLoanAssignment_4 )? )
+            // InternalMy.g:2171:1: ( ( ( rule__ResourcesConfig__IsLoanAssignment_4 )? ) )
+            // InternalMy.g:2172:1: ( ( rule__ResourcesConfig__IsLoanAssignment_4 )? )
             {
-            // InternalMy.g:2064:1: ( ( rule__ResourcesConfig__IsLoanAssignment_4 )? )
-            // InternalMy.g:2065:2: ( rule__ResourcesConfig__IsLoanAssignment_4 )?
+            // InternalMy.g:2172:1: ( ( rule__ResourcesConfig__IsLoanAssignment_4 )? )
+            // InternalMy.g:2173:2: ( rule__ResourcesConfig__IsLoanAssignment_4 )?
             {
              before(grammarAccess.getResourcesConfigAccess().getIsLoanAssignment_4()); 
-            // InternalMy.g:2066:2: ( rule__ResourcesConfig__IsLoanAssignment_4 )?
+            // InternalMy.g:2174:2: ( rule__ResourcesConfig__IsLoanAssignment_4 )?
             int alt16=2;
             int LA16_0 = input.LA(1);
 
-            if ( (LA16_0==37) ) {
+            if ( (LA16_0==36) ) {
                 alt16=1;
             }
             switch (alt16) {
                 case 1 :
-                    // InternalMy.g:2066:3: rule__ResourcesConfig__IsLoanAssignment_4
+                    // InternalMy.g:2174:3: rule__ResourcesConfig__IsLoanAssignment_4
                     {
                     pushFollow(FOLLOW_2);
                     rule__ResourcesConfig__IsLoanAssignment_4();
@@ -6305,16 +6604,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__5"
-    // InternalMy.g:2074:1: rule__ResourcesConfig__Group__5 : rule__ResourcesConfig__Group__5__Impl rule__ResourcesConfig__Group__6 ;
+    // InternalMy.g:2182:1: rule__ResourcesConfig__Group__5 : rule__ResourcesConfig__Group__5__Impl rule__ResourcesConfig__Group__6 ;
     public final void rule__ResourcesConfig__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2078:1: ( rule__ResourcesConfig__Group__5__Impl rule__ResourcesConfig__Group__6 )
-            // InternalMy.g:2079:2: rule__ResourcesConfig__Group__5__Impl rule__ResourcesConfig__Group__6
+            // InternalMy.g:2186:1: ( rule__ResourcesConfig__Group__5__Impl rule__ResourcesConfig__Group__6 )
+            // InternalMy.g:2187:2: rule__ResourcesConfig__Group__5__Impl rule__ResourcesConfig__Group__6
             {
-            pushFollow(FOLLOW_22);
+            pushFollow(FOLLOW_20);
             rule__ResourcesConfig__Group__5__Impl();
 
             state._fsp--;
@@ -6343,29 +6642,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__5__Impl"
-    // InternalMy.g:2086:1: rule__ResourcesConfig__Group__5__Impl : ( ( rule__ResourcesConfig__IsChargedAssignment_5 )? ) ;
+    // InternalMy.g:2194:1: rule__ResourcesConfig__Group__5__Impl : ( ( rule__ResourcesConfig__IsChargedAssignment_5 )? ) ;
     public final void rule__ResourcesConfig__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2090:1: ( ( ( rule__ResourcesConfig__IsChargedAssignment_5 )? ) )
-            // InternalMy.g:2091:1: ( ( rule__ResourcesConfig__IsChargedAssignment_5 )? )
+            // InternalMy.g:2198:1: ( ( ( rule__ResourcesConfig__IsChargedAssignment_5 )? ) )
+            // InternalMy.g:2199:1: ( ( rule__ResourcesConfig__IsChargedAssignment_5 )? )
             {
-            // InternalMy.g:2091:1: ( ( rule__ResourcesConfig__IsChargedAssignment_5 )? )
-            // InternalMy.g:2092:2: ( rule__ResourcesConfig__IsChargedAssignment_5 )?
+            // InternalMy.g:2199:1: ( ( rule__ResourcesConfig__IsChargedAssignment_5 )? )
+            // InternalMy.g:2200:2: ( rule__ResourcesConfig__IsChargedAssignment_5 )?
             {
              before(grammarAccess.getResourcesConfigAccess().getIsChargedAssignment_5()); 
-            // InternalMy.g:2093:2: ( rule__ResourcesConfig__IsChargedAssignment_5 )?
+            // InternalMy.g:2201:2: ( rule__ResourcesConfig__IsChargedAssignment_5 )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
-            if ( (LA17_0==38) ) {
+            if ( (LA17_0==37) ) {
                 alt17=1;
             }
             switch (alt17) {
                 case 1 :
-                    // InternalMy.g:2093:3: rule__ResourcesConfig__IsChargedAssignment_5
+                    // InternalMy.g:2201:3: rule__ResourcesConfig__IsChargedAssignment_5
                     {
                     pushFollow(FOLLOW_2);
                     rule__ResourcesConfig__IsChargedAssignment_5();
@@ -6401,14 +6700,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__6"
-    // InternalMy.g:2101:1: rule__ResourcesConfig__Group__6 : rule__ResourcesConfig__Group__6__Impl ;
+    // InternalMy.g:2209:1: rule__ResourcesConfig__Group__6 : rule__ResourcesConfig__Group__6__Impl ;
     public final void rule__ResourcesConfig__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2105:1: ( rule__ResourcesConfig__Group__6__Impl )
-            // InternalMy.g:2106:2: rule__ResourcesConfig__Group__6__Impl
+            // InternalMy.g:2213:1: ( rule__ResourcesConfig__Group__6__Impl )
+            // InternalMy.g:2214:2: rule__ResourcesConfig__Group__6__Impl
             {
             pushFollow(FOLLOW_2);
             rule__ResourcesConfig__Group__6__Impl();
@@ -6434,20 +6733,20 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__Group__6__Impl"
-    // InternalMy.g:2112:1: rule__ResourcesConfig__Group__6__Impl : ( ')' ) ;
+    // InternalMy.g:2220:1: rule__ResourcesConfig__Group__6__Impl : ( ')' ) ;
     public final void rule__ResourcesConfig__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2116:1: ( ( ')' ) )
-            // InternalMy.g:2117:1: ( ')' )
+            // InternalMy.g:2224:1: ( ( ')' ) )
+            // InternalMy.g:2225:1: ( ')' )
             {
-            // InternalMy.g:2117:1: ( ')' )
-            // InternalMy.g:2118:2: ')'
+            // InternalMy.g:2225:1: ( ')' )
+            // InternalMy.g:2226:2: ')'
             {
              before(grammarAccess.getResourcesConfigAccess().getRightParenthesisKeyword_6()); 
-            match(input,24,FOLLOW_2); 
+            match(input,13,FOLLOW_2); 
              after(grammarAccess.getResourcesConfigAccess().getRightParenthesisKeyword_6()); 
 
             }
@@ -6471,16 +6770,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LotsConfig__Group__0"
-    // InternalMy.g:2128:1: rule__LotsConfig__Group__0 : rule__LotsConfig__Group__0__Impl rule__LotsConfig__Group__1 ;
+    // InternalMy.g:2236:1: rule__LotsConfig__Group__0 : rule__LotsConfig__Group__0__Impl rule__LotsConfig__Group__1 ;
     public final void rule__LotsConfig__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2132:1: ( rule__LotsConfig__Group__0__Impl rule__LotsConfig__Group__1 )
-            // InternalMy.g:2133:2: rule__LotsConfig__Group__0__Impl rule__LotsConfig__Group__1
+            // InternalMy.g:2240:1: ( rule__LotsConfig__Group__0__Impl rule__LotsConfig__Group__1 )
+            // InternalMy.g:2241:2: rule__LotsConfig__Group__0__Impl rule__LotsConfig__Group__1
             {
-            pushFollow(FOLLOW_14);
+            pushFollow(FOLLOW_9);
             rule__LotsConfig__Group__0__Impl();
 
             state._fsp--;
@@ -6509,21 +6808,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LotsConfig__Group__0__Impl"
-    // InternalMy.g:2140:1: rule__LotsConfig__Group__0__Impl : ( () ) ;
+    // InternalMy.g:2248:1: rule__LotsConfig__Group__0__Impl : ( () ) ;
     public final void rule__LotsConfig__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2144:1: ( ( () ) )
-            // InternalMy.g:2145:1: ( () )
+            // InternalMy.g:2252:1: ( ( () ) )
+            // InternalMy.g:2253:1: ( () )
             {
-            // InternalMy.g:2145:1: ( () )
-            // InternalMy.g:2146:2: ()
+            // InternalMy.g:2253:1: ( () )
+            // InternalMy.g:2254:2: ()
             {
              before(grammarAccess.getLotsConfigAccess().getLotsConfigAction_0()); 
-            // InternalMy.g:2147:2: ()
-            // InternalMy.g:2147:3: 
+            // InternalMy.g:2255:2: ()
+            // InternalMy.g:2255:3: 
             {
             }
 
@@ -6546,16 +6845,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LotsConfig__Group__1"
-    // InternalMy.g:2155:1: rule__LotsConfig__Group__1 : rule__LotsConfig__Group__1__Impl rule__LotsConfig__Group__2 ;
+    // InternalMy.g:2263:1: rule__LotsConfig__Group__1 : rule__LotsConfig__Group__1__Impl rule__LotsConfig__Group__2 ;
     public final void rule__LotsConfig__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2159:1: ( rule__LotsConfig__Group__1__Impl rule__LotsConfig__Group__2 )
-            // InternalMy.g:2160:2: rule__LotsConfig__Group__1__Impl rule__LotsConfig__Group__2
+            // InternalMy.g:2267:1: ( rule__LotsConfig__Group__1__Impl rule__LotsConfig__Group__2 )
+            // InternalMy.g:2268:2: rule__LotsConfig__Group__1__Impl rule__LotsConfig__Group__2
             {
-            pushFollow(FOLLOW_14);
+            pushFollow(FOLLOW_21);
             rule__LotsConfig__Group__1__Impl();
 
             state._fsp--;
@@ -6584,42 +6883,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LotsConfig__Group__1__Impl"
-    // InternalMy.g:2167:1: rule__LotsConfig__Group__1__Impl : ( ( rule__LotsConfig__HasImageAssignment_1 )? ) ;
+    // InternalMy.g:2275:1: rule__LotsConfig__Group__1__Impl : ( '(' ) ;
     public final void rule__LotsConfig__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2171:1: ( ( ( rule__LotsConfig__HasImageAssignment_1 )? ) )
-            // InternalMy.g:2172:1: ( ( rule__LotsConfig__HasImageAssignment_1 )? )
+            // InternalMy.g:2279:1: ( ( '(' ) )
+            // InternalMy.g:2280:1: ( '(' )
             {
-            // InternalMy.g:2172:1: ( ( rule__LotsConfig__HasImageAssignment_1 )? )
-            // InternalMy.g:2173:2: ( rule__LotsConfig__HasImageAssignment_1 )?
+            // InternalMy.g:2280:1: ( '(' )
+            // InternalMy.g:2281:2: '('
             {
-             before(grammarAccess.getLotsConfigAccess().getHasImageAssignment_1()); 
-            // InternalMy.g:2174:2: ( rule__LotsConfig__HasImageAssignment_1 )?
-            int alt18=2;
-            int LA18_0 = input.LA(1);
-
-            if ( (LA18_0==34) ) {
-                alt18=1;
-            }
-            switch (alt18) {
-                case 1 :
-                    // InternalMy.g:2174:3: rule__LotsConfig__HasImageAssignment_1
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__LotsConfig__HasImageAssignment_1();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getLotsConfigAccess().getHasImageAssignment_1()); 
+             before(grammarAccess.getLotsConfigAccess().getLeftParenthesisKeyword_1()); 
+            match(input,15,FOLLOW_2); 
+             after(grammarAccess.getLotsConfigAccess().getLeftParenthesisKeyword_1()); 
 
             }
 
@@ -6642,17 +6920,22 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LotsConfig__Group__2"
-    // InternalMy.g:2182:1: rule__LotsConfig__Group__2 : rule__LotsConfig__Group__2__Impl ;
+    // InternalMy.g:2290:1: rule__LotsConfig__Group__2 : rule__LotsConfig__Group__2__Impl rule__LotsConfig__Group__3 ;
     public final void rule__LotsConfig__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2186:1: ( rule__LotsConfig__Group__2__Impl )
-            // InternalMy.g:2187:2: rule__LotsConfig__Group__2__Impl
+            // InternalMy.g:2294:1: ( rule__LotsConfig__Group__2__Impl rule__LotsConfig__Group__3 )
+            // InternalMy.g:2295:2: rule__LotsConfig__Group__2__Impl rule__LotsConfig__Group__3
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_21);
             rule__LotsConfig__Group__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__LotsConfig__Group__3();
 
             state._fsp--;
 
@@ -6675,32 +6958,32 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LotsConfig__Group__2__Impl"
-    // InternalMy.g:2193:1: rule__LotsConfig__Group__2__Impl : ( ( rule__LotsConfig__HasOneStockPerSlotAssignment_2 )? ) ;
+    // InternalMy.g:2302:1: rule__LotsConfig__Group__2__Impl : ( ( rule__LotsConfig__HasImageAssignment_2 )? ) ;
     public final void rule__LotsConfig__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2197:1: ( ( ( rule__LotsConfig__HasOneStockPerSlotAssignment_2 )? ) )
-            // InternalMy.g:2198:1: ( ( rule__LotsConfig__HasOneStockPerSlotAssignment_2 )? )
+            // InternalMy.g:2306:1: ( ( ( rule__LotsConfig__HasImageAssignment_2 )? ) )
+            // InternalMy.g:2307:1: ( ( rule__LotsConfig__HasImageAssignment_2 )? )
             {
-            // InternalMy.g:2198:1: ( ( rule__LotsConfig__HasOneStockPerSlotAssignment_2 )? )
-            // InternalMy.g:2199:2: ( rule__LotsConfig__HasOneStockPerSlotAssignment_2 )?
+            // InternalMy.g:2307:1: ( ( rule__LotsConfig__HasImageAssignment_2 )? )
+            // InternalMy.g:2308:2: ( rule__LotsConfig__HasImageAssignment_2 )?
             {
-             before(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotAssignment_2()); 
-            // InternalMy.g:2200:2: ( rule__LotsConfig__HasOneStockPerSlotAssignment_2 )?
-            int alt19=2;
-            int LA19_0 = input.LA(1);
+             before(grammarAccess.getLotsConfigAccess().getHasImageAssignment_2()); 
+            // InternalMy.g:2309:2: ( rule__LotsConfig__HasImageAssignment_2 )?
+            int alt18=2;
+            int LA18_0 = input.LA(1);
 
-            if ( (LA19_0==35) ) {
-                alt19=1;
+            if ( (LA18_0==33) ) {
+                alt18=1;
             }
-            switch (alt19) {
+            switch (alt18) {
                 case 1 :
-                    // InternalMy.g:2200:3: rule__LotsConfig__HasOneStockPerSlotAssignment_2
+                    // InternalMy.g:2309:3: rule__LotsConfig__HasImageAssignment_2
                     {
                     pushFollow(FOLLOW_2);
-                    rule__LotsConfig__HasOneStockPerSlotAssignment_2();
+                    rule__LotsConfig__HasImageAssignment_2();
 
                     state._fsp--;
 
@@ -6710,7 +6993,7 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
             }
 
-             after(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotAssignment_2()); 
+             after(grammarAccess.getLotsConfigAccess().getHasImageAssignment_2()); 
 
             }
 
@@ -6732,17 +7015,183 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__LotsConfig__Group__2__Impl"
 
 
+    // $ANTLR start "rule__LotsConfig__Group__3"
+    // InternalMy.g:2317:1: rule__LotsConfig__Group__3 : rule__LotsConfig__Group__3__Impl rule__LotsConfig__Group__4 ;
+    public final void rule__LotsConfig__Group__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2321:1: ( rule__LotsConfig__Group__3__Impl rule__LotsConfig__Group__4 )
+            // InternalMy.g:2322:2: rule__LotsConfig__Group__3__Impl rule__LotsConfig__Group__4
+            {
+            pushFollow(FOLLOW_21);
+            rule__LotsConfig__Group__3__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__LotsConfig__Group__4();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LotsConfig__Group__3"
+
+
+    // $ANTLR start "rule__LotsConfig__Group__3__Impl"
+    // InternalMy.g:2329:1: rule__LotsConfig__Group__3__Impl : ( ( rule__LotsConfig__HasOneStockPerSlotAssignment_3 )? ) ;
+    public final void rule__LotsConfig__Group__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2333:1: ( ( ( rule__LotsConfig__HasOneStockPerSlotAssignment_3 )? ) )
+            // InternalMy.g:2334:1: ( ( rule__LotsConfig__HasOneStockPerSlotAssignment_3 )? )
+            {
+            // InternalMy.g:2334:1: ( ( rule__LotsConfig__HasOneStockPerSlotAssignment_3 )? )
+            // InternalMy.g:2335:2: ( rule__LotsConfig__HasOneStockPerSlotAssignment_3 )?
+            {
+             before(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotAssignment_3()); 
+            // InternalMy.g:2336:2: ( rule__LotsConfig__HasOneStockPerSlotAssignment_3 )?
+            int alt19=2;
+            int LA19_0 = input.LA(1);
+
+            if ( (LA19_0==34) ) {
+                alt19=1;
+            }
+            switch (alt19) {
+                case 1 :
+                    // InternalMy.g:2336:3: rule__LotsConfig__HasOneStockPerSlotAssignment_3
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__LotsConfig__HasOneStockPerSlotAssignment_3();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotAssignment_3()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LotsConfig__Group__3__Impl"
+
+
+    // $ANTLR start "rule__LotsConfig__Group__4"
+    // InternalMy.g:2344:1: rule__LotsConfig__Group__4 : rule__LotsConfig__Group__4__Impl ;
+    public final void rule__LotsConfig__Group__4() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2348:1: ( rule__LotsConfig__Group__4__Impl )
+            // InternalMy.g:2349:2: rule__LotsConfig__Group__4__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__LotsConfig__Group__4__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LotsConfig__Group__4"
+
+
+    // $ANTLR start "rule__LotsConfig__Group__4__Impl"
+    // InternalMy.g:2355:1: rule__LotsConfig__Group__4__Impl : ( ')' ) ;
+    public final void rule__LotsConfig__Group__4__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2359:1: ( ( ')' ) )
+            // InternalMy.g:2360:1: ( ')' )
+            {
+            // InternalMy.g:2360:1: ( ')' )
+            // InternalMy.g:2361:2: ')'
+            {
+             before(grammarAccess.getLotsConfigAccess().getRightParenthesisKeyword_4()); 
+            match(input,13,FOLLOW_2); 
+             after(grammarAccess.getLotsConfigAccess().getRightParenthesisKeyword_4()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LotsConfig__Group__4__Impl"
+
+
     // $ANTLR start "rule__PricingSystem__Group__0"
-    // InternalMy.g:2209:1: rule__PricingSystem__Group__0 : rule__PricingSystem__Group__0__Impl rule__PricingSystem__Group__1 ;
+    // InternalMy.g:2371:1: rule__PricingSystem__Group__0 : rule__PricingSystem__Group__0__Impl rule__PricingSystem__Group__1 ;
     public final void rule__PricingSystem__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2213:1: ( rule__PricingSystem__Group__0__Impl rule__PricingSystem__Group__1 )
-            // InternalMy.g:2214:2: rule__PricingSystem__Group__0__Impl rule__PricingSystem__Group__1
+            // InternalMy.g:2375:1: ( rule__PricingSystem__Group__0__Impl rule__PricingSystem__Group__1 )
+            // InternalMy.g:2376:2: rule__PricingSystem__Group__0__Impl rule__PricingSystem__Group__1
             {
-            pushFollow(FOLLOW_3);
+            pushFollow(FOLLOW_9);
             rule__PricingSystem__Group__0__Impl();
 
             state._fsp--;
@@ -6771,21 +7220,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__0__Impl"
-    // InternalMy.g:2221:1: rule__PricingSystem__Group__0__Impl : ( ( rule__PricingSystem__NameAssignment_0 ) ) ;
+    // InternalMy.g:2383:1: rule__PricingSystem__Group__0__Impl : ( ( rule__PricingSystem__NameAssignment_0 ) ) ;
     public final void rule__PricingSystem__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2225:1: ( ( ( rule__PricingSystem__NameAssignment_0 ) ) )
-            // InternalMy.g:2226:1: ( ( rule__PricingSystem__NameAssignment_0 ) )
+            // InternalMy.g:2387:1: ( ( ( rule__PricingSystem__NameAssignment_0 ) ) )
+            // InternalMy.g:2388:1: ( ( rule__PricingSystem__NameAssignment_0 ) )
             {
-            // InternalMy.g:2226:1: ( ( rule__PricingSystem__NameAssignment_0 ) )
-            // InternalMy.g:2227:2: ( rule__PricingSystem__NameAssignment_0 )
+            // InternalMy.g:2388:1: ( ( rule__PricingSystem__NameAssignment_0 ) )
+            // InternalMy.g:2389:2: ( rule__PricingSystem__NameAssignment_0 )
             {
              before(grammarAccess.getPricingSystemAccess().getNameAssignment_0()); 
-            // InternalMy.g:2228:2: ( rule__PricingSystem__NameAssignment_0 )
-            // InternalMy.g:2228:3: rule__PricingSystem__NameAssignment_0
+            // InternalMy.g:2390:2: ( rule__PricingSystem__NameAssignment_0 )
+            // InternalMy.g:2390:3: rule__PricingSystem__NameAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__PricingSystem__NameAssignment_0();
@@ -6818,16 +7267,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__1"
-    // InternalMy.g:2236:1: rule__PricingSystem__Group__1 : rule__PricingSystem__Group__1__Impl rule__PricingSystem__Group__2 ;
+    // InternalMy.g:2398:1: rule__PricingSystem__Group__1 : rule__PricingSystem__Group__1__Impl rule__PricingSystem__Group__2 ;
     public final void rule__PricingSystem__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2240:1: ( rule__PricingSystem__Group__1__Impl rule__PricingSystem__Group__2 )
-            // InternalMy.g:2241:2: rule__PricingSystem__Group__1__Impl rule__PricingSystem__Group__2
+            // InternalMy.g:2402:1: ( rule__PricingSystem__Group__1__Impl rule__PricingSystem__Group__2 )
+            // InternalMy.g:2403:2: rule__PricingSystem__Group__1__Impl rule__PricingSystem__Group__2
             {
-            pushFollow(FOLLOW_23);
+            pushFollow(FOLLOW_22);
             rule__PricingSystem__Group__1__Impl();
 
             state._fsp--;
@@ -6856,21 +7305,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__1__Impl"
-    // InternalMy.g:2248:1: rule__PricingSystem__Group__1__Impl : ( ':' ) ;
+    // InternalMy.g:2410:1: rule__PricingSystem__Group__1__Impl : ( '(' ) ;
     public final void rule__PricingSystem__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2252:1: ( ( ':' ) )
-            // InternalMy.g:2253:1: ( ':' )
+            // InternalMy.g:2414:1: ( ( '(' ) )
+            // InternalMy.g:2415:1: ( '(' )
             {
-            // InternalMy.g:2253:1: ( ':' )
-            // InternalMy.g:2254:2: ':'
+            // InternalMy.g:2415:1: ( '(' )
+            // InternalMy.g:2416:2: '('
             {
-             before(grammarAccess.getPricingSystemAccess().getColonKeyword_1()); 
-            match(input,11,FOLLOW_2); 
-             after(grammarAccess.getPricingSystemAccess().getColonKeyword_1()); 
+             before(grammarAccess.getPricingSystemAccess().getLeftParenthesisKeyword_1()); 
+            match(input,15,FOLLOW_2); 
+             after(grammarAccess.getPricingSystemAccess().getLeftParenthesisKeyword_1()); 
 
             }
 
@@ -6893,16 +7342,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__2"
-    // InternalMy.g:2263:1: rule__PricingSystem__Group__2 : rule__PricingSystem__Group__2__Impl rule__PricingSystem__Group__3 ;
+    // InternalMy.g:2425:1: rule__PricingSystem__Group__2 : rule__PricingSystem__Group__2__Impl rule__PricingSystem__Group__3 ;
     public final void rule__PricingSystem__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2267:1: ( rule__PricingSystem__Group__2__Impl rule__PricingSystem__Group__3 )
-            // InternalMy.g:2268:2: rule__PricingSystem__Group__2__Impl rule__PricingSystem__Group__3
+            // InternalMy.g:2429:1: ( rule__PricingSystem__Group__2__Impl rule__PricingSystem__Group__3 )
+            // InternalMy.g:2430:2: rule__PricingSystem__Group__2__Impl rule__PricingSystem__Group__3
             {
-            pushFollow(FOLLOW_5);
+            pushFollow(FOLLOW_3);
             rule__PricingSystem__Group__2__Impl();
 
             state._fsp--;
@@ -6931,21 +7380,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__2__Impl"
-    // InternalMy.g:2275:1: rule__PricingSystem__Group__2__Impl : ( 'currency' ) ;
+    // InternalMy.g:2437:1: rule__PricingSystem__Group__2__Impl : ( 'devise' ) ;
     public final void rule__PricingSystem__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2279:1: ( ( 'currency' ) )
-            // InternalMy.g:2280:1: ( 'currency' )
+            // InternalMy.g:2441:1: ( ( 'devise' ) )
+            // InternalMy.g:2442:1: ( 'devise' )
             {
-            // InternalMy.g:2280:1: ( 'currency' )
-            // InternalMy.g:2281:2: 'currency'
+            // InternalMy.g:2442:1: ( 'devise' )
+            // InternalMy.g:2443:2: 'devise'
             {
-             before(grammarAccess.getPricingSystemAccess().getCurrencyKeyword_2()); 
-            match(input,25,FOLLOW_2); 
-             after(grammarAccess.getPricingSystemAccess().getCurrencyKeyword_2()); 
+             before(grammarAccess.getPricingSystemAccess().getDeviseKeyword_2()); 
+            match(input,24,FOLLOW_2); 
+             after(grammarAccess.getPricingSystemAccess().getDeviseKeyword_2()); 
 
             }
 
@@ -6968,16 +7417,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__3"
-    // InternalMy.g:2290:1: rule__PricingSystem__Group__3 : rule__PricingSystem__Group__3__Impl rule__PricingSystem__Group__4 ;
+    // InternalMy.g:2452:1: rule__PricingSystem__Group__3 : rule__PricingSystem__Group__3__Impl rule__PricingSystem__Group__4 ;
     public final void rule__PricingSystem__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2294:1: ( rule__PricingSystem__Group__3__Impl rule__PricingSystem__Group__4 )
-            // InternalMy.g:2295:2: rule__PricingSystem__Group__3__Impl rule__PricingSystem__Group__4
+            // InternalMy.g:2456:1: ( rule__PricingSystem__Group__3__Impl rule__PricingSystem__Group__4 )
+            // InternalMy.g:2457:2: rule__PricingSystem__Group__3__Impl rule__PricingSystem__Group__4
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_5);
             rule__PricingSystem__Group__3__Impl();
 
             state._fsp--;
@@ -7006,31 +7455,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__3__Impl"
-    // InternalMy.g:2302:1: rule__PricingSystem__Group__3__Impl : ( ( rule__PricingSystem__CurrencyAssignment_3 ) ) ;
+    // InternalMy.g:2464:1: rule__PricingSystem__Group__3__Impl : ( ':' ) ;
     public final void rule__PricingSystem__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2306:1: ( ( ( rule__PricingSystem__CurrencyAssignment_3 ) ) )
-            // InternalMy.g:2307:1: ( ( rule__PricingSystem__CurrencyAssignment_3 ) )
+            // InternalMy.g:2468:1: ( ( ':' ) )
+            // InternalMy.g:2469:1: ( ':' )
             {
-            // InternalMy.g:2307:1: ( ( rule__PricingSystem__CurrencyAssignment_3 ) )
-            // InternalMy.g:2308:2: ( rule__PricingSystem__CurrencyAssignment_3 )
+            // InternalMy.g:2469:1: ( ':' )
+            // InternalMy.g:2470:2: ':'
             {
-             before(grammarAccess.getPricingSystemAccess().getCurrencyAssignment_3()); 
-            // InternalMy.g:2309:2: ( rule__PricingSystem__CurrencyAssignment_3 )
-            // InternalMy.g:2309:3: rule__PricingSystem__CurrencyAssignment_3
-            {
-            pushFollow(FOLLOW_2);
-            rule__PricingSystem__CurrencyAssignment_3();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getPricingSystemAccess().getCurrencyAssignment_3()); 
+             before(grammarAccess.getPricingSystemAccess().getColonKeyword_3()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getPricingSystemAccess().getColonKeyword_3()); 
 
             }
 
@@ -7053,16 +7492,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__4"
-    // InternalMy.g:2317:1: rule__PricingSystem__Group__4 : rule__PricingSystem__Group__4__Impl rule__PricingSystem__Group__5 ;
+    // InternalMy.g:2479:1: rule__PricingSystem__Group__4 : rule__PricingSystem__Group__4__Impl rule__PricingSystem__Group__5 ;
     public final void rule__PricingSystem__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2321:1: ( rule__PricingSystem__Group__4__Impl rule__PricingSystem__Group__5 )
-            // InternalMy.g:2322:2: rule__PricingSystem__Group__4__Impl rule__PricingSystem__Group__5
+            // InternalMy.g:2483:1: ( rule__PricingSystem__Group__4__Impl rule__PricingSystem__Group__5 )
+            // InternalMy.g:2484:2: rule__PricingSystem__Group__4__Impl rule__PricingSystem__Group__5
             {
-            pushFollow(FOLLOW_24);
+            pushFollow(FOLLOW_15);
             rule__PricingSystem__Group__4__Impl();
 
             state._fsp--;
@@ -7091,21 +7530,31 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__4__Impl"
-    // InternalMy.g:2329:1: rule__PricingSystem__Group__4__Impl : ( ',' ) ;
+    // InternalMy.g:2491:1: rule__PricingSystem__Group__4__Impl : ( ( rule__PricingSystem__CurrencyAssignment_4 ) ) ;
     public final void rule__PricingSystem__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2333:1: ( ( ',' ) )
-            // InternalMy.g:2334:1: ( ',' )
+            // InternalMy.g:2495:1: ( ( ( rule__PricingSystem__CurrencyAssignment_4 ) ) )
+            // InternalMy.g:2496:1: ( ( rule__PricingSystem__CurrencyAssignment_4 ) )
             {
-            // InternalMy.g:2334:1: ( ',' )
-            // InternalMy.g:2335:2: ','
+            // InternalMy.g:2496:1: ( ( rule__PricingSystem__CurrencyAssignment_4 ) )
+            // InternalMy.g:2497:2: ( rule__PricingSystem__CurrencyAssignment_4 )
             {
-             before(grammarAccess.getPricingSystemAccess().getCommaKeyword_4()); 
-            match(input,16,FOLLOW_2); 
-             after(grammarAccess.getPricingSystemAccess().getCommaKeyword_4()); 
+             before(grammarAccess.getPricingSystemAccess().getCurrencyAssignment_4()); 
+            // InternalMy.g:2498:2: ( rule__PricingSystem__CurrencyAssignment_4 )
+            // InternalMy.g:2498:3: rule__PricingSystem__CurrencyAssignment_4
+            {
+            pushFollow(FOLLOW_2);
+            rule__PricingSystem__CurrencyAssignment_4();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getPricingSystemAccess().getCurrencyAssignment_4()); 
 
             }
 
@@ -7128,16 +7577,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__5"
-    // InternalMy.g:2344:1: rule__PricingSystem__Group__5 : rule__PricingSystem__Group__5__Impl rule__PricingSystem__Group__6 ;
+    // InternalMy.g:2506:1: rule__PricingSystem__Group__5 : rule__PricingSystem__Group__5__Impl rule__PricingSystem__Group__6 ;
     public final void rule__PricingSystem__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2348:1: ( rule__PricingSystem__Group__5__Impl rule__PricingSystem__Group__6 )
-            // InternalMy.g:2349:2: rule__PricingSystem__Group__5__Impl rule__PricingSystem__Group__6
+            // InternalMy.g:2510:1: ( rule__PricingSystem__Group__5__Impl rule__PricingSystem__Group__6 )
+            // InternalMy.g:2511:2: rule__PricingSystem__Group__5__Impl rule__PricingSystem__Group__6
             {
-            pushFollow(FOLLOW_5);
+            pushFollow(FOLLOW_23);
             rule__PricingSystem__Group__5__Impl();
 
             state._fsp--;
@@ -7166,21 +7615,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__5__Impl"
-    // InternalMy.g:2356:1: rule__PricingSystem__Group__5__Impl : ( 'taxSystem' ) ;
+    // InternalMy.g:2518:1: rule__PricingSystem__Group__5__Impl : ( ',' ) ;
     public final void rule__PricingSystem__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2360:1: ( ( 'taxSystem' ) )
-            // InternalMy.g:2361:1: ( 'taxSystem' )
+            // InternalMy.g:2522:1: ( ( ',' ) )
+            // InternalMy.g:2523:1: ( ',' )
             {
-            // InternalMy.g:2361:1: ( 'taxSystem' )
-            // InternalMy.g:2362:2: 'taxSystem'
+            // InternalMy.g:2523:1: ( ',' )
+            // InternalMy.g:2524:2: ','
             {
-             before(grammarAccess.getPricingSystemAccess().getTaxSystemKeyword_5()); 
-            match(input,26,FOLLOW_2); 
-             after(grammarAccess.getPricingSystemAccess().getTaxSystemKeyword_5()); 
+             before(grammarAccess.getPricingSystemAccess().getCommaKeyword_5()); 
+            match(input,18,FOLLOW_2); 
+             after(grammarAccess.getPricingSystemAccess().getCommaKeyword_5()); 
 
             }
 
@@ -7203,17 +7652,22 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__6"
-    // InternalMy.g:2371:1: rule__PricingSystem__Group__6 : rule__PricingSystem__Group__6__Impl ;
+    // InternalMy.g:2533:1: rule__PricingSystem__Group__6 : rule__PricingSystem__Group__6__Impl rule__PricingSystem__Group__7 ;
     public final void rule__PricingSystem__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2375:1: ( rule__PricingSystem__Group__6__Impl )
-            // InternalMy.g:2376:2: rule__PricingSystem__Group__6__Impl
+            // InternalMy.g:2537:1: ( rule__PricingSystem__Group__6__Impl rule__PricingSystem__Group__7 )
+            // InternalMy.g:2538:2: rule__PricingSystem__Group__6__Impl rule__PricingSystem__Group__7
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_3);
             rule__PricingSystem__Group__6__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__PricingSystem__Group__7();
 
             state._fsp--;
 
@@ -7236,31 +7690,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PricingSystem__Group__6__Impl"
-    // InternalMy.g:2382:1: rule__PricingSystem__Group__6__Impl : ( ( rule__PricingSystem__TaxSystemAssignment_6 ) ) ;
+    // InternalMy.g:2545:1: rule__PricingSystem__Group__6__Impl : ( 'systeme-comptable' ) ;
     public final void rule__PricingSystem__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2386:1: ( ( ( rule__PricingSystem__TaxSystemAssignment_6 ) ) )
-            // InternalMy.g:2387:1: ( ( rule__PricingSystem__TaxSystemAssignment_6 ) )
+            // InternalMy.g:2549:1: ( ( 'systeme-comptable' ) )
+            // InternalMy.g:2550:1: ( 'systeme-comptable' )
             {
-            // InternalMy.g:2387:1: ( ( rule__PricingSystem__TaxSystemAssignment_6 ) )
-            // InternalMy.g:2388:2: ( rule__PricingSystem__TaxSystemAssignment_6 )
+            // InternalMy.g:2550:1: ( 'systeme-comptable' )
+            // InternalMy.g:2551:2: 'systeme-comptable'
             {
-             before(grammarAccess.getPricingSystemAccess().getTaxSystemAssignment_6()); 
-            // InternalMy.g:2389:2: ( rule__PricingSystem__TaxSystemAssignment_6 )
-            // InternalMy.g:2389:3: rule__PricingSystem__TaxSystemAssignment_6
-            {
-            pushFollow(FOLLOW_2);
-            rule__PricingSystem__TaxSystemAssignment_6();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getPricingSystemAccess().getTaxSystemAssignment_6()); 
+             before(grammarAccess.getPricingSystemAccess().getSystemeComptableKeyword_6()); 
+            match(input,25,FOLLOW_2); 
+             after(grammarAccess.getPricingSystemAccess().getSystemeComptableKeyword_6()); 
 
             }
 
@@ -7282,17 +7726,247 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__PricingSystem__Group__6__Impl"
 
 
+    // $ANTLR start "rule__PricingSystem__Group__7"
+    // InternalMy.g:2560:1: rule__PricingSystem__Group__7 : rule__PricingSystem__Group__7__Impl rule__PricingSystem__Group__8 ;
+    public final void rule__PricingSystem__Group__7() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2564:1: ( rule__PricingSystem__Group__7__Impl rule__PricingSystem__Group__8 )
+            // InternalMy.g:2565:2: rule__PricingSystem__Group__7__Impl rule__PricingSystem__Group__8
+            {
+            pushFollow(FOLLOW_5);
+            rule__PricingSystem__Group__7__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__PricingSystem__Group__8();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PricingSystem__Group__7"
+
+
+    // $ANTLR start "rule__PricingSystem__Group__7__Impl"
+    // InternalMy.g:2572:1: rule__PricingSystem__Group__7__Impl : ( ':' ) ;
+    public final void rule__PricingSystem__Group__7__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2576:1: ( ( ':' ) )
+            // InternalMy.g:2577:1: ( ':' )
+            {
+            // InternalMy.g:2577:1: ( ':' )
+            // InternalMy.g:2578:2: ':'
+            {
+             before(grammarAccess.getPricingSystemAccess().getColonKeyword_7()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getPricingSystemAccess().getColonKeyword_7()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PricingSystem__Group__7__Impl"
+
+
+    // $ANTLR start "rule__PricingSystem__Group__8"
+    // InternalMy.g:2587:1: rule__PricingSystem__Group__8 : rule__PricingSystem__Group__8__Impl rule__PricingSystem__Group__9 ;
+    public final void rule__PricingSystem__Group__8() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2591:1: ( rule__PricingSystem__Group__8__Impl rule__PricingSystem__Group__9 )
+            // InternalMy.g:2592:2: rule__PricingSystem__Group__8__Impl rule__PricingSystem__Group__9
+            {
+            pushFollow(FOLLOW_24);
+            rule__PricingSystem__Group__8__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__PricingSystem__Group__9();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PricingSystem__Group__8"
+
+
+    // $ANTLR start "rule__PricingSystem__Group__8__Impl"
+    // InternalMy.g:2599:1: rule__PricingSystem__Group__8__Impl : ( ( rule__PricingSystem__TaxSystemAssignment_8 ) ) ;
+    public final void rule__PricingSystem__Group__8__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2603:1: ( ( ( rule__PricingSystem__TaxSystemAssignment_8 ) ) )
+            // InternalMy.g:2604:1: ( ( rule__PricingSystem__TaxSystemAssignment_8 ) )
+            {
+            // InternalMy.g:2604:1: ( ( rule__PricingSystem__TaxSystemAssignment_8 ) )
+            // InternalMy.g:2605:2: ( rule__PricingSystem__TaxSystemAssignment_8 )
+            {
+             before(grammarAccess.getPricingSystemAccess().getTaxSystemAssignment_8()); 
+            // InternalMy.g:2606:2: ( rule__PricingSystem__TaxSystemAssignment_8 )
+            // InternalMy.g:2606:3: rule__PricingSystem__TaxSystemAssignment_8
+            {
+            pushFollow(FOLLOW_2);
+            rule__PricingSystem__TaxSystemAssignment_8();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getPricingSystemAccess().getTaxSystemAssignment_8()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PricingSystem__Group__8__Impl"
+
+
+    // $ANTLR start "rule__PricingSystem__Group__9"
+    // InternalMy.g:2614:1: rule__PricingSystem__Group__9 : rule__PricingSystem__Group__9__Impl ;
+    public final void rule__PricingSystem__Group__9() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2618:1: ( rule__PricingSystem__Group__9__Impl )
+            // InternalMy.g:2619:2: rule__PricingSystem__Group__9__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__PricingSystem__Group__9__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PricingSystem__Group__9"
+
+
+    // $ANTLR start "rule__PricingSystem__Group__9__Impl"
+    // InternalMy.g:2625:1: rule__PricingSystem__Group__9__Impl : ( ')' ) ;
+    public final void rule__PricingSystem__Group__9__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:2629:1: ( ( ')' ) )
+            // InternalMy.g:2630:1: ( ')' )
+            {
+            // InternalMy.g:2630:1: ( ')' )
+            // InternalMy.g:2631:2: ')'
+            {
+             before(grammarAccess.getPricingSystemAccess().getRightParenthesisKeyword_9()); 
+            match(input,13,FOLLOW_2); 
+             after(grammarAccess.getPricingSystemAccess().getRightParenthesisKeyword_9()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__PricingSystem__Group__9__Impl"
+
+
     // $ANTLR start "rule__EInt__Group__0"
-    // InternalMy.g:2398:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
+    // InternalMy.g:2641:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
     public final void rule__EInt__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2402:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
-            // InternalMy.g:2403:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
+            // InternalMy.g:2645:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
+            // InternalMy.g:2646:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
             {
-            pushFollow(FOLLOW_16);
+            pushFollow(FOLLOW_17);
             rule__EInt__Group__0__Impl();
 
             state._fsp--;
@@ -7321,31 +7995,31 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__0__Impl"
-    // InternalMy.g:2410:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
+    // InternalMy.g:2653:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
     public final void rule__EInt__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2414:1: ( ( ( '-' )? ) )
-            // InternalMy.g:2415:1: ( ( '-' )? )
+            // InternalMy.g:2657:1: ( ( ( '-' )? ) )
+            // InternalMy.g:2658:1: ( ( '-' )? )
             {
-            // InternalMy.g:2415:1: ( ( '-' )? )
-            // InternalMy.g:2416:2: ( '-' )?
+            // InternalMy.g:2658:1: ( ( '-' )? )
+            // InternalMy.g:2659:2: ( '-' )?
             {
              before(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
-            // InternalMy.g:2417:2: ( '-' )?
+            // InternalMy.g:2660:2: ( '-' )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
-            if ( (LA20_0==27) ) {
+            if ( (LA20_0==26) ) {
                 alt20=1;
             }
             switch (alt20) {
                 case 1 :
-                    // InternalMy.g:2417:3: '-'
+                    // InternalMy.g:2660:3: '-'
                     {
-                    match(input,27,FOLLOW_2); 
+                    match(input,26,FOLLOW_2); 
 
                     }
                     break;
@@ -7375,14 +8049,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__1"
-    // InternalMy.g:2425:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
+    // InternalMy.g:2668:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
     public final void rule__EInt__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2429:1: ( rule__EInt__Group__1__Impl )
-            // InternalMy.g:2430:2: rule__EInt__Group__1__Impl
+            // InternalMy.g:2672:1: ( rule__EInt__Group__1__Impl )
+            // InternalMy.g:2673:2: rule__EInt__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__EInt__Group__1__Impl();
@@ -7408,17 +8082,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EInt__Group__1__Impl"
-    // InternalMy.g:2436:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
+    // InternalMy.g:2679:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
     public final void rule__EInt__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2440:1: ( ( RULE_INT ) )
-            // InternalMy.g:2441:1: ( RULE_INT )
+            // InternalMy.g:2683:1: ( ( RULE_INT ) )
+            // InternalMy.g:2684:1: ( RULE_INT )
             {
-            // InternalMy.g:2441:1: ( RULE_INT )
-            // InternalMy.g:2442:2: RULE_INT
+            // InternalMy.g:2684:1: ( RULE_INT )
+            // InternalMy.g:2685:2: RULE_INT
             {
              before(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
             match(input,RULE_INT,FOLLOW_2); 
@@ -7445,14 +8119,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group__0"
-    // InternalMy.g:2452:1: rule__StatusList__Group__0 : rule__StatusList__Group__0__Impl rule__StatusList__Group__1 ;
+    // InternalMy.g:2695:1: rule__StatusList__Group__0 : rule__StatusList__Group__0__Impl rule__StatusList__Group__1 ;
     public final void rule__StatusList__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2456:1: ( rule__StatusList__Group__0__Impl rule__StatusList__Group__1 )
-            // InternalMy.g:2457:2: rule__StatusList__Group__0__Impl rule__StatusList__Group__1
+            // InternalMy.g:2699:1: ( rule__StatusList__Group__0__Impl rule__StatusList__Group__1 )
+            // InternalMy.g:2700:2: rule__StatusList__Group__0__Impl rule__StatusList__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__StatusList__Group__0__Impl();
@@ -7483,20 +8157,20 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group__0__Impl"
-    // InternalMy.g:2464:1: rule__StatusList__Group__0__Impl : ( '(' ) ;
+    // InternalMy.g:2707:1: rule__StatusList__Group__0__Impl : ( '(' ) ;
     public final void rule__StatusList__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2468:1: ( ( '(' ) )
-            // InternalMy.g:2469:1: ( '(' )
+            // InternalMy.g:2711:1: ( ( '(' ) )
+            // InternalMy.g:2712:1: ( '(' )
             {
-            // InternalMy.g:2469:1: ( '(' )
-            // InternalMy.g:2470:2: '('
+            // InternalMy.g:2712:1: ( '(' )
+            // InternalMy.g:2713:2: '('
             {
              before(grammarAccess.getStatusListAccess().getLeftParenthesisKeyword_0()); 
-            match(input,23,FOLLOW_2); 
+            match(input,15,FOLLOW_2); 
              after(grammarAccess.getStatusListAccess().getLeftParenthesisKeyword_0()); 
 
             }
@@ -7520,16 +8194,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group__1"
-    // InternalMy.g:2479:1: rule__StatusList__Group__1 : rule__StatusList__Group__1__Impl rule__StatusList__Group__2 ;
+    // InternalMy.g:2722:1: rule__StatusList__Group__1 : rule__StatusList__Group__1__Impl rule__StatusList__Group__2 ;
     public final void rule__StatusList__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2483:1: ( rule__StatusList__Group__1__Impl rule__StatusList__Group__2 )
-            // InternalMy.g:2484:2: rule__StatusList__Group__1__Impl rule__StatusList__Group__2
+            // InternalMy.g:2726:1: ( rule__StatusList__Group__1__Impl rule__StatusList__Group__2 )
+            // InternalMy.g:2727:2: rule__StatusList__Group__1__Impl rule__StatusList__Group__2
             {
-            pushFollow(FOLLOW_25);
+            pushFollow(FOLLOW_10);
             rule__StatusList__Group__1__Impl();
 
             state._fsp--;
@@ -7558,21 +8232,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group__1__Impl"
-    // InternalMy.g:2491:1: rule__StatusList__Group__1__Impl : ( ( rule__StatusList__StatusAssignment_1 ) ) ;
+    // InternalMy.g:2734:1: rule__StatusList__Group__1__Impl : ( ( rule__StatusList__StatusAssignment_1 ) ) ;
     public final void rule__StatusList__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2495:1: ( ( ( rule__StatusList__StatusAssignment_1 ) ) )
-            // InternalMy.g:2496:1: ( ( rule__StatusList__StatusAssignment_1 ) )
+            // InternalMy.g:2738:1: ( ( ( rule__StatusList__StatusAssignment_1 ) ) )
+            // InternalMy.g:2739:1: ( ( rule__StatusList__StatusAssignment_1 ) )
             {
-            // InternalMy.g:2496:1: ( ( rule__StatusList__StatusAssignment_1 ) )
-            // InternalMy.g:2497:2: ( rule__StatusList__StatusAssignment_1 )
+            // InternalMy.g:2739:1: ( ( rule__StatusList__StatusAssignment_1 ) )
+            // InternalMy.g:2740:2: ( rule__StatusList__StatusAssignment_1 )
             {
              before(grammarAccess.getStatusListAccess().getStatusAssignment_1()); 
-            // InternalMy.g:2498:2: ( rule__StatusList__StatusAssignment_1 )
-            // InternalMy.g:2498:3: rule__StatusList__StatusAssignment_1
+            // InternalMy.g:2741:2: ( rule__StatusList__StatusAssignment_1 )
+            // InternalMy.g:2741:3: rule__StatusList__StatusAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__StatusList__StatusAssignment_1();
@@ -7605,16 +8279,16 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group__2"
-    // InternalMy.g:2506:1: rule__StatusList__Group__2 : rule__StatusList__Group__2__Impl rule__StatusList__Group__3 ;
+    // InternalMy.g:2749:1: rule__StatusList__Group__2 : rule__StatusList__Group__2__Impl rule__StatusList__Group__3 ;
     public final void rule__StatusList__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2510:1: ( rule__StatusList__Group__2__Impl rule__StatusList__Group__3 )
-            // InternalMy.g:2511:2: rule__StatusList__Group__2__Impl rule__StatusList__Group__3
+            // InternalMy.g:2753:1: ( rule__StatusList__Group__2__Impl rule__StatusList__Group__3 )
+            // InternalMy.g:2754:2: rule__StatusList__Group__2__Impl rule__StatusList__Group__3
             {
-            pushFollow(FOLLOW_25);
+            pushFollow(FOLLOW_10);
             rule__StatusList__Group__2__Impl();
 
             state._fsp--;
@@ -7643,33 +8317,33 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group__2__Impl"
-    // InternalMy.g:2518:1: rule__StatusList__Group__2__Impl : ( ( rule__StatusList__Group_2__0 )* ) ;
+    // InternalMy.g:2761:1: rule__StatusList__Group__2__Impl : ( ( rule__StatusList__Group_2__0 )* ) ;
     public final void rule__StatusList__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2522:1: ( ( ( rule__StatusList__Group_2__0 )* ) )
-            // InternalMy.g:2523:1: ( ( rule__StatusList__Group_2__0 )* )
+            // InternalMy.g:2765:1: ( ( ( rule__StatusList__Group_2__0 )* ) )
+            // InternalMy.g:2766:1: ( ( rule__StatusList__Group_2__0 )* )
             {
-            // InternalMy.g:2523:1: ( ( rule__StatusList__Group_2__0 )* )
-            // InternalMy.g:2524:2: ( rule__StatusList__Group_2__0 )*
+            // InternalMy.g:2766:1: ( ( rule__StatusList__Group_2__0 )* )
+            // InternalMy.g:2767:2: ( rule__StatusList__Group_2__0 )*
             {
              before(grammarAccess.getStatusListAccess().getGroup_2()); 
-            // InternalMy.g:2525:2: ( rule__StatusList__Group_2__0 )*
+            // InternalMy.g:2768:2: ( rule__StatusList__Group_2__0 )*
             loop21:
             do {
                 int alt21=2;
                 int LA21_0 = input.LA(1);
 
-                if ( (LA21_0==16) ) {
+                if ( (LA21_0==18) ) {
                     alt21=1;
                 }
 
 
                 switch (alt21) {
             	case 1 :
-            	    // InternalMy.g:2525:3: rule__StatusList__Group_2__0
+            	    // InternalMy.g:2768:3: rule__StatusList__Group_2__0
             	    {
             	    pushFollow(FOLLOW_7);
             	    rule__StatusList__Group_2__0();
@@ -7708,14 +8382,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group__3"
-    // InternalMy.g:2533:1: rule__StatusList__Group__3 : rule__StatusList__Group__3__Impl ;
+    // InternalMy.g:2776:1: rule__StatusList__Group__3 : rule__StatusList__Group__3__Impl ;
     public final void rule__StatusList__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2537:1: ( rule__StatusList__Group__3__Impl )
-            // InternalMy.g:2538:2: rule__StatusList__Group__3__Impl
+            // InternalMy.g:2780:1: ( rule__StatusList__Group__3__Impl )
+            // InternalMy.g:2781:2: rule__StatusList__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__StatusList__Group__3__Impl();
@@ -7741,20 +8415,20 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group__3__Impl"
-    // InternalMy.g:2544:1: rule__StatusList__Group__3__Impl : ( ')' ) ;
+    // InternalMy.g:2787:1: rule__StatusList__Group__3__Impl : ( ')' ) ;
     public final void rule__StatusList__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2548:1: ( ( ')' ) )
-            // InternalMy.g:2549:1: ( ')' )
+            // InternalMy.g:2791:1: ( ( ')' ) )
+            // InternalMy.g:2792:1: ( ')' )
             {
-            // InternalMy.g:2549:1: ( ')' )
-            // InternalMy.g:2550:2: ')'
+            // InternalMy.g:2792:1: ( ')' )
+            // InternalMy.g:2793:2: ')'
             {
              before(grammarAccess.getStatusListAccess().getRightParenthesisKeyword_3()); 
-            match(input,24,FOLLOW_2); 
+            match(input,13,FOLLOW_2); 
              after(grammarAccess.getStatusListAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -7778,14 +8452,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group_2__0"
-    // InternalMy.g:2560:1: rule__StatusList__Group_2__0 : rule__StatusList__Group_2__0__Impl rule__StatusList__Group_2__1 ;
+    // InternalMy.g:2803:1: rule__StatusList__Group_2__0 : rule__StatusList__Group_2__0__Impl rule__StatusList__Group_2__1 ;
     public final void rule__StatusList__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2564:1: ( rule__StatusList__Group_2__0__Impl rule__StatusList__Group_2__1 )
-            // InternalMy.g:2565:2: rule__StatusList__Group_2__0__Impl rule__StatusList__Group_2__1
+            // InternalMy.g:2807:1: ( rule__StatusList__Group_2__0__Impl rule__StatusList__Group_2__1 )
+            // InternalMy.g:2808:2: rule__StatusList__Group_2__0__Impl rule__StatusList__Group_2__1
             {
             pushFollow(FOLLOW_5);
             rule__StatusList__Group_2__0__Impl();
@@ -7816,20 +8490,20 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group_2__0__Impl"
-    // InternalMy.g:2572:1: rule__StatusList__Group_2__0__Impl : ( ',' ) ;
+    // InternalMy.g:2815:1: rule__StatusList__Group_2__0__Impl : ( ',' ) ;
     public final void rule__StatusList__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2576:1: ( ( ',' ) )
-            // InternalMy.g:2577:1: ( ',' )
+            // InternalMy.g:2819:1: ( ( ',' ) )
+            // InternalMy.g:2820:1: ( ',' )
             {
-            // InternalMy.g:2577:1: ( ',' )
-            // InternalMy.g:2578:2: ','
+            // InternalMy.g:2820:1: ( ',' )
+            // InternalMy.g:2821:2: ','
             {
              before(grammarAccess.getStatusListAccess().getCommaKeyword_2_0()); 
-            match(input,16,FOLLOW_2); 
+            match(input,18,FOLLOW_2); 
              after(grammarAccess.getStatusListAccess().getCommaKeyword_2_0()); 
 
             }
@@ -7853,14 +8527,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group_2__1"
-    // InternalMy.g:2587:1: rule__StatusList__Group_2__1 : rule__StatusList__Group_2__1__Impl ;
+    // InternalMy.g:2830:1: rule__StatusList__Group_2__1 : rule__StatusList__Group_2__1__Impl ;
     public final void rule__StatusList__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2591:1: ( rule__StatusList__Group_2__1__Impl )
-            // InternalMy.g:2592:2: rule__StatusList__Group_2__1__Impl
+            // InternalMy.g:2834:1: ( rule__StatusList__Group_2__1__Impl )
+            // InternalMy.g:2835:2: rule__StatusList__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__StatusList__Group_2__1__Impl();
@@ -7886,21 +8560,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__Group_2__1__Impl"
-    // InternalMy.g:2598:1: rule__StatusList__Group_2__1__Impl : ( ( rule__StatusList__StatusAssignment_2_1 ) ) ;
+    // InternalMy.g:2841:1: rule__StatusList__Group_2__1__Impl : ( ( rule__StatusList__StatusAssignment_2_1 ) ) ;
     public final void rule__StatusList__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2602:1: ( ( ( rule__StatusList__StatusAssignment_2_1 ) ) )
-            // InternalMy.g:2603:1: ( ( rule__StatusList__StatusAssignment_2_1 ) )
+            // InternalMy.g:2845:1: ( ( ( rule__StatusList__StatusAssignment_2_1 ) ) )
+            // InternalMy.g:2846:1: ( ( rule__StatusList__StatusAssignment_2_1 ) )
             {
-            // InternalMy.g:2603:1: ( ( rule__StatusList__StatusAssignment_2_1 ) )
-            // InternalMy.g:2604:2: ( rule__StatusList__StatusAssignment_2_1 )
+            // InternalMy.g:2846:1: ( ( rule__StatusList__StatusAssignment_2_1 ) )
+            // InternalMy.g:2847:2: ( rule__StatusList__StatusAssignment_2_1 )
             {
              before(grammarAccess.getStatusListAccess().getStatusAssignment_2_1()); 
-            // InternalMy.g:2605:2: ( rule__StatusList__StatusAssignment_2_1 )
-            // InternalMy.g:2605:3: rule__StatusList__StatusAssignment_2_1
+            // InternalMy.g:2848:2: ( rule__StatusList__StatusAssignment_2_1 )
+            // InternalMy.g:2848:3: rule__StatusList__StatusAssignment_2_1
             {
             pushFollow(FOLLOW_2);
             rule__StatusList__StatusAssignment_2_1();
@@ -7933,14 +8607,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Status__Group__0"
-    // InternalMy.g:2614:1: rule__Status__Group__0 : rule__Status__Group__0__Impl rule__Status__Group__1 ;
+    // InternalMy.g:2857:1: rule__Status__Group__0 : rule__Status__Group__0__Impl rule__Status__Group__1 ;
     public final void rule__Status__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2618:1: ( rule__Status__Group__0__Impl rule__Status__Group__1 )
-            // InternalMy.g:2619:2: rule__Status__Group__0__Impl rule__Status__Group__1
+            // InternalMy.g:2861:1: ( rule__Status__Group__0__Impl rule__Status__Group__1 )
+            // InternalMy.g:2862:2: rule__Status__Group__0__Impl rule__Status__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__Status__Group__0__Impl();
@@ -7971,21 +8645,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Status__Group__0__Impl"
-    // InternalMy.g:2626:1: rule__Status__Group__0__Impl : ( () ) ;
+    // InternalMy.g:2869:1: rule__Status__Group__0__Impl : ( () ) ;
     public final void rule__Status__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2630:1: ( ( () ) )
-            // InternalMy.g:2631:1: ( () )
+            // InternalMy.g:2873:1: ( ( () ) )
+            // InternalMy.g:2874:1: ( () )
             {
-            // InternalMy.g:2631:1: ( () )
-            // InternalMy.g:2632:2: ()
+            // InternalMy.g:2874:1: ( () )
+            // InternalMy.g:2875:2: ()
             {
              before(grammarAccess.getStatusAccess().getStatusAction_0()); 
-            // InternalMy.g:2633:2: ()
-            // InternalMy.g:2633:3: 
+            // InternalMy.g:2876:2: ()
+            // InternalMy.g:2876:3: 
             {
             }
 
@@ -8008,14 +8682,14 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Status__Group__1"
-    // InternalMy.g:2641:1: rule__Status__Group__1 : rule__Status__Group__1__Impl ;
+    // InternalMy.g:2884:1: rule__Status__Group__1 : rule__Status__Group__1__Impl ;
     public final void rule__Status__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2645:1: ( rule__Status__Group__1__Impl )
-            // InternalMy.g:2646:2: rule__Status__Group__1__Impl
+            // InternalMy.g:2888:1: ( rule__Status__Group__1__Impl )
+            // InternalMy.g:2889:2: rule__Status__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Status__Group__1__Impl();
@@ -8041,21 +8715,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Status__Group__1__Impl"
-    // InternalMy.g:2652:1: rule__Status__Group__1__Impl : ( ( rule__Status__NameAssignment_1 ) ) ;
+    // InternalMy.g:2895:1: rule__Status__Group__1__Impl : ( ( rule__Status__NameAssignment_1 ) ) ;
     public final void rule__Status__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2656:1: ( ( ( rule__Status__NameAssignment_1 ) ) )
-            // InternalMy.g:2657:1: ( ( rule__Status__NameAssignment_1 ) )
+            // InternalMy.g:2899:1: ( ( ( rule__Status__NameAssignment_1 ) ) )
+            // InternalMy.g:2900:1: ( ( rule__Status__NameAssignment_1 ) )
             {
-            // InternalMy.g:2657:1: ( ( rule__Status__NameAssignment_1 ) )
-            // InternalMy.g:2658:2: ( rule__Status__NameAssignment_1 )
+            // InternalMy.g:2900:1: ( ( rule__Status__NameAssignment_1 ) )
+            // InternalMy.g:2901:2: ( rule__Status__NameAssignment_1 )
             {
              before(grammarAccess.getStatusAccess().getNameAssignment_1()); 
-            // InternalMy.g:2659:2: ( rule__Status__NameAssignment_1 )
-            // InternalMy.g:2659:3: rule__Status__NameAssignment_1
+            // InternalMy.g:2902:2: ( rule__Status__NameAssignment_1 )
+            // InternalMy.g:2902:3: rule__Status__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Status__NameAssignment_1();
@@ -8088,17 +8762,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SServiceName__NameAssignment_0"
-    // InternalMy.g:2668:1: rule__SServiceName__NameAssignment_0 : ( ruleEString ) ;
+    // InternalMy.g:2911:1: rule__SServiceName__NameAssignment_0 : ( ruleEString ) ;
     public final void rule__SServiceName__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2672:1: ( ( ruleEString ) )
-            // InternalMy.g:2673:2: ( ruleEString )
+            // InternalMy.g:2915:1: ( ( ruleEString ) )
+            // InternalMy.g:2916:2: ( ruleEString )
             {
-            // InternalMy.g:2673:2: ( ruleEString )
-            // InternalMy.g:2674:3: ruleEString
+            // InternalMy.g:2916:2: ( ruleEString )
+            // InternalMy.g:2917:3: ruleEString
             {
              before(grammarAccess.getSServiceNameAccess().getNameEStringParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -8129,17 +8803,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SServiceName__ServiceconfigAssignment_2"
-    // InternalMy.g:2683:1: rule__SServiceName__ServiceconfigAssignment_2 : ( ruleServiceConfig ) ;
+    // InternalMy.g:2926:1: rule__SServiceName__ServiceconfigAssignment_2 : ( ruleServiceConfig ) ;
     public final void rule__SServiceName__ServiceconfigAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2687:1: ( ( ruleServiceConfig ) )
-            // InternalMy.g:2688:2: ( ruleServiceConfig )
+            // InternalMy.g:2930:1: ( ( ruleServiceConfig ) )
+            // InternalMy.g:2931:2: ( ruleServiceConfig )
             {
-            // InternalMy.g:2688:2: ( ruleServiceConfig )
-            // InternalMy.g:2689:3: ruleServiceConfig
+            // InternalMy.g:2931:2: ( ruleServiceConfig )
+            // InternalMy.g:2932:3: ruleServiceConfig
             {
              before(grammarAccess.getSServiceNameAccess().getServiceconfigServiceConfigParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -8170,29 +8844,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__ClosesOnPublicHolidaysAssignment_0"
-    // InternalMy.g:2698:1: rule__ServiceConfig__ClosesOnPublicHolidaysAssignment_0 : ( ( 'closesOnPublicHolidays' ) ) ;
+    // InternalMy.g:2941:1: rule__ServiceConfig__ClosesOnPublicHolidaysAssignment_0 : ( ( 'ferme-les-jours-feries' ) ) ;
     public final void rule__ServiceConfig__ClosesOnPublicHolidaysAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2702:1: ( ( ( 'closesOnPublicHolidays' ) ) )
-            // InternalMy.g:2703:2: ( ( 'closesOnPublicHolidays' ) )
+            // InternalMy.g:2945:1: ( ( ( 'ferme-les-jours-feries' ) ) )
+            // InternalMy.g:2946:2: ( ( 'ferme-les-jours-feries' ) )
             {
-            // InternalMy.g:2703:2: ( ( 'closesOnPublicHolidays' ) )
-            // InternalMy.g:2704:3: ( 'closesOnPublicHolidays' )
+            // InternalMy.g:2946:2: ( ( 'ferme-les-jours-feries' ) )
+            // InternalMy.g:2947:3: ( 'ferme-les-jours-feries' )
             {
-             before(grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0()); 
-            // InternalMy.g:2705:3: ( 'closesOnPublicHolidays' )
-            // InternalMy.g:2706:4: 'closesOnPublicHolidays'
+             before(grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0()); 
+            // InternalMy.g:2948:3: ( 'ferme-les-jours-feries' )
+            // InternalMy.g:2949:4: 'ferme-les-jours-feries'
             {
-             before(grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0()); 
-            match(input,28,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0()); 
+             before(grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0()); 
+            match(input,27,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0()); 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0()); 
+             after(grammarAccess.getServiceConfigAccess().getClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0()); 
 
             }
 
@@ -8215,29 +8889,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__InventoryIsPublicAssignment_1"
-    // InternalMy.g:2717:1: rule__ServiceConfig__InventoryIsPublicAssignment_1 : ( ( 'inventoryIsPublic' ) ) ;
+    // InternalMy.g:2960:1: rule__ServiceConfig__InventoryIsPublicAssignment_1 : ( ( 'inventaire-public' ) ) ;
     public final void rule__ServiceConfig__InventoryIsPublicAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2721:1: ( ( ( 'inventoryIsPublic' ) ) )
-            // InternalMy.g:2722:2: ( ( 'inventoryIsPublic' ) )
+            // InternalMy.g:2964:1: ( ( ( 'inventaire-public' ) ) )
+            // InternalMy.g:2965:2: ( ( 'inventaire-public' ) )
             {
-            // InternalMy.g:2722:2: ( ( 'inventoryIsPublic' ) )
-            // InternalMy.g:2723:3: ( 'inventoryIsPublic' )
+            // InternalMy.g:2965:2: ( ( 'inventaire-public' ) )
+            // InternalMy.g:2966:3: ( 'inventaire-public' )
             {
-             before(grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventoryIsPublicKeyword_1_0()); 
-            // InternalMy.g:2724:3: ( 'inventoryIsPublic' )
-            // InternalMy.g:2725:4: 'inventoryIsPublic'
+             before(grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventairePublicKeyword_1_0()); 
+            // InternalMy.g:2967:3: ( 'inventaire-public' )
+            // InternalMy.g:2968:4: 'inventaire-public'
             {
-             before(grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventoryIsPublicKeyword_1_0()); 
-            match(input,29,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventoryIsPublicKeyword_1_0()); 
+             before(grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventairePublicKeyword_1_0()); 
+            match(input,28,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventairePublicKeyword_1_0()); 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventoryIsPublicKeyword_1_0()); 
+             after(grammarAccess.getServiceConfigAccess().getInventoryIsPublicInventairePublicKeyword_1_0()); 
 
             }
 
@@ -8260,29 +8934,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__HasChartAssignment_2"
-    // InternalMy.g:2736:1: rule__ServiceConfig__HasChartAssignment_2 : ( ( 'hasChart' ) ) ;
+    // InternalMy.g:2979:1: rule__ServiceConfig__HasChartAssignment_2 : ( ( 'charte-d-utilisation-visible' ) ) ;
     public final void rule__ServiceConfig__HasChartAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2740:1: ( ( ( 'hasChart' ) ) )
-            // InternalMy.g:2741:2: ( ( 'hasChart' ) )
+            // InternalMy.g:2983:1: ( ( ( 'charte-d-utilisation-visible' ) ) )
+            // InternalMy.g:2984:2: ( ( 'charte-d-utilisation-visible' ) )
             {
-            // InternalMy.g:2741:2: ( ( 'hasChart' ) )
-            // InternalMy.g:2742:3: ( 'hasChart' )
+            // InternalMy.g:2984:2: ( ( 'charte-d-utilisation-visible' ) )
+            // InternalMy.g:2985:3: ( 'charte-d-utilisation-visible' )
             {
-             before(grammarAccess.getServiceConfigAccess().getHasChartHasChartKeyword_2_0()); 
-            // InternalMy.g:2743:3: ( 'hasChart' )
-            // InternalMy.g:2744:4: 'hasChart'
+             before(grammarAccess.getServiceConfigAccess().getHasChartCharteDUtilisationVisibleKeyword_2_0()); 
+            // InternalMy.g:2986:3: ( 'charte-d-utilisation-visible' )
+            // InternalMy.g:2987:4: 'charte-d-utilisation-visible'
             {
-             before(grammarAccess.getServiceConfigAccess().getHasChartHasChartKeyword_2_0()); 
-            match(input,30,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getHasChartHasChartKeyword_2_0()); 
+             before(grammarAccess.getServiceConfigAccess().getHasChartCharteDUtilisationVisibleKeyword_2_0()); 
+            match(input,29,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getHasChartCharteDUtilisationVisibleKeyword_2_0()); 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getHasChartHasChartKeyword_2_0()); 
+             after(grammarAccess.getServiceConfigAccess().getHasChartCharteDUtilisationVisibleKeyword_2_0()); 
 
             }
 
@@ -8305,29 +8979,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__CountInBusinessDaysAssignment_3"
-    // InternalMy.g:2755:1: rule__ServiceConfig__CountInBusinessDaysAssignment_3 : ( ( 'countInBusinessDays' ) ) ;
+    // InternalMy.g:2998:1: rule__ServiceConfig__CountInBusinessDaysAssignment_3 : ( ( 'compte-en-jours-ouvrables' ) ) ;
     public final void rule__ServiceConfig__CountInBusinessDaysAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2759:1: ( ( ( 'countInBusinessDays' ) ) )
-            // InternalMy.g:2760:2: ( ( 'countInBusinessDays' ) )
+            // InternalMy.g:3002:1: ( ( ( 'compte-en-jours-ouvrables' ) ) )
+            // InternalMy.g:3003:2: ( ( 'compte-en-jours-ouvrables' ) )
             {
-            // InternalMy.g:2760:2: ( ( 'countInBusinessDays' ) )
-            // InternalMy.g:2761:3: ( 'countInBusinessDays' )
+            // InternalMy.g:3003:2: ( ( 'compte-en-jours-ouvrables' ) )
+            // InternalMy.g:3004:3: ( 'compte-en-jours-ouvrables' )
             {
-             before(grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCountInBusinessDaysKeyword_3_0()); 
-            // InternalMy.g:2762:3: ( 'countInBusinessDays' )
-            // InternalMy.g:2763:4: 'countInBusinessDays'
+             before(grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0()); 
+            // InternalMy.g:3005:3: ( 'compte-en-jours-ouvrables' )
+            // InternalMy.g:3006:4: 'compte-en-jours-ouvrables'
             {
-             before(grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCountInBusinessDaysKeyword_3_0()); 
-            match(input,31,FOLLOW_2); 
-             after(grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCountInBusinessDaysKeyword_3_0()); 
+             before(grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0()); 
+            match(input,30,FOLLOW_2); 
+             after(grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0()); 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCountInBusinessDaysKeyword_3_0()); 
+             after(grammarAccess.getServiceConfigAccess().getCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0()); 
 
             }
 
@@ -8350,17 +9024,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__CountryAssignment_6"
-    // InternalMy.g:2774:1: rule__ServiceConfig__CountryAssignment_6 : ( ruleCountry ) ;
+    // InternalMy.g:3017:1: rule__ServiceConfig__CountryAssignment_6 : ( ruleCountry ) ;
     public final void rule__ServiceConfig__CountryAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2778:1: ( ( ruleCountry ) )
-            // InternalMy.g:2779:2: ( ruleCountry )
+            // InternalMy.g:3021:1: ( ( ruleCountry ) )
+            // InternalMy.g:3022:2: ( ruleCountry )
             {
-            // InternalMy.g:2779:2: ( ruleCountry )
-            // InternalMy.g:2780:3: ruleCountry
+            // InternalMy.g:3022:2: ( ruleCountry )
+            // InternalMy.g:3023:3: ruleCountry
             {
              before(grammarAccess.getServiceConfigAccess().getCountryCountryParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -8391,17 +9065,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ServiceConfig__CountryAssignment_7_1"
-    // InternalMy.g:2789:1: rule__ServiceConfig__CountryAssignment_7_1 : ( ruleCountry ) ;
+    // InternalMy.g:3032:1: rule__ServiceConfig__CountryAssignment_7_1 : ( ruleCountry ) ;
     public final void rule__ServiceConfig__CountryAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2793:1: ( ( ruleCountry ) )
-            // InternalMy.g:2794:2: ( ruleCountry )
+            // InternalMy.g:3036:1: ( ( ruleCountry ) )
+            // InternalMy.g:3037:2: ( ruleCountry )
             {
-            // InternalMy.g:2794:2: ( ruleCountry )
-            // InternalMy.g:2795:3: ruleCountry
+            // InternalMy.g:3037:2: ( ruleCountry )
+            // InternalMy.g:3038:3: ruleCountry
             {
              before(grammarAccess.getServiceConfigAccess().getCountryCountryParserRuleCall_7_1_0()); 
             pushFollow(FOLLOW_2);
@@ -8431,34 +9105,34 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ServiceConfig__CountryAssignment_7_1"
 
 
-    // $ANTLR start "rule__ServiceConfig__PricingsystemAssignment_8_2"
-    // InternalMy.g:2804:1: rule__ServiceConfig__PricingsystemAssignment_8_2 : ( ( ruleEString ) ) ;
-    public final void rule__ServiceConfig__PricingsystemAssignment_8_2() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__PricingsystemAssignment_8_3"
+    // InternalMy.g:3047:1: rule__ServiceConfig__PricingsystemAssignment_8_3 : ( ( ruleEString ) ) ;
+    public final void rule__ServiceConfig__PricingsystemAssignment_8_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2808:1: ( ( ( ruleEString ) ) )
-            // InternalMy.g:2809:2: ( ( ruleEString ) )
+            // InternalMy.g:3051:1: ( ( ( ruleEString ) ) )
+            // InternalMy.g:3052:2: ( ( ruleEString ) )
             {
-            // InternalMy.g:2809:2: ( ( ruleEString ) )
-            // InternalMy.g:2810:3: ( ruleEString )
+            // InternalMy.g:3052:2: ( ( ruleEString ) )
+            // InternalMy.g:3053:3: ( ruleEString )
             {
-             before(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_2_0()); 
-            // InternalMy.g:2811:3: ( ruleEString )
-            // InternalMy.g:2812:4: ruleEString
+             before(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_3_0()); 
+            // InternalMy.g:3054:3: ( ruleEString )
+            // InternalMy.g:3055:4: ruleEString
             {
-             before(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemEStringParserRuleCall_8_2_0_1()); 
+             before(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemEStringParserRuleCall_8_3_0_1()); 
             pushFollow(FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemEStringParserRuleCall_8_2_0_1()); 
+             after(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemEStringParserRuleCall_8_3_0_1()); 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_2_0()); 
+             after(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_3_0()); 
 
             }
 
@@ -8477,37 +9151,37 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__PricingsystemAssignment_8_2"
+    // $ANTLR end "rule__ServiceConfig__PricingsystemAssignment_8_3"
 
 
-    // $ANTLR start "rule__ServiceConfig__PricingsystemAssignment_8_3_1"
-    // InternalMy.g:2823:1: rule__ServiceConfig__PricingsystemAssignment_8_3_1 : ( ( ruleEString ) ) ;
-    public final void rule__ServiceConfig__PricingsystemAssignment_8_3_1() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__PricingsystemAssignment_8_4_1"
+    // InternalMy.g:3066:1: rule__ServiceConfig__PricingsystemAssignment_8_4_1 : ( ( ruleEString ) ) ;
+    public final void rule__ServiceConfig__PricingsystemAssignment_8_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2827:1: ( ( ( ruleEString ) ) )
-            // InternalMy.g:2828:2: ( ( ruleEString ) )
+            // InternalMy.g:3070:1: ( ( ( ruleEString ) ) )
+            // InternalMy.g:3071:2: ( ( ruleEString ) )
             {
-            // InternalMy.g:2828:2: ( ( ruleEString ) )
-            // InternalMy.g:2829:3: ( ruleEString )
+            // InternalMy.g:3071:2: ( ( ruleEString ) )
+            // InternalMy.g:3072:3: ( ruleEString )
             {
-             before(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_3_1_0()); 
-            // InternalMy.g:2830:3: ( ruleEString )
-            // InternalMy.g:2831:4: ruleEString
+             before(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_4_1_0()); 
+            // InternalMy.g:3073:3: ( ruleEString )
+            // InternalMy.g:3074:4: ruleEString
             {
-             before(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemEStringParserRuleCall_8_3_1_0_1()); 
+             before(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemEStringParserRuleCall_8_4_1_0_1()); 
             pushFollow(FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemEStringParserRuleCall_8_3_1_0_1()); 
+             after(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemEStringParserRuleCall_8_4_1_0_1()); 
 
             }
 
-             after(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_3_1_0()); 
+             after(grammarAccess.getServiceConfigAccess().getPricingsystemPricingSystemCrossReference_8_4_1_0()); 
 
             }
 
@@ -8526,29 +9200,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__PricingsystemAssignment_8_3_1"
+    // $ANTLR end "rule__ServiceConfig__PricingsystemAssignment_8_4_1"
 
 
-    // $ANTLR start "rule__ServiceConfig__LanguageAssignment_11"
-    // InternalMy.g:2842:1: rule__ServiceConfig__LanguageAssignment_11 : ( ruleLanguage ) ;
-    public final void rule__ServiceConfig__LanguageAssignment_11() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__LanguageAssignment_13"
+    // InternalMy.g:3085:1: rule__ServiceConfig__LanguageAssignment_13 : ( ruleLanguage ) ;
+    public final void rule__ServiceConfig__LanguageAssignment_13() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2846:1: ( ( ruleLanguage ) )
-            // InternalMy.g:2847:2: ( ruleLanguage )
+            // InternalMy.g:3089:1: ( ( ruleLanguage ) )
+            // InternalMy.g:3090:2: ( ruleLanguage )
             {
-            // InternalMy.g:2847:2: ( ruleLanguage )
-            // InternalMy.g:2848:3: ruleLanguage
+            // InternalMy.g:3090:2: ( ruleLanguage )
+            // InternalMy.g:3091:3: ruleLanguage
             {
-             before(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_11_0()); 
+             before(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_13_0()); 
             pushFollow(FOLLOW_2);
             ruleLanguage();
 
             state._fsp--;
 
-             after(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_11_0()); 
+             after(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_13_0()); 
 
             }
 
@@ -8567,29 +9241,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__LanguageAssignment_11"
+    // $ANTLR end "rule__ServiceConfig__LanguageAssignment_13"
 
 
-    // $ANTLR start "rule__ServiceConfig__LanguageAssignment_12_1"
-    // InternalMy.g:2857:1: rule__ServiceConfig__LanguageAssignment_12_1 : ( ruleLanguage ) ;
-    public final void rule__ServiceConfig__LanguageAssignment_12_1() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__LanguageAssignment_14_1"
+    // InternalMy.g:3100:1: rule__ServiceConfig__LanguageAssignment_14_1 : ( ruleLanguage ) ;
+    public final void rule__ServiceConfig__LanguageAssignment_14_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2861:1: ( ( ruleLanguage ) )
-            // InternalMy.g:2862:2: ( ruleLanguage )
+            // InternalMy.g:3104:1: ( ( ruleLanguage ) )
+            // InternalMy.g:3105:2: ( ruleLanguage )
             {
-            // InternalMy.g:2862:2: ( ruleLanguage )
-            // InternalMy.g:2863:3: ruleLanguage
+            // InternalMy.g:3105:2: ( ruleLanguage )
+            // InternalMy.g:3106:3: ruleLanguage
             {
-             before(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_12_1_0()); 
+             before(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_14_1_0()); 
             pushFollow(FOLLOW_2);
             ruleLanguage();
 
             state._fsp--;
 
-             after(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_12_1_0()); 
+             after(grammarAccess.getServiceConfigAccess().getLanguageLanguageParserRuleCall_14_1_0()); 
 
             }
 
@@ -8608,29 +9282,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__LanguageAssignment_12_1"
+    // $ANTLR end "rule__ServiceConfig__LanguageAssignment_14_1"
 
 
-    // $ANTLR start "rule__ServiceConfig__ReservationsconfigAssignment_15"
-    // InternalMy.g:2872:1: rule__ServiceConfig__ReservationsconfigAssignment_15 : ( ruleReservationsConfig ) ;
-    public final void rule__ServiceConfig__ReservationsconfigAssignment_15() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__ReservationsconfigAssignment_18"
+    // InternalMy.g:3115:1: rule__ServiceConfig__ReservationsconfigAssignment_18 : ( ruleReservationsConfig ) ;
+    public final void rule__ServiceConfig__ReservationsconfigAssignment_18() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2876:1: ( ( ruleReservationsConfig ) )
-            // InternalMy.g:2877:2: ( ruleReservationsConfig )
+            // InternalMy.g:3119:1: ( ( ruleReservationsConfig ) )
+            // InternalMy.g:3120:2: ( ruleReservationsConfig )
             {
-            // InternalMy.g:2877:2: ( ruleReservationsConfig )
-            // InternalMy.g:2878:3: ruleReservationsConfig
+            // InternalMy.g:3120:2: ( ruleReservationsConfig )
+            // InternalMy.g:3121:3: ruleReservationsConfig
             {
-             before(grammarAccess.getServiceConfigAccess().getReservationsconfigReservationsConfigParserRuleCall_15_0()); 
+             before(grammarAccess.getServiceConfigAccess().getReservationsconfigReservationsConfigParserRuleCall_18_0()); 
             pushFollow(FOLLOW_2);
             ruleReservationsConfig();
 
             state._fsp--;
 
-             after(grammarAccess.getServiceConfigAccess().getReservationsconfigReservationsConfigParserRuleCall_15_0()); 
+             after(grammarAccess.getServiceConfigAccess().getReservationsconfigReservationsConfigParserRuleCall_18_0()); 
 
             }
 
@@ -8649,29 +9323,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__ReservationsconfigAssignment_15"
+    // $ANTLR end "rule__ServiceConfig__ReservationsconfigAssignment_18"
 
 
-    // $ANTLR start "rule__ServiceConfig__ResourcesconfigAssignment_18"
-    // InternalMy.g:2887:1: rule__ServiceConfig__ResourcesconfigAssignment_18 : ( ruleResourcesConfig ) ;
-    public final void rule__ServiceConfig__ResourcesconfigAssignment_18() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__ResourcesconfigAssignment_21"
+    // InternalMy.g:3130:1: rule__ServiceConfig__ResourcesconfigAssignment_21 : ( ruleResourcesConfig ) ;
+    public final void rule__ServiceConfig__ResourcesconfigAssignment_21() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2891:1: ( ( ruleResourcesConfig ) )
-            // InternalMy.g:2892:2: ( ruleResourcesConfig )
+            // InternalMy.g:3134:1: ( ( ruleResourcesConfig ) )
+            // InternalMy.g:3135:2: ( ruleResourcesConfig )
             {
-            // InternalMy.g:2892:2: ( ruleResourcesConfig )
-            // InternalMy.g:2893:3: ruleResourcesConfig
+            // InternalMy.g:3135:2: ( ruleResourcesConfig )
+            // InternalMy.g:3136:3: ruleResourcesConfig
             {
-             before(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_18_0()); 
+             before(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_21_0()); 
             pushFollow(FOLLOW_2);
             ruleResourcesConfig();
 
             state._fsp--;
 
-             after(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_18_0()); 
+             after(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_21_0()); 
 
             }
 
@@ -8690,29 +9364,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__ResourcesconfigAssignment_18"
+    // $ANTLR end "rule__ServiceConfig__ResourcesconfigAssignment_21"
 
 
-    // $ANTLR start "rule__ServiceConfig__ResourcesconfigAssignment_19_1"
-    // InternalMy.g:2902:1: rule__ServiceConfig__ResourcesconfigAssignment_19_1 : ( ruleResourcesConfig ) ;
-    public final void rule__ServiceConfig__ResourcesconfigAssignment_19_1() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__ResourcesconfigAssignment_22_1"
+    // InternalMy.g:3145:1: rule__ServiceConfig__ResourcesconfigAssignment_22_1 : ( ruleResourcesConfig ) ;
+    public final void rule__ServiceConfig__ResourcesconfigAssignment_22_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2906:1: ( ( ruleResourcesConfig ) )
-            // InternalMy.g:2907:2: ( ruleResourcesConfig )
+            // InternalMy.g:3149:1: ( ( ruleResourcesConfig ) )
+            // InternalMy.g:3150:2: ( ruleResourcesConfig )
             {
-            // InternalMy.g:2907:2: ( ruleResourcesConfig )
-            // InternalMy.g:2908:3: ruleResourcesConfig
+            // InternalMy.g:3150:2: ( ruleResourcesConfig )
+            // InternalMy.g:3151:3: ruleResourcesConfig
             {
-             before(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_19_1_0()); 
+             before(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_22_1_0()); 
             pushFollow(FOLLOW_2);
             ruleResourcesConfig();
 
             state._fsp--;
 
-             after(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_19_1_0()); 
+             after(grammarAccess.getServiceConfigAccess().getResourcesconfigResourcesConfigParserRuleCall_22_1_0()); 
 
             }
 
@@ -8731,29 +9405,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__ResourcesconfigAssignment_19_1"
+    // $ANTLR end "rule__ServiceConfig__ResourcesconfigAssignment_22_1"
 
 
-    // $ANTLR start "rule__ServiceConfig__LotsconfigAssignment_20_2"
-    // InternalMy.g:2917:1: rule__ServiceConfig__LotsconfigAssignment_20_2 : ( ruleLotsConfig ) ;
-    public final void rule__ServiceConfig__LotsconfigAssignment_20_2() throws RecognitionException {
+    // $ANTLR start "rule__ServiceConfig__LotsconfigAssignment_23_2"
+    // InternalMy.g:3160:1: rule__ServiceConfig__LotsconfigAssignment_23_2 : ( ruleLotsConfig ) ;
+    public final void rule__ServiceConfig__LotsconfigAssignment_23_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2921:1: ( ( ruleLotsConfig ) )
-            // InternalMy.g:2922:2: ( ruleLotsConfig )
+            // InternalMy.g:3164:1: ( ( ruleLotsConfig ) )
+            // InternalMy.g:3165:2: ( ruleLotsConfig )
             {
-            // InternalMy.g:2922:2: ( ruleLotsConfig )
-            // InternalMy.g:2923:3: ruleLotsConfig
+            // InternalMy.g:3165:2: ( ruleLotsConfig )
+            // InternalMy.g:3166:3: ruleLotsConfig
             {
-             before(grammarAccess.getServiceConfigAccess().getLotsconfigLotsConfigParserRuleCall_20_2_0()); 
+             before(grammarAccess.getServiceConfigAccess().getLotsconfigLotsConfigParserRuleCall_23_2_0()); 
             pushFollow(FOLLOW_2);
             ruleLotsConfig();
 
             state._fsp--;
 
-             after(grammarAccess.getServiceConfigAccess().getLotsconfigLotsConfigParserRuleCall_20_2_0()); 
+             after(grammarAccess.getServiceConfigAccess().getLotsconfigLotsConfigParserRuleCall_23_2_0()); 
 
             }
 
@@ -8772,21 +9446,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ServiceConfig__LotsconfigAssignment_20_2"
+    // $ANTLR end "rule__ServiceConfig__LotsconfigAssignment_23_2"
 
 
     // $ANTLR start "rule__Language__NameAssignment_1"
-    // InternalMy.g:2932:1: rule__Language__NameAssignment_1 : ( ruleEString ) ;
+    // InternalMy.g:3175:1: rule__Language__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Language__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2936:1: ( ( ruleEString ) )
-            // InternalMy.g:2937:2: ( ruleEString )
+            // InternalMy.g:3179:1: ( ( ruleEString ) )
+            // InternalMy.g:3180:2: ( ruleEString )
             {
-            // InternalMy.g:2937:2: ( ruleEString )
-            // InternalMy.g:2938:3: ruleEString
+            // InternalMy.g:3180:2: ( ruleEString )
+            // InternalMy.g:3181:3: ruleEString
             {
              before(grammarAccess.getLanguageAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -8817,29 +9491,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__HasMoveOutCheckAssignment_0"
-    // InternalMy.g:2947:1: rule__ReservationsConfig__HasMoveOutCheckAssignment_0 : ( ( 'hasMoveOutCheck' ) ) ;
+    // InternalMy.g:3190:1: rule__ReservationsConfig__HasMoveOutCheckAssignment_0 : ( ( 'etat-des-lieux-sortie' ) ) ;
     public final void rule__ReservationsConfig__HasMoveOutCheckAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2951:1: ( ( ( 'hasMoveOutCheck' ) ) )
-            // InternalMy.g:2952:2: ( ( 'hasMoveOutCheck' ) )
+            // InternalMy.g:3194:1: ( ( ( 'etat-des-lieux-sortie' ) ) )
+            // InternalMy.g:3195:2: ( ( 'etat-des-lieux-sortie' ) )
             {
-            // InternalMy.g:2952:2: ( ( 'hasMoveOutCheck' ) )
-            // InternalMy.g:2953:3: ( 'hasMoveOutCheck' )
+            // InternalMy.g:3195:2: ( ( 'etat-des-lieux-sortie' ) )
+            // InternalMy.g:3196:3: ( 'etat-des-lieux-sortie' )
             {
-             before(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckHasMoveOutCheckKeyword_0_0()); 
-            // InternalMy.g:2954:3: ( 'hasMoveOutCheck' )
-            // InternalMy.g:2955:4: 'hasMoveOutCheck'
+             before(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0()); 
+            // InternalMy.g:3197:3: ( 'etat-des-lieux-sortie' )
+            // InternalMy.g:3198:4: 'etat-des-lieux-sortie'
             {
-             before(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckHasMoveOutCheckKeyword_0_0()); 
-            match(input,32,FOLLOW_2); 
-             after(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckHasMoveOutCheckKeyword_0_0()); 
+             before(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0()); 
+            match(input,31,FOLLOW_2); 
+             after(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0()); 
 
             }
 
-             after(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckHasMoveOutCheckKeyword_0_0()); 
+             after(grammarAccess.getReservationsConfigAccess().getHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0()); 
 
             }
 
@@ -8862,29 +9536,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReservationsConfig__HasMoveInCheckAssignment_1"
-    // InternalMy.g:2966:1: rule__ReservationsConfig__HasMoveInCheckAssignment_1 : ( ( 'hasMoveInCheck' ) ) ;
+    // InternalMy.g:3209:1: rule__ReservationsConfig__HasMoveInCheckAssignment_1 : ( ( 'etat-des-lieux-retour' ) ) ;
     public final void rule__ReservationsConfig__HasMoveInCheckAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2970:1: ( ( ( 'hasMoveInCheck' ) ) )
-            // InternalMy.g:2971:2: ( ( 'hasMoveInCheck' ) )
+            // InternalMy.g:3213:1: ( ( ( 'etat-des-lieux-retour' ) ) )
+            // InternalMy.g:3214:2: ( ( 'etat-des-lieux-retour' ) )
             {
-            // InternalMy.g:2971:2: ( ( 'hasMoveInCheck' ) )
-            // InternalMy.g:2972:3: ( 'hasMoveInCheck' )
+            // InternalMy.g:3214:2: ( ( 'etat-des-lieux-retour' ) )
+            // InternalMy.g:3215:3: ( 'etat-des-lieux-retour' )
             {
-             before(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckHasMoveInCheckKeyword_1_0()); 
-            // InternalMy.g:2973:3: ( 'hasMoveInCheck' )
-            // InternalMy.g:2974:4: 'hasMoveInCheck'
+             before(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckEtatDesLieuxRetourKeyword_1_0()); 
+            // InternalMy.g:3216:3: ( 'etat-des-lieux-retour' )
+            // InternalMy.g:3217:4: 'etat-des-lieux-retour'
             {
-             before(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckHasMoveInCheckKeyword_1_0()); 
-            match(input,33,FOLLOW_2); 
-             after(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckHasMoveInCheckKeyword_1_0()); 
+             before(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckEtatDesLieuxRetourKeyword_1_0()); 
+            match(input,32,FOLLOW_2); 
+             after(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckEtatDesLieuxRetourKeyword_1_0()); 
 
             }
 
-             after(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckHasMoveInCheckKeyword_1_0()); 
+             after(grammarAccess.getReservationsConfigAccess().getHasMoveInCheckEtatDesLieuxRetourKeyword_1_0()); 
 
             }
 
@@ -8906,26 +9580,26 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ReservationsConfig__HasMoveInCheckAssignment_1"
 
 
-    // $ANTLR start "rule__ReservationsConfig__MinRequestAdvanceAssignment_3"
-    // InternalMy.g:2985:1: rule__ReservationsConfig__MinRequestAdvanceAssignment_3 : ( ruleEInt ) ;
-    public final void rule__ReservationsConfig__MinRequestAdvanceAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__ReservationsConfig__MinRequestAdvanceAssignment_4"
+    // InternalMy.g:3228:1: rule__ReservationsConfig__MinRequestAdvanceAssignment_4 : ( ruleEInt ) ;
+    public final void rule__ReservationsConfig__MinRequestAdvanceAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:2989:1: ( ( ruleEInt ) )
-            // InternalMy.g:2990:2: ( ruleEInt )
+            // InternalMy.g:3232:1: ( ( ruleEInt ) )
+            // InternalMy.g:3233:2: ( ruleEInt )
             {
-            // InternalMy.g:2990:2: ( ruleEInt )
-            // InternalMy.g:2991:3: ruleEInt
+            // InternalMy.g:3233:2: ( ruleEInt )
+            // InternalMy.g:3234:3: ruleEInt
             {
-             before(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceEIntParserRuleCall_3_0()); 
+             before(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceEIntParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
             ruleEInt();
 
             state._fsp--;
 
-             after(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceEIntParserRuleCall_3_0()); 
+             after(grammarAccess.getReservationsConfigAccess().getMinRequestAdvanceEIntParserRuleCall_4_0()); 
 
             }
 
@@ -8944,29 +9618,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ReservationsConfig__MinRequestAdvanceAssignment_3"
+    // $ANTLR end "rule__ReservationsConfig__MinRequestAdvanceAssignment_4"
 
 
-    // $ANTLR start "rule__ReservationsConfig__MaxRequestAdvanceAssignment_5"
-    // InternalMy.g:3000:1: rule__ReservationsConfig__MaxRequestAdvanceAssignment_5 : ( ruleEInt ) ;
-    public final void rule__ReservationsConfig__MaxRequestAdvanceAssignment_5() throws RecognitionException {
+    // $ANTLR start "rule__ReservationsConfig__MaxRequestAdvanceAssignment_6"
+    // InternalMy.g:3243:1: rule__ReservationsConfig__MaxRequestAdvanceAssignment_6 : ( ruleEInt ) ;
+    public final void rule__ReservationsConfig__MaxRequestAdvanceAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3004:1: ( ( ruleEInt ) )
-            // InternalMy.g:3005:2: ( ruleEInt )
+            // InternalMy.g:3247:1: ( ( ruleEInt ) )
+            // InternalMy.g:3248:2: ( ruleEInt )
             {
-            // InternalMy.g:3005:2: ( ruleEInt )
-            // InternalMy.g:3006:3: ruleEInt
+            // InternalMy.g:3248:2: ( ruleEInt )
+            // InternalMy.g:3249:3: ruleEInt
             {
-             before(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceEIntParserRuleCall_5_0()); 
+             before(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceEIntParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
             ruleEInt();
 
             state._fsp--;
 
-             after(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceEIntParserRuleCall_5_0()); 
+             after(grammarAccess.getReservationsConfigAccess().getMaxRequestAdvanceEIntParserRuleCall_6_0()); 
 
             }
 
@@ -8985,29 +9659,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ReservationsConfig__MaxRequestAdvanceAssignment_5"
+    // $ANTLR end "rule__ReservationsConfig__MaxRequestAdvanceAssignment_6"
 
 
-    // $ANTLR start "rule__ReservationsConfig__StatuslistAssignment_8"
-    // InternalMy.g:3015:1: rule__ReservationsConfig__StatuslistAssignment_8 : ( ruleStatusList ) ;
-    public final void rule__ReservationsConfig__StatuslistAssignment_8() throws RecognitionException {
+    // $ANTLR start "rule__ReservationsConfig__StatuslistAssignment_9"
+    // InternalMy.g:3258:1: rule__ReservationsConfig__StatuslistAssignment_9 : ( ruleStatusList ) ;
+    public final void rule__ReservationsConfig__StatuslistAssignment_9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3019:1: ( ( ruleStatusList ) )
-            // InternalMy.g:3020:2: ( ruleStatusList )
+            // InternalMy.g:3262:1: ( ( ruleStatusList ) )
+            // InternalMy.g:3263:2: ( ruleStatusList )
             {
-            // InternalMy.g:3020:2: ( ruleStatusList )
-            // InternalMy.g:3021:3: ruleStatusList
+            // InternalMy.g:3263:2: ( ruleStatusList )
+            // InternalMy.g:3264:3: ruleStatusList
             {
-             before(grammarAccess.getReservationsConfigAccess().getStatuslistStatusListParserRuleCall_8_0()); 
+             before(grammarAccess.getReservationsConfigAccess().getStatuslistStatusListParserRuleCall_9_0()); 
             pushFollow(FOLLOW_2);
             ruleStatusList();
 
             state._fsp--;
 
-             after(grammarAccess.getReservationsConfigAccess().getStatuslistStatusListParserRuleCall_8_0()); 
+             after(grammarAccess.getReservationsConfigAccess().getStatuslistStatusListParserRuleCall_9_0()); 
 
             }
 
@@ -9026,21 +9700,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__ReservationsConfig__StatuslistAssignment_8"
+    // $ANTLR end "rule__ReservationsConfig__StatuslistAssignment_9"
 
 
     // $ANTLR start "rule__Country__NameAssignment_0"
-    // InternalMy.g:3030:1: rule__Country__NameAssignment_0 : ( ruleEString ) ;
+    // InternalMy.g:3273:1: rule__Country__NameAssignment_0 : ( ruleEString ) ;
     public final void rule__Country__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3034:1: ( ( ruleEString ) )
-            // InternalMy.g:3035:2: ( ruleEString )
+            // InternalMy.g:3277:1: ( ( ruleEString ) )
+            // InternalMy.g:3278:2: ( ruleEString )
             {
-            // InternalMy.g:3035:2: ( ruleEString )
-            // InternalMy.g:3036:3: ruleEString
+            // InternalMy.g:3278:2: ( ruleEString )
+            // InternalMy.g:3279:3: ruleEString
             {
              before(grammarAccess.getCountryAccess().getNameEStringParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -9071,17 +9745,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__LanguageAssignment_2"
-    // InternalMy.g:3045:1: rule__Country__LanguageAssignment_2 : ( ruleLanguage ) ;
+    // InternalMy.g:3288:1: rule__Country__LanguageAssignment_2 : ( ruleLanguage ) ;
     public final void rule__Country__LanguageAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3049:1: ( ( ruleLanguage ) )
-            // InternalMy.g:3050:2: ( ruleLanguage )
+            // InternalMy.g:3292:1: ( ( ruleLanguage ) )
+            // InternalMy.g:3293:2: ( ruleLanguage )
             {
-            // InternalMy.g:3050:2: ( ruleLanguage )
-            // InternalMy.g:3051:3: ruleLanguage
+            // InternalMy.g:3293:2: ( ruleLanguage )
+            // InternalMy.g:3294:3: ruleLanguage
             {
              before(grammarAccess.getCountryAccess().getLanguageLanguageParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -9112,17 +9786,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Country__PricingsystemAssignment_6"
-    // InternalMy.g:3060:1: rule__Country__PricingsystemAssignment_6 : ( rulePricingSystem ) ;
+    // InternalMy.g:3303:1: rule__Country__PricingsystemAssignment_6 : ( rulePricingSystem ) ;
     public final void rule__Country__PricingsystemAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3064:1: ( ( rulePricingSystem ) )
-            // InternalMy.g:3065:2: ( rulePricingSystem )
+            // InternalMy.g:3307:1: ( ( rulePricingSystem ) )
+            // InternalMy.g:3308:2: ( rulePricingSystem )
             {
-            // InternalMy.g:3065:2: ( rulePricingSystem )
-            // InternalMy.g:3066:3: rulePricingSystem
+            // InternalMy.g:3308:2: ( rulePricingSystem )
+            // InternalMy.g:3309:3: rulePricingSystem
             {
              before(grammarAccess.getCountryAccess().getPricingsystemPricingSystemParserRuleCall_6_0()); 
             pushFollow(FOLLOW_2);
@@ -9153,29 +9827,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__HasImageAssignment_1"
-    // InternalMy.g:3075:1: rule__ResourcesConfig__HasImageAssignment_1 : ( ( 'hasImage' ) ) ;
+    // InternalMy.g:3318:1: rule__ResourcesConfig__HasImageAssignment_1 : ( ( 'avec-illustration' ) ) ;
     public final void rule__ResourcesConfig__HasImageAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3079:1: ( ( ( 'hasImage' ) ) )
-            // InternalMy.g:3080:2: ( ( 'hasImage' ) )
+            // InternalMy.g:3322:1: ( ( ( 'avec-illustration' ) ) )
+            // InternalMy.g:3323:2: ( ( 'avec-illustration' ) )
             {
-            // InternalMy.g:3080:2: ( ( 'hasImage' ) )
-            // InternalMy.g:3081:3: ( 'hasImage' )
+            // InternalMy.g:3323:2: ( ( 'avec-illustration' ) )
+            // InternalMy.g:3324:3: ( 'avec-illustration' )
             {
-             before(grammarAccess.getResourcesConfigAccess().getHasImageHasImageKeyword_1_0()); 
-            // InternalMy.g:3082:3: ( 'hasImage' )
-            // InternalMy.g:3083:4: 'hasImage'
+             before(grammarAccess.getResourcesConfigAccess().getHasImageAvecIllustrationKeyword_1_0()); 
+            // InternalMy.g:3325:3: ( 'avec-illustration' )
+            // InternalMy.g:3326:4: 'avec-illustration'
             {
-             before(grammarAccess.getResourcesConfigAccess().getHasImageHasImageKeyword_1_0()); 
-            match(input,34,FOLLOW_2); 
-             after(grammarAccess.getResourcesConfigAccess().getHasImageHasImageKeyword_1_0()); 
+             before(grammarAccess.getResourcesConfigAccess().getHasImageAvecIllustrationKeyword_1_0()); 
+            match(input,33,FOLLOW_2); 
+             after(grammarAccess.getResourcesConfigAccess().getHasImageAvecIllustrationKeyword_1_0()); 
 
             }
 
-             after(grammarAccess.getResourcesConfigAccess().getHasImageHasImageKeyword_1_0()); 
+             after(grammarAccess.getResourcesConfigAccess().getHasImageAvecIllustrationKeyword_1_0()); 
 
             }
 
@@ -9198,29 +9872,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__HasOneStockPerSlotAssignment_2"
-    // InternalMy.g:3094:1: rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 : ( ( 'hasOneStockPerSlot' ) ) ;
+    // InternalMy.g:3337:1: rule__ResourcesConfig__HasOneStockPerSlotAssignment_2 : ( ( 'un-stock-par-ouverture' ) ) ;
     public final void rule__ResourcesConfig__HasOneStockPerSlotAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3098:1: ( ( ( 'hasOneStockPerSlot' ) ) )
-            // InternalMy.g:3099:2: ( ( 'hasOneStockPerSlot' ) )
+            // InternalMy.g:3341:1: ( ( ( 'un-stock-par-ouverture' ) ) )
+            // InternalMy.g:3342:2: ( ( 'un-stock-par-ouverture' ) )
             {
-            // InternalMy.g:3099:2: ( ( 'hasOneStockPerSlot' ) )
-            // InternalMy.g:3100:3: ( 'hasOneStockPerSlot' )
+            // InternalMy.g:3342:2: ( ( 'un-stock-par-ouverture' ) )
+            // InternalMy.g:3343:3: ( 'un-stock-par-ouverture' )
             {
-             before(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0()); 
-            // InternalMy.g:3101:3: ( 'hasOneStockPerSlot' )
-            // InternalMy.g:3102:4: 'hasOneStockPerSlot'
+             before(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_2_0()); 
+            // InternalMy.g:3344:3: ( 'un-stock-par-ouverture' )
+            // InternalMy.g:3345:4: 'un-stock-par-ouverture'
             {
-             before(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0()); 
-            match(input,35,FOLLOW_2); 
-             after(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0()); 
+             before(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_2_0()); 
+            match(input,34,FOLLOW_2); 
+             after(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_2_0()); 
 
             }
 
-             after(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0()); 
+             after(grammarAccess.getResourcesConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_2_0()); 
 
             }
 
@@ -9243,29 +9917,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__IsConsumableAssignment_3"
-    // InternalMy.g:3113:1: rule__ResourcesConfig__IsConsumableAssignment_3 : ( ( 'isConsumable' ) ) ;
+    // InternalMy.g:3356:1: rule__ResourcesConfig__IsConsumableAssignment_3 : ( ( 'type-consommable' ) ) ;
     public final void rule__ResourcesConfig__IsConsumableAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3117:1: ( ( ( 'isConsumable' ) ) )
-            // InternalMy.g:3118:2: ( ( 'isConsumable' ) )
+            // InternalMy.g:3360:1: ( ( ( 'type-consommable' ) ) )
+            // InternalMy.g:3361:2: ( ( 'type-consommable' ) )
             {
-            // InternalMy.g:3118:2: ( ( 'isConsumable' ) )
-            // InternalMy.g:3119:3: ( 'isConsumable' )
+            // InternalMy.g:3361:2: ( ( 'type-consommable' ) )
+            // InternalMy.g:3362:3: ( 'type-consommable' )
             {
-             before(grammarAccess.getResourcesConfigAccess().getIsConsumableIsConsumableKeyword_3_0()); 
-            // InternalMy.g:3120:3: ( 'isConsumable' )
-            // InternalMy.g:3121:4: 'isConsumable'
+             before(grammarAccess.getResourcesConfigAccess().getIsConsumableTypeConsommableKeyword_3_0()); 
+            // InternalMy.g:3363:3: ( 'type-consommable' )
+            // InternalMy.g:3364:4: 'type-consommable'
             {
-             before(grammarAccess.getResourcesConfigAccess().getIsConsumableIsConsumableKeyword_3_0()); 
-            match(input,36,FOLLOW_2); 
-             after(grammarAccess.getResourcesConfigAccess().getIsConsumableIsConsumableKeyword_3_0()); 
+             before(grammarAccess.getResourcesConfigAccess().getIsConsumableTypeConsommableKeyword_3_0()); 
+            match(input,35,FOLLOW_2); 
+             after(grammarAccess.getResourcesConfigAccess().getIsConsumableTypeConsommableKeyword_3_0()); 
 
             }
 
-             after(grammarAccess.getResourcesConfigAccess().getIsConsumableIsConsumableKeyword_3_0()); 
+             after(grammarAccess.getResourcesConfigAccess().getIsConsumableTypeConsommableKeyword_3_0()); 
 
             }
 
@@ -9288,29 +9962,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__IsLoanAssignment_4"
-    // InternalMy.g:3132:1: rule__ResourcesConfig__IsLoanAssignment_4 : ( ( 'isLoan' ) ) ;
+    // InternalMy.g:3375:1: rule__ResourcesConfig__IsLoanAssignment_4 : ( ( 'emprunt-avec-retour' ) ) ;
     public final void rule__ResourcesConfig__IsLoanAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3136:1: ( ( ( 'isLoan' ) ) )
-            // InternalMy.g:3137:2: ( ( 'isLoan' ) )
+            // InternalMy.g:3379:1: ( ( ( 'emprunt-avec-retour' ) ) )
+            // InternalMy.g:3380:2: ( ( 'emprunt-avec-retour' ) )
             {
-            // InternalMy.g:3137:2: ( ( 'isLoan' ) )
-            // InternalMy.g:3138:3: ( 'isLoan' )
+            // InternalMy.g:3380:2: ( ( 'emprunt-avec-retour' ) )
+            // InternalMy.g:3381:3: ( 'emprunt-avec-retour' )
             {
-             before(grammarAccess.getResourcesConfigAccess().getIsLoanIsLoanKeyword_4_0()); 
-            // InternalMy.g:3139:3: ( 'isLoan' )
-            // InternalMy.g:3140:4: 'isLoan'
+             before(grammarAccess.getResourcesConfigAccess().getIsLoanEmpruntAvecRetourKeyword_4_0()); 
+            // InternalMy.g:3382:3: ( 'emprunt-avec-retour' )
+            // InternalMy.g:3383:4: 'emprunt-avec-retour'
             {
-             before(grammarAccess.getResourcesConfigAccess().getIsLoanIsLoanKeyword_4_0()); 
-            match(input,37,FOLLOW_2); 
-             after(grammarAccess.getResourcesConfigAccess().getIsLoanIsLoanKeyword_4_0()); 
+             before(grammarAccess.getResourcesConfigAccess().getIsLoanEmpruntAvecRetourKeyword_4_0()); 
+            match(input,36,FOLLOW_2); 
+             after(grammarAccess.getResourcesConfigAccess().getIsLoanEmpruntAvecRetourKeyword_4_0()); 
 
             }
 
-             after(grammarAccess.getResourcesConfigAccess().getIsLoanIsLoanKeyword_4_0()); 
+             after(grammarAccess.getResourcesConfigAccess().getIsLoanEmpruntAvecRetourKeyword_4_0()); 
 
             }
 
@@ -9333,29 +10007,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ResourcesConfig__IsChargedAssignment_5"
-    // InternalMy.g:3151:1: rule__ResourcesConfig__IsChargedAssignment_5 : ( ( 'isCharged' ) ) ;
+    // InternalMy.g:3394:1: rule__ResourcesConfig__IsChargedAssignment_5 : ( ( 'payant' ) ) ;
     public final void rule__ResourcesConfig__IsChargedAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3155:1: ( ( ( 'isCharged' ) ) )
-            // InternalMy.g:3156:2: ( ( 'isCharged' ) )
+            // InternalMy.g:3398:1: ( ( ( 'payant' ) ) )
+            // InternalMy.g:3399:2: ( ( 'payant' ) )
             {
-            // InternalMy.g:3156:2: ( ( 'isCharged' ) )
-            // InternalMy.g:3157:3: ( 'isCharged' )
+            // InternalMy.g:3399:2: ( ( 'payant' ) )
+            // InternalMy.g:3400:3: ( 'payant' )
             {
-             before(grammarAccess.getResourcesConfigAccess().getIsChargedIsChargedKeyword_5_0()); 
-            // InternalMy.g:3158:3: ( 'isCharged' )
-            // InternalMy.g:3159:4: 'isCharged'
+             before(grammarAccess.getResourcesConfigAccess().getIsChargedPayantKeyword_5_0()); 
+            // InternalMy.g:3401:3: ( 'payant' )
+            // InternalMy.g:3402:4: 'payant'
             {
-             before(grammarAccess.getResourcesConfigAccess().getIsChargedIsChargedKeyword_5_0()); 
-            match(input,38,FOLLOW_2); 
-             after(grammarAccess.getResourcesConfigAccess().getIsChargedIsChargedKeyword_5_0()); 
+             before(grammarAccess.getResourcesConfigAccess().getIsChargedPayantKeyword_5_0()); 
+            match(input,37,FOLLOW_2); 
+             after(grammarAccess.getResourcesConfigAccess().getIsChargedPayantKeyword_5_0()); 
 
             }
 
-             after(grammarAccess.getResourcesConfigAccess().getIsChargedIsChargedKeyword_5_0()); 
+             after(grammarAccess.getResourcesConfigAccess().getIsChargedPayantKeyword_5_0()); 
 
             }
 
@@ -9377,75 +10051,75 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__ResourcesConfig__IsChargedAssignment_5"
 
 
-    // $ANTLR start "rule__LotsConfig__HasImageAssignment_1"
-    // InternalMy.g:3170:1: rule__LotsConfig__HasImageAssignment_1 : ( ( 'hasImage' ) ) ;
-    public final void rule__LotsConfig__HasImageAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__LotsConfig__HasImageAssignment_2"
+    // InternalMy.g:3413:1: rule__LotsConfig__HasImageAssignment_2 : ( ( 'avec-illustration' ) ) ;
+    public final void rule__LotsConfig__HasImageAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3174:1: ( ( ( 'hasImage' ) ) )
-            // InternalMy.g:3175:2: ( ( 'hasImage' ) )
+            // InternalMy.g:3417:1: ( ( ( 'avec-illustration' ) ) )
+            // InternalMy.g:3418:2: ( ( 'avec-illustration' ) )
             {
-            // InternalMy.g:3175:2: ( ( 'hasImage' ) )
-            // InternalMy.g:3176:3: ( 'hasImage' )
+            // InternalMy.g:3418:2: ( ( 'avec-illustration' ) )
+            // InternalMy.g:3419:3: ( 'avec-illustration' )
             {
-             before(grammarAccess.getLotsConfigAccess().getHasImageHasImageKeyword_1_0()); 
-            // InternalMy.g:3177:3: ( 'hasImage' )
-            // InternalMy.g:3178:4: 'hasImage'
+             before(grammarAccess.getLotsConfigAccess().getHasImageAvecIllustrationKeyword_2_0()); 
+            // InternalMy.g:3420:3: ( 'avec-illustration' )
+            // InternalMy.g:3421:4: 'avec-illustration'
             {
-             before(grammarAccess.getLotsConfigAccess().getHasImageHasImageKeyword_1_0()); 
+             before(grammarAccess.getLotsConfigAccess().getHasImageAvecIllustrationKeyword_2_0()); 
+            match(input,33,FOLLOW_2); 
+             after(grammarAccess.getLotsConfigAccess().getHasImageAvecIllustrationKeyword_2_0()); 
+
+            }
+
+             after(grammarAccess.getLotsConfigAccess().getHasImageAvecIllustrationKeyword_2_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LotsConfig__HasImageAssignment_2"
+
+
+    // $ANTLR start "rule__LotsConfig__HasOneStockPerSlotAssignment_3"
+    // InternalMy.g:3432:1: rule__LotsConfig__HasOneStockPerSlotAssignment_3 : ( ( 'un-stock-par-ouverture' ) ) ;
+    public final void rule__LotsConfig__HasOneStockPerSlotAssignment_3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalMy.g:3436:1: ( ( ( 'un-stock-par-ouverture' ) ) )
+            // InternalMy.g:3437:2: ( ( 'un-stock-par-ouverture' ) )
+            {
+            // InternalMy.g:3437:2: ( ( 'un-stock-par-ouverture' ) )
+            // InternalMy.g:3438:3: ( 'un-stock-par-ouverture' )
+            {
+             before(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_3_0()); 
+            // InternalMy.g:3439:3: ( 'un-stock-par-ouverture' )
+            // InternalMy.g:3440:4: 'un-stock-par-ouverture'
+            {
+             before(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_3_0()); 
             match(input,34,FOLLOW_2); 
-             after(grammarAccess.getLotsConfigAccess().getHasImageHasImageKeyword_1_0()); 
+             after(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_3_0()); 
 
             }
 
-             after(grammarAccess.getLotsConfigAccess().getHasImageHasImageKeyword_1_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__LotsConfig__HasImageAssignment_1"
-
-
-    // $ANTLR start "rule__LotsConfig__HasOneStockPerSlotAssignment_2"
-    // InternalMy.g:3189:1: rule__LotsConfig__HasOneStockPerSlotAssignment_2 : ( ( 'hasOneStockPerSlot' ) ) ;
-    public final void rule__LotsConfig__HasOneStockPerSlotAssignment_2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalMy.g:3193:1: ( ( ( 'hasOneStockPerSlot' ) ) )
-            // InternalMy.g:3194:2: ( ( 'hasOneStockPerSlot' ) )
-            {
-            // InternalMy.g:3194:2: ( ( 'hasOneStockPerSlot' ) )
-            // InternalMy.g:3195:3: ( 'hasOneStockPerSlot' )
-            {
-             before(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0()); 
-            // InternalMy.g:3196:3: ( 'hasOneStockPerSlot' )
-            // InternalMy.g:3197:4: 'hasOneStockPerSlot'
-            {
-             before(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0()); 
-            match(input,35,FOLLOW_2); 
-             after(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0()); 
-
-            }
-
-             after(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0()); 
+             after(grammarAccess.getLotsConfigAccess().getHasOneStockPerSlotUnStockParOuvertureKeyword_3_0()); 
 
             }
 
@@ -9464,21 +10138,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__LotsConfig__HasOneStockPerSlotAssignment_2"
+    // $ANTLR end "rule__LotsConfig__HasOneStockPerSlotAssignment_3"
 
 
     // $ANTLR start "rule__PricingSystem__NameAssignment_0"
-    // InternalMy.g:3208:1: rule__PricingSystem__NameAssignment_0 : ( ruleEString ) ;
+    // InternalMy.g:3451:1: rule__PricingSystem__NameAssignment_0 : ( ruleEString ) ;
     public final void rule__PricingSystem__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3212:1: ( ( ruleEString ) )
-            // InternalMy.g:3213:2: ( ruleEString )
+            // InternalMy.g:3455:1: ( ( ruleEString ) )
+            // InternalMy.g:3456:2: ( ruleEString )
             {
-            // InternalMy.g:3213:2: ( ruleEString )
-            // InternalMy.g:3214:3: ruleEString
+            // InternalMy.g:3456:2: ( ruleEString )
+            // InternalMy.g:3457:3: ruleEString
             {
              before(grammarAccess.getPricingSystemAccess().getNameEStringParserRuleCall_0_0()); 
             pushFollow(FOLLOW_2);
@@ -9508,26 +10182,26 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__PricingSystem__NameAssignment_0"
 
 
-    // $ANTLR start "rule__PricingSystem__CurrencyAssignment_3"
-    // InternalMy.g:3223:1: rule__PricingSystem__CurrencyAssignment_3 : ( ruleEString ) ;
-    public final void rule__PricingSystem__CurrencyAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__PricingSystem__CurrencyAssignment_4"
+    // InternalMy.g:3466:1: rule__PricingSystem__CurrencyAssignment_4 : ( ruleEString ) ;
+    public final void rule__PricingSystem__CurrencyAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3227:1: ( ( ruleEString ) )
-            // InternalMy.g:3228:2: ( ruleEString )
+            // InternalMy.g:3470:1: ( ( ruleEString ) )
+            // InternalMy.g:3471:2: ( ruleEString )
             {
-            // InternalMy.g:3228:2: ( ruleEString )
-            // InternalMy.g:3229:3: ruleEString
+            // InternalMy.g:3471:2: ( ruleEString )
+            // InternalMy.g:3472:3: ruleEString
             {
-             before(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_3_0()); 
+             before(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_3_0()); 
+             after(grammarAccess.getPricingSystemAccess().getCurrencyEStringParserRuleCall_4_0()); 
 
             }
 
@@ -9546,29 +10220,29 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PricingSystem__CurrencyAssignment_3"
+    // $ANTLR end "rule__PricingSystem__CurrencyAssignment_4"
 
 
-    // $ANTLR start "rule__PricingSystem__TaxSystemAssignment_6"
-    // InternalMy.g:3238:1: rule__PricingSystem__TaxSystemAssignment_6 : ( ruleEString ) ;
-    public final void rule__PricingSystem__TaxSystemAssignment_6() throws RecognitionException {
+    // $ANTLR start "rule__PricingSystem__TaxSystemAssignment_8"
+    // InternalMy.g:3481:1: rule__PricingSystem__TaxSystemAssignment_8 : ( ruleEString ) ;
+    public final void rule__PricingSystem__TaxSystemAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3242:1: ( ( ruleEString ) )
-            // InternalMy.g:3243:2: ( ruleEString )
+            // InternalMy.g:3485:1: ( ( ruleEString ) )
+            // InternalMy.g:3486:2: ( ruleEString )
             {
-            // InternalMy.g:3243:2: ( ruleEString )
-            // InternalMy.g:3244:3: ruleEString
+            // InternalMy.g:3486:2: ( ruleEString )
+            // InternalMy.g:3487:3: ruleEString
             {
-             before(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_6_0()); 
+             before(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_8_0()); 
             pushFollow(FOLLOW_2);
             ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_6_0()); 
+             after(grammarAccess.getPricingSystemAccess().getTaxSystemEStringParserRuleCall_8_0()); 
 
             }
 
@@ -9587,21 +10261,21 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PricingSystem__TaxSystemAssignment_6"
+    // $ANTLR end "rule__PricingSystem__TaxSystemAssignment_8"
 
 
     // $ANTLR start "rule__StatusList__StatusAssignment_1"
-    // InternalMy.g:3253:1: rule__StatusList__StatusAssignment_1 : ( ruleStatus ) ;
+    // InternalMy.g:3496:1: rule__StatusList__StatusAssignment_1 : ( ruleStatus ) ;
     public final void rule__StatusList__StatusAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3257:1: ( ( ruleStatus ) )
-            // InternalMy.g:3258:2: ( ruleStatus )
+            // InternalMy.g:3500:1: ( ( ruleStatus ) )
+            // InternalMy.g:3501:2: ( ruleStatus )
             {
-            // InternalMy.g:3258:2: ( ruleStatus )
-            // InternalMy.g:3259:3: ruleStatus
+            // InternalMy.g:3501:2: ( ruleStatus )
+            // InternalMy.g:3502:3: ruleStatus
             {
              before(grammarAccess.getStatusListAccess().getStatusStatusParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -9632,17 +10306,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__StatusList__StatusAssignment_2_1"
-    // InternalMy.g:3268:1: rule__StatusList__StatusAssignment_2_1 : ( ruleStatus ) ;
+    // InternalMy.g:3511:1: rule__StatusList__StatusAssignment_2_1 : ( ruleStatus ) ;
     public final void rule__StatusList__StatusAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3272:1: ( ( ruleStatus ) )
-            // InternalMy.g:3273:2: ( ruleStatus )
+            // InternalMy.g:3515:1: ( ( ruleStatus ) )
+            // InternalMy.g:3516:2: ( ruleStatus )
             {
-            // InternalMy.g:3273:2: ( ruleStatus )
-            // InternalMy.g:3274:3: ruleStatus
+            // InternalMy.g:3516:2: ( ruleStatus )
+            // InternalMy.g:3517:3: ruleStatus
             {
              before(grammarAccess.getStatusListAccess().getStatusStatusParserRuleCall_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -9673,17 +10347,17 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Status__NameAssignment_1"
-    // InternalMy.g:3283:1: rule__Status__NameAssignment_1 : ( ruleEString ) ;
+    // InternalMy.g:3526:1: rule__Status__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__Status__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMy.g:3287:1: ( ( ruleEString ) )
-            // InternalMy.g:3288:2: ( ruleEString )
+            // InternalMy.g:3530:1: ( ( ruleEString ) )
+            // InternalMy.g:3531:2: ( ruleEString )
             {
-            // InternalMy.g:3288:2: ( ruleEString )
-            // InternalMy.g:3289:3: ruleEString
+            // InternalMy.g:3531:2: ( ruleEString )
+            // InternalMy.g:3532:3: ruleEString
             {
              before(grammarAccess.getStatusAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -9720,27 +10394,26 @@ public class InternalMyParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x00000000F0001000L});
+    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000078001000L});
     public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000032000L});
-    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000010002L});
-    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000014000L});
-    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000050000L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000C00000000L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000200080000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000008000040L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000007C01000000L});
+    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x00000000000C2000L});
+    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000040002L});
+    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000042000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000080000000L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000140000L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000100200000L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000004000040L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000003E00002000L});
+    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000600002000L});
+    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000001000000L});
     public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000000001010000L});
+    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000000002000L});
 
 }

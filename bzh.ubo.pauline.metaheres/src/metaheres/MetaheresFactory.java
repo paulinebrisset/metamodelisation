@@ -40,15 +40,6 @@ public interface MetaheresFactory extends EFactory {
 	Status createStatus();
 
 	/**
-	 * Returns a new object of class '<em>Right Level</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Right Level</em>'.
-	 * @generated
-	 */
-	RightLevel createRightLevel();
-
-	/**
 	 * Returns a new object of class '<em>Language</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,15 +49,6 @@ public interface MetaheresFactory extends EFactory {
 	Language createLanguage();
 
 	/**
-	 * Returns a new object of class '<em>Rights Level List</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Rights Level List</em>'.
-	 * @generated
-	 */
-	RightsLevelList createRightsLevelList();
-
-	/**
 	 * Returns a new object of class '<em>Status List</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,15 +56,6 @@ public interface MetaheresFactory extends EFactory {
 	 * @generated
 	 */
 	StatusList createStatusList();
-
-	/**
-	 * Returns a new object of class '<em>Users Config</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Users Config</em>'.
-	 * @generated
-	 */
-	UsersConfig createUsersConfig();
 
 	/**
 	 * Returns a new object of class '<em>Service Config</em>'.

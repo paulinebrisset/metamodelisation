@@ -72,24 +72,19 @@ public class MetaheresTables extends AbstractTables
 	public static final /*@NonInvalid*/ ClassId CLSSid_PricingSystem = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("PricingSystem", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_ReservationsConfig = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("ReservationsConfig", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_ResourcesConfig = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("ResourcesConfig", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_RightLevel = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("RightLevel", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_RightsLevelList = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("RightsLevelList", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_ServiceConfig = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("ServiceConfig", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_ServiceName = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("ServiceName", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_Status = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("Status", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_StatusList = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("StatusList", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_UsersConfig = MetaheresTables.PACKid_http_c_s_s_www_bzh_ubo_pauline_metaheres.getClassId("UsersConfig", 0);
 	public static final /*@NonInvalid*/ DataTypeId DATAid_EInt = MetaheresTables.PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore.getDataTypeId("EInt", 0);
 	public static final /*@NonInvalid*/ IntegerValue INT_0 = ValueUtil.integerValueOf("0");
 	public static final /*@NonInvalid*/ IntegerValue INT_5 = ValueUtil.integerValueOf("5");
 	public static final /*@NonInvalid*/ CollectionTypeId SEQ_PRIMid_String = TypeId.SEQUENCE.getSpecializedId(TypeId.STRING);
-	public static final /*@NonInvalid*/ CollectionTypeId BAG_CLSSid_RightsLevelList = TypeId.BAG.getSpecializedId(MetaheresTables.CLSSid_RightsLevelList);
 	public static final /*@NonInvalid*/ CollectionTypeId BAG_CLSSid_ServiceConfig = TypeId.BAG.getSpecializedId(MetaheresTables.CLSSid_ServiceConfig);
 	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Country = TypeId.ORDERED_SET.getSpecializedId(MetaheresTables.CLSSid_Country);
 	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Language = TypeId.ORDERED_SET.getSpecializedId(MetaheresTables.CLSSid_Language);
 	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_PricingSystem = TypeId.ORDERED_SET.getSpecializedId(MetaheresTables.CLSSid_PricingSystem);
 	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_ResourcesConfig = TypeId.ORDERED_SET.getSpecializedId(MetaheresTables.CLSSid_ResourcesConfig);
-	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_RightLevel = TypeId.ORDERED_SET.getSpecializedId(MetaheresTables.CLSSid_RightLevel);
 	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Status = TypeId.ORDERED_SET.getSpecializedId(MetaheresTables.CLSSid_Status);
 	public static final /*@NonInvalid*/ CollectionTypeId SEQ_CLSSid_Language = TypeId.SEQUENCE.getSpecializedId(MetaheresTables.CLSSid_Language);
 	public static final /*@NonInvalid*/ CollectionTypeId SET_CLSSid_Country = TypeId.SET.getSpecializedId(MetaheresTables.CLSSid_Country);
@@ -132,13 +127,10 @@ public class MetaheresTables extends AbstractTables
 		public static final EcoreExecutorType _ReservableEntity = new EcoreExecutorType(MetaheresPackage.Literals.RESERVABLE_ENTITY, PACKAGE, 0 | ExecutorType.ABSTRACT);
 		public static final EcoreExecutorType _ReservationsConfig = new EcoreExecutorType(MetaheresPackage.Literals.RESERVATIONS_CONFIG, PACKAGE, 0);
 		public static final EcoreExecutorType _ResourcesConfig = new EcoreExecutorType(MetaheresPackage.Literals.RESOURCES_CONFIG, PACKAGE, 0);
-		public static final EcoreExecutorType _RightLevel = new EcoreExecutorType(MetaheresPackage.Literals.RIGHT_LEVEL, PACKAGE, 0);
-		public static final EcoreExecutorType _RightsLevelList = new EcoreExecutorType(MetaheresPackage.Literals.RIGHTS_LEVEL_LIST, PACKAGE, 0);
 		public static final EcoreExecutorType _ServiceConfig = new EcoreExecutorType(MetaheresPackage.Literals.SERVICE_CONFIG, PACKAGE, 0);
 		public static final EcoreExecutorType _ServiceName = new EcoreExecutorType(MetaheresPackage.Literals.SERVICE_NAME, PACKAGE, 0);
 		public static final EcoreExecutorType _Status = new EcoreExecutorType(MetaheresPackage.Literals.STATUS, PACKAGE, 0);
 		public static final EcoreExecutorType _StatusList = new EcoreExecutorType(MetaheresPackage.Literals.STATUS_LIST, PACKAGE, 0);
-		public static final EcoreExecutorType _UsersConfig = new EcoreExecutorType(MetaheresPackage.Literals.USERS_CONFIG, PACKAGE, 0);
 
 		private static final EcoreExecutorType /*@NonNull*/ [] types = {
 			_Country,
@@ -149,13 +141,10 @@ public class MetaheresTables extends AbstractTables
 			_ReservableEntity,
 			_ReservationsConfig,
 			_ResourcesConfig,
-			_RightLevel,
-			_RightsLevelList,
 			_ServiceConfig,
 			_ServiceName,
 			_Status,
-			_StatusList,
-			_UsersConfig
+			_StatusList
 		};
 
 		/*
@@ -216,15 +205,6 @@ public class MetaheresTables extends AbstractTables
 		private static final ExecutorFragment _ResourcesConfig__ReservableEntity = new ExecutorFragment(Types._ResourcesConfig, MetaheresTables.Types._ReservableEntity);
 		private static final ExecutorFragment _ResourcesConfig__ResourcesConfig = new ExecutorFragment(Types._ResourcesConfig, MetaheresTables.Types._ResourcesConfig);
 
-		private static final ExecutorFragment _RightLevel__NamedElement = new ExecutorFragment(Types._RightLevel, MetaheresTables.Types._NamedElement);
-		private static final ExecutorFragment _RightLevel__OclAny = new ExecutorFragment(Types._RightLevel, OCLstdlibTables.Types._OclAny);
-		private static final ExecutorFragment _RightLevel__OclElement = new ExecutorFragment(Types._RightLevel, OCLstdlibTables.Types._OclElement);
-		private static final ExecutorFragment _RightLevel__RightLevel = new ExecutorFragment(Types._RightLevel, MetaheresTables.Types._RightLevel);
-
-		private static final ExecutorFragment _RightsLevelList__OclAny = new ExecutorFragment(Types._RightsLevelList, OCLstdlibTables.Types._OclAny);
-		private static final ExecutorFragment _RightsLevelList__OclElement = new ExecutorFragment(Types._RightsLevelList, OCLstdlibTables.Types._OclElement);
-		private static final ExecutorFragment _RightsLevelList__RightsLevelList = new ExecutorFragment(Types._RightsLevelList, MetaheresTables.Types._RightsLevelList);
-
 		private static final ExecutorFragment _ServiceConfig__OclAny = new ExecutorFragment(Types._ServiceConfig, OCLstdlibTables.Types._OclAny);
 		private static final ExecutorFragment _ServiceConfig__OclElement = new ExecutorFragment(Types._ServiceConfig, OCLstdlibTables.Types._OclElement);
 		private static final ExecutorFragment _ServiceConfig__ServiceConfig = new ExecutorFragment(Types._ServiceConfig, MetaheresTables.Types._ServiceConfig);
@@ -242,10 +222,6 @@ public class MetaheresTables extends AbstractTables
 		private static final ExecutorFragment _StatusList__OclAny = new ExecutorFragment(Types._StatusList, OCLstdlibTables.Types._OclAny);
 		private static final ExecutorFragment _StatusList__OclElement = new ExecutorFragment(Types._StatusList, OCLstdlibTables.Types._OclElement);
 		private static final ExecutorFragment _StatusList__StatusList = new ExecutorFragment(Types._StatusList, MetaheresTables.Types._StatusList);
-
-		private static final ExecutorFragment _UsersConfig__OclAny = new ExecutorFragment(Types._UsersConfig, OCLstdlibTables.Types._OclAny);
-		private static final ExecutorFragment _UsersConfig__OclElement = new ExecutorFragment(Types._UsersConfig, OCLstdlibTables.Types._OclElement);
-		private static final ExecutorFragment _UsersConfig__UsersConfig = new ExecutorFragment(Types._UsersConfig, MetaheresTables.Types._UsersConfig);
 
 		static {
 			Init.initEnd();
@@ -350,11 +326,6 @@ public class MetaheresTables extends AbstractTables
 		public static final ExecutorProperty _ResourcesConfig__isLoan = new EcoreExecutorProperty(MetaheresPackage.Literals.RESOURCES_CONFIG__IS_LOAN, Types._ResourcesConfig, 2);
 		public static final ExecutorProperty _ResourcesConfig__serviceconfig = new EcoreExecutorProperty(MetaheresPackage.Literals.RESOURCES_CONFIG__SERVICECONFIG, Types._ResourcesConfig, 3);
 
-		public static final ExecutorProperty _RightLevel__RightsLevelList__rightlevel = new ExecutorPropertyWithImplementation("RightsLevelList", Types._RightLevel, 0, new EcoreLibraryOppositeProperty(MetaheresPackage.Literals.RIGHTS_LEVEL_LIST__RIGHTLEVEL));
-
-		public static final ExecutorProperty _RightsLevelList__rightlevel = new EcoreExecutorProperty(MetaheresPackage.Literals.RIGHTS_LEVEL_LIST__RIGHTLEVEL, Types._RightsLevelList, 0);
-		public static final ExecutorProperty _RightsLevelList__UsersConfig__rightslevellist = new ExecutorPropertyWithImplementation("UsersConfig", Types._RightsLevelList, 1, new EcoreLibraryOppositeProperty(MetaheresPackage.Literals.USERS_CONFIG__RIGHTSLEVELLIST));
-
 		public static final ExecutorProperty _ServiceConfig__closesOnPublicHolidays = new EcoreExecutorProperty(MetaheresPackage.Literals.SERVICE_CONFIG__CLOSES_ON_PUBLIC_HOLIDAYS, Types._ServiceConfig, 0);
 		public static final ExecutorProperty _ServiceConfig__countInBusinessDays = new EcoreExecutorProperty(MetaheresPackage.Literals.SERVICE_CONFIG__COUNT_IN_BUSINESS_DAYS, Types._ServiceConfig, 1);
 		public static final ExecutorProperty _ServiceConfig__country = new EcoreExecutorProperty(MetaheresPackage.Literals.SERVICE_CONFIG__COUNTRY, Types._ServiceConfig, 2);
@@ -373,11 +344,6 @@ public class MetaheresTables extends AbstractTables
 
 		public static final ExecutorProperty _StatusList__status = new EcoreExecutorProperty(MetaheresPackage.Literals.STATUS_LIST__STATUS, Types._StatusList, 0);
 		public static final ExecutorProperty _StatusList__ReservationsConfig__statuslist = new ExecutorPropertyWithImplementation("ReservationsConfig", Types._StatusList, 1, new EcoreLibraryOppositeProperty(MetaheresPackage.Literals.RESERVATIONS_CONFIG__STATUSLIST));
-
-		public static final ExecutorProperty _UsersConfig__bloackedAtUnfulfilledReservation = new EcoreExecutorProperty(MetaheresPackage.Literals.USERS_CONFIG__BLOACKED_AT_UNFULFILLED_RESERVATION, Types._UsersConfig, 0);
-		public static final ExecutorProperty _UsersConfig__hasAdress = new EcoreExecutorProperty(MetaheresPackage.Literals.USERS_CONFIG__HAS_ADRESS, Types._UsersConfig, 1);
-		public static final ExecutorProperty _UsersConfig__hasPhone = new EcoreExecutorProperty(MetaheresPackage.Literals.USERS_CONFIG__HAS_PHONE, Types._UsersConfig, 2);
-		public static final ExecutorProperty _UsersConfig__rightslevellist = new EcoreExecutorProperty(MetaheresPackage.Literals.USERS_CONFIG__RIGHTSLEVELLIST, Types._UsersConfig, 3);
 		static {
 			Init.initEnd();
 		}
@@ -464,23 +430,6 @@ public class MetaheresTables extends AbstractTables
 			};
 		private static final int /*@NonNull*/ [] __ResourcesConfig = { 1,1,1,1 };
 
-		private static final ExecutorFragment /*@NonNull*/ [] _RightLevel =
-			{
-				Fragments._RightLevel__OclAny /* 0 */,
-				Fragments._RightLevel__OclElement /* 1 */,
-				Fragments._RightLevel__NamedElement /* 2 */,
-				Fragments._RightLevel__RightLevel /* 3 */
-			};
-		private static final int /*@NonNull*/ [] __RightLevel = { 1,1,1,1 };
-
-		private static final ExecutorFragment /*@NonNull*/ [] _RightsLevelList =
-			{
-				Fragments._RightsLevelList__OclAny /* 0 */,
-				Fragments._RightsLevelList__OclElement /* 1 */,
-				Fragments._RightsLevelList__RightsLevelList /* 2 */
-			};
-		private static final int /*@NonNull*/ [] __RightsLevelList = { 1,1,1 };
-
 		private static final ExecutorFragment /*@NonNull*/ [] _ServiceConfig =
 			{
 				Fragments._ServiceConfig__OclAny /* 0 */,
@@ -515,14 +464,6 @@ public class MetaheresTables extends AbstractTables
 			};
 		private static final int /*@NonNull*/ [] __StatusList = { 1,1,1 };
 
-		private static final ExecutorFragment /*@NonNull*/ [] _UsersConfig =
-			{
-				Fragments._UsersConfig__OclAny /* 0 */,
-				Fragments._UsersConfig__OclElement /* 1 */,
-				Fragments._UsersConfig__UsersConfig /* 2 */
-			};
-		private static final int /*@NonNull*/ [] __UsersConfig = { 1,1,1 };
-
 		/**
 		 *	Install the fragment descriptors in the class descriptors.
 		 */
@@ -535,13 +476,10 @@ public class MetaheresTables extends AbstractTables
 			Types._ReservableEntity.initFragments(_ReservableEntity, __ReservableEntity);
 			Types._ReservationsConfig.initFragments(_ReservationsConfig, __ReservationsConfig);
 			Types._ResourcesConfig.initFragments(_ResourcesConfig, __ResourcesConfig);
-			Types._RightLevel.initFragments(_RightLevel, __RightLevel);
-			Types._RightsLevelList.initFragments(_RightsLevelList, __RightsLevelList);
 			Types._ServiceConfig.initFragments(_ServiceConfig, __ServiceConfig);
 			Types._ServiceName.initFragments(_ServiceName, __ServiceName);
 			Types._Status.initFragments(_Status, __Status);
 			Types._StatusList.initFragments(_StatusList, __StatusList);
-			Types._UsersConfig.initFragments(_UsersConfig, __UsersConfig);
 
 			Init.initEnd();
 		}
@@ -788,63 +726,6 @@ public class MetaheresTables extends AbstractTables
 		};
 		private static final ExecutorOperation /*@NonNull*/ [] _ResourcesConfig__ReservableEntity = {};
 
-		private static final ExecutorOperation /*@NonNull*/ [] _RightLevel__RightLevel = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _RightLevel__NamedElement = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _RightLevel__OclAny = {
-			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
-			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
-			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
-			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
-			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
-			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
-			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
-			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
-			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
-			OCLstdlibTables.Operations._OclAny__toString /* toString() */
-		};
-		private static final ExecutorOperation /*@NonNull*/ [] _RightLevel__OclElement = {
-			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
-			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[1]) */,
-			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
-			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
-			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
-			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
-		};
-
-		private static final ExecutorOperation /*@NonNull*/ [] _RightsLevelList__RightsLevelList = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _RightsLevelList__OclAny = {
-			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
-			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
-			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
-			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
-			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
-			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
-			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
-			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
-			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
-			OCLstdlibTables.Operations._OclAny__toString /* toString() */
-		};
-		private static final ExecutorOperation /*@NonNull*/ [] _RightsLevelList__OclElement = {
-			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
-			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[1]) */,
-			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
-			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
-			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
-			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
-		};
-
 		private static final ExecutorOperation /*@NonNull*/ [] _ServiceConfig__ServiceConfig = {};
 		private static final ExecutorOperation /*@NonNull*/ [] _ServiceConfig__OclAny = {
 			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
@@ -959,34 +840,6 @@ public class MetaheresTables extends AbstractTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
-		private static final ExecutorOperation /*@NonNull*/ [] _UsersConfig__UsersConfig = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _UsersConfig__OclAny = {
-			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
-			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
-			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
-			OCLstdlibTables.Operations._OclAny__oclAsType /* oclAsType(TT)(TT[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsInState /* oclIsInState(OclState[?]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsInvalid /* oclIsInvalid() */,
-			OCLstdlibTables.Operations._OclAny__oclIsKindOf /* oclIsKindOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsNew /* oclIsNew() */,
-			OCLstdlibTables.Operations._OclAny__oclIsTypeOf /* oclIsTypeOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclIsUndefined /* oclIsUndefined() */,
-			OCLstdlibTables.Operations._OclAny__0_oclLog /* oclLog() */,
-			OCLstdlibTables.Operations._OclAny__1_oclLog /* oclLog(String[1]) */,
-			OCLstdlibTables.Operations._OclAny__oclType /* oclType() */,
-			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
-			OCLstdlibTables.Operations._OclAny__toString /* toString() */
-		};
-		private static final ExecutorOperation /*@NonNull*/ [] _UsersConfig__OclElement = {
-			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
-			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[1]) */,
-			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
-			OCLstdlibTables.Operations._OclElement__oclContents /* oclContents() */,
-			OCLstdlibTables.Operations._OclElement__oclIsModelKindOf /* oclIsModelKindOf(OclType[1]) */,
-			OCLstdlibTables.Operations._OclElement__oclModelType /* oclModelType() */,
-			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
-		};
-
 		/*
 		 *	Install the operation descriptors in the fragment descriptors.
 		 */
@@ -1026,15 +879,6 @@ public class MetaheresTables extends AbstractTables
 			Fragments._ResourcesConfig__ReservableEntity.initOperations(_ResourcesConfig__ReservableEntity);
 			Fragments._ResourcesConfig__ResourcesConfig.initOperations(_ResourcesConfig__ResourcesConfig);
 
-			Fragments._RightLevel__NamedElement.initOperations(_RightLevel__NamedElement);
-			Fragments._RightLevel__OclAny.initOperations(_RightLevel__OclAny);
-			Fragments._RightLevel__OclElement.initOperations(_RightLevel__OclElement);
-			Fragments._RightLevel__RightLevel.initOperations(_RightLevel__RightLevel);
-
-			Fragments._RightsLevelList__OclAny.initOperations(_RightsLevelList__OclAny);
-			Fragments._RightsLevelList__OclElement.initOperations(_RightsLevelList__OclElement);
-			Fragments._RightsLevelList__RightsLevelList.initOperations(_RightsLevelList__RightsLevelList);
-
 			Fragments._ServiceConfig__OclAny.initOperations(_ServiceConfig__OclAny);
 			Fragments._ServiceConfig__OclElement.initOperations(_ServiceConfig__OclElement);
 			Fragments._ServiceConfig__ServiceConfig.initOperations(_ServiceConfig__ServiceConfig);
@@ -1052,10 +896,6 @@ public class MetaheresTables extends AbstractTables
 			Fragments._StatusList__OclAny.initOperations(_StatusList__OclAny);
 			Fragments._StatusList__OclElement.initOperations(_StatusList__OclElement);
 			Fragments._StatusList__StatusList.initOperations(_StatusList__StatusList);
-
-			Fragments._UsersConfig__OclAny.initOperations(_UsersConfig__OclAny);
-			Fragments._UsersConfig__OclElement.initOperations(_UsersConfig__OclElement);
-			Fragments._UsersConfig__UsersConfig.initOperations(_UsersConfig__UsersConfig);
 
 			Init.initEnd();
 		}
@@ -1140,18 +980,6 @@ public class MetaheresTables extends AbstractTables
 			MetaheresTables.Properties._ResourcesConfig__serviceconfig
 		};
 
-		private static final ExecutorProperty /*@NonNull*/ [] _RightLevel = {
-			MetaheresTables.Properties._NamedElement__name,
-			OCLstdlibTables.Properties._OclElement__oclContainer,
-			OCLstdlibTables.Properties._OclElement__oclContents
-		};
-
-		private static final ExecutorProperty /*@NonNull*/ [] _RightsLevelList = {
-			OCLstdlibTables.Properties._OclElement__oclContainer,
-			OCLstdlibTables.Properties._OclElement__oclContents,
-			MetaheresTables.Properties._RightsLevelList__rightlevel
-		};
-
 		private static final ExecutorProperty /*@NonNull*/ [] _ServiceConfig = {
 			MetaheresTables.Properties._ServiceConfig__closesOnPublicHolidays,
 			MetaheresTables.Properties._ServiceConfig__countInBusinessDays,
@@ -1187,15 +1015,6 @@ public class MetaheresTables extends AbstractTables
 			MetaheresTables.Properties._StatusList__status
 		};
 
-		private static final ExecutorProperty /*@NonNull*/ [] _UsersConfig = {
-			MetaheresTables.Properties._UsersConfig__bloackedAtUnfulfilledReservation,
-			MetaheresTables.Properties._UsersConfig__hasAdress,
-			MetaheresTables.Properties._UsersConfig__hasPhone,
-			OCLstdlibTables.Properties._OclElement__oclContainer,
-			OCLstdlibTables.Properties._OclElement__oclContents,
-			MetaheresTables.Properties._UsersConfig__rightslevellist
-		};
-
 		/**
 		 *	Install the property descriptors in the fragment descriptors.
 		 */
@@ -1208,13 +1027,10 @@ public class MetaheresTables extends AbstractTables
 			Fragments._ReservableEntity__ReservableEntity.initProperties(_ReservableEntity);
 			Fragments._ReservationsConfig__ReservationsConfig.initProperties(_ReservationsConfig);
 			Fragments._ResourcesConfig__ResourcesConfig.initProperties(_ResourcesConfig);
-			Fragments._RightLevel__RightLevel.initProperties(_RightLevel);
-			Fragments._RightsLevelList__RightsLevelList.initProperties(_RightsLevelList);
 			Fragments._ServiceConfig__ServiceConfig.initProperties(_ServiceConfig);
 			Fragments._ServiceName__ServiceName.initProperties(_ServiceName);
 			Fragments._Status__Status.initProperties(_Status);
 			Fragments._StatusList__StatusList.initProperties(_StatusList);
-			Fragments._UsersConfig__UsersConfig.initProperties(_UsersConfig);
 
 			Init.initEnd();
 		}

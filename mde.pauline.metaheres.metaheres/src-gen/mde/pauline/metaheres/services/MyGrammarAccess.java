@@ -82,14 +82,14 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.ServiceConfig");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cClosesOnPublicHolidaysAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Keyword cClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0 = (Keyword)cClosesOnPublicHolidaysAssignment_0.eContents().get(0);
+		private final Keyword cClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0 = (Keyword)cClosesOnPublicHolidaysAssignment_0.eContents().get(0);
 		private final Assignment cInventoryIsPublicAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final Keyword cInventoryIsPublicInventoryIsPublicKeyword_1_0 = (Keyword)cInventoryIsPublicAssignment_1.eContents().get(0);
+		private final Keyword cInventoryIsPublicInventairePublicKeyword_1_0 = (Keyword)cInventoryIsPublicAssignment_1.eContents().get(0);
 		private final Assignment cHasChartAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final Keyword cHasChartHasChartKeyword_2_0 = (Keyword)cHasChartAssignment_2.eContents().get(0);
+		private final Keyword cHasChartCharteDUtilisationVisibleKeyword_2_0 = (Keyword)cHasChartAssignment_2.eContents().get(0);
 		private final Assignment cCountInBusinessDaysAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final Keyword cCountInBusinessDaysCountInBusinessDaysKeyword_3_0 = (Keyword)cCountInBusinessDaysAssignment_3.eContents().get(0);
-		private final Keyword cCountryKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Keyword cCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0 = (Keyword)cCountInBusinessDaysAssignment_3.eContents().get(0);
+		private final Keyword cPaysKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		private final Keyword cColonKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		private final Assignment cCountryAssignment_6 = (Assignment)cGroup.eContents().get(6);
 		private final RuleCall cCountryCountryParserRuleCall_6_0 = (RuleCall)cCountryAssignment_6.eContents().get(0);
@@ -98,94 +98,98 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 		private final Assignment cCountryAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
 		private final RuleCall cCountryCountryParserRuleCall_7_1_0 = (RuleCall)cCountryAssignment_7_1.eContents().get(0);
 		private final Group cGroup_8 = (Group)cGroup.eContents().get(8);
-		private final Keyword cPricingsystemKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
+		private final Keyword cPaiementsProposesKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
 		private final Keyword cColonKeyword_8_1 = (Keyword)cGroup_8.eContents().get(1);
-		private final Assignment cPricingsystemAssignment_8_2 = (Assignment)cGroup_8.eContents().get(2);
-		private final CrossReference cPricingsystemPricingSystemCrossReference_8_2_0 = (CrossReference)cPricingsystemAssignment_8_2.eContents().get(0);
-		private final RuleCall cPricingsystemPricingSystemEStringParserRuleCall_8_2_0_1 = (RuleCall)cPricingsystemPricingSystemCrossReference_8_2_0.eContents().get(1);
-		private final Group cGroup_8_3 = (Group)cGroup_8.eContents().get(3);
-		private final Keyword cCommaKeyword_8_3_0 = (Keyword)cGroup_8_3.eContents().get(0);
-		private final Assignment cPricingsystemAssignment_8_3_1 = (Assignment)cGroup_8_3.eContents().get(1);
-		private final CrossReference cPricingsystemPricingSystemCrossReference_8_3_1_0 = (CrossReference)cPricingsystemAssignment_8_3_1.eContents().get(0);
-		private final RuleCall cPricingsystemPricingSystemEStringParserRuleCall_8_3_1_0_1 = (RuleCall)cPricingsystemPricingSystemCrossReference_8_3_1_0.eContents().get(1);
-		private final Keyword cLangKeyword_9 = (Keyword)cGroup.eContents().get(9);
-		private final Keyword cColonKeyword_10 = (Keyword)cGroup.eContents().get(10);
-		private final Assignment cLanguageAssignment_11 = (Assignment)cGroup.eContents().get(11);
-		private final RuleCall cLanguageLanguageParserRuleCall_11_0 = (RuleCall)cLanguageAssignment_11.eContents().get(0);
-		private final Group cGroup_12 = (Group)cGroup.eContents().get(12);
-		private final Keyword cCommaKeyword_12_0 = (Keyword)cGroup_12.eContents().get(0);
-		private final Assignment cLanguageAssignment_12_1 = (Assignment)cGroup_12.eContents().get(1);
-		private final RuleCall cLanguageLanguageParserRuleCall_12_1_0 = (RuleCall)cLanguageAssignment_12_1.eContents().get(0);
-		private final Keyword cReservationsconfigKeyword_13 = (Keyword)cGroup.eContents().get(13);
-		private final Keyword cColonKeyword_14 = (Keyword)cGroup.eContents().get(14);
-		private final Assignment cReservationsconfigAssignment_15 = (Assignment)cGroup.eContents().get(15);
-		private final RuleCall cReservationsconfigReservationsConfigParserRuleCall_15_0 = (RuleCall)cReservationsconfigAssignment_15.eContents().get(0);
-		private final Keyword cResourcesconfigKeyword_16 = (Keyword)cGroup.eContents().get(16);
+		private final Keyword cLeftParenthesisKeyword_8_2 = (Keyword)cGroup_8.eContents().get(2);
+		private final Assignment cPricingsystemAssignment_8_3 = (Assignment)cGroup_8.eContents().get(3);
+		private final CrossReference cPricingsystemPricingSystemCrossReference_8_3_0 = (CrossReference)cPricingsystemAssignment_8_3.eContents().get(0);
+		private final RuleCall cPricingsystemPricingSystemEStringParserRuleCall_8_3_0_1 = (RuleCall)cPricingsystemPricingSystemCrossReference_8_3_0.eContents().get(1);
+		private final Group cGroup_8_4 = (Group)cGroup_8.eContents().get(4);
+		private final Keyword cCommaKeyword_8_4_0 = (Keyword)cGroup_8_4.eContents().get(0);
+		private final Assignment cPricingsystemAssignment_8_4_1 = (Assignment)cGroup_8_4.eContents().get(1);
+		private final CrossReference cPricingsystemPricingSystemCrossReference_8_4_1_0 = (CrossReference)cPricingsystemAssignment_8_4_1.eContents().get(0);
+		private final RuleCall cPricingsystemPricingSystemEStringParserRuleCall_8_4_1_0_1 = (RuleCall)cPricingsystemPricingSystemCrossReference_8_4_1_0.eContents().get(1);
+		private final Keyword cRightParenthesisKeyword_9 = (Keyword)cGroup.eContents().get(9);
+		private final Keyword cLanguesKeyword_10 = (Keyword)cGroup.eContents().get(10);
+		private final Keyword cColonKeyword_11 = (Keyword)cGroup.eContents().get(11);
+		private final Keyword cLeftParenthesisKeyword_12 = (Keyword)cGroup.eContents().get(12);
+		private final Assignment cLanguageAssignment_13 = (Assignment)cGroup.eContents().get(13);
+		private final RuleCall cLanguageLanguageParserRuleCall_13_0 = (RuleCall)cLanguageAssignment_13.eContents().get(0);
+		private final Group cGroup_14 = (Group)cGroup.eContents().get(14);
+		private final Keyword cCommaKeyword_14_0 = (Keyword)cGroup_14.eContents().get(0);
+		private final Assignment cLanguageAssignment_14_1 = (Assignment)cGroup_14.eContents().get(1);
+		private final RuleCall cLanguageLanguageParserRuleCall_14_1_0 = (RuleCall)cLanguageAssignment_14_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_15 = (Keyword)cGroup.eContents().get(15);
+		private final Keyword cConfigurationReservationsKeyword_16 = (Keyword)cGroup.eContents().get(16);
 		private final Keyword cColonKeyword_17 = (Keyword)cGroup.eContents().get(17);
-		private final Assignment cResourcesconfigAssignment_18 = (Assignment)cGroup.eContents().get(18);
-		private final RuleCall cResourcesconfigResourcesConfigParserRuleCall_18_0 = (RuleCall)cResourcesconfigAssignment_18.eContents().get(0);
-		private final Group cGroup_19 = (Group)cGroup.eContents().get(19);
-		private final Keyword cCommaKeyword_19_0 = (Keyword)cGroup_19.eContents().get(0);
-		private final Assignment cResourcesconfigAssignment_19_1 = (Assignment)cGroup_19.eContents().get(1);
-		private final RuleCall cResourcesconfigResourcesConfigParserRuleCall_19_1_0 = (RuleCall)cResourcesconfigAssignment_19_1.eContents().get(0);
-		private final Group cGroup_20 = (Group)cGroup.eContents().get(20);
-		private final Keyword cLotsconfigKeyword_20_0 = (Keyword)cGroup_20.eContents().get(0);
-		private final Keyword cColonKeyword_20_1 = (Keyword)cGroup_20.eContents().get(1);
-		private final Assignment cLotsconfigAssignment_20_2 = (Assignment)cGroup_20.eContents().get(2);
-		private final RuleCall cLotsconfigLotsConfigParserRuleCall_20_2_0 = (RuleCall)cLotsconfigAssignment_20_2.eContents().get(0);
+		private final Assignment cReservationsconfigAssignment_18 = (Assignment)cGroup.eContents().get(18);
+		private final RuleCall cReservationsconfigReservationsConfigParserRuleCall_18_0 = (RuleCall)cReservationsconfigAssignment_18.eContents().get(0);
+		private final Keyword cConfigurationRessourcesKeyword_19 = (Keyword)cGroup.eContents().get(19);
+		private final Keyword cColonKeyword_20 = (Keyword)cGroup.eContents().get(20);
+		private final Assignment cResourcesconfigAssignment_21 = (Assignment)cGroup.eContents().get(21);
+		private final RuleCall cResourcesconfigResourcesConfigParserRuleCall_21_0 = (RuleCall)cResourcesconfigAssignment_21.eContents().get(0);
+		private final Group cGroup_22 = (Group)cGroup.eContents().get(22);
+		private final Keyword cCommaKeyword_22_0 = (Keyword)cGroup_22.eContents().get(0);
+		private final Assignment cResourcesconfigAssignment_22_1 = (Assignment)cGroup_22.eContents().get(1);
+		private final RuleCall cResourcesconfigResourcesConfigParserRuleCall_22_1_0 = (RuleCall)cResourcesconfigAssignment_22_1.eContents().get(0);
+		private final Group cGroup_23 = (Group)cGroup.eContents().get(23);
+		private final Keyword cLotsconfigKeyword_23_0 = (Keyword)cGroup_23.eContents().get(0);
+		private final Keyword cColonKeyword_23_1 = (Keyword)cGroup_23.eContents().get(1);
+		private final Assignment cLotsconfigAssignment_23_2 = (Assignment)cGroup_23.eContents().get(2);
+		private final RuleCall cLotsconfigLotsConfigParserRuleCall_23_2_0 = (RuleCall)cLotsconfigAssignment_23_2.eContents().get(0);
 		
 		//ServiceConfig returns ServiceConfig:
-		//    (closesOnPublicHolidays?='closesOnPublicHolidays')?
-		//    (inventoryIsPublic?='inventoryIsPublic')?
-		//    (hasChart?='hasChart')?
-		//    (countInBusinessDays?='countInBusinessDays')?
-		//    'country' ':' country+=Country ( "," country+=Country)*
-		//    ('pricingsystem' ':' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )?
-		//    'lang' ':' language+=Language ( "," language+=Language)*
-		//    'reservationsconfig' ':' reservationsconfig=ReservationsConfig
-		//    'resourcesconfig' ':' resourcesconfig+=ResourcesConfig ( "," resourcesconfig+=ResourcesConfig)*
+		//    (closesOnPublicHolidays?='ferme-les-jours-feries')?
+		//    (inventoryIsPublic?='inventaire-public')?
+		//    (hasChart?='charte-d-utilisation-visible')?
+		//    (countInBusinessDays?='compte-en-jours-ouvrables')?
+		//    'pays'':' country+=Country ( "," country+=Country)*
+		//    ('paiements-proposes' ':' '(' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )? ')'
+		//    'langues' ':' '(' language+=Language ( "," language+=Language)* ')'
+		//    'configuration-reservations' ':' reservationsconfig=ReservationsConfig
+		//    'configuration-ressources' ':' resourcesconfig+=ResourcesConfig ( "," resourcesconfig+=ResourcesConfig)*
 		//    ('lotsconfig' ':' lotsconfig=LotsConfig)?
 		//;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//(closesOnPublicHolidays?='closesOnPublicHolidays')?
-		//(inventoryIsPublic?='inventoryIsPublic')?
-		//(hasChart?='hasChart')?
-		//(countInBusinessDays?='countInBusinessDays')?
-		//'country' ':' country+=Country ( "," country+=Country)*
-		//('pricingsystem' ':' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )?
-		//'lang' ':' language+=Language ( "," language+=Language)*
-		//'reservationsconfig' ':' reservationsconfig=ReservationsConfig
-		//'resourcesconfig' ':' resourcesconfig+=ResourcesConfig ( "," resourcesconfig+=ResourcesConfig)*
+		//(closesOnPublicHolidays?='ferme-les-jours-feries')?
+		//(inventoryIsPublic?='inventaire-public')?
+		//(hasChart?='charte-d-utilisation-visible')?
+		//(countInBusinessDays?='compte-en-jours-ouvrables')?
+		//'pays'':' country+=Country ( "," country+=Country)*
+		//('paiements-proposes' ':' '(' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )? ')'
+		//'langues' ':' '(' language+=Language ( "," language+=Language)* ')'
+		//'configuration-reservations' ':' reservationsconfig=ReservationsConfig
+		//'configuration-ressources' ':' resourcesconfig+=ResourcesConfig ( "," resourcesconfig+=ResourcesConfig)*
 		//('lotsconfig' ':' lotsconfig=LotsConfig)?
 		public Group getGroup() { return cGroup; }
 		
-		//(closesOnPublicHolidays?='closesOnPublicHolidays')?
+		//(closesOnPublicHolidays?='ferme-les-jours-feries')?
 		public Assignment getClosesOnPublicHolidaysAssignment_0() { return cClosesOnPublicHolidaysAssignment_0; }
 		
-		//'closesOnPublicHolidays'
-		public Keyword getClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0() { return cClosesOnPublicHolidaysClosesOnPublicHolidaysKeyword_0_0; }
+		//'ferme-les-jours-feries'
+		public Keyword getClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0() { return cClosesOnPublicHolidaysFermeLesJoursFeriesKeyword_0_0; }
 		
-		//(inventoryIsPublic?='inventoryIsPublic')?
+		//(inventoryIsPublic?='inventaire-public')?
 		public Assignment getInventoryIsPublicAssignment_1() { return cInventoryIsPublicAssignment_1; }
 		
-		//'inventoryIsPublic'
-		public Keyword getInventoryIsPublicInventoryIsPublicKeyword_1_0() { return cInventoryIsPublicInventoryIsPublicKeyword_1_0; }
+		//'inventaire-public'
+		public Keyword getInventoryIsPublicInventairePublicKeyword_1_0() { return cInventoryIsPublicInventairePublicKeyword_1_0; }
 		
-		//(hasChart?='hasChart')?
+		//(hasChart?='charte-d-utilisation-visible')?
 		public Assignment getHasChartAssignment_2() { return cHasChartAssignment_2; }
 		
-		//'hasChart'
-		public Keyword getHasChartHasChartKeyword_2_0() { return cHasChartHasChartKeyword_2_0; }
+		//'charte-d-utilisation-visible'
+		public Keyword getHasChartCharteDUtilisationVisibleKeyword_2_0() { return cHasChartCharteDUtilisationVisibleKeyword_2_0; }
 		
-		//(countInBusinessDays?='countInBusinessDays')?
+		//(countInBusinessDays?='compte-en-jours-ouvrables')?
 		public Assignment getCountInBusinessDaysAssignment_3() { return cCountInBusinessDaysAssignment_3; }
 		
-		//'countInBusinessDays'
-		public Keyword getCountInBusinessDaysCountInBusinessDaysKeyword_3_0() { return cCountInBusinessDaysCountInBusinessDaysKeyword_3_0; }
+		//'compte-en-jours-ouvrables'
+		public Keyword getCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0() { return cCountInBusinessDaysCompteEnJoursOuvrablesKeyword_3_0; }
 		
-		//'country'
-		public Keyword getCountryKeyword_4() { return cCountryKeyword_4; }
+		//'pays'
+		public Keyword getPaysKeyword_4() { return cPaysKeyword_4; }
 		
 		//':'
 		public Keyword getColonKeyword_5() { return cColonKeyword_5; }
@@ -208,113 +212,125 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 		//Country
 		public RuleCall getCountryCountryParserRuleCall_7_1_0() { return cCountryCountryParserRuleCall_7_1_0; }
 		
-		//('pricingsystem' ':' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )?
+		//('paiements-proposes' ':' '(' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )?
 		public Group getGroup_8() { return cGroup_8; }
 		
-		//'pricingsystem'
-		public Keyword getPricingsystemKeyword_8_0() { return cPricingsystemKeyword_8_0; }
+		//'paiements-proposes'
+		public Keyword getPaiementsProposesKeyword_8_0() { return cPaiementsProposesKeyword_8_0; }
 		
 		//':'
 		public Keyword getColonKeyword_8_1() { return cColonKeyword_8_1; }
 		
+		//'('
+		public Keyword getLeftParenthesisKeyword_8_2() { return cLeftParenthesisKeyword_8_2; }
+		
 		//pricingsystem+=[PricingSystem|EString]
-		public Assignment getPricingsystemAssignment_8_2() { return cPricingsystemAssignment_8_2; }
+		public Assignment getPricingsystemAssignment_8_3() { return cPricingsystemAssignment_8_3; }
 		
 		//[PricingSystem|EString]
-		public CrossReference getPricingsystemPricingSystemCrossReference_8_2_0() { return cPricingsystemPricingSystemCrossReference_8_2_0; }
+		public CrossReference getPricingsystemPricingSystemCrossReference_8_3_0() { return cPricingsystemPricingSystemCrossReference_8_3_0; }
 		
 		//EString
-		public RuleCall getPricingsystemPricingSystemEStringParserRuleCall_8_2_0_1() { return cPricingsystemPricingSystemEStringParserRuleCall_8_2_0_1; }
+		public RuleCall getPricingsystemPricingSystemEStringParserRuleCall_8_3_0_1() { return cPricingsystemPricingSystemEStringParserRuleCall_8_3_0_1; }
 		
 		//( "," pricingsystem+=[PricingSystem|EString])*
-		public Group getGroup_8_3() { return cGroup_8_3; }
+		public Group getGroup_8_4() { return cGroup_8_4; }
 		
 		//","
-		public Keyword getCommaKeyword_8_3_0() { return cCommaKeyword_8_3_0; }
+		public Keyword getCommaKeyword_8_4_0() { return cCommaKeyword_8_4_0; }
 		
 		//pricingsystem+=[PricingSystem|EString]
-		public Assignment getPricingsystemAssignment_8_3_1() { return cPricingsystemAssignment_8_3_1; }
+		public Assignment getPricingsystemAssignment_8_4_1() { return cPricingsystemAssignment_8_4_1; }
 		
 		//[PricingSystem|EString]
-		public CrossReference getPricingsystemPricingSystemCrossReference_8_3_1_0() { return cPricingsystemPricingSystemCrossReference_8_3_1_0; }
+		public CrossReference getPricingsystemPricingSystemCrossReference_8_4_1_0() { return cPricingsystemPricingSystemCrossReference_8_4_1_0; }
 		
 		//EString
-		public RuleCall getPricingsystemPricingSystemEStringParserRuleCall_8_3_1_0_1() { return cPricingsystemPricingSystemEStringParserRuleCall_8_3_1_0_1; }
+		public RuleCall getPricingsystemPricingSystemEStringParserRuleCall_8_4_1_0_1() { return cPricingsystemPricingSystemEStringParserRuleCall_8_4_1_0_1; }
 		
-		//'lang'
-		public Keyword getLangKeyword_9() { return cLangKeyword_9; }
+		//')'
+		public Keyword getRightParenthesisKeyword_9() { return cRightParenthesisKeyword_9; }
+		
+		//'langues'
+		public Keyword getLanguesKeyword_10() { return cLanguesKeyword_10; }
 		
 		//':'
-		public Keyword getColonKeyword_10() { return cColonKeyword_10; }
+		public Keyword getColonKeyword_11() { return cColonKeyword_11; }
+		
+		//'('
+		public Keyword getLeftParenthesisKeyword_12() { return cLeftParenthesisKeyword_12; }
 		
 		//language+=Language
-		public Assignment getLanguageAssignment_11() { return cLanguageAssignment_11; }
+		public Assignment getLanguageAssignment_13() { return cLanguageAssignment_13; }
 		
 		//Language
-		public RuleCall getLanguageLanguageParserRuleCall_11_0() { return cLanguageLanguageParserRuleCall_11_0; }
+		public RuleCall getLanguageLanguageParserRuleCall_13_0() { return cLanguageLanguageParserRuleCall_13_0; }
 		
 		//( "," language+=Language)*
-		public Group getGroup_12() { return cGroup_12; }
+		public Group getGroup_14() { return cGroup_14; }
 		
 		//","
-		public Keyword getCommaKeyword_12_0() { return cCommaKeyword_12_0; }
+		public Keyword getCommaKeyword_14_0() { return cCommaKeyword_14_0; }
 		
 		//language+=Language
-		public Assignment getLanguageAssignment_12_1() { return cLanguageAssignment_12_1; }
+		public Assignment getLanguageAssignment_14_1() { return cLanguageAssignment_14_1; }
 		
 		//Language
-		public RuleCall getLanguageLanguageParserRuleCall_12_1_0() { return cLanguageLanguageParserRuleCall_12_1_0; }
+		public RuleCall getLanguageLanguageParserRuleCall_14_1_0() { return cLanguageLanguageParserRuleCall_14_1_0; }
 		
-		//'reservationsconfig'
-		public Keyword getReservationsconfigKeyword_13() { return cReservationsconfigKeyword_13; }
+		//')'
+		public Keyword getRightParenthesisKeyword_15() { return cRightParenthesisKeyword_15; }
 		
-		//':'
-		public Keyword getColonKeyword_14() { return cColonKeyword_14; }
-		
-		//reservationsconfig=ReservationsConfig
-		public Assignment getReservationsconfigAssignment_15() { return cReservationsconfigAssignment_15; }
-		
-		//ReservationsConfig
-		public RuleCall getReservationsconfigReservationsConfigParserRuleCall_15_0() { return cReservationsconfigReservationsConfigParserRuleCall_15_0; }
-		
-		//'resourcesconfig'
-		public Keyword getResourcesconfigKeyword_16() { return cResourcesconfigKeyword_16; }
+		//'configuration-reservations'
+		public Keyword getConfigurationReservationsKeyword_16() { return cConfigurationReservationsKeyword_16; }
 		
 		//':'
 		public Keyword getColonKeyword_17() { return cColonKeyword_17; }
 		
-		//resourcesconfig+=ResourcesConfig
-		public Assignment getResourcesconfigAssignment_18() { return cResourcesconfigAssignment_18; }
+		//reservationsconfig=ReservationsConfig
+		public Assignment getReservationsconfigAssignment_18() { return cReservationsconfigAssignment_18; }
 		
-		//ResourcesConfig
-		public RuleCall getResourcesconfigResourcesConfigParserRuleCall_18_0() { return cResourcesconfigResourcesConfigParserRuleCall_18_0; }
+		//ReservationsConfig
+		public RuleCall getReservationsconfigReservationsConfigParserRuleCall_18_0() { return cReservationsconfigReservationsConfigParserRuleCall_18_0; }
 		
-		//( "," resourcesconfig+=ResourcesConfig)*
-		public Group getGroup_19() { return cGroup_19; }
-		
-		//","
-		public Keyword getCommaKeyword_19_0() { return cCommaKeyword_19_0; }
-		
-		//resourcesconfig+=ResourcesConfig
-		public Assignment getResourcesconfigAssignment_19_1() { return cResourcesconfigAssignment_19_1; }
-		
-		//ResourcesConfig
-		public RuleCall getResourcesconfigResourcesConfigParserRuleCall_19_1_0() { return cResourcesconfigResourcesConfigParserRuleCall_19_1_0; }
-		
-		//('lotsconfig' ':' lotsconfig=LotsConfig)?
-		public Group getGroup_20() { return cGroup_20; }
-		
-		//'lotsconfig'
-		public Keyword getLotsconfigKeyword_20_0() { return cLotsconfigKeyword_20_0; }
+		//'configuration-ressources'
+		public Keyword getConfigurationRessourcesKeyword_19() { return cConfigurationRessourcesKeyword_19; }
 		
 		//':'
-		public Keyword getColonKeyword_20_1() { return cColonKeyword_20_1; }
+		public Keyword getColonKeyword_20() { return cColonKeyword_20; }
+		
+		//resourcesconfig+=ResourcesConfig
+		public Assignment getResourcesconfigAssignment_21() { return cResourcesconfigAssignment_21; }
+		
+		//ResourcesConfig
+		public RuleCall getResourcesconfigResourcesConfigParserRuleCall_21_0() { return cResourcesconfigResourcesConfigParserRuleCall_21_0; }
+		
+		//( "," resourcesconfig+=ResourcesConfig)*
+		public Group getGroup_22() { return cGroup_22; }
+		
+		//","
+		public Keyword getCommaKeyword_22_0() { return cCommaKeyword_22_0; }
+		
+		//resourcesconfig+=ResourcesConfig
+		public Assignment getResourcesconfigAssignment_22_1() { return cResourcesconfigAssignment_22_1; }
+		
+		//ResourcesConfig
+		public RuleCall getResourcesconfigResourcesConfigParserRuleCall_22_1_0() { return cResourcesconfigResourcesConfigParserRuleCall_22_1_0; }
+		
+		//('lotsconfig' ':' lotsconfig=LotsConfig)?
+		public Group getGroup_23() { return cGroup_23; }
+		
+		//'lotsconfig'
+		public Keyword getLotsconfigKeyword_23_0() { return cLotsconfigKeyword_23_0; }
+		
+		//':'
+		public Keyword getColonKeyword_23_1() { return cColonKeyword_23_1; }
 		
 		//lotsconfig=LotsConfig
-		public Assignment getLotsconfigAssignment_20_2() { return cLotsconfigAssignment_20_2; }
+		public Assignment getLotsconfigAssignment_23_2() { return cLotsconfigAssignment_23_2; }
 		
 		//LotsConfig
-		public RuleCall getLotsconfigLotsConfigParserRuleCall_20_2_0() { return cLotsconfigLotsConfigParserRuleCall_20_2_0; }
+		public RuleCall getLotsconfigLotsConfigParserRuleCall_23_2_0() { return cLotsconfigLotsConfigParserRuleCall_23_2_0; }
 	}
 	public class EBooleanObjectElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.EBooleanObject");
@@ -364,270 +380,104 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.ReservationsConfig");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cHasMoveOutCheckAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Keyword cHasMoveOutCheckHasMoveOutCheckKeyword_0_0 = (Keyword)cHasMoveOutCheckAssignment_0.eContents().get(0);
+		private final Keyword cHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0 = (Keyword)cHasMoveOutCheckAssignment_0.eContents().get(0);
 		private final Assignment cHasMoveInCheckAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final Keyword cHasMoveInCheckHasMoveInCheckKeyword_1_0 = (Keyword)cHasMoveInCheckAssignment_1.eContents().get(0);
-		private final Keyword cMinRequestAdvanceKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cMinRequestAdvanceAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cMinRequestAdvanceEIntParserRuleCall_3_0 = (RuleCall)cMinRequestAdvanceAssignment_3.eContents().get(0);
-		private final Keyword cMaxRequestAdvanceKeyword_4 = (Keyword)cGroup.eContents().get(4);
-		private final Assignment cMaxRequestAdvanceAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final RuleCall cMaxRequestAdvanceEIntParserRuleCall_5_0 = (RuleCall)cMaxRequestAdvanceAssignment_5.eContents().get(0);
-		private final Keyword cStatuslistKeyword_6 = (Keyword)cGroup.eContents().get(6);
-		private final Keyword cColonKeyword_7 = (Keyword)cGroup.eContents().get(7);
-		private final Assignment cStatuslistAssignment_8 = (Assignment)cGroup.eContents().get(8);
-		private final RuleCall cStatuslistStatusListParserRuleCall_8_0 = (RuleCall)cStatuslistAssignment_8.eContents().get(0);
+		private final Keyword cHasMoveInCheckEtatDesLieuxRetourKeyword_1_0 = (Keyword)cHasMoveInCheckAssignment_1.eContents().get(0);
+		private final Keyword cAvanceMinimumEtMaximumReservationKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cColonKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cMinRequestAdvanceAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cMinRequestAdvanceEIntParserRuleCall_4_0 = (RuleCall)cMinRequestAdvanceAssignment_4.eContents().get(0);
+		private final Keyword cCommaKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Assignment cMaxRequestAdvanceAssignment_6 = (Assignment)cGroup.eContents().get(6);
+		private final RuleCall cMaxRequestAdvanceEIntParserRuleCall_6_0 = (RuleCall)cMaxRequestAdvanceAssignment_6.eContents().get(0);
+		private final Keyword cStatutsDesDemandesKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Keyword cColonKeyword_8 = (Keyword)cGroup.eContents().get(8);
+		private final Assignment cStatuslistAssignment_9 = (Assignment)cGroup.eContents().get(9);
+		private final RuleCall cStatuslistStatusListParserRuleCall_9_0 = (RuleCall)cStatuslistAssignment_9.eContents().get(0);
 		
 		//ReservationsConfig returns ReservationsConfig:
-		//    hasMoveOutCheck?='hasMoveOutCheck'
-		//    (hasMoveInCheck?='hasMoveInCheck')?
-		//        'minRequestAdvance' minRequestAdvance=EInt
-		//        'maxRequestAdvance' maxRequestAdvance=EInt
-		//        'statuslist' ':' statuslist=StatusList
+		//    hasMoveOutCheck?='etat-des-lieux-sortie'
+		//    (hasMoveInCheck?='etat-des-lieux-retour')?
+		//        'avance-minimum-et-maximum-reservation' ':' minRequestAdvance=EInt ',' maxRequestAdvance=EInt
+		//        'statuts-des-demandes' ':' statuslist=StatusList
 		//    ;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//hasMoveOutCheck?='hasMoveOutCheck'
-		//(hasMoveInCheck?='hasMoveInCheck')?
-		//    'minRequestAdvance' minRequestAdvance=EInt
-		//    'maxRequestAdvance' maxRequestAdvance=EInt
-		//    'statuslist' ':' statuslist=StatusList
+		//hasMoveOutCheck?='etat-des-lieux-sortie'
+		//(hasMoveInCheck?='etat-des-lieux-retour')?
+		//    'avance-minimum-et-maximum-reservation' ':' minRequestAdvance=EInt ',' maxRequestAdvance=EInt
+		//    'statuts-des-demandes' ':' statuslist=StatusList
 		public Group getGroup() { return cGroup; }
 		
-		//hasMoveOutCheck?='hasMoveOutCheck'
+		//hasMoveOutCheck?='etat-des-lieux-sortie'
 		public Assignment getHasMoveOutCheckAssignment_0() { return cHasMoveOutCheckAssignment_0; }
 		
-		//'hasMoveOutCheck'
-		public Keyword getHasMoveOutCheckHasMoveOutCheckKeyword_0_0() { return cHasMoveOutCheckHasMoveOutCheckKeyword_0_0; }
+		//'etat-des-lieux-sortie'
+		public Keyword getHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0() { return cHasMoveOutCheckEtatDesLieuxSortieKeyword_0_0; }
 		
-		//(hasMoveInCheck?='hasMoveInCheck')?
+		//(hasMoveInCheck?='etat-des-lieux-retour')?
 		public Assignment getHasMoveInCheckAssignment_1() { return cHasMoveInCheckAssignment_1; }
 		
-		//'hasMoveInCheck'
-		public Keyword getHasMoveInCheckHasMoveInCheckKeyword_1_0() { return cHasMoveInCheckHasMoveInCheckKeyword_1_0; }
+		//'etat-des-lieux-retour'
+		public Keyword getHasMoveInCheckEtatDesLieuxRetourKeyword_1_0() { return cHasMoveInCheckEtatDesLieuxRetourKeyword_1_0; }
 		
-		//'minRequestAdvance'
-		public Keyword getMinRequestAdvanceKeyword_2() { return cMinRequestAdvanceKeyword_2; }
-		
-		//minRequestAdvance=EInt
-		public Assignment getMinRequestAdvanceAssignment_3() { return cMinRequestAdvanceAssignment_3; }
-		
-		//EInt
-		public RuleCall getMinRequestAdvanceEIntParserRuleCall_3_0() { return cMinRequestAdvanceEIntParserRuleCall_3_0; }
-		
-		//'maxRequestAdvance'
-		public Keyword getMaxRequestAdvanceKeyword_4() { return cMaxRequestAdvanceKeyword_4; }
-		
-		//maxRequestAdvance=EInt
-		public Assignment getMaxRequestAdvanceAssignment_5() { return cMaxRequestAdvanceAssignment_5; }
-		
-		//EInt
-		public RuleCall getMaxRequestAdvanceEIntParserRuleCall_5_0() { return cMaxRequestAdvanceEIntParserRuleCall_5_0; }
-		
-		//'statuslist'
-		public Keyword getStatuslistKeyword_6() { return cStatuslistKeyword_6; }
+		//'avance-minimum-et-maximum-reservation'
+		public Keyword getAvanceMinimumEtMaximumReservationKeyword_2() { return cAvanceMinimumEtMaximumReservationKeyword_2; }
 		
 		//':'
-		public Keyword getColonKeyword_7() { return cColonKeyword_7; }
+		public Keyword getColonKeyword_3() { return cColonKeyword_3; }
+		
+		//minRequestAdvance=EInt
+		public Assignment getMinRequestAdvanceAssignment_4() { return cMinRequestAdvanceAssignment_4; }
+		
+		//EInt
+		public RuleCall getMinRequestAdvanceEIntParserRuleCall_4_0() { return cMinRequestAdvanceEIntParserRuleCall_4_0; }
+		
+		//','
+		public Keyword getCommaKeyword_5() { return cCommaKeyword_5; }
+		
+		//maxRequestAdvance=EInt
+		public Assignment getMaxRequestAdvanceAssignment_6() { return cMaxRequestAdvanceAssignment_6; }
+		
+		//EInt
+		public RuleCall getMaxRequestAdvanceEIntParserRuleCall_6_0() { return cMaxRequestAdvanceEIntParserRuleCall_6_0; }
+		
+		//'statuts-des-demandes'
+		public Keyword getStatutsDesDemandesKeyword_7() { return cStatutsDesDemandesKeyword_7; }
+		
+		//':'
+		public Keyword getColonKeyword_8() { return cColonKeyword_8; }
 		
 		//statuslist=StatusList
-		public Assignment getStatuslistAssignment_8() { return cStatuslistAssignment_8; }
+		public Assignment getStatuslistAssignment_9() { return cStatuslistAssignment_9; }
 		
 		//StatusList
-		public RuleCall getStatuslistStatusListParserRuleCall_8_0() { return cStatuslistStatusListParserRuleCall_8_0; }
+		public RuleCall getStatuslistStatusListParserRuleCall_9_0() { return cStatuslistStatusListParserRuleCall_9_0; }
 	}
 	public class CountryElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.Country");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameEStringParserRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
-		private final Keyword cLangKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cLanguageAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cLanguageLanguageParserRuleCall_2_0 = (RuleCall)cLanguageAssignment_2.eContents().get(0);
-		private final Keyword cPricingKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Keyword cColonKeyword_4 = (Keyword)cGroup.eContents().get(4);
-		private final Keyword cLeftParenthesisKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Keyword cCommaKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Keyword cTarificationKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Keyword cColonKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		private final Assignment cPricingsystemAssignment_6 = (Assignment)cGroup.eContents().get(6);
 		private final RuleCall cPricingsystemPricingSystemParserRuleCall_6_0 = (RuleCall)cPricingsystemAssignment_6.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_7 = (Keyword)cGroup.eContents().get(7);
 		
 		//Country returns Country:
-		//    name=EString
-		//        'lang' language=Language
-		//        'pricing' ':' '(' pricingsystem=PricingSystem ')'
-		//;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//name=EString
-		//    'lang' language=Language
-		//    'pricing' ':' '(' pricingsystem=PricingSystem ')'
-		public Group getGroup() { return cGroup; }
-		
-		//name=EString
-		public Assignment getNameAssignment_0() { return cNameAssignment_0; }
-		
-		//EString
-		public RuleCall getNameEStringParserRuleCall_0_0() { return cNameEStringParserRuleCall_0_0; }
-		
-		//'lang'
-		public Keyword getLangKeyword_1() { return cLangKeyword_1; }
-		
-		//language=Language
-		public Assignment getLanguageAssignment_2() { return cLanguageAssignment_2; }
-		
-		//Language
-		public RuleCall getLanguageLanguageParserRuleCall_2_0() { return cLanguageLanguageParserRuleCall_2_0; }
-		
-		//'pricing'
-		public Keyword getPricingKeyword_3() { return cPricingKeyword_3; }
-		
-		//':'
-		public Keyword getColonKeyword_4() { return cColonKeyword_4; }
-		
-		//'('
-		public Keyword getLeftParenthesisKeyword_5() { return cLeftParenthesisKeyword_5; }
-		
-		//pricingsystem=PricingSystem
-		public Assignment getPricingsystemAssignment_6() { return cPricingsystemAssignment_6; }
-		
-		//PricingSystem
-		public RuleCall getPricingsystemPricingSystemParserRuleCall_6_0() { return cPricingsystemPricingSystemParserRuleCall_6_0; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_7() { return cRightParenthesisKeyword_7; }
-	}
-	public class ResourcesConfigElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.ResourcesConfig");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cHasImageAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final Keyword cHasImageHasImageKeyword_1_0 = (Keyword)cHasImageAssignment_1.eContents().get(0);
-		private final Assignment cHasOneStockPerSlotAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final Keyword cHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0 = (Keyword)cHasOneStockPerSlotAssignment_2.eContents().get(0);
-		private final Assignment cIsConsumableAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final Keyword cIsConsumableIsConsumableKeyword_3_0 = (Keyword)cIsConsumableAssignment_3.eContents().get(0);
-		private final Assignment cIsLoanAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final Keyword cIsLoanIsLoanKeyword_4_0 = (Keyword)cIsLoanAssignment_4.eContents().get(0);
-		private final Assignment cIsChargedAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final Keyword cIsChargedIsChargedKeyword_5_0 = (Keyword)cIsChargedAssignment_5.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_6 = (Keyword)cGroup.eContents().get(6);
-		
-		//ResourcesConfig returns ResourcesConfig:
-		//    '('
-		//    (hasImage?='hasImage')?
-		//    (hasOneStockPerSlot?='hasOneStockPerSlot')?
-		//    (isConsumable?='isConsumable')?
-		//    (isLoan?='isLoan')?
-		//    (isCharged?='isCharged')?
-		//    ')'
-		//    ;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//'('
-		//(hasImage?='hasImage')?
-		//(hasOneStockPerSlot?='hasOneStockPerSlot')?
-		//(isConsumable?='isConsumable')?
-		//(isLoan?='isLoan')?
-		//(isCharged?='isCharged')?
-		//')'
-		public Group getGroup() { return cGroup; }
-		
-		//'('
-		public Keyword getLeftParenthesisKeyword_0() { return cLeftParenthesisKeyword_0; }
-		
-		//(hasImage?='hasImage')?
-		public Assignment getHasImageAssignment_1() { return cHasImageAssignment_1; }
-		
-		//'hasImage'
-		public Keyword getHasImageHasImageKeyword_1_0() { return cHasImageHasImageKeyword_1_0; }
-		
-		//(hasOneStockPerSlot?='hasOneStockPerSlot')?
-		public Assignment getHasOneStockPerSlotAssignment_2() { return cHasOneStockPerSlotAssignment_2; }
-		
-		//'hasOneStockPerSlot'
-		public Keyword getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0() { return cHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0; }
-		
-		//(isConsumable?='isConsumable')?
-		public Assignment getIsConsumableAssignment_3() { return cIsConsumableAssignment_3; }
-		
-		//'isConsumable'
-		public Keyword getIsConsumableIsConsumableKeyword_3_0() { return cIsConsumableIsConsumableKeyword_3_0; }
-		
-		//(isLoan?='isLoan')?
-		public Assignment getIsLoanAssignment_4() { return cIsLoanAssignment_4; }
-		
-		//'isLoan'
-		public Keyword getIsLoanIsLoanKeyword_4_0() { return cIsLoanIsLoanKeyword_4_0; }
-		
-		//(isCharged?='isCharged')?
-		public Assignment getIsChargedAssignment_5() { return cIsChargedAssignment_5; }
-		
-		//'isCharged'
-		public Keyword getIsChargedIsChargedKeyword_5_0() { return cIsChargedIsChargedKeyword_5_0; }
-		
-		//')'
-		public Keyword getRightParenthesisKeyword_6() { return cRightParenthesisKeyword_6; }
-	}
-	public class LotsConfigElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.LotsConfig");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Action cLotsConfigAction_0 = (Action)cGroup.eContents().get(0);
-		private final Assignment cHasImageAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final Keyword cHasImageHasImageKeyword_1_0 = (Keyword)cHasImageAssignment_1.eContents().get(0);
-		private final Assignment cHasOneStockPerSlotAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final Keyword cHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0 = (Keyword)cHasOneStockPerSlotAssignment_2.eContents().get(0);
-		
-		//LotsConfig returns LotsConfig:
-		//    {LotsConfig}
-		//    (hasImage?='hasImage')?
-		//    (hasOneStockPerSlot?='hasOneStockPerSlot')?
-		//    ;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//{LotsConfig}
-		//(hasImage?='hasImage')?
-		//(hasOneStockPerSlot?='hasOneStockPerSlot')?
-		public Group getGroup() { return cGroup; }
-		
-		//{LotsConfig}
-		public Action getLotsConfigAction_0() { return cLotsConfigAction_0; }
-		
-		//(hasImage?='hasImage')?
-		public Assignment getHasImageAssignment_1() { return cHasImageAssignment_1; }
-		
-		//'hasImage'
-		public Keyword getHasImageHasImageKeyword_1_0() { return cHasImageHasImageKeyword_1_0; }
-		
-		//(hasOneStockPerSlot?='hasOneStockPerSlot')?
-		public Assignment getHasOneStockPerSlotAssignment_2() { return cHasOneStockPerSlotAssignment_2; }
-		
-		//'hasOneStockPerSlot'
-		public Keyword getHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0() { return cHasOneStockPerSlotHasOneStockPerSlotKeyword_2_0; }
-	}
-	public class PricingSystemElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.PricingSystem");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cNameEStringParserRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
-		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Keyword cCurrencyKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cCurrencyAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cCurrencyEStringParserRuleCall_3_0 = (RuleCall)cCurrencyAssignment_3.eContents().get(0);
-		private final Keyword cCommaKeyword_4 = (Keyword)cGroup.eContents().get(4);
-		private final Keyword cTaxSystemKeyword_5 = (Keyword)cGroup.eContents().get(5);
-		private final Assignment cTaxSystemAssignment_6 = (Assignment)cGroup.eContents().get(6);
-		private final RuleCall cTaxSystemEStringParserRuleCall_6_0 = (RuleCall)cTaxSystemAssignment_6.eContents().get(0);
-		
-		//PricingSystem returns PricingSystem:
 		//    name=EString ':'
-		//    'currency' currency=EString ','
-		//    'taxSystem' taxSystem=EString
+		//        language=Language ','
+		//        'tarification' ':' pricingsystem=PricingSystem
 		//;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//name=EString ':'
-		//'currency' currency=EString ','
-		//'taxSystem' taxSystem=EString
+		//    language=Language ','
+		//    'tarification' ':' pricingsystem=PricingSystem
 		public Group getGroup() { return cGroup; }
 		
 		//name=EString
@@ -639,26 +489,214 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 		//':'
 		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
 		
-		//'currency'
-		public Keyword getCurrencyKeyword_2() { return cCurrencyKeyword_2; }
+		//language=Language
+		public Assignment getLanguageAssignment_2() { return cLanguageAssignment_2; }
 		
-		//currency=EString
-		public Assignment getCurrencyAssignment_3() { return cCurrencyAssignment_3; }
-		
-		//EString
-		public RuleCall getCurrencyEStringParserRuleCall_3_0() { return cCurrencyEStringParserRuleCall_3_0; }
+		//Language
+		public RuleCall getLanguageLanguageParserRuleCall_2_0() { return cLanguageLanguageParserRuleCall_2_0; }
 		
 		//','
-		public Keyword getCommaKeyword_4() { return cCommaKeyword_4; }
+		public Keyword getCommaKeyword_3() { return cCommaKeyword_3; }
 		
-		//'taxSystem'
-		public Keyword getTaxSystemKeyword_5() { return cTaxSystemKeyword_5; }
+		//'tarification'
+		public Keyword getTarificationKeyword_4() { return cTarificationKeyword_4; }
 		
-		//taxSystem=EString
-		public Assignment getTaxSystemAssignment_6() { return cTaxSystemAssignment_6; }
+		//':'
+		public Keyword getColonKeyword_5() { return cColonKeyword_5; }
+		
+		//pricingsystem=PricingSystem
+		public Assignment getPricingsystemAssignment_6() { return cPricingsystemAssignment_6; }
+		
+		//PricingSystem
+		public RuleCall getPricingsystemPricingSystemParserRuleCall_6_0() { return cPricingsystemPricingSystemParserRuleCall_6_0; }
+	}
+	public class ResourcesConfigElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.ResourcesConfig");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cHasImageAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final Keyword cHasImageAvecIllustrationKeyword_1_0 = (Keyword)cHasImageAssignment_1.eContents().get(0);
+		private final Assignment cHasOneStockPerSlotAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final Keyword cHasOneStockPerSlotUnStockParOuvertureKeyword_2_0 = (Keyword)cHasOneStockPerSlotAssignment_2.eContents().get(0);
+		private final Assignment cIsConsumableAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final Keyword cIsConsumableTypeConsommableKeyword_3_0 = (Keyword)cIsConsumableAssignment_3.eContents().get(0);
+		private final Assignment cIsLoanAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final Keyword cIsLoanEmpruntAvecRetourKeyword_4_0 = (Keyword)cIsLoanAssignment_4.eContents().get(0);
+		private final Assignment cIsChargedAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final Keyword cIsChargedPayantKeyword_5_0 = (Keyword)cIsChargedAssignment_5.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		
+		//ResourcesConfig returns ResourcesConfig:
+		//    '('
+		//    (hasImage?='avec-illustration')?
+		//    (hasOneStockPerSlot?='un-stock-par-ouverture')?
+		//    (isConsumable?='type-consommable')?
+		//    (isLoan?='emprunt-avec-retour')?
+		//    (isCharged?='payant')?
+		//    ')'
+		//    ;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'('
+		//(hasImage?='avec-illustration')?
+		//(hasOneStockPerSlot?='un-stock-par-ouverture')?
+		//(isConsumable?='type-consommable')?
+		//(isLoan?='emprunt-avec-retour')?
+		//(isCharged?='payant')?
+		//')'
+		public Group getGroup() { return cGroup; }
+		
+		//'('
+		public Keyword getLeftParenthesisKeyword_0() { return cLeftParenthesisKeyword_0; }
+		
+		//(hasImage?='avec-illustration')?
+		public Assignment getHasImageAssignment_1() { return cHasImageAssignment_1; }
+		
+		//'avec-illustration'
+		public Keyword getHasImageAvecIllustrationKeyword_1_0() { return cHasImageAvecIllustrationKeyword_1_0; }
+		
+		//(hasOneStockPerSlot?='un-stock-par-ouverture')?
+		public Assignment getHasOneStockPerSlotAssignment_2() { return cHasOneStockPerSlotAssignment_2; }
+		
+		//'un-stock-par-ouverture'
+		public Keyword getHasOneStockPerSlotUnStockParOuvertureKeyword_2_0() { return cHasOneStockPerSlotUnStockParOuvertureKeyword_2_0; }
+		
+		//(isConsumable?='type-consommable')?
+		public Assignment getIsConsumableAssignment_3() { return cIsConsumableAssignment_3; }
+		
+		//'type-consommable'
+		public Keyword getIsConsumableTypeConsommableKeyword_3_0() { return cIsConsumableTypeConsommableKeyword_3_0; }
+		
+		//(isLoan?='emprunt-avec-retour')?
+		public Assignment getIsLoanAssignment_4() { return cIsLoanAssignment_4; }
+		
+		//'emprunt-avec-retour'
+		public Keyword getIsLoanEmpruntAvecRetourKeyword_4_0() { return cIsLoanEmpruntAvecRetourKeyword_4_0; }
+		
+		//(isCharged?='payant')?
+		public Assignment getIsChargedAssignment_5() { return cIsChargedAssignment_5; }
+		
+		//'payant'
+		public Keyword getIsChargedPayantKeyword_5_0() { return cIsChargedPayantKeyword_5_0; }
+		
+		//')'
+		public Keyword getRightParenthesisKeyword_6() { return cRightParenthesisKeyword_6; }
+	}
+	public class LotsConfigElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.LotsConfig");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Action cLotsConfigAction_0 = (Action)cGroup.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cHasImageAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final Keyword cHasImageAvecIllustrationKeyword_2_0 = (Keyword)cHasImageAssignment_2.eContents().get(0);
+		private final Assignment cHasOneStockPerSlotAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final Keyword cHasOneStockPerSlotUnStockParOuvertureKeyword_3_0 = (Keyword)cHasOneStockPerSlotAssignment_3.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		
+		//LotsConfig returns LotsConfig:
+		//    {LotsConfig} '('
+		//    (hasImage?='avec-illustration')?
+		//    (hasOneStockPerSlot?='un-stock-par-ouverture')?
+		//    ')'
+		//    ;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//{LotsConfig} '('
+		//(hasImage?='avec-illustration')?
+		//(hasOneStockPerSlot?='un-stock-par-ouverture')?
+		//')'
+		public Group getGroup() { return cGroup; }
+		
+		//{LotsConfig}
+		public Action getLotsConfigAction_0() { return cLotsConfigAction_0; }
+		
+		//'('
+		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
+		
+		//(hasImage?='avec-illustration')?
+		public Assignment getHasImageAssignment_2() { return cHasImageAssignment_2; }
+		
+		//'avec-illustration'
+		public Keyword getHasImageAvecIllustrationKeyword_2_0() { return cHasImageAvecIllustrationKeyword_2_0; }
+		
+		//(hasOneStockPerSlot?='un-stock-par-ouverture')?
+		public Assignment getHasOneStockPerSlotAssignment_3() { return cHasOneStockPerSlotAssignment_3; }
+		
+		//'un-stock-par-ouverture'
+		public Keyword getHasOneStockPerSlotUnStockParOuvertureKeyword_3_0() { return cHasOneStockPerSlotUnStockParOuvertureKeyword_3_0; }
+		
+		//')'
+		public Keyword getRightParenthesisKeyword_4() { return cRightParenthesisKeyword_4; }
+	}
+	public class PricingSystemElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.PricingSystem");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cNameEStringParserRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Keyword cDeviseKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cColonKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cCurrencyAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cCurrencyEStringParserRuleCall_4_0 = (RuleCall)cCurrencyAssignment_4.eContents().get(0);
+		private final Keyword cCommaKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Keyword cSystemeComptableKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Keyword cColonKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Assignment cTaxSystemAssignment_8 = (Assignment)cGroup.eContents().get(8);
+		private final RuleCall cTaxSystemEStringParserRuleCall_8_0 = (RuleCall)cTaxSystemAssignment_8.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_9 = (Keyword)cGroup.eContents().get(9);
+		
+		//PricingSystem returns PricingSystem:
+		//    name=EString '('
+		//    'devise' ':' currency=EString ','
+		//    'systeme-comptable' ':' taxSystem=EString
+		//    ')'
+		//;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//name=EString '('
+		//'devise' ':' currency=EString ','
+		//'systeme-comptable' ':' taxSystem=EString
+		//')'
+		public Group getGroup() { return cGroup; }
+		
+		//name=EString
+		public Assignment getNameAssignment_0() { return cNameAssignment_0; }
 		
 		//EString
-		public RuleCall getTaxSystemEStringParserRuleCall_6_0() { return cTaxSystemEStringParserRuleCall_6_0; }
+		public RuleCall getNameEStringParserRuleCall_0_0() { return cNameEStringParserRuleCall_0_0; }
+		
+		//'('
+		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
+		
+		//'devise'
+		public Keyword getDeviseKeyword_2() { return cDeviseKeyword_2; }
+		
+		//':'
+		public Keyword getColonKeyword_3() { return cColonKeyword_3; }
+		
+		//currency=EString
+		public Assignment getCurrencyAssignment_4() { return cCurrencyAssignment_4; }
+		
+		//EString
+		public RuleCall getCurrencyEStringParserRuleCall_4_0() { return cCurrencyEStringParserRuleCall_4_0; }
+		
+		//','
+		public Keyword getCommaKeyword_5() { return cCommaKeyword_5; }
+		
+		//'systeme-comptable'
+		public Keyword getSystemeComptableKeyword_6() { return cSystemeComptableKeyword_6; }
+		
+		//':'
+		public Keyword getColonKeyword_7() { return cColonKeyword_7; }
+		
+		//taxSystem=EString
+		public Assignment getTaxSystemAssignment_8() { return cTaxSystemAssignment_8; }
+		
+		//EString
+		public RuleCall getTaxSystemEStringParserRuleCall_8_0() { return cTaxSystemEStringParserRuleCall_8_0; }
+		
+		//')'
+		public Keyword getRightParenthesisKeyword_9() { return cRightParenthesisKeyword_9; }
 	}
 	public class EBooleanElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "mde.pauline.metaheres.My.EBoolean");
@@ -859,15 +897,15 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 	}
 	
 	//ServiceConfig returns ServiceConfig:
-	//    (closesOnPublicHolidays?='closesOnPublicHolidays')?
-	//    (inventoryIsPublic?='inventoryIsPublic')?
-	//    (hasChart?='hasChart')?
-	//    (countInBusinessDays?='countInBusinessDays')?
-	//    'country' ':' country+=Country ( "," country+=Country)*
-	//    ('pricingsystem' ':' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )?
-	//    'lang' ':' language+=Language ( "," language+=Language)*
-	//    'reservationsconfig' ':' reservationsconfig=ReservationsConfig
-	//    'resourcesconfig' ':' resourcesconfig+=ResourcesConfig ( "," resourcesconfig+=ResourcesConfig)*
+	//    (closesOnPublicHolidays?='ferme-les-jours-feries')?
+	//    (inventoryIsPublic?='inventaire-public')?
+	//    (hasChart?='charte-d-utilisation-visible')?
+	//    (countInBusinessDays?='compte-en-jours-ouvrables')?
+	//    'pays'':' country+=Country ( "," country+=Country)*
+	//    ('paiements-proposes' ':' '(' pricingsystem+=[PricingSystem|EString] ( "," pricingsystem+=[PricingSystem|EString])* )? ')'
+	//    'langues' ':' '(' language+=Language ( "," language+=Language)* ')'
+	//    'configuration-reservations' ':' reservationsconfig=ReservationsConfig
+	//    'configuration-ressources' ':' resourcesconfig+=ResourcesConfig ( "," resourcesconfig+=ResourcesConfig)*
 	//    ('lotsconfig' ':' lotsconfig=LotsConfig)?
 	//;
 	public ServiceConfigElements getServiceConfigAccess() {
@@ -900,11 +938,10 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 	}
 	
 	//ReservationsConfig returns ReservationsConfig:
-	//    hasMoveOutCheck?='hasMoveOutCheck'
-	//    (hasMoveInCheck?='hasMoveInCheck')?
-	//        'minRequestAdvance' minRequestAdvance=EInt
-	//        'maxRequestAdvance' maxRequestAdvance=EInt
-	//        'statuslist' ':' statuslist=StatusList
+	//    hasMoveOutCheck?='etat-des-lieux-sortie'
+	//    (hasMoveInCheck?='etat-des-lieux-retour')?
+	//        'avance-minimum-et-maximum-reservation' ':' minRequestAdvance=EInt ',' maxRequestAdvance=EInt
+	//        'statuts-des-demandes' ':' statuslist=StatusList
 	//    ;
 	public ReservationsConfigElements getReservationsConfigAccess() {
 		return pReservationsConfig;
@@ -915,9 +952,9 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 	}
 	
 	//Country returns Country:
-	//    name=EString
-	//        'lang' language=Language
-	//        'pricing' ':' '(' pricingsystem=PricingSystem ')'
+	//    name=EString ':'
+	//        language=Language ','
+	//        'tarification' ':' pricingsystem=PricingSystem
 	//;
 	public CountryElements getCountryAccess() {
 		return pCountry;
@@ -929,11 +966,11 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 	
 	//ResourcesConfig returns ResourcesConfig:
 	//    '('
-	//    (hasImage?='hasImage')?
-	//    (hasOneStockPerSlot?='hasOneStockPerSlot')?
-	//    (isConsumable?='isConsumable')?
-	//    (isLoan?='isLoan')?
-	//    (isCharged?='isCharged')?
+	//    (hasImage?='avec-illustration')?
+	//    (hasOneStockPerSlot?='un-stock-par-ouverture')?
+	//    (isConsumable?='type-consommable')?
+	//    (isLoan?='emprunt-avec-retour')?
+	//    (isCharged?='payant')?
 	//    ')'
 	//    ;
 	public ResourcesConfigElements getResourcesConfigAccess() {
@@ -945,9 +982,10 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 	}
 	
 	//LotsConfig returns LotsConfig:
-	//    {LotsConfig}
-	//    (hasImage?='hasImage')?
-	//    (hasOneStockPerSlot?='hasOneStockPerSlot')?
+	//    {LotsConfig} '('
+	//    (hasImage?='avec-illustration')?
+	//    (hasOneStockPerSlot?='un-stock-par-ouverture')?
+	//    ')'
 	//    ;
 	public LotsConfigElements getLotsConfigAccess() {
 		return pLotsConfig;
@@ -958,9 +996,10 @@ public class MyGrammarAccess extends AbstractElementFinder.AbstractGrammarElemen
 	}
 	
 	//PricingSystem returns PricingSystem:
-	//    name=EString ':'
-	//    'currency' currency=EString ','
-	//    'taxSystem' taxSystem=EString
+	//    name=EString '('
+	//    'devise' ':' currency=EString ','
+	//    'systeme-comptable' ':' taxSystem=EString
+	//    ')'
 	//;
 	public PricingSystemElements getPricingSystemAccess() {
 		return pPricingSystem;

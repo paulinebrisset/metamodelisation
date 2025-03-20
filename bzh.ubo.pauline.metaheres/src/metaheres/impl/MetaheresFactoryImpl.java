@@ -58,11 +58,8 @@ public class MetaheresFactoryImpl extends EFactoryImpl implements MetaheresFacto
 		switch (eClass.getClassifierID()) {
 			case MetaheresPackage.SERVICE_NAME: return createServiceName();
 			case MetaheresPackage.STATUS: return createStatus();
-			case MetaheresPackage.RIGHT_LEVEL: return createRightLevel();
 			case MetaheresPackage.LANGUAGE: return createLanguage();
-			case MetaheresPackage.RIGHTS_LEVEL_LIST: return createRightsLevelList();
 			case MetaheresPackage.STATUS_LIST: return createStatusList();
-			case MetaheresPackage.USERS_CONFIG: return createUsersConfig();
 			case MetaheresPackage.SERVICE_CONFIG: return createServiceConfig();
 			case MetaheresPackage.COUNTRY: return createCountry();
 			case MetaheresPackage.RESERVATIONS_CONFIG: return createReservationsConfig();
@@ -99,16 +96,6 @@ public class MetaheresFactoryImpl extends EFactoryImpl implements MetaheresFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RightLevel createRightLevel() {
-		RightLevelImpl rightLevel = new RightLevelImpl();
-		return rightLevel;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Language createLanguage() {
 		LanguageImpl language = new LanguageImpl();
 		return language;
@@ -119,29 +106,9 @@ public class MetaheresFactoryImpl extends EFactoryImpl implements MetaheresFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public RightsLevelList createRightsLevelList() {
-		RightsLevelListImpl rightsLevelList = new RightsLevelListImpl();
-		return rightsLevelList;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public StatusList createStatusList() {
 		StatusListImpl statusList = new StatusListImpl();
 		return statusList;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public UsersConfig createUsersConfig() {
-		UsersConfigImpl usersConfig = new UsersConfigImpl();
-		return usersConfig;
 	}
 
 	/**

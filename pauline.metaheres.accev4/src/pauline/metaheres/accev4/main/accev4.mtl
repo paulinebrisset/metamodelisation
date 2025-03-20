@@ -1,144 +1,197 @@
 [comment encoding = UTF-8 /]
 [module accev4('http://www.bzh.ubo.pauline.metaheres')]
 
+    
+
 [template public templateMetaheres(aServiceName : ServiceName)]
 [comment @main/]
-[file ('propositionsiteweb_'.concat('.html'), false, 'UTF-8')]
+[file ('reporttest2_'.concat('.html'), false, 'UTF-8')]
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rapport de Configuration - [aServiceName.name/]</title>
+    <title>Gestion du service - [aServiceName.name/]</title>
     <style>
-        body { font-family:sans-serif; background-color: #f4f4f4; padding: 20px; }
+        body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
         h1 { color: #2c3e50; text-align: center; }
         h2 { color: #2980b9; border-bottom: 2px solid #2980b9; padding-bottom: 5px; }
         p, li { font-size: 16px; }
         ul { list-style-type: square; padding-left: 20px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        table { width: 100%; border-collapse: collapse; background: white; }
         th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
         th { background-color: #2980b9; color: white; }
         .highlight { color: #e74c3c; font-weight: bold; }
         .success { color: #008000; font-weight: bold; }
         .info { color: #f39c12; font-weight: bold; }
+        .edit-btn {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .edit-btn:hover {
+            background-color: #1c5d8b;
+        }
     </style>
 </head>
 <body>
 
-<h1>Configurations appliquées au service : [aServiceName.name/]</h1>
-
-<h2>Informations générales</h2>
+<h1>Bienvenue a vous, gestionnaire du service [aServiceName.name/]</h1>
+<h2>Gestion de votre configuration</h2>
+<h3>Informations generales sur la configuration de votre service</h3>
 <ul>
-    <li>Ferme pendant les jours fériés : 
+    <li>Ferme pendant les jours feries :
         [if (aServiceName.serviceconfig.closesOnPublicHolidays)]
-            <span class="success">OUI</span>
- 		[/if]
+            <span class="success">oui</span>
+        [/if]
         [if (not aServiceName.serviceconfig.closesOnPublicHolidays)]
-            <span class="highlight">NON</span>
+            <span class="highlight">non</span>
         [/if]
+        <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
     </li>
-    
-    <li>L'inventaire est public : 
+    <li>
         [if (aServiceName.serviceconfig.inventoryIsPublic)]
-            <span class="success">OUI</span>
- 		[/if]
+            <span>L'inventaire est <span class="success">accessible</span> au public</span>
+        [/if]
         [if (not aServiceName.serviceconfig.inventoryIsPublic)]
-            <span class="highlight">NON</span>
+            <span class="highlight">Votre inventaire n'est accessible que pour les utilisateurs enregistres aupres du service.</span>
         [/if]
+        <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
     </li>
-
-    <li>Présente une charte d'utilisation : 
+    <li>
         [if (aServiceName.serviceconfig.hasChart)]
-            <span class="success">OUI</span>
- 		[/if]
+            <span>Vous avez defini une charte d'utilisation, elle est <span class="success">affichee</span></span>
+            <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
+        [/if]
         [if (not aServiceName.serviceconfig.hasChart)]
-            <span class="highlight">NON</span>
+            <span class="highlight">Vous n'avez pas de charte d'utilisation a presenter.</span>
         [/if]
     </li>
-
-    <li>Compte en jours ouvrables : 
+    <li>Compte des jours :
         [if (aServiceName.serviceconfig.countInBusinessDays)]
-            <span class="success">OUI</span>
- 		[/if]
-        [if (not aServiceName.serviceconfig.countInBusinessDays)]
-            <span class="highlight">NON</span>
+            <span>en jours ouvrables</span>
         [/if]
+        [if (not aServiceName.serviceconfig.countInBusinessDays)]
+            <span>en jours calendaires</span>
+        [/if]
+        <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
     </li>
-
-    <li>Système de tarification : <span class="info">[aServiceName.serviceconfig.pricingsystem/]</span></li>
+    <li>Pays dans lesquels le service est propose :
+        <table>
+            <tr>
+                <th>Pays</th>
+                <th>Langue</th>
+                <th>Systeme comptable</th>
+            </tr>
+            [for (count : Country | aServiceName.serviceconfig.country)]
+            <tr>
+                <td>[count.name/]</td>
+                <td>[count.language.name/]</td>
+                <td>[aServiceName.serviceconfig.country.pricingsystem.name/] 
+                    (devise : [aServiceName.serviceconfig.country.pricingsystem.currency/], 
+                    systeme comptable : [aServiceName.serviceconfig.country.pricingsystem.taxSystem/])
+                </td>
+            </tr>
+            [/for]
+        </table>
+    </li>
+    <li>Systemes de tarification proposes par votre service :
+        <ul>
+            [for (pricing : PricingSystem | aServiceName.serviceconfig.pricingsystem)]
+            <li>[pricing.name/]
+     (devise : [aServiceName.serviceconfig.country.pricingsystem.currency/], systeme comptable : 
+                    [aServiceName.serviceconfig.country.pricingsystem.taxSystem/])</span></li>
+            [/for]
+        </ul>
+    </li>
+    <li>Langues disponibles sur votre site :
+        <ul>
+            [for (lang : Language | aServiceName.serviceconfig.country.language)]
+            <li>[lang.name/]</li>
+            [/for]
+        </ul>
+    </li>
 </ul>
 
-<h2>Langues parlées</h2>
-<ul>
-[for (lang : Language | aServiceName.serviceconfig.country.language)]
-    <li>[lang.name/]</li>
-[/for]
-</ul>
-
-<h2>Configuration des réservations</h2>
+<h3>Regles de gestion de vos reservations</h3>
 <table>
     <tr>
-        <th>Paramètre</th>
+        <th>Parametre</th>
         <th>Valeur</th>
     </tr>
     <tr>
-        <td>Délai minimal de demande</td>
+        <td>Delai minimal de demande</td>
         <td>[aServiceName.serviceconfig.reservationsconfig.minRequestAdvance/] jours</td>
     </tr>
     <tr>
-        <td>Délai maximal de demande</td>
+        <td>Delai maximal de demande</td>
         <td>[aServiceName.serviceconfig.reservationsconfig.maxRequestAdvance/] jours</td>
     </tr>
-</table>
-
-<h2>Statuts possibles pour une réservation</h2>
+<tr>
+<td>Statuts possibles pour une reservation</td>
+<td>
 <ul>
 [for (status : Status | aServiceName.serviceconfig.reservationsconfig.statuslist.status)]
     <li>[status.name/]</li>
 [/for]
 </ul>
+</td>
+</tr>
+</table>
 
-<h2>Pays où le service est proposé</h2>
-<ul>
-    <li>Pays : <span class="info">[aServiceName.serviceconfig.country.name/]</span></li>
-    <li>Langue associée : <span class="info">[aServiceName.serviceconfig.country.language.name/]</span></li>
-    <li>Système de tarification : <span class="info">[aServiceName.serviceconfig.country.pricingsystem.name/] 
-        ([aServiceName.serviceconfig.country.pricingsystem.currency/], [aServiceName.serviceconfig.country.pricingsystem.taxSystem/])</span></li>
-</ul>
-
-<h2>Configuration des ressources disponibles à la réservation</h2>
-<ul>
-    <li>Affichage avec une image : 
-        [if (aServiceName.serviceconfig.resourcesconfig.hasImage->first())]
-            <span class="highlight">OUI</span>
- 		[/if]
-        [if (not aServiceName.serviceconfig.resourcesconfig.hasImage->first())]
-            <span class="success">NON</span>
+<h2>Reservations du jour</h2>
+<table>
+    <tr>
+        <th>Utlisateur</th>
+ [if (aServiceName.serviceconfig.countInBusinessDays)]
+            <span>en jours ouvrables</span>
         [/if]
-    </li>
+        <th>Items reserves</th>
+<th>Statut de la reservation</th>
+    </tr>
+<tr><td>Pauline</td><td>Un sandwich</td><td>En traitement</td></tr>
+<tr><td>Julien</td><td>Deux salades</td><td>Validee</td></tr>
+</table>
 
-    <li>Stocks renouvelés pour chaque créneau : 
-        [if (aServiceName.serviceconfig.resourcesconfig.hasOneStockPerSlot->first())]
-            <span class="highlight">OUI</span>
+<h3>Ressources qui sont disponibles a la reservation</h3>
+<table>
+	<tr>
+        [if (aServiceName.serviceconfig.resourcesconfig.hasImage->first())]
+             <th>Illustration</th>
+ 		[/if]
+          [if (aServiceName.serviceconfig.resourcesconfig.hasOneStockPerSlot->first())]
+          <th>  Stock disponible pour chaque creneau</th>
  		[/if]
         [if (not aServiceName.serviceconfig.resourcesconfig.hasOneStockPerSlot->first())]
-            <span class="success">NON</span>
+          <th>  Stock total disponible</th>
         [/if]
-    </li>
-
-    <li>Ressources consommables : 
-        [if (aServiceName.serviceconfig.resourcesconfig.isConsumable->first())]
-            <span class="highlight">OUI</span>
- 		[/if]
-        [if (not aServiceName.serviceconfig.resourcesconfig.isConsumable->first())]
-            <span class="success">NON</span>
+   		[if (aServiceName.serviceconfig.resourcesconfig.isCharged)]
+          <th>Tarif</th>
         [/if]
-    </li>
-</ul>
+		[if (aServiceName.serviceconfig.resourcesconfig.isLoan->first())]
+          <th>Duree maximale de location</th>
+        [/if]
+    </tr>
+   <tr>
+       <td>Photosandwich.jpeg</td>
+<td>50 unites</td><td>5 euros</td>
+  <td>Photo-salade.jpeg</td><td>150 unites</td><td>6 euros</td>
+    </tr>
+</table>
 
 </body>
+<script>
+    function modifierElement(btn) {
+        alert("Pop-up pour permettre la modification.");
+    }
+</script>
 </html>
 [/file]
 [/template]
+
+

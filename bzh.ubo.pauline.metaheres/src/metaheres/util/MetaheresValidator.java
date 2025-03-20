@@ -147,16 +147,10 @@ public class MetaheresValidator extends EObjectValidator {
 				return validateServiceName((ServiceName)value, diagnostics, context);
 			case MetaheresPackage.STATUS:
 				return validateStatus((Status)value, diagnostics, context);
-			case MetaheresPackage.RIGHT_LEVEL:
-				return validateRightLevel((RightLevel)value, diagnostics, context);
 			case MetaheresPackage.LANGUAGE:
 				return validateLanguage((Language)value, diagnostics, context);
-			case MetaheresPackage.RIGHTS_LEVEL_LIST:
-				return validateRightsLevelList((RightsLevelList)value, diagnostics, context);
 			case MetaheresPackage.STATUS_LIST:
 				return validateStatusList((StatusList)value, diagnostics, context);
-			case MetaheresPackage.USERS_CONFIG:
-				return validateUsersConfig((UsersConfig)value, diagnostics, context);
 			case MetaheresPackage.SERVICE_CONFIG:
 				return validateServiceConfig((ServiceConfig)value, diagnostics, context);
 			case MetaheresPackage.COUNTRY:
@@ -208,15 +202,6 @@ public class MetaheresValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRightLevel(RightLevel rightLevel, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(rightLevel, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateLanguage(Language language, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(language, diagnostics, context);
 	}
@@ -226,26 +211,8 @@ public class MetaheresValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRightsLevelList(RightsLevelList rightsLevelList, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(rightsLevelList, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateStatusList(StatusList statusList, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(statusList, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateUsersConfig(UsersConfig usersConfig, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(usersConfig, diagnostics, context);
 	}
 
 	/**
