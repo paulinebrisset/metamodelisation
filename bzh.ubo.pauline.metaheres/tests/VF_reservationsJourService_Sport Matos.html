@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservations du jour du service - Sport Matos</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+
+        p,
+        li {
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .success {
+            color: #008000;
+            font-weight: bold;
+        }
+
+        .info {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .edit-btn {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .edit-btn:hover {
+            background-color: #1c5d8b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue à vous, gestionnaire du service Sport Matos</h1>
+    <h1>Réservations du jour</h1>
+    <table>
+        <tr>
+            <th>Utlisateur</th>
+            <th>Items et lots réservés</th>
+            <th>Statut de la réservation</th>
+			<th>Date de retrait</th>
+            <th>Check-out</th>
+            <th>Date de retour</th>
+            <th>Check-in</th>
+        </tr>
+        <tr>
+			<td>Pauline</td>
+			<td>10 haltères</td> 
+			<td>Brouillon</td>
+			<td>21/03/2025</td>
+			<td><span class="success">Fait</span></td>
+			<td>30/03/2025</td>
+			<td>Non-réalisé</td>
+        </tr>
+        <tr>
+			<td>Julien</td>
+			<td>Lot évaluation piscine : 1 bassin, 1 mannequin, 10 flotteurs</td>
+			<td>Validee</td>
+			<td>21/03/2025</td>
+			<td><span class="success">Fait</span></td>
+			<td>22/03/2025</td>
+			<td>Non-réalisé</td>
+        </tr>
+    </table>
+</body>
+<script>
+    function modifierElement(btn) {
+        alert("Pop-up pour permettre la modification.");
+    }
+</script>
+
+</html>

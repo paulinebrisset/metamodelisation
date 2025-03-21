@@ -4,15 +4,166 @@
 
 [template public templateMetaheres(aServiceName : ServiceName)]
 [comment @main/]
-[file ('reporttest2_'.concat(aServiceName.name).concat('.html'), false, 'UTF-8')]
-
+[file ('VF_reservationsJourService_'.concat(aServiceName.name).concat('.html'), false, 'UTF-8')]
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion du service - [aServiceName.name/]</title>
+    <title>Réservations du jour du service - [aServiceName.name/]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+
+        p,
+        li {
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .success {
+            color: #008000;
+            font-weight: bold;
+        }
+
+        .info {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .edit-btn {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .edit-btn:hover {
+            background-color: #1c5d8b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue à vous, gestionnaire du service [aServiceName.name/]</h1>
+    <h1>Réservations du jour</h1>
+    <table>
+        <tr>
+            <th>Utlisateur</th>
+            <th>Items et lots réservés</th>
+            [if (aServiceName.serviceconfig.resourcesconfig.isCharged->first())]
+            <th>Tarif</th>
+            [/if]
+            <th>Statut de la réservation</th>
+			<th>Date de retrait</th>
+  			[if (aServiceName.serviceconfig.reservationsconfig.hasMoveOutCheck)]
+            <th>Check-out</th>
+            [/if]
+  			[if (aServiceName.serviceconfig.resourcesconfig.isLoan->first())]
+            <th>Date de retour</th>
+            [/if]
+  			[if (aServiceName.serviceconfig.reservationsconfig.hasMoveInCheck)]
+            <th>Check-in</th>
+            [/if]
+        </tr>
+	[if (aServiceName.serviceconfig.resourcesconfig.isLoan->first())]
+        <tr>
+			<td>Pauline</td>
+			<td>10 haltères</td> 
+			<td>Brouillon</td>
+			<td>21/03/2025</td>
+			<td><span class="success">Fait</span></td>
+			<td>30/03/2025</td>
+			<td>Non-réalisé</td>
+        </tr>
+        <tr>
+			<td>Julien</td>
+			<td>Lot évaluation piscine : 1 bassin, 1 mannequin, 10 flotteurs</td>
+			<td>Validee</td>
+			<td>21/03/2025</td>
+			<td><span class="success">Fait</span></td>
+			<td>22/03/2025</td>
+			<td>Non-réalisé</td>
+        </tr>
+	[/if]
+   [if not (aServiceName.serviceconfig.resourcesconfig.isLoan->first())]
+        <tr>
+            <td>Pauline</td>
+            <td>1 sandwich; 1 coca</td>
+            <td>5euros</td>
+            <td>Brouillon</td>
+   			<td>21/03/2025</td>
+        </tr>
+        <tr>
+            <td>Julien</td>
+            <td>2 salades</td>
+            <td>6euros</td>
+            <td>Validée</td>
+            <td>21/03/2025</td>
+        </tr>
+	[/if]
+    </table>
+</body>
+<script>
+    function modifierElement(btn) {
+        alert("Pop-up pour permettre la modification.");
+    }
+</script>
+
+</html>
+[/file]
+[file ('VF_configurations_'.concat(aServiceName.name).concat('.html'), false, 'UTF-8')]
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurations du service - [aServiceName.name/]</title>
     <style>
         body {
             font-family: sans-serif;
@@ -91,36 +242,71 @@
 </head>
 
 <body>
-
-    <h1>Bienvenue a vous, gestionnaire du service [aServiceName.name/]</h1>
-    <h2>Reservations du jour</h2>
+    <h1>Gestion de votre configuration</h1>
+    <h2>Ressources qui sont disponibles à la reservation</h2>
+ [for (resource : ResourcesConfig | aServiceName.serviceconfig.resourcesconfig)]
     <table>
         <tr>
-            <th>Utlisateur</th>
-            <th>Items reserves</th>
-            [if (aServiceName.serviceconfig.resourcesconfig.isCharged->first())]
+			<th>Nom</th>
+            [if (resource.hasImage)]
+            <th>Illustration</th>
+            [/if]
+            [if (resource.hasOneStockPerSlot)]
+            <th> Stock disponible pour chaque creneau</th>
+            [/if]
+            [if not (resource.hasOneStockPerSlot)]
+            <th>Stock total disponible</th>
+            [/if]
+            [if (resource.isCharged)]
             <th>Tarif</th>
             [/if]
-            <th>Statut de la reservation</th>
+            [if (resource.isLoan)]
+			<th>Duree minimale de location</th>
+            <th>Duree maximale de location</th>
+            [/if]
         </tr>
+	[if not (aServiceName.serviceconfig.resourcesconfig.isLoan->first())]
         <tr>
-            <td>Pauline</td>
-            <td>Un sandwich</td>
-            <td>5euros</td>
-            <td>En traitement</td>
+			<td>Sandwich</td>
+            <td>Photosandwich.jpeg</td>
+            <td>50 unites</td>
+            <td>5 euros</td>
+		</tr>
+		<tr>
+			<td>Salade</td>
+            <td>Photo-salade.jpeg</td>
+            <td>150 unites</td>
+            <td>6 euros</td>
         </tr>
-        <tr>
-            <td>Julien</td>
-            <td>Deux salades</td>
-            <td>6euros</td>
-            <td>Validee</td>
+	[/if]
+   [if (aServiceName.serviceconfig.resourcesconfig.isLoan->first())]
+   		<tr>
+			<td>Haltere</td>
+			<td>haltere.jpg</td>
+			<td>200</td> 
+			<td>2 heures</td>
+			<td>5 jours</td>
         </tr>
+        <tr>	
+			<td>Ballon</td>
+            <td>ballons.jpg</td>
+            <td>50 unites</td>
+            <td>2 heures</td>
+			<td>5 jours</td>
+		</tr>
+		<tr>
+			<td>Piscine</td>
+            <td>Photo-piscine.jpeg</td>
+            <td>3 unites</td>
+			<td>2 heures</td>
+			<td>1 jour</td>
+        </tr>
+	[/if]
     </table>
-
-    <h2>Gestion de votre configuration</h2>
-    <h3>Informations generales sur la configuration de votre service</h3>
+[/for]
+    <h2>Informations générales sur la configuration de votre service</h2>
     <ul>
-        <li>Ferme pendant les jours feries :
+        <li>Ferme pendant les jours fériés :
             [if (aServiceName.serviceconfig.closesOnPublicHolidays)]
             <span class="success">oui</span>
             [/if]
@@ -134,20 +320,20 @@
             <span>L'inventaire est <span class="success">accessible</span> au public</span>
             [/if]
             [if (not aServiceName.serviceconfig.inventoryIsPublic)]
-            <span class="highlight">Votre inventaire n'est accessible que pour les utilisateurs enregistres aupres du
+            <span class="highlight">Votre inventaire n'est accessible que pour les utilisateurs enregistrés aupres du
                 service.</span>
             [/if]
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
         <li>
             [if (aServiceName.serviceconfig.hasChart)]
-            <span>Vous avez defini une charte d'utilisation, elle est <span class="success">affichee</span>
-            <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
+            <span>Vous avez defini une charte d'utilisation, elle est <span class="success">affichée</span>
+            <button class="edit-btn" onclick="modifierElement(this)">Modifier la charte</button>
             [/if]
             [if (not aServiceName.serviceconfig.hasChart)]
-            <span class="highlight">Vous n'avez pas de charte d'utilisation a presenter.</span>
+            <span class="highlight">Vous n'avez pas de charte d'utilisation a présenter.</span>
+  			<button class="edit-btn" onclick="modifierElement(this)">Ajouter une charte</button>
             [/if]
-            <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
         <li>
             Compte des jours :
@@ -159,38 +345,46 @@
             [/if]
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
-        <li>Pays dans lesquels le service est propose :
+        <li>Pays dans lesquels le service est proposé :
             <table>
                 <tr>
                     <th>Pays</th>
                     <th>Langue</th>
-                    <th>Systeme comptable</th>
+                    <th>Système comptable</th>
                 </tr>
                 [for (count : Country | aServiceName.serviceconfig.country)]
                 <tr>
                     <td>[count.name/]</td>
                     <td>[count.language.name/]</td>
-                    <td><span>[aServiceName.serviceconfig.country.pricingsystem.name/]
-                            (devise : [aServiceName.serviceconfig.country.pricingsystem.currency/],
-                            systeme comptable : [aServiceName.serviceconfig.country.pricingsystem.taxSystem/])</span>
+                    <td><span><b>[count.pricingsystem.name/]</b><br/>
+                            devise : [count.pricingsystem.currency/],<br/>
+                            systàme comptable : [count.pricingsystem.taxSystem/]</span>
                     </td>
                 </tr>
                 [/for]
             </table>
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
-        <li>Systemes de tarification proposes par votre service :
-            <ul>
+        <li>Systèmes de tarification proposés par votre service :</br>
+           
+        [if (aServiceName.serviceconfig.pricingsystem->isEmpty())]
+            <span class="highlight">Aucun système renseigné</span>
+        [/if]
+        [if not (aServiceName.serviceconfig.pricingsystem->isEmpty())]
+   <ul>
                 [for (pricing : PricingSystem | aServiceName.serviceconfig.pricingsystem)]
                 <li>
                     <span>
-                        [pricing.name/]
-                        (devise : [aServiceName.serviceconfig.country.pricingsystem.currency/], systeme comptable :
-                        [aServiceName.serviceconfig.country.pricingsystem.taxSystem/])
+                        <b>[pricing.name/]</b><br/>
+                        devise : [pricing.currency/],<br/> 
+						systeme comptable :
+                        [pricing.taxSystem/]
                     </span>
                 </li>
                 [/for]
-            </ul>
+  </ul>
+      [/if]
+          
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
         <li>Langues disponibles sur votre site :
@@ -203,26 +397,26 @@
         <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
     </ul>
 
-    <h3>Regles de gestion de vos reservations</h3>
+    <h2>Règles de gestion de vos réservations</h2>
     <table>
         <tr>
-            <th>Parametre</th>
+            <th>Paramètre</th>
             <th>Valeur</th>
         </tr>
         <tr>
-            <td>Delai minimal de demande</td>
+            <td>Délai minimal de demande</td>
             <td>[aServiceName.serviceconfig.reservationsconfig.minRequestAdvance/] jours
                 <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
             </td>
         </tr>
         <tr>
-            <td>Delai maximal de demande</td>
+            <td>Délai maximal de demande</td>
             <td>[aServiceName.serviceconfig.reservationsconfig.maxRequestAdvance/] jours <button class="edit-btn"
                     onclick="modifierElement(this)">Modifier</button>
             </td>
         </tr>
         <tr>
-            <td>Statuts possibles pour une reservation</td>
+            <td>Statuts possibles pour une réservation</td>
             <td>
                 <ul>
                     [for (status : Status | aServiceName.serviceconfig.reservationsconfig.statuslist.status)]
@@ -231,35 +425,6 @@
                 </ul> <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
 
             </td>
-        </tr>
-    </table>
-
-    <h3>Ressources qui sont disponibles a la reservation</h3>
-    <table>
-        <tr>
-            [if (aServiceName.serviceconfig.resourcesconfig.hasImage->first())]
-            <th>Illustration</th>
-            [/if]
-            [if (aServiceName.serviceconfig.resourcesconfig.hasOneStockPerSlot->first())]
-            <th> Stock disponible pour chaque creneau</th>
-            [/if]
-            [if not (aServiceName.serviceconfig.resourcesconfig.hasOneStockPerSlot->first())]
-            <th>Stock total disponible</th>
-            [/if]
-            [if (aServiceName.serviceconfig.resourcesconfig.isCharged->first())]
-            <th>Tarif</th>
-            [/if]
-            [if (aServiceName.serviceconfig.resourcesconfig.isLoan->first())]
-            <th>Duree maximale de location</th>
-            [/if]
-        </tr>
-        <tr>
-            <td>Photosandwich.jpeg</td>
-            <td>50 unites</td>
-            <td>5 euros</td>
-            <td>Photo-salade.jpeg</td>
-            <td>150 unites</td>
-            <td>6 euros</td>
         </tr>
     </table>
 </body>
@@ -271,4 +436,6 @@
 
 </html>
 [/file]
+
+
 [/template]

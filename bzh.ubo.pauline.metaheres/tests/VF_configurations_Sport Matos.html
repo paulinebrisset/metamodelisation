@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion du service - Heres</title>
+    <title>Configurations du service - Sport Matos</title>
     <style>
         body {
             font-family: sans-serif;
@@ -84,152 +83,120 @@
 </head>
 
 <body>
-
-    <h1>Bienvenue a vous, gestionnaire du service Heres</h1>
-    <h2>Reservations du jour</h2>
+    <h1>Gestion de votre configuration</h1>
+    <h2>Ressources qui sont disponibles à la reservation</h2>
     <table>
         <tr>
-            <th>Utlisateur</th>
-            <th>Items reserves</th>
-            <th>Tarif</th>
-            <th>Statut de la reservation</th>
+			<th>Nom</th>
+            <th>Illustration</th>
+            <th>Stock total disponible</th>
+			<th>Duree minimale de location</th>
+            <th>Duree maximale de location</th>
         </tr>
-        <tr>
-            <td>Pauline</td>
-            <td>Un sandwich</td>
-            <td>5euros</td>
-            <td>En traitement</td>
+   		<tr>
+			<td>Haltere</td>
+			<td>haltere.jpg</td>
+			<td>200</td> 
+			<td>2 heures</td>
+			<td>5 jours</td>
         </tr>
-        <tr>
-            <td>Julien</td>
-            <td>Deux salades</td>
-            <td>6euros</td>
-            <td>Validee</td>
+        <tr>	
+			<td>Ballon</td>
+            <td>ballons.jpg</td>
+            <td>50 unites</td>
+            <td>2 heures</td>
+			<td>5 jours</td>
+		</tr>
+		<tr>
+			<td>Piscine</td>
+            <td>Photo-piscine.jpeg</td>
+            <td>3 unites</td>
+			<td>2 heures</td>
+			<td>1 jour</td>
         </tr>
     </table>
-
-    <h2>Gestion de votre configuration</h2>
-    <h3>Informations generales sur la configuration de votre service</h3>
+    <h2>Informations générales sur la configuration de votre service</h2>
     <ul>
-        <li>Ferme pendant les jours feries :
+        <li>Ferme pendant les jours fériés :
             <span class="success">oui</span>
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
         <li>
-            <span>L'inventaire est <span class="success">accessible</span> au public</span>
+            <span class="highlight">Votre inventaire n'est accessible que pour les utilisateurs enregistrés aupres du
+                service.</span>
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
         <li>
-            <span>Vous avez defini une charte d'utilisation, elle est <span class="success">affichee</span>
-            <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
-            <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
+            <span class="highlight">Vous n'avez pas de charte d'utilisation a présenter.</span>
+  			<button class="edit-btn" onclick="modifierElement(this)">Ajouter une charte</button>
         </li>
         <li>
             Compte des jours :
-            <span>en jours ouvrables</span>
+            <span>en jours calendaires</span>
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
-        <li>Pays dans lesquels le service est propose :
+        <li>Pays dans lesquels le service est proposé :
             <table>
                 <tr>
                     <th>Pays</th>
                     <th>Langue</th>
-                    <th>Systeme comptable</th>
+                    <th>Système comptable</th>
                 </tr>
                 <tr>
                     <td>France</td>
                     <td>Français</td>
-                    <td><span>PricingFRSystemeAngSystemeES
-                            (devise : EurosLivre SterlingEuros,
-                            systeme comptable : TVA_FRHors-UETaxUE)</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Angleterre</td>
-                    <td>English</td>
-                    <td><span>PricingFRSystemeAngSystemeES
-                            (devise : EurosLivre SterlingEuros,
-                            systeme comptable : TVA_FRHors-UETaxUE)</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Espagne</td>
-                    <td>Espagnol</td>
-                    <td><span>PricingFRSystemeAngSystemeES
-                            (devise : EurosLivre SterlingEuros,
-                            systeme comptable : TVA_FRHors-UETaxUE)</span>
+                    <td><span><b>FranceSysteme</b><br/>
+                            devise : Euros,<br/>
+                            systàme comptable : TVA nationale</span>
                     </td>
                 </tr>
             </table>
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
-        <li>Systemes de tarification proposes par votre service :
-            <ul>
-                <li>
-                    <span>
-                        PricingFR
-                        (devise : EurosLivre SterlingEuros, systeme comptable :
-                        TVA_FRHors-UETaxUE)
-                    </span>
-                </li>
-            </ul>
+        <li>Systèmes de tarification proposés par votre service :</br>
+           
+            <span class="highlight">Aucun système renseigné</span>
+          
             <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
         </li>
         <li>Langues disponibles sur votre site :
             <ul>
                 <li>Français</li>
-                <li>English</li>
-                <li>Espagnol</li>
             </ul>
         </li>
         <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
     </ul>
 
-    <h3>Regles de gestion de vos reservations</h3>
+    <h2>Règles de gestion de vos réservations</h2>
     <table>
         <tr>
-            <th>Parametre</th>
+            <th>Paramètre</th>
             <th>Valeur</th>
         </tr>
         <tr>
-            <td>Delai minimal de demande</td>
+            <td>Délai minimal de demande</td>
             <td>1 jours
                 <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
             </td>
         </tr>
         <tr>
-            <td>Delai maximal de demande</td>
-            <td>15 jours <button class="edit-btn"
+            <td>Délai maximal de demande</td>
+            <td>10 jours <button class="edit-btn"
                     onclick="modifierElement(this)">Modifier</button>
             </td>
         </tr>
         <tr>
-            <td>Statuts possibles pour une reservation</td>
+            <td>Statuts possibles pour une réservation</td>
             <td>
                 <ul>
                     <li>Brouillon</li>
-                    <li>Validé</li>
-                    <li>Fini</li>
+                    <li>Validée</li>
+                    <li>Annulée</li>
+                    <li>Refusée</li>
+                    <li>Supprimée</li>
                 </ul> <button class="edit-btn" onclick="modifierElement(this)">Modifier</button>
 
             </td>
-        </tr>
-    </table>
-
-    <h3>Ressources qui sont disponibles a la reservation</h3>
-    <table>
-        <tr>
-            <th>Illustration</th>
-            <th> Stock disponible pour chaque creneau</th>
-            <th>Tarif</th>
-        </tr>
-        <tr>
-            <td>Photosandwich.jpeg</td>
-            <td>50 unites</td>
-            <td>5 euros</td>
-            <td>Photo-salade.jpeg</td>
-            <td>150 unites</td>
-            <td>6 euros</td>
         </tr>
     </table>
 </body>

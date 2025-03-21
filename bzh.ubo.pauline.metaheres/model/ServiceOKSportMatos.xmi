@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metaheres:ServiceName
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:metaheres="http://www.bzh.ubo.pauline.metaheres"
+    name="Sport Matos">
+  <serviceconfig
+      closesOnPublicHolidays="true"
+      inventoryIsPublic="false"
+      hasChart="false"
+      countInBusinessDays="false">
+    <language
+        name="Français"/>
+    <reservationsconfig
+        hasMoveOutCheck="true"
+        minRequestAdvance="1"
+        maxRequestAdvance="10"
+        hasMoveInCheck="true">
+      <statuslist>
+        <status
+            name="Brouillon"/>
+        <status
+            name="Validée"/>
+        <status
+            name="Annulée"/>
+        <status
+            name="Refusée"/>
+        <status
+            name="Supprimée"/>
+      </statuslist>
+    </reservationsconfig>
+    <country
+        name="France">
+      <language
+          name="Français"/>
+      <pricingsystem
+          currency="Euros"
+          taxSystem="TVA nationale"
+          name="FranceSysteme"/>
+    </country>
+    <resourcesconfig
+        hasImage="true"
+        hasOneStockPerSlot="false"
+        isLoan="true"
+        isCharged="false"/>
+    <lotsconfig
+        hasImage="true"
+        hasOneStockPerSlot="false"/>
+  </serviceconfig>
+</metaheres:ServiceName>
